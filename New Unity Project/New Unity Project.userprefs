@@ -1,10 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\RunicPillarA.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MenuGestion.cs">
     <Files>
-      <File FileName="Assets\Scripts\ActivateOnTrigger.cs" Line="24" Column="3" />
-      <File FileName="Assets\Scripts\CameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\RunicPillarA.cs" Line="26" Column="39" />
+      <File FileName="..\..\..\Unity Personnal\Unity Project\TFE Raph\Refonte Objet TFE\Assets\Script\ABCDDeplacement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\RotationCircleGestion.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CircleOpeningAfterEndRotation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ActivateCirclePuzzle.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerActivateRockEnigme.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EndRockEnigme.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\NavMeshMovingRock.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GestionSelectionRocks.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ActivateAnimTemple1BigSalle.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MenuGestion.cs" Line="57" Column="49" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

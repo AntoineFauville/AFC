@@ -13,6 +13,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
 
+		//public bool areaEffectCollider;
+
+		public float h;
+		public float v;
         
         private void Start()
         {
@@ -24,7 +28,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             else
             {
                 Debug.LogWarning(
-                    "Warning: no main camera found. Third person character needs a Camera tagged \"MainCamera\", for camera-relative controls.", gameObject);
+                    "Warning: no main camera found. Third person character needs a Camera tagged \"MainCamera\", for camera-relative controls.");
                 // we use self-relative controls in this case, which probably isn't what the user wants, but hey, we warned them!
             }
 
@@ -43,11 +47,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 
         // Fixed update is called in sync with physics
-        private void FixedUpdate()
+        public void FixedUpdate()
         {
             // read inputs
-            float h = CrossPlatformInputManager.GetAxis("Horizontal");
-            float v = CrossPlatformInputManager.GetAxis("Vertical");
+			//if(!areaEffectCollider){
+           		h = CrossPlatformInputManager.GetAxis("Horizontal");
+				v = CrossPlatformInputManager.GetAxis("Vertical");
+		//	}
             bool crouch = Input.GetKey(KeyCode.C);
 
             // calculate move direction to pass to character
