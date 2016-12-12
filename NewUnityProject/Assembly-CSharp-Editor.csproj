@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5A0769DA-25DA-A68D-BA58-6ED404CB536B}</ProjectGuid>
+    <ProjectGuid>{9E25C958-A19F-A2C1-DA5E-E2B6432D8CEA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -53,7 +53,6 @@
      <Compile Include="Assets\Editor\ImageEffects\CameraMotionBlurEditor.cs" />
      <Compile Include="Assets\Editor\ImageEffects\ColorCorrectionCurvesEditor.cs" />
      <Compile Include="Assets\Editor\ImageEffects\ColorCorrectionLookupEditor.cs" />
-     <Compile Include="Assets\Editor\ImageEffects\CreaseShadingEditor.cs" />
      <Compile Include="Assets\Editor\ImageEffects\DepthOfFieldDeprecatedEditor.cs" />
      <Compile Include="Assets\Editor\ImageEffects\DepthOfFieldEditor.cs" />
      <Compile Include="Assets\Editor\ImageEffects\EdgeDetectionEditor.cs" />
@@ -213,11 +212,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{79391AC5-8752-B4CC-F33F-BB9EB1094377}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{5FCAF2FF-5497-75D9-36A6-AEC84C9C2CE7}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript.unityproj">
-      <Project>{1753851C-AE59-909A-15AB-E3FFE34BC5A0}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
+      <Project>{F8D220FF-AAF0-F26B-7B51-92AEF8277F20}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

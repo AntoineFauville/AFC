@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}</ProjectGuid>
+    <ProjectGuid>{DBF3B2E1-0D90-2909-F21E-611088EAA85D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -71,13 +71,16 @@
      <Compile Include="Assets\Scripts\ActivateCanvasWhenPassNearBy.cs" />
      <Compile Include="Assets\Scripts\ActivateCirclePuzzle.cs" />
      <Compile Include="Assets\Scripts\ActivateEnigmeFaisseaux.cs" />
+     <Compile Include="Assets\Scripts\ActivateNextObjective.cs" />
      <Compile Include="Assets\Scripts\ActivateOnTrigger.cs" />
      <Compile Include="Assets\Scripts\ActivateTotemEnigma.cs" />
      <Compile Include="Assets\Scripts\AddOnceToBar.cs" />
      <Compile Include="Assets\Scripts\AnimOnTrigger.cs" />
+     <Compile Include="Assets\Scripts\AnimOnTrigger1.cs" />
      <Compile Include="Assets\Scripts\AreaColliderSecondScript.cs" />
      <Compile Include="Assets\Scripts\AreaDetectorGestion.cs" />
      <Compile Include="Assets\Scripts\BonusPointExplosion.cs" />
+     <Compile Include="Assets\Scripts\BookapintuOpenTheGate.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\ChangeZoomSize.cs" />
      <Compile Include="Assets\Scripts\ChangingViewFocus.cs" />
@@ -86,11 +89,13 @@
      <Compile Include="Assets\Scripts\DetectArea.cs" />
      <Compile Include="Assets\Scripts\EndEnigmeRotationCircle.cs" />
      <Compile Include="Assets\Scripts\EndRockEnigme.cs" />
+     <Compile Include="Assets\Scripts\EndTotemEnigma.cs" />
      <Compile Include="Assets\Scripts\GestionSelectionParts.cs" />
      <Compile Include="Assets\Scripts\GestionSelectionRocks.cs" />
      <Compile Include="Assets\Scripts\HistorybarInteractive.cs" />
      <Compile Include="Assets\Scripts\InstantiatePrefabOnWalk.cs" />
      <Compile Include="Assets\Scripts\InteractiveAreaGestion.cs" />
+     <Compile Include="Assets\Scripts\InterestPointArea.cs" />
      <Compile Include="Assets\Scripts\IsThisIntrosceneScript.cs" />
      <Compile Include="Assets\Scripts\LightBeamTriggerLazer.cs" />
      <Compile Include="Assets\Scripts\LoadScene.cs" />
@@ -99,7 +104,9 @@
      <Compile Include="Assets\Scripts\MouseLock.cs" />
      <Compile Include="Assets\Scripts\MouseShow.cs" />
      <Compile Include="Assets\Scripts\NavMeshMovingRock.cs" />
+     <Compile Include="Assets\Scripts\ObjectiveStates.cs" />
      <Compile Include="Assets\Scripts\OnClicAnimator.cs" />
+     <Compile Include="Assets\Scripts\OpenCloseBook.cs" />
      <Compile Include="Assets\Scripts\PlantsGrowing.cs" />
      <Compile Include="Assets\Scripts\PlayerActivateRockEnigme.cs" />
      <Compile Include="Assets\Scripts\QT_SurfaceNoise.cs" />
@@ -109,12 +116,18 @@
      <Compile Include="Assets\Scripts\RotationEnigmeLazer.cs" />
      <Compile Include="Assets\Scripts\RunInBackGround.cs" />
      <Compile Include="Assets\Scripts\RunicPillarA.cs" />
+     <Compile Include="Assets\Scripts\Save + GameInfo\GameInformation.cs" />
+     <Compile Include="Assets\Scripts\Save + GameInfo\LoadInformation.cs" />
+     <Compile Include="Assets\Scripts\Save + GameInfo\SaveInformation.cs" />
      <Compile Include="Assets\Scripts\SaveBookInputs.cs" />
      <Compile Include="Assets\Scripts\ShackingEffect.cs" />
      <Compile Include="Assets\Scripts\SmoothCameraDeplacement.cs" />
      <Compile Include="Assets\Scripts\SpriteSheet.cs" />
      <Compile Include="Assets\Scripts\StartWhiteScreen.cs" />
+     <Compile Include="Assets\Scripts\TriggerActivateAnimationHidingWall.cs" />
+     <Compile Include="Assets\Scripts\TriggerObjectives.cs" />
      <Compile Include="Assets\Scripts\WhenWalkedActivateMontage.cs" />
+     <Compile Include="Assets\Scripts\turnGolbalFinalDoorBool.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
@@ -222,7 +235,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{79391AC5-8752-B4CC-F33F-BB9EB1094377}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{5FCAF2FF-5497-75D9-36A6-AEC84C9C2CE7}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

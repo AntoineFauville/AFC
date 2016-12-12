@@ -1,0 +1,21 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SaveBookInputs.cs">
+    <Files>
+      <File FileName="Assets\Scripts\RotationEnigmeLazer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EndTotemEnigma.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EndEnigmeRotationCircle.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\InterestPointArea.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MenuGestion.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\OpenCloseBook.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SaveBookInputs.cs" Line="16" Column="3" />
+      <File FileName="Assets\Scripts\Save + GameInfo\GameInformation.cs" Line="14" Column="3" />
+      <File FileName="Assets\Scripts\Save + GameInfo\SaveInformation.cs" Line="24" Column="3" />
+      <File FileName="Assets\Scripts\Save + GameInfo\LoadInformation.cs" Line="7" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

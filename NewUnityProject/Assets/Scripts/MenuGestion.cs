@@ -75,7 +75,7 @@ public class MenuGestion : MonoBehaviour {
 
 	IEnumerator launchGame (){
 		yield return new WaitForSeconds (3.0f);
-		SceneManager.LoadScene ("IntroScene");
+		SceneManager.LoadScene ("SceneIntroRemasterd");
 	}
 
 	IEnumerator EndGame (){

@@ -8,9 +8,16 @@ public class SaveBookInputs : MonoBehaviour {
 
 	public InputField usernameInput;
 	public string username;
-	//public string newName;
+
+	public int a = 0;
+
+	void Awake() {
+		DontDestroyOnLoad(transform.gameObject);
+//		DontDestroyOnLoad (a);
+	}
 
 	void Start() {
+		a++;
 		if(username != null)
 			usernameInput.text = username;
 	}
