@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/PuzzleTestScene.unity
+- path: Assets/Scenes/SceneIntroRemasterd.unity
   isLoaded: 1
   isActive: 1

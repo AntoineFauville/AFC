@@ -8,10 +8,13 @@ public class MenuGestion : MonoBehaviour {
 	public bool amILaunched = false;
 	public CanvasGroup imageblanche;
 
-	public bool state1, state2;
+	public GameObject ImageChargement;
+
+	public bool state1, state2, state3;
 
 	public GameObject state1Outline;
 	public GameObject state2Outline;
+	public GameObject state3Outline;
 
 	public float amoutOfAlpha;
 
@@ -21,8 +24,10 @@ public class MenuGestion : MonoBehaviour {
 	private bool didIPess = false;
 	// Use this for initialization
 	void Start () {
+		ImageChargement.SetActive (false);
 		state1 = true;
 		state2 = false;
+		state3 = false;
 		imageblanche.alpha = 0.0f;
 	}
 	
@@ -32,27 +37,62 @@ public class MenuGestion : MonoBehaviour {
 			imageblanche.alpha += amoutOfAlpha;
 		}
 
-		if(Input.GetAxis("Vertical") >= 0.4f && !canIInputAgain && state1 == false){
-			state1 = true;
-			state2 = false;
-		}
 		if(Input.GetAxis("Vertical") <= -0.4f && !canIInputAgain && state1 == true){
 			state1 = false;
 			state2 = true;
+			state3 = false;
+			canIInputAgain = true;
+			StartCoroutine ("returnInput");
+		}
+		if(Input.GetAxis("Vertical") <= -0.4f && !canIInputAgain && state2 == true){
+			state1 = false;
+			state2 = false;
+			state3 = true;
+			canIInputAgain = true;
+			StartCoroutine ("returnInput");
+		}
+		if(Input.GetAxis("Vertical") >= 0.4f && !canIInputAgain && state2 == true){
+			state1 = true;
+			state2 = false;
+			state3 = false;
+			canIInputAgain = true;
+			StartCoroutine ("returnInput");
+		}
+		if(Input.GetAxis("Vertical") >= 0.4f && !canIInputAgain && state3 == true){
+			state1 = false;
+			state2 = true;
+			state3 = false;
+			canIInputAgain = true;
+			StartCoroutine ("returnInput");
 		}
 
 		if (state1){
 			state1Outline.SetActive (true);
 			state2Outline.SetActive (false);
+			state3Outline.SetActive (false);
 
 			if(Input.GetButtonDown("Submit") && !didIPess){
 				didIPess = true;
 				LoadScene ();
 			}
 		}
+
 		if (state2){
 			state1Outline.SetActive (false);
 			state2Outline.SetActive (true);
+			state3Outline.SetActive (false);
+
+			if(Input.GetButtonDown("Submit") && !didIPess){
+				didIPess = true;
+				ContinueGame ();
+				print("hey wait for it to be implemented");
+			}
+		}
+
+		if (state3){
+			state1Outline.SetActive (false);
+			state2Outline.SetActive (false);
+			state3Outline.SetActive (true);
 
 			if(Input.GetButtonDown("Submit") && !didIPess){
 				didIPess = true;
@@ -60,6 +100,10 @@ public class MenuGestion : MonoBehaviour {
 			}
 		}
 
+	}
+
+	public void ContinueGame(){
+		print("hey wait for it to be implemented");
 	}
 
 	public void QuitGame(){
@@ -74,12 +118,20 @@ public class MenuGestion : MonoBehaviour {
 	}
 
 	IEnumerator launchGame (){
-		yield return new WaitForSeconds (3.0f);
+		amILaunched = true;
+		yield return new WaitForSeconds (2.0f);
+		ImageChargement.SetActive (true);
+		yield return new WaitForSeconds (0.5f);
 		SceneManager.LoadScene ("SceneIntroRemasterd");
 	}
 
 	IEnumerator EndGame (){
-		yield return new WaitForSeconds (3.0f);
+		amILaunched = true;
+		yield return new WaitForSeconds (2.0f);
+		if (runInEditMode) {
+			amILaunched = false;
+			imageblanche.alpha = 0.0f;
+		}
 		Application.CancelQuit ();
 	}
 

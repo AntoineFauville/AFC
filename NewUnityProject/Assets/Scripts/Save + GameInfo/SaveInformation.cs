@@ -1,28 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SaveInformation {
+using UnityEngine.UI;
 
-	public static void SaveAllInformation(){
-		PlayerPrefs.SetInt ("PLAYERLEVEL", GameInformation.PlayerLevel);
-	//	PlayerPrefs.SetString ("PLAYERNAME", GameInformation.PlayerName); 
-		PlayerPrefs.SetInt ("CURRENTXP", GameInformation.CurrentXP);
-		PlayerPrefs.SetInt ("NEEDEDXP", GameInformation.NeededXP);
-		PlayerPrefs.SetInt ("STAMINA", GameInformation.Stamina);
-		PlayerPrefs.SetInt ("STRENGTH", GameInformation.Strength);
-		PlayerPrefs.SetInt ("INTELLECT", GameInformation.Intellect);
-		PlayerPrefs.SetInt ("MIND", GameInformation.Mind);
-		PlayerPrefs.SetInt ("WISDOM", GameInformation.Wisdom);
-		PlayerPrefs.SetInt ("FIRERESISTANCE", GameInformation.FireResistance);
-		PlayerPrefs.SetInt ("WATERRESISTANCE", GameInformation.WaterResistance);
-		PlayerPrefs.SetInt ("AIRRESISTANCE", GameInformation.AirResistance);
-		PlayerPrefs.SetInt ("EARTHRESISTANCE", GameInformation.EarthResistance);
-		PlayerPrefs.SetInt ("GOLD", GameInformation.Gold);
+public class SaveInformation : MonoBehaviour {
 
-//		if (GameInformation.EquipmentOne != null) {
-//			PPSerialization.Save ("EQUIPMENTITEM1", GameInformation.EquipmentOne);
-//		}
+	public InputField usernameInput;
+	public InputField DescriptionInput;
 
-			Debug.Log ("SAVED");
+	public void SaveName(){
+
+		GameInformation.NameImage1 = usernameInput.text;
+
+		PlayerPrefs.SetString ("NAMEIMAGE1", GameInformation.NameImage1); 
+		//PlayerPrefs.SetInt ("CURRENTXP", GameInformation.CurrentXP);
+
+		Debug.Log ("SAVED NAME IMAGE 1");
 		}
+
+	public void SaveDesc(){
+
+		GameInformation.DescriptionImage1 = DescriptionInput.text;
+
+		PlayerPrefs.SetString ("DESCIMAGE1", GameInformation.DescriptionImage1); 
+		//PlayerPrefs.SetInt ("CURRENTXP", GameInformation.CurrentXP);
+
+		Debug.Log ("SAVED DESC IMAGE 1");
 	}
+}

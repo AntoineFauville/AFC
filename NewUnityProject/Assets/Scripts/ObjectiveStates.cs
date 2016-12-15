@@ -23,7 +23,7 @@ public class ObjectiveStates : MonoBehaviour {
 
 		PlayerCanvas.SetBool ("NewObjectiveActiv",newObjectivePlayerUI);
 
-		print (newObjectivePlayerUI);
+	//	print (newObjectivePlayerUI);
 	}
 
 	public void GoNextPoint(int a){
