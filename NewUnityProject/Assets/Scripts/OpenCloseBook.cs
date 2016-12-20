@@ -29,7 +29,7 @@ public class OpenCloseBook : MonoBehaviour {
 
 				//FF.lockMouseCursor = false;
 		} else 
-			if (Input.GetButtonDown ("OpenBook") && !isBookOpen) {
+			if (Input.GetButtonDown ("Cancel") && !isBookOpen) {
 					
 				canvas.SetActive (false);
 				isBookOpen = true;
