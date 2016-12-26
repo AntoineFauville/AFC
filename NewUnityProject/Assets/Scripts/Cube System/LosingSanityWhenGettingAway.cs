@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class LosingSanityWhenGettingAway : MonoBehaviour {
 
 	GameObject Player;
 	SanityGestion SG;
+
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +19,6 @@ public class LosingSanityWhenGettingAway : MonoBehaviour {
 	void Update () {
 		float distance = Vector3.Distance(Player.transform.position, transform.position);
 
-		SG.sanity = distance;
+		SG.sanity = 1 - (distance /20);
 	}
 }
