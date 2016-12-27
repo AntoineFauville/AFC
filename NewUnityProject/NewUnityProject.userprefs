@@ -1,12 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Cube System\DropCube.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Area\DetectArea.cs">
     <Files>
-      <File FileName="Assets\Scripts\Cube System\DropCube.cs" Line="19" Column="35" />
-      <File FileName="Assets\Scripts\Cube System\pickUpCube.cs" Line="24" Column="17" />
-      <File FileName="Assets\Scripts\Cube System\SanityGestion.cs" Line="16" Column="61" />
-      <File FileName="Assets\Scripts\Cube System\LosingSanityWhenGettingAway.cs" Line="22" Column="31" />
+      <File FileName="Assets\Scripts\Cube System\DropCube.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Cube System\pickUpCube.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Cube System\SanityGestion.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Cube System\LosingSanityWhenGettingAway.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Book\OpenCloseBook.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Area\DetectArea.cs" Line="33" Column="128" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
