@@ -1,13 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Area\DetectArea.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Cube System\Zonedetection.cs">
     <Files>
       <File FileName="Assets\Scripts\Cube System\DropCube.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Cube System\pickUpCube.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Cube System\SanityGestion.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Cube System\LosingSanityWhenGettingAway.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Book\OpenCloseBook.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Area\DetectArea.cs" Line="33" Column="128" />
+      <File FileName="Assets\Scripts\Cube System\pickUpCube.cs" Line="23" Column="43" />
+      <File FileName="Assets\Scripts\Cube System\Zonedetection.cs" Line="49" Column="100" />
+      <File FileName="Assets\Scripts\Cube System\ListeDesZonesDuCubes.cs" Line="7" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
