@@ -31,17 +31,18 @@ public class DropCube : MonoBehaviour {
 		if(Input.GetButtonDown("dropcube") && !isCubeOnGround && OCB.isBookOpen == false){
 			Instantiate (prefabCube,LaunchCube.position, LaunchCube.rotation);
 			isCubeOnGround = true;
+			cubeOnAss.SetActive (false);
 			ScanningPanel.SetActive (true);
 			//StartCoroutine ("returnCubeBool");
 		}
 
 		//pick it up
-		if (isCubeOnGround) {
+		/*if (isCubeOnGround) {
 			cubeOnAss.SetActive (false);
 		} else {
 			cubeOnAss.SetActive (true);
 		}
-
+*/
 	}
 
 	IEnumerator returnCubeBool () {
