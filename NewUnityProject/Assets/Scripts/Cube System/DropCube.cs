@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using ThirdPersonCamera;
 
 public class DropCube : MonoBehaviour {
 
@@ -10,6 +11,8 @@ public class DropCube : MonoBehaviour {
 
 	GameObject ScanningPanel; 
 
+	OpenCloseBook OCB;
+
 	public Transform LaunchCube;
 
 	public bool isCubeOnGround;
@@ -17,6 +20,7 @@ public class DropCube : MonoBehaviour {
 	void Start () {
 		ScanningPanel = GameObject.Find ("Scanning");
 		ScanningPanel.SetActive (false);
+		OCB = GameObject.Find ("ScriptManager").GetComponent<OpenCloseBook> ();
 	}
 	
 	// Update is called once per frame
@@ -24,7 +28,7 @@ public class DropCube : MonoBehaviour {
 
 		//drop it
 
-		if(Input.GetButtonDown("dropcube") && !isCubeOnGround){
+		if(Input.GetButtonDown("dropcube") && !isCubeOnGround && OCB.isBookOpen == false){
 			Instantiate (prefabCube,LaunchCube.position, LaunchCube.rotation);
 			isCubeOnGround = true;
 			ScanningPanel.SetActive (true);

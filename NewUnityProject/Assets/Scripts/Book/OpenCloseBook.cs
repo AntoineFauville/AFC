@@ -10,6 +10,11 @@ public class OpenCloseBook : MonoBehaviour {
 	public bool isBookOpen;
 	public GameObject buttonOuvrirBook;
 
+		GameObject canvasMainCamera;
+
+		public GameObject mainCamera;
+		public GameObject SecondCamera;
+
 	public FreeForm FF;
 
 	public GameObject player;
@@ -17,14 +22,21 @@ public class OpenCloseBook : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		canvas.SetActive (false);
+			canvasMainCamera = GameObject.Find ("Canvas Book Notification MainCamera");
+			mainCamera.SetActive (true);SecondCamera.SetActive (false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown ("OpenBook") && isBookOpen) {
+		if (Input.GetButtonDown ("OpenBook") && !isBookOpen) {
 			canvas.SetActive (true);
+
+				mainCamera.SetActive (false);SecondCamera.SetActive (true);
+
+				canvasMainCamera.SetActive (false);
+
 			buttonOuvrirBook.SetActive (false);
-			isBookOpen = false;
+			isBookOpen = true;
 			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().enabled = false;
 			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl> ().enabled = false;
 			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl> ().v = 0;
@@ -32,11 +44,16 @@ public class OpenCloseBook : MonoBehaviour {
 
 				//FF.lockMouseCursor = false;
 		} else 
-			if (Input.GetButtonDown ("Cancel") && !isBookOpen) {
+			if (Input.GetButtonDown ("Cancel") && isBookOpen) {
 				buttonOuvrirBook.SetActive (true);
+
+					mainCamera.SetActive (true);SecondCamera.SetActive (false);
+
+					canvasMainCamera.SetActive (true);
+
 				canvas.SetActive (false);
 				cameraMiniMap.SetActive (false);
-				isBookOpen = true;
+				isBookOpen = false;
 				player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().enabled = true;
 				player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl> ().enabled = true;
 
