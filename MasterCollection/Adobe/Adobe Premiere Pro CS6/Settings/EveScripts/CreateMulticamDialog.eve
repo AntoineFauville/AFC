@@ -1,0 +1,44 @@
+layout my_dialog
+{
+	view dva_dialog(name:'$$$/Premiere/DLG/CreateMulticamDialog/kResDLGCreateMulticamDialogTitle=Create Multi-Camera Source Sequence', identifier:'CreateMulticamDialog')
+	{
+		row(horizontal: align_fill, spacing:15)
+		{
+			column()
+			{
+				row(child_horizontal: align_fill, horizontal: align_fill)
+				{
+					column(child_horizontal: align_fill, horizontal: align_fill)
+					{
+						dva_text_edit(identifier:'nameTextEdit', label:'$$$/Premiere/DLG/CreateMulticamDialog/kResDLGName=Name:', minWidth:200, setAsFocused:'true');
+					}
+				}
+				dva_groupbox(identifier:'synchronizePointGroupBox', name:'$$$/Premiere/DLG/CreateMulticamDialog/kResDLGSynchronizePoint=Synchronize Point', headerType:'static_text')
+				{
+					dva_radio_button_group(identifier: 'synchronizePointRadioGroup', showBorder: 'false', groupSpacing: 4)
+					{
+						column()
+						{
+							dva_radio_button(identifier:'clipStartRadioButton', name: '$$$/Premiere/DLG/CreateMulticamDialog/kResDLGCreateMulticamDialogInPoints=In Points');
+							dva_radio_button(identifier:'clipEndRadioButton', name: '$$$/Premiere/DLG/CreateMulticamDialog/kResDLGCreateMulticamDialogOutPoints=Out Points');
+							row(child_vertical: align_center, child_horizontal: align_left)
+							{
+								dva_radio_button(identifier:'timecodeRadioButton', name: '$$$/Premiere/DLG/CreateMulticamDialog/kResDLGCreateMulticamDialogTimecode=Timecode');
+								dva_checkbox(identifier:'ignoreHoursCheckbox', name:'$$$/Premiere/DLG/CreateMulticamDialog/kResDLGIgnoreHours=Ignore Hours', minHeight:16, leftSpace:25);
+							}		
+							row(child_vertical: align_center, child_horizontal: align_left)
+							{
+								dva_radio_button(identifier:'numberedClipMarkerRadioButton', name: '$$$/Premiere/DLG/CreateMulticamDialog/kResDLGClipMarker=Clip Marker');
+								dva_popup(identifier:'numberedClipMarkerPopup', minWidth:180, minHeight:20, leftSpace:15);
+							}
+						}
+					}
+				}				
+				row(child_horizontal: align_center, horizontal: align_right)
+				{
+					dva_ok_cancel_row(horizontal: align_right, minWidth:80, minHeight:20);
+				}
+			}
+		}
+	}
+} 

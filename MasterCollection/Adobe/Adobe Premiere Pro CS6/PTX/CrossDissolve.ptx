@@ -1,0 +1,404 @@
+	.version 2.3
+	.target sm_20
+	.address_size 64
+	// compiled with C:\mightykilt64/shared/adobe/MediaCore//External/3rdParty/NVIDIA/CUDA/win/bin/../open64/lib//be.exe
+	// nvopencc 4.0 built on 2011-05-13
+
+	//-----------------------------------------------------------
+	// Compiling C:/Users/dvaeng/AppData/Local/Temp/tmpxft_00003710_00000000-11_CrossDissolve.cpp3.i (C:/Users/dvaeng/AppData/Local/Temp/ccBI#.a14268)
+	//-----------------------------------------------------------
+
+	//-----------------------------------------------------------
+	// Options:
+	//-----------------------------------------------------------
+	//  Target:ptx, ISA:sm_20, Endian:little, Pointer Size:64
+	//  -O3	(Optimization level)
+	//  -g0	(Debug level)
+	//  -m2	(Report advisories)
+	//-----------------------------------------------------------
+
+	.file	1	"C:/Users/dvaeng/AppData/Local/Temp/tmpxft_00003710_00000000-10_CrossDissolve.cudafe2.gpu"
+	.file	2	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/DevicePixelFormat.h"
+	.file	3	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/PixelRGB.h"
+	.file	4	"c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h"
+	.file	5	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\crt/device_runtime.h"
+	.file	6	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\host_defines.h"
+	.file	7	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\builtin_types.h"
+	.file	8	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_types.h"
+	.file	9	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\driver_types.h"
+	.file	10	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_types.h"
+	.file	11	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_types.h"
+	.file	12	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\vector_types.h"
+	.file	13	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\builtin_types.h"
+	.file	14	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\host_defines.h"
+	.file	15	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\device_launch_parameters.h"
+	.file	16	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\crt\storage_class.h"
+	.file	17	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\INCLUDE\time.h"
+	.file	18	"C:/mightykilt64/shared/adobe/MediaCore/GPUFoundation/Src/ImageProcessing/CrossDissolve.cu"
+	.file	19	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\common_functions.h"
+	.file	20	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions.h"
+	.file	21	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_constants.h"
+	.file	22	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_functions.h"
+	.file	23	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_11_atomic_functions.h"
+	.file	24	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_12_atomic_functions.h"
+	.file	25	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_13_double_functions.h"
+	.file	26	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_atomic_functions.h"
+	.file	27	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_intrinsics.h"
+	.file	28	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_functions.h"
+	.file	29	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_fetch_functions.h"
+	.file	30	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions_dbl_ptx3.h"
+
+
+	.entry CrossDissolveKernel (
+		.param .u64 __cudaparm_CrossDissolveKernel_inSrc0,
+		.param .s32 __cudaparm_CrossDissolveKernel_inSrcPitch0,
+		.param .u64 __cudaparm_CrossDissolveKernel_inSrc1,
+		.param .s32 __cudaparm_CrossDissolveKernel_inSrcPitch1,
+		.param .u64 __cudaparm_CrossDissolveKernel_outDest,
+		.param .s32 __cudaparm_CrossDissolveKernel_inDestPitch,
+		.param .u32 __cudaparm_CrossDissolveKernel_inDeviceFormat,
+		.param .s32 __cudaparm_CrossDissolveKernel_inWidth,
+		.param .s32 __cudaparm_CrossDissolveKernel_inHeight,
+		.param .f32 __cudaparm_CrossDissolveKernel_inDissolve,
+		.param .s32 __cudaparm_CrossDissolveKernel_inProcessInLinearColor)
+	{
+	.reg .u32 %r<45>;
+	.reg .u64 %rd<20>;
+	.reg .f32 %f<138>;
+	.reg .pred %p<17>;
+	.loc	18	29	0
+$LDWbegin_CrossDissolveKernel:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.y;
+	mov.u32 	%r5, %ntid.y;
+	mul.lo.u32 	%r6, %r4, %r5;
+	mov.u32 	%r7, %tid.x;
+	add.u32 	%r8, %r7, %r3;
+	mov.u32 	%r9, %tid.y;
+	add.u32 	%r10, %r9, %r6;
+	ld.param.s32 	%r11, [__cudaparm_CrossDissolveKernel_inWidth];
+	set.gt.u32.s32 	%r12, %r11, %r8;
+	neg.s32 	%r13, %r12;
+	ld.param.s32 	%r14, [__cudaparm_CrossDissolveKernel_inHeight];
+	set.gt.u32.s32 	%r15, %r14, %r10;
+	neg.s32 	%r16, %r15;
+	and.b32 	%r17, %r13, %r16;
+	mov.u32 	%r18, 0;
+	setp.eq.s32 	%p1, %r17, %r18;
+	@%p1 bra 	$Lt_0_14338;
+	ld.param.u32 	%r19, [__cudaparm_CrossDissolveKernel_inDeviceFormat];
+	mov.s32 	%r20, 0;
+	setp.eq.s32 	%p2, %r19, %r20;
+	ld.param.s32 	%r21, [__cudaparm_CrossDissolveKernel_inSrcPitch0];
+	mul.lo.s32 	%r22, %r21, %r10;
+	add.s32 	%r23, %r8, %r22;
+	cvt.s64.s32 	%rd1, %r23;
+	ld.param.u64 	%rd2, [__cudaparm_CrossDissolveKernel_inSrc0];
+	@!%p2 bra 	$Lt_0_15106;
+	mul.lo.u64 	%rd3, %rd1, 8;
+	add.u64 	%rd4, %rd2, %rd3;
+	ld.global.v4.u16 	{%r24,%r25,%r26,%r27}, [%rd4+0];
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r24;
+	cvt.ftz.f32.f16	%f1, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r25;
+	cvt.ftz.f32.f16	%f2, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r26;
+	cvt.ftz.f32.f16	%f3, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r27;
+	cvt.ftz.f32.f16	%f4, %b1; }
+	bra.uni 	$Lt_0_14850;
+$Lt_0_15106:
+	mul.lo.u64 	%rd5, %rd1, 16;
+	add.u64 	%rd6, %rd2, %rd5;
+	ld.global.v4.f32 	{%f1,%f2,%f3,%f4}, [%rd6+0];
+$Lt_0_14850:
+	mov.f32 	%f5, %f1;
+	mov.f32 	%f6, %f2;
+	mov.f32 	%f7, %f3;
+	ld.param.s32 	%r28, [__cudaparm_CrossDissolveKernel_inSrcPitch1];
+	mul.lo.s32 	%r29, %r28, %r10;
+	add.s32 	%r30, %r8, %r29;
+	cvt.s64.s32 	%rd7, %r30;
+	ld.param.u64 	%rd8, [__cudaparm_CrossDissolveKernel_inSrc1];
+	@!%p2 bra 	$Lt_0_15618;
+	mul.lo.u64 	%rd9, %rd7, 8;
+	add.u64 	%rd10, %rd8, %rd9;
+	ld.global.v4.u16 	{%r31,%r32,%r33,%r34}, [%rd10+0];
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r31;
+	cvt.ftz.f32.f16	%f8, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r32;
+	cvt.ftz.f32.f16	%f9, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r33;
+	cvt.ftz.f32.f16	%f10, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r34;
+	cvt.ftz.f32.f16	%f11, %b1; }
+	bra.uni 	$Lt_0_15362;
+$Lt_0_15618:
+	mul.lo.u64 	%rd11, %rd7, 16;
+	add.u64 	%rd12, %rd8, %rd11;
+	ld.global.v4.f32 	{%f8,%f9,%f10,%f11}, [%rd12+0];
+$Lt_0_15362:
+	mov.f32 	%f12, %f8;
+	mov.f32 	%f13, %f9;
+	mov.f32 	%f14, %f10;
+	ld.param.s32 	%r35, [__cudaparm_CrossDissolveKernel_inProcessInLinearColor];
+	mov.s32 	%r36, 0;
+	setp.ne.s32 	%p3, %r35, %r36;
+	@!%p3 bra 	$Lt_0_15874;
+	mov.f32 	%f15, 0f00000000;    	// 0
+	setp.ge.ftz.f32 	%p4, %f5, %f15;
+	@!%p4 bra 	$Lt_0_16642;
+	lg2.approx.ftz.f32 	%f16, %f5;
+	mov.f32 	%f17, 0f400ccccd;    	// 2.2
+	mul.ftz.f32 	%f18, %f16, %f17;
+	ex2.approx.ftz.f32 	%f19, %f18;
+	bra.uni 	$Lt_0_16386;
+$Lt_0_16642:
+	neg.ftz.f32 	%f20, %f5;
+	lg2.approx.ftz.f32 	%f21, %f20;
+	mov.f32 	%f22, 0f400ccccd;    	// 2.2
+	mul.ftz.f32 	%f23, %f21, %f22;
+	ex2.approx.ftz.f32 	%f24, %f23;
+	neg.ftz.f32 	%f19, %f24;
+$Lt_0_16386:
+	mov.f32 	%f5, %f19;
+	mov.f32 	%f25, 0f00000000;    	// 0
+	setp.ge.ftz.f32 	%p5, %f6, %f25;
+	@!%p5 bra 	$Lt_0_17154;
+	lg2.approx.ftz.f32 	%f26, %f6;
+	mov.f32 	%f27, 0f400ccccd;    	// 2.2
+	mul.ftz.f32 	%f28, %f26, %f27;
+	ex2.approx.ftz.f32 	%f29, %f28;
+	bra.uni 	$Lt_0_16898;
+$Lt_0_17154:
+	neg.ftz.f32 	%f30, %f6;
+	lg2.approx.ftz.f32 	%f31, %f30;
+	mov.f32 	%f32, 0f400ccccd;    	// 2.2
+	mul.ftz.f32 	%f33, %f31, %f32;
+	ex2.approx.ftz.f32 	%f34, %f33;
+	neg.ftz.f32 	%f29, %f34;
+$Lt_0_16898:
+	mov.f32 	%f6, %f29;
+	mov.f32 	%f35, 0f00000000;    	// 0
+	setp.ge.ftz.f32 	%p6, %f7, %f35;
+	@!%p6 bra 	$Lt_0_17666;
+	lg2.approx.ftz.f32 	%f36, %f7;
+	mov.f32 	%f37, 0f400ccccd;    	// 2.2
+	mul.ftz.f32 	%f38, %f36, %f37;
+	ex2.approx.ftz.f32 	%f39, %f38;
+	bra.uni 	$Lt_0_17410;
+$Lt_0_17666:
+	neg.ftz.f32 	%f40, %f7;
+	lg2.approx.ftz.f32 	%f41, %f40;
+	mov.f32 	%f42, 0f400ccccd;    	// 2.2
+	mul.ftz.f32 	%f43, %f41, %f42;
+	ex2.approx.ftz.f32 	%f44, %f43;
+	neg.ftz.f32 	%f39, %f44;
+$Lt_0_17410:
+	mov.f32 	%f7, %f39;
+	mov.f32 	%f45, 0f00000000;    	// 0
+	setp.ge.ftz.f32 	%p7, %f12, %f45;
+	@!%p7 bra 	$Lt_0_18178;
+	lg2.approx.ftz.f32 	%f46, %f12;
+	mov.f32 	%f47, 0f400ccccd;    	// 2.2
+	mul.ftz.f32 	%f48, %f46, %f47;
+	ex2.approx.ftz.f32 	%f49, %f48;
+	bra.uni 	$Lt_0_17922;
+$Lt_0_18178:
+	neg.ftz.f32 	%f50, %f12;
+	lg2.approx.ftz.f32 	%f51, %f50;
+	mov.f32 	%f52, 0f400ccccd;    	// 2.2
+	mul.ftz.f32 	%f53, %f51, %f52;
+	ex2.approx.ftz.f32 	%f54, %f53;
+	neg.ftz.f32 	%f49, %f54;
+$Lt_0_17922:
+	mov.f32 	%f12, %f49;
+	mov.f32 	%f55, 0f00000000;    	// 0
+	setp.ge.ftz.f32 	%p8, %f13, %f55;
+	@!%p8 bra 	$Lt_0_18690;
+	lg2.approx.ftz.f32 	%f56, %f13;
+	mov.f32 	%f57, 0f400ccccd;    	// 2.2
+	mul.ftz.f32 	%f58, %f56, %f57;
+	ex2.approx.ftz.f32 	%f59, %f58;
+	bra.uni 	$Lt_0_18434;
+$Lt_0_18690:
+	neg.ftz.f32 	%f60, %f13;
+	lg2.approx.ftz.f32 	%f61, %f60;
+	mov.f32 	%f62, 0f400ccccd;    	// 2.2
+	mul.ftz.f32 	%f63, %f61, %f62;
+	ex2.approx.ftz.f32 	%f64, %f63;
+	neg.ftz.f32 	%f59, %f64;
+$Lt_0_18434:
+	mov.f32 	%f13, %f59;
+	mov.f32 	%f65, 0f00000000;    	// 0
+	setp.ge.ftz.f32 	%p9, %f14, %f65;
+	@!%p9 bra 	$Lt_0_19202;
+	lg2.approx.ftz.f32 	%f66, %f14;
+	mov.f32 	%f67, 0f400ccccd;    	// 2.2
+	mul.ftz.f32 	%f68, %f66, %f67;
+	ex2.approx.ftz.f32 	%f69, %f68;
+	bra.uni 	$Lt_0_18946;
+$Lt_0_19202:
+	neg.ftz.f32 	%f70, %f14;
+	lg2.approx.ftz.f32 	%f71, %f70;
+	mov.f32 	%f72, 0f400ccccd;    	// 2.2
+	mul.ftz.f32 	%f73, %f71, %f72;
+	ex2.approx.ftz.f32 	%f74, %f73;
+	neg.ftz.f32 	%f69, %f74;
+$Lt_0_18946:
+	mov.f32 	%f14, %f69;
+$Lt_0_15874:
+	ld.param.f32 	%f75, [__cudaparm_CrossDissolveKernel_inDissolve];
+	mov.f32 	%f76, 0fb70637bd;    	// -8e-006
+	add.ftz.f32 	%f77, %f4, %f76;
+	mov.f32 	%f78, 0f00000000;    	// 0
+	setp.le.ftz.f32 	%p10, %f77, %f78;
+	@!%p10 bra 	$Lt_0_19714;
+	mov.f32 	%f79, %f12;
+	mov.f32 	%f80, %f13;
+	mov.f32 	%f81, %f14;
+	mov.f32 	%f82, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f83, %f82, %f75;
+	mul.ftz.f32 	%f84, %f11, %f83;
+	bra.uni 	$Lt_0_19458;
+$Lt_0_19714:
+	mov.f32 	%f85, 0fb70637bd;    	// -8e-006
+	add.ftz.f32 	%f86, %f11, %f85;
+	mov.f32 	%f87, 0f00000000;    	// 0
+	setp.le.ftz.f32 	%p11, %f86, %f87;
+	@!%p11 bra 	$Lt_0_20226;
+	mov.f32 	%f79, %f5;
+	mov.f32 	%f80, %f6;
+	mov.f32 	%f81, %f7;
+	mul.ftz.f32 	%f84, %f4, %f75;
+	bra.uni 	$Lt_0_19970;
+$Lt_0_20226:
+	mov.f32 	%f88, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f89, %f88, %f75;
+	sub.ftz.f32 	%f90, %f4, %f11;
+	abs.ftz.f32 	%f91, %f90;
+	mov.f32 	%f92, 0f370637bd;    	// 8e-006
+	setp.lt.ftz.f32 	%p12, %f91, %f92;
+	@!%p12 bra 	$Lt_0_20738;
+	mul.ftz.f32 	%f93, %f89, %f12;
+	fma.rn.ftz.f32 	%f79, %f75, %f5, %f93;
+	mul.ftz.f32 	%f94, %f89, %f13;
+	fma.rn.ftz.f32 	%f80, %f75, %f6, %f94;
+	mul.ftz.f32 	%f95, %f89, %f14;
+	fma.rn.ftz.f32 	%f81, %f75, %f7, %f95;
+	mov.f32 	%f84, %f4;
+	bra.uni 	$Lt_0_20482;
+$Lt_0_20738:
+	mul.ftz.f32 	%f96, %f4, %f75;
+	mul.ftz.f32 	%f97, %f89, %f11;
+	add.ftz.f32 	%f98, %f96, %f97;
+	mov.f32 	%f99, 0f3f800000;    	// 1
+	div.approx.ftz.f32 	%f100, %f99, %f98;
+	mul.ftz.f32 	%f101, %f97, %f12;
+	fma.rn.ftz.f32 	%f102, %f5, %f96, %f101;
+	mul.ftz.f32 	%f79, %f100, %f102;
+	mul.ftz.f32 	%f103, %f97, %f13;
+	fma.rn.ftz.f32 	%f104, %f96, %f6, %f103;
+	mul.ftz.f32 	%f80, %f100, %f104;
+	mul.ftz.f32 	%f105, %f97, %f14;
+	fma.rn.ftz.f32 	%f106, %f96, %f7, %f105;
+	mul.ftz.f32 	%f81, %f100, %f106;
+	mov.f32 	%f84, %f98;
+$Lt_0_20482:
+$Lt_0_19970:
+$Lt_0_19458:
+	@!%p3 bra 	$Lt_0_20994;
+	mov.f32 	%f107, 0f00000000;   	// 0
+	setp.ge.ftz.f32 	%p13, %f79, %f107;
+	@!%p13 bra 	$Lt_0_21762;
+	lg2.approx.ftz.f32 	%f108, %f79;
+	mov.f32 	%f109, 0f3ee8ba2e;   	// 0.454545
+	mul.ftz.f32 	%f110, %f108, %f109;
+	ex2.approx.ftz.f32 	%f111, %f110;
+	bra.uni 	$Lt_0_21506;
+$Lt_0_21762:
+	neg.ftz.f32 	%f112, %f79;
+	lg2.approx.ftz.f32 	%f113, %f112;
+	mov.f32 	%f114, 0f3ee8ba2e;   	// 0.454545
+	mul.ftz.f32 	%f115, %f113, %f114;
+	ex2.approx.ftz.f32 	%f116, %f115;
+	neg.ftz.f32 	%f111, %f116;
+$Lt_0_21506:
+	mov.f32 	%f79, %f111;
+	mov.f32 	%f117, 0f00000000;   	// 0
+	setp.ge.ftz.f32 	%p14, %f80, %f117;
+	@!%p14 bra 	$Lt_0_22274;
+	lg2.approx.ftz.f32 	%f118, %f80;
+	mov.f32 	%f119, 0f3ee8ba2e;   	// 0.454545
+	mul.ftz.f32 	%f120, %f118, %f119;
+	ex2.approx.ftz.f32 	%f121, %f120;
+	bra.uni 	$Lt_0_22018;
+$Lt_0_22274:
+	neg.ftz.f32 	%f122, %f80;
+	lg2.approx.ftz.f32 	%f123, %f122;
+	mov.f32 	%f124, 0f3ee8ba2e;   	// 0.454545
+	mul.ftz.f32 	%f125, %f123, %f124;
+	ex2.approx.ftz.f32 	%f126, %f125;
+	neg.ftz.f32 	%f121, %f126;
+$Lt_0_22018:
+	mov.f32 	%f80, %f121;
+	mov.f32 	%f127, 0f00000000;   	// 0
+	setp.ge.ftz.f32 	%p15, %f81, %f127;
+	@!%p15 bra 	$Lt_0_22786;
+	lg2.approx.ftz.f32 	%f128, %f81;
+	mov.f32 	%f129, 0f3ee8ba2e;   	// 0.454545
+	mul.ftz.f32 	%f130, %f128, %f129;
+	ex2.approx.ftz.f32 	%f131, %f130;
+	bra.uni 	$Lt_0_22530;
+$Lt_0_22786:
+	neg.ftz.f32 	%f132, %f81;
+	lg2.approx.ftz.f32 	%f133, %f132;
+	mov.f32 	%f134, 0f3ee8ba2e;   	// 0.454545
+	mul.ftz.f32 	%f135, %f133, %f134;
+	ex2.approx.ftz.f32 	%f136, %f135;
+	neg.ftz.f32 	%f131, %f136;
+$Lt_0_22530:
+	mov.f32 	%f81, %f131;
+$Lt_0_20994:
+	ld.param.s32 	%r37, [__cudaparm_CrossDissolveKernel_inDestPitch];
+	mul.lo.s32 	%r38, %r37, %r10;
+	add.s32 	%r39, %r8, %r38;
+	cvt.s64.s32 	%rd13, %r39;
+	ld.param.u64 	%rd14, [__cudaparm_CrossDissolveKernel_outDest];
+	@!%p2 bra 	$Lt_0_23298;
+	mul.lo.u64 	%rd15, %rd13, 8;
+	add.u64 	%rd16, %rd14, %rd15;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f79;
+	mov.b32		%r40, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f80;
+	mov.b32		%r41, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f81;
+	mov.b32		%r42, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f84;
+	mov.b32		%r43, %b1; }
+	st.global.v4.u16 	[%rd16+0], {%r40,%r41,%r42,%r43};
+	bra.uni 	$Lt_0_23042;
+$Lt_0_23298:
+	mul.lo.u64 	%rd17, %rd13, 16;
+	add.u64 	%rd18, %rd14, %rd17;
+	st.global.v4.f32 	[%rd18+0], {%f79,%f80,%f81,%f84};
+$Lt_0_23042:
+$Lt_0_14338:
+	exit;
+$LDWend_CrossDissolveKernel:
+	} // CrossDissolveKernel
+

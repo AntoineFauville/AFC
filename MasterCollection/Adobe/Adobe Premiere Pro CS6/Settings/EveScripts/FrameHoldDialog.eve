@@ -1,0 +1,20 @@
+layout my_dialog
+{
+    view dva_dialog(name: '$$$/Premiere/DLG/FrameHoldDialog/kResDLGFrameHoldOptionsTitle=Frame Hold Options', identifier:'FrameHold')
+    {
+		row(spacing:15)
+		{
+			column()
+			{
+       			dva_checkbox(name: '$$$/Premiere/DLG/FrameHoldDialog/kResDLGHoldOn=Hold On', identifier:'holdOn', minWidth:50);
+       			dva_checkbox(name: '$$$/Premiere/DLG/FrameHoldDialog/kResDLGHoldFilters=Hold Filters', identifier:'holdFilters', minWidth:50);
+       			dva_checkbox(name: '$$$/Premiere/DLG/FrameHoldDialog/kResDLGDeinterlace=Deinterlace', identifier:'deinterlace', minWidth:50);
+			}
+			dva_popup(identifier:'holdOnPopup', minWidth:120, minHeigth:20);
+			column()
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);
+			}
+		}
+    }
+}

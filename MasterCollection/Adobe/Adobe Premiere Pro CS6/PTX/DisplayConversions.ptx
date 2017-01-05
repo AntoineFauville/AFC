@@ -1,0 +1,243 @@
+	.version 2.3
+	.target sm_20
+	.address_size 64
+	// compiled with C:\mightykilt64/shared/adobe/MediaCore//External/3rdParty/NVIDIA/CUDA/win/bin/../open64/lib//be.exe
+	// nvopencc 4.0 built on 2011-05-13
+
+	//-----------------------------------------------------------
+	// Compiling C:/Users/dvaeng/AppData/Local/Temp/tmpxft_000033ec_00000000-11_DisplayConversions.cpp3.i (C:/Users/dvaeng/AppData/Local/Temp/ccBI#.a10436)
+	//-----------------------------------------------------------
+
+	//-----------------------------------------------------------
+	// Options:
+	//-----------------------------------------------------------
+	//  Target:ptx, ISA:sm_20, Endian:little, Pointer Size:64
+	//  -O3	(Optimization level)
+	//  -g0	(Debug level)
+	//  -m2	(Report advisories)
+	//-----------------------------------------------------------
+
+	.file	1	"C:/Users/dvaeng/AppData/Local/Temp/tmpxft_000033ec_00000000-10_DisplayConversions.cudafe2.gpu"
+	.file	2	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/DevicePixelFormat.h"
+	.file	3	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/PixelRGB.h"
+	.file	4	"c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h"
+	.file	5	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\crt/device_runtime.h"
+	.file	6	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\host_defines.h"
+	.file	7	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\builtin_types.h"
+	.file	8	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_types.h"
+	.file	9	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\driver_types.h"
+	.file	10	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_types.h"
+	.file	11	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_types.h"
+	.file	12	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\vector_types.h"
+	.file	13	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\builtin_types.h"
+	.file	14	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\host_defines.h"
+	.file	15	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\device_launch_parameters.h"
+	.file	16	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\crt\storage_class.h"
+	.file	17	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\INCLUDE\time.h"
+	.file	18	"C:/mightykilt64/shared/adobe/MediaCore/DisplaySurface/Src/DisplayConversions.cu"
+	.file	19	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\common_functions.h"
+	.file	20	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions.h"
+	.file	21	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_constants.h"
+	.file	22	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_functions.h"
+	.file	23	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_11_atomic_functions.h"
+	.file	24	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_12_atomic_functions.h"
+	.file	25	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_13_double_functions.h"
+	.file	26	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_atomic_functions.h"
+	.file	27	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_intrinsics.h"
+	.file	28	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_functions.h"
+	.file	29	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_fetch_functions.h"
+	.file	30	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions_dbl_ptx3.h"
+
+
+	.entry PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel (
+		.param .u64 __cudaparm_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel_inSrc,
+		.param .s32 __cudaparm_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel_inSrcPitch,
+		.param .u64 __cudaparm_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel_outDest,
+		.param .s32 __cudaparm_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel_inDestPitch,
+		.param .u32 __cudaparm_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel_inDeviceFormat,
+		.param .s32 __cudaparm_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel_inWidth,
+		.param .s32 __cudaparm_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel_inHeight)
+	{
+	.reg .u32 %r<36>;
+	.reg .u64 %rd<12>;
+	.reg .f32 %f<18>;
+	.reg .pred %p<4>;
+	.loc	18	30	0
+$LDWbegin_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.y;
+	mov.u32 	%r5, %ntid.y;
+	mul.lo.u32 	%r6, %r4, %r5;
+	mov.u32 	%r7, %tid.x;
+	add.u32 	%r8, %r7, %r3;
+	mov.u32 	%r9, %tid.y;
+	add.u32 	%r10, %r9, %r6;
+	ld.param.s32 	%r11, [__cudaparm_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel_inWidth];
+	set.gt.u32.s32 	%r12, %r11, %r8;
+	neg.s32 	%r13, %r12;
+	ld.param.s32 	%r14, [__cudaparm_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel_inHeight];
+	set.gt.u32.s32 	%r15, %r14, %r10;
+	neg.s32 	%r16, %r15;
+	and.b32 	%r17, %r13, %r16;
+	mov.u32 	%r18, 0;
+	setp.eq.s32 	%p1, %r17, %r18;
+	@%p1 bra 	$Lt_0_2050;
+	ld.param.s32 	%r19, [__cudaparm_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel_inSrcPitch];
+	mul.lo.s32 	%r20, %r19, %r10;
+	add.s32 	%r21, %r8, %r20;
+	cvt.s64.s32 	%rd1, %r21;
+	ld.param.u64 	%rd2, [__cudaparm_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel_inSrc];
+	ld.param.u32 	%r22, [__cudaparm_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel_inDeviceFormat];
+	mov.u32 	%r23, 0;
+	setp.ne.s32 	%p2, %r22, %r23;
+	@%p2 bra 	$Lt_0_2818;
+	mul.lo.u64 	%rd3, %rd1, 8;
+	add.u64 	%rd4, %rd2, %rd3;
+	ld.global.v4.u16 	{%r24,%r25,%r26,%r27}, [%rd4+0];
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r24;
+	cvt.ftz.f32.f16	%f1, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r25;
+	cvt.ftz.f32.f16	%f2, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r26;
+	cvt.ftz.f32.f16	%f3, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r27;
+	cvt.ftz.f32.f16	%f4, %b1; }
+	bra.uni 	$Lt_0_2562;
+$Lt_0_2818:
+	mul.lo.u64 	%rd5, %rd1, 16;
+	add.u64 	%rd6, %rd2, %rd5;
+	ld.global.v4.f32 	{%f1,%f2,%f3,%f4}, [%rd6+0];
+$Lt_0_2562:
+	cvt.ftz.sat.f32.f32 	%f5, %f4;
+	mov.f32 	%f6, 0f437f0000;     	// 255
+	mul.ftz.f32 	%f7, %f5, %f6;
+	ld.param.u64 	%rd7, [__cudaparm_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel_outDest];
+	ld.param.s32 	%r28, [__cudaparm_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel_inDestPitch];
+	mul.lo.s32 	%r29, %r28, %r10;
+	add.s32 	%r30, %r8, %r29;
+	cvt.s64.s32 	%rd8, %r30;
+	mul.wide.s32 	%rd9, %r30, 4;
+	add.u64 	%rd10, %rd7, %rd9;
+	mov.f32 	%f8, 0f3f000000;     	// 0.5
+	cvt.ftz.sat.f32.f32 	%f9, %f3;
+	fma.rn.ftz.f32 	%f10, %f7, %f9, %f8;
+	cvt.rzi.ftz.u32.f32 	%r31, %f10;
+	mov.f32 	%f11, 0f3f000000;    	// 0.5
+	cvt.ftz.sat.f32.f32 	%f12, %f2;
+	fma.rn.ftz.f32 	%f13, %f7, %f12, %f11;
+	cvt.rzi.ftz.u32.f32 	%r32, %f13;
+	mov.f32 	%f14, 0f3f000000;    	// 0.5
+	cvt.ftz.sat.f32.f32 	%f15, %f1;
+	fma.rn.ftz.f32 	%f16, %f7, %f15, %f14;
+	cvt.rzi.ftz.u32.f32 	%r33, %f16;
+	mov.u32 	%r34, 255;
+	st.global.v4.u8 	[%rd10+0], {%r31,%r32,%r33,%r34};
+$Lt_0_2050:
+	exit;
+$LDWend_PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel:
+	} // PixelFormatConvert_BGRA_4444_32f_to_RGBX_4444_8uKernel
+
+	.entry PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel (
+		.param .u64 __cudaparm_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel_inSrc,
+		.param .s32 __cudaparm_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel_inSrcPitch,
+		.param .u64 __cudaparm_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel_outDest,
+		.param .s32 __cudaparm_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel_inDestPitch,
+		.param .u32 __cudaparm_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel_inDeviceFormat,
+		.param .s32 __cudaparm_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel_inWidth,
+		.param .s32 __cudaparm_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel_inHeight)
+	{
+	.reg .u32 %r<41>;
+	.reg .u64 %rd<12>;
+	.reg .f32 %f<18>;
+	.reg .pred %p<4>;
+$LDWbegin_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.y;
+	mov.u32 	%r5, %ntid.y;
+	mul.lo.u32 	%r6, %r4, %r5;
+	mov.u32 	%r7, %tid.x;
+	add.u32 	%r8, %r7, %r3;
+	mov.u32 	%r9, %tid.y;
+	add.u32 	%r10, %r9, %r6;
+	ld.param.s32 	%r11, [__cudaparm_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel_inWidth];
+	set.gt.u32.s32 	%r12, %r11, %r8;
+	neg.s32 	%r13, %r12;
+	ld.param.s32 	%r14, [__cudaparm_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel_inHeight];
+	set.gt.u32.s32 	%r15, %r14, %r10;
+	neg.s32 	%r16, %r15;
+	and.b32 	%r17, %r13, %r16;
+	mov.u32 	%r18, 0;
+	setp.eq.s32 	%p1, %r17, %r18;
+	@%p1 bra 	$Lt_1_2050;
+	ld.param.s32 	%r19, [__cudaparm_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel_inSrcPitch];
+	mul.lo.s32 	%r20, %r19, %r10;
+	add.s32 	%r21, %r8, %r20;
+	cvt.s64.s32 	%rd1, %r21;
+	ld.param.u64 	%rd2, [__cudaparm_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel_inSrc];
+	ld.param.u32 	%r22, [__cudaparm_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel_inDeviceFormat];
+	mov.u32 	%r23, 0;
+	setp.ne.s32 	%p2, %r22, %r23;
+	@%p2 bra 	$Lt_1_2818;
+	mul.lo.u64 	%rd3, %rd1, 8;
+	add.u64 	%rd4, %rd2, %rd3;
+	ld.global.v4.u16 	{%r24,%r25,%r26,%r27}, [%rd4+0];
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r24;
+	cvt.ftz.f32.f16	%f1, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r25;
+	cvt.ftz.f32.f16	%f2, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r26;
+	cvt.ftz.f32.f16	%f3, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r27;
+	cvt.ftz.f32.f16	%f4, %b1; }
+	bra.uni 	$Lt_1_2562;
+$Lt_1_2818:
+	mul.lo.u64 	%rd5, %rd1, 16;
+	add.u64 	%rd6, %rd2, %rd5;
+	ld.global.v4.f32 	{%f1,%f2,%f3,%f4}, [%rd6+0];
+$Lt_1_2562:
+	cvt.ftz.sat.f32.f32 	%f5, %f4;
+	mov.f32 	%f6, 0f447fc000;     	// 1023
+	mul.ftz.f32 	%f7, %f5, %f6;
+	mov.f32 	%f8, 0f3f000000;     	// 0.5
+	cvt.ftz.sat.f32.f32 	%f9, %f1;
+	fma.rn.ftz.f32 	%f10, %f7, %f9, %f8;
+	cvt.rzi.ftz.u32.f32 	%r28, %f10;
+	shl.b32 	%r29, %r28, 22;
+	mov.f32 	%f11, 0f3f000000;    	// 0.5
+	cvt.ftz.sat.f32.f32 	%f12, %f2;
+	fma.rn.ftz.f32 	%f13, %f7, %f12, %f11;
+	cvt.rzi.ftz.u32.f32 	%r30, %f13;
+	shl.b32 	%r31, %r30, 12;
+	or.b32 	%r32, %r29, %r31;
+	mov.f32 	%f14, 0f3f000000;    	// 0.5
+	cvt.ftz.sat.f32.f32 	%f15, %f3;
+	fma.rn.ftz.f32 	%f16, %f7, %f15, %f14;
+	cvt.rzi.ftz.u32.f32 	%r33, %f16;
+	shl.b32 	%r34, %r33, 2;
+	or.b32 	%r35, %r32, %r34;
+	or.b32 	%r36, %r35, 3;
+	ld.param.u64 	%rd7, [__cudaparm_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel_outDest];
+	ld.param.s32 	%r37, [__cudaparm_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel_inDestPitch];
+	mul.lo.s32 	%r38, %r37, %r10;
+	add.s32 	%r39, %r8, %r38;
+	cvt.s64.s32 	%rd8, %r39;
+	mul.wide.s32 	%rd9, %r39, 4;
+	add.u64 	%rd10, %rd7, %rd9;
+	st.global.u32 	[%rd10+0], %r36;
+$Lt_1_2050:
+	exit;
+$LDWend_PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel:
+	} // PixelFormatConvert_BGRA_4444_32f_to_BGR10uX2uKernel
+

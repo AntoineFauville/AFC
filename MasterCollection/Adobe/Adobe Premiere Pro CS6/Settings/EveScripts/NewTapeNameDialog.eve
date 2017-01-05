@@ -1,0 +1,23 @@
+layout my_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/NewTapeNameDialog/kResDLGNewTapeNameDialogTitle=Enter New Tape Name', identifier:'NewTapeNameDialog')
+	{
+		column(child_horizontal: align_fill, horizontal: align_fill, vertical: align_fill, spacing:15)
+		{
+			row()
+			{
+				dva_text_edit(
+					identifier:'tapeNameTextEdit', 
+					minWidth:100, 
+					minHeight:20, 
+					horizontal: align_fill, 
+					label:'$$$/Premiere/DLG/NewTapeNameDialog/kResDLGName=Name:',
+					setAsFocused:'true');
+			}
+			row()
+			{
+				dva_ok_cancel_row(minWidth:80, minHeight:20);
+			}
+		}
+	}
+}

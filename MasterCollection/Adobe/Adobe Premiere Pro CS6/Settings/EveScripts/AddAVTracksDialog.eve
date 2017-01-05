@@ -1,0 +1,51 @@
+layout my_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/AddAVTracksDialog/kResDLGAddAVTracksDialogTitle=Add Tracks', identifier:'AddAVTracksDialog')
+	{
+		row(child_horizontal: align_fill, horizontal: align_fill, spacing:15)
+		{
+			column(child_horizontal: align_fill, horizontal: align_fill)
+			{
+				dva_groupbox(identifier:'videoTracksGroupBox', name:'$$$/Premiere/DLG/AddAVTracksDialog/kDLGResVideoTracksGroupboxTitle=Video Tracks', headerType:'static_text', topFrame:4)
+				{
+					row()
+					{
+						column()
+						{
+							dva_hot_text_number(identifier:'videoTracksCountHotTextNumber',label:'$$$/Premiere/DLG/AddAVTracksDialog/kDLGResAdd=Add:', postLabel:'$$$/Premiere/DLG/AddTracksDialog/kResVideoTracksString=Video Track(s)',  value:1, minValue:0, maxValue:100, decimalPlaces:0, increment:1, overwritePostLabel:'false', setAsFocused:'true');
+							dva_popup(identifier:'videoPlacementPopup', minWidth:200, minHeigth:20, label:'$$$/Premiere/DLG/AddAVTracksDialog/kDLGResPlacement=Placement:');
+						}
+					}
+				}
+				dva_groupbox(identifier:'audioTracksGroupBox', name:'$$$/Premiere/DLG/AddAVTracksDialog/kDLGResAudioTracksGroupboxTitle=Audio Tracks', headerType:'static_text', topFrame:4)
+				{
+					row()
+					{
+						column()
+						{
+							dva_hot_text_number(identifier:'audioTracksCountHotTextNumber', label:'$$$/Premiere/DLG/AddAVTracksDialog/kDLGResAdd=Add:', postLabel:'$$$/Premiere/DLG/AddTracksDialog/kResAudioTracksString=Audio Track(s)',  value:1, minValue:0, maxValue:100, decimalPlaces:0, increment:1, overwritePostLabel:'false');
+							dva_popup(identifier:'audioPlacementPopup', minWidth:200, minHeigth:20, label:'$$$/Premiere/DLG/AddAVTracksDialog/kDLGResPlacement=Placement:');
+							dva_popup(identifier:'audioTrackTypePopup', minWidth:200, minHeigth:20, label:'$$$/Premiere/DLG/AddAVTracksDialog/kDLGResTrackType=Track Type:');
+						}
+					}
+				}
+				dva_groupbox(identifier:'submixTracksGroupBox', name:'$$$/Premiere/DLG/AddAVTracksDialog/kDLGResAudioSubmixTracks=Audio Submix Tracks', headerType:'static_text', topFrame:4)
+				{
+					row()
+					{
+						column()
+						{
+							dva_hot_text_number(identifier:'audioSubmixTracksCountHotTextNumber', label:'$$$/Premiere/DLG/AddAVTracksDialog/kDLGResAdd=Add:', postLabel:'$$$/Premiere/DLG/AddTracksDialog/kResAudioSubmixTracksString=Audio Submix Track(s)',  value:0, minValue:0, maxValue:100, decimalPlaces:0, increment:1, overwritePostLabel:'false');
+							dva_popup(identifier:'audioSubmixPlacementPopup', minWidth:200, minHeigth:20, label:'$$$/Premiere/DLG/AddAVTracksDialog/kDLGResPlacement=Placement:');
+							dva_popup(identifier:'audioSubmixTrackTypePopup', minWidth:200, minHeigth:20, label:'$$$/Premiere/DLG/AddAVTracksDialog/kDLGResTrackType=Track Type:');
+						}
+					}
+				}
+			}
+			column(guide_mask:[@guide_baseline])
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);
+			}
+		}
+	}
+} 

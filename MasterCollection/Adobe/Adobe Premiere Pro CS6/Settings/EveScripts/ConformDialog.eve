@@ -1,0 +1,24 @@
+layout my_dialog
+{
+    view dva_dialog(name: '$$$/Premiere/DLG/ConformAudio/kResDLGConformAudio=Conform Audio', identifier:'ConformDialog', spacing: 10)
+    {
+		dva_groupbox(identifier:'conformGroupBox', horizontal:align_fill)
+		{
+			column(child_horizontal: align_fill, horizontal:align_fill)
+			{
+				row(child_horizontal: align_fill, horizontal: align_fill)
+				{
+					dva_static_text(name: '$$$/Premiere/DLG/ConformAudio/kResDLGConforming=Conforming...', identifier:'conformMessageText');
+				}
+				row(child_horizontal: align_fill, horizontal: align_fill)
+				{
+					dva_progress_bar(identifier:'progressBar', minWidth:200, minHeight:15, key_start_value:0, key_total_value:100);
+				}
+			}
+		}
+		row(child_horizontal: align_center, horizontal: align_fill)
+		{
+			dva_button(name: '$$$/Premiere/DLG/kResDLGCancel=Cancel', identifier:'cancelButton', minWidth:80);
+		}
+    }
+}

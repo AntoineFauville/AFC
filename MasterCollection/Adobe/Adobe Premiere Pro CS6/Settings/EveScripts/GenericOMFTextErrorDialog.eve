@@ -1,0 +1,18 @@
+layout genericOMFTextErrorDialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/GenericOMFTextErrorDialog/kResDLGError=Error', identifier:'genericOMFTextErrorDialog')
+	{
+		row(child_horizontal: align_left, horizontal: align_fill, spacing:15)
+		{
+			column()
+			{
+				dva_text_edit(identifier:'errorOMFTextEdit', minWidth:520, minHeight:300, horizontal:align_left, multiLine:'true', vertical_scroll:'true', read_only:'true');
+			}
+			column()
+			{
+				dva_button(name: '$$$/Premiere/DLG/kResDLGOK=OK', identifier:'okButton', default: true, setAsDefault:'true', minWidth:80);
+				dva_button(name: '$$$/Premiere/DLG/kResDLGCancel=Cancel', identifier:'cancelButton', default: false, setAsDefault:'false', minWidth:80);
+			}
+		}
+	}
+}

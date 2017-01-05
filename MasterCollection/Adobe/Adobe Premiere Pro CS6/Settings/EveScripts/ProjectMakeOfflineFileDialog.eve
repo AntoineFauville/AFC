@@ -1,0 +1,24 @@
+layout ProjectMakeOfflineFileDialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/ProjectMakeOfflineFileDialog/kResDLGProjectMakeOfflineFileDialogTitle=Make Offline', identifier:'ProjectMakeOfflineFileDialog')
+	{
+		row(child_horizontal: align_fill, horizontal: align_fill, spacing:15)
+		{
+			column()
+			{
+				dva_groupbox(identifier:'generalGroupbox', name:'$$$/Premiere/DLG/ProjectMakeOfflineFileDialog/kResDLGProjectMakeOfflineFileDialogMediaOptionsGroupBoxName=Media Options', headerType:'static_text', topFrame:4)
+				{
+					column()
+					{
+						dva_radio_button(identifier:'remainRadioButton', name:'$$$/Premiere/DLG/ProjectMakeOfflineFileDialog/kResDLGProjectMakeOfflineFileDialogRemainRadioButtonName=Media Files Remain on Disk', value: 'true');
+						dva_radio_button(identifier:'deleteRadioButton', name:'$$$/Premiere/DLG/ProjectMakeOfflineFileDialog/kResDLGProjectMakeOfflineFileDialogDeleteRadioButtonName=Media Files Are Deleted', value: 'false');
+					}
+				}
+			}
+			column(guide_mask:[@guide_baseline])
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);
+			}
+		}
+	}
+}

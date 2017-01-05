@@ -1,0 +1,34 @@
+<CropProportions>
+
+# Standard
+4:3 
+
+# Mobile/CIF
+11:9 
+
+# Tablet PC/WXGA
+15:9 
+
+# Widescreen
+16:9 
+
+# Tablet PC/WSXGA
+16:10 
+
+
+# Rotated Standard
+3:4 
+
+# Rotated Mobile/CIF
+9:11 
+
+# Rotated Tablet PC/WXGA
+9:15 
+
+# Rotated Widescreen
+9:16 
+
+# Rotated Tablet PC/WSXGA
+10:16 
+
+</CropProportions>

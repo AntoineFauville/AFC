@@ -1,0 +1,10 @@
+layout my_menu
+{
+	view menu(id:18460)
+	{
+		menu(text:'$$$/Premiere/Menu/18460/Off=Off', idName:'cmd.effectcontrols.softness.off');
+		menu(text:'$$$/Premiere/Menu/18460/Low=Low', idName:'cmd.effectcontrols.softness.low');
+		menu(text:'$$$/Premiere/Menu/18460/Medium=Medium', idName:'cmd.effectcontrols.softness.medium');
+		menu(text:'$$$/Premiere/Menu/18460/High=High', idName:'cmd.effectcontrols.softness.high');
+	}
+}

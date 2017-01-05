@@ -1,0 +1,33 @@
+layout exportToEDLDialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/ExportToEDLDialog/kResDLGExportToEDLDialogTitle=EDL Export Settings', identifier:'ExportToEDLDialog')
+	{
+		row(child_horizontal:align_fill, horizontal:align_fill, spacing:15)
+		{
+			column()
+			{
+				dva_text_edit(identifier:'EDLTitleTextEdit', minWidth:150, minHeight:20, label:'$$$/Premiere/DLG/ExportToEDLDialog/kResDLGEDLTitle=EDL Title:', setAsFocused:'true');
+				row()
+				{
+					dva_subview(identifier:'timecodeControl', minWidth:90, minHeight:18, label:'$$$/Premiere/DLG/ExportToEDLDialog/kResDLGStartTimecode=Start Timecode:');
+					dva_checkbox(identifier:'dropFrameCheckbox', name:'$$$/Premiere/DLG/ExportToEDLDialog/kResDLGDropFrameString=Drop Frame');
+				}
+				dva_checkbox(identifier:'includeVideoLevelsCheckbox', name:'$$$/Premiere/DLG/ExportToEDLDialog/kResIncludeVideoLevelsString=Include Video Levels', leftSpace:94);
+				dva_checkbox(identifier:'includeAudioLevelsCheckbox', name:'$$$/Premiere/DLG/ExportToEDLDialog/kResIncludeAudioLevelsString=Include Audio Levels', leftSpace:94);
+				dva_popup(identifier:'audioProcessingPopup', minWidth:200, minHeight:20, label:'$$$/Premiere/DLG/ExportToEDLDialog/kResDLGAudioProcessing=Audio Processing:');
+				dva_groupbox(identifier:'tracksToExport', name:'$$$/Premiere/DLG/ExportToEDLDialog/kResDLGTracksToExport=Tracks To Export', headerType:'static_text')
+				{
+					dva_popup(identifier:'videoTrackToExportPopup', minWidth: 200, minHeight:20, label:'$$$/Premiere/DLG/ExportToEDLDialog/kResDLGVideo=Video:');
+					dva_popup(identifier:'audio1TrackToExportPopup', minWidth: 200, minHeight:20, label:'$$$/Premiere/DLG/ExportToEDLDialog/kResDLGAudio1=Audio 1:');
+					dva_popup(identifier:'audio2TrackToExportPopup', minWidth: 200, minHeight:20, label:'$$$/Premiere/DLG/ExportToEDLDialog/kResDLGAudio2=Audio 2:');
+					dva_popup(identifier:'audio3TrackToExportPopup', minWidth: 200, minHeight:20, label:'$$$/Premiere/DLG/ExportToEDLDialog/kResDLGAudio3=Audio 3:');
+					dva_popup(identifier:'audio4TrackToExportPopup', minWidth: 200, minHeight:20, label:'$$$/Premiere/DLG/ExportToEDLDialog/kResDLGAudio4=Audio 4:');
+				}
+			}
+			column()
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);
+			}
+		}		
+	}
+}

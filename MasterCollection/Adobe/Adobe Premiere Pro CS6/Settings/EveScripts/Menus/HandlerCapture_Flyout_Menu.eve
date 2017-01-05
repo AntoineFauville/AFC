@@ -1,0 +1,15 @@
+layout my_menu
+{
+	view menu(id:8100)
+	{
+		menu(text:'$$$/Premiere/Menu/8100/CapturePanelMenu/CaptureSettings...=Capture Settings...', idName:'cmd.capture.settings');
+		separator();
+		menu(text:'$$$/Premiere/Menu/8100/CapturePanelMenu/RecordVideo=Record Video', idName:'cmd.capture.record.video');
+		menu(text:'$$$/Premiere/Menu/8100/CapturePanelMenu/RecordAudio=Record Audio', idName:'cmd.capture.record.audio');
+		menu(text:'$$$/Premiere/Menu/8100/CapturePanelMenu/RecordAudioandVideo=Record Audio and Video', idName:'cmd.capture.recordaudioandvideo');
+		separator();
+		menu(text:'$$$/Premiere/Menu/8100/CapturePanelMenu/SceneDetect=Scene Detect', idName:'cmd.capture.toggle.scene.detect');
+		separator();
+		menu(text:'$$$/Premiere/Menu/8100/CapturePanelMenu/CollapseWindow=Collapse Window', idName:'cmd.capture.collapsewindow');
+	}
+}

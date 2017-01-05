@@ -1,0 +1,24 @@
+layout my_menu
+{
+	view menu(id:21602)
+	{
+		menu(text:'$$$/Premiere/Menu/21602/NewStyle...=New Style...', idName:'cmd.titler.menu.style.new');
+		separator();
+		menu(text:'$$$/Premiere/Menu/21602/ApplyStyle=Apply Style', idName:'cmd.titler.menu.style.apply');
+		menu(text:'$$$/Premiere/Menu/21602/ApplyStylewithFontSize=Apply Style with Font Size', idName:'cmd.titler.menu.style.apply.fontsize');
+		menu(text:'$$$/Premiere/Menu/21602/ApplyStyleColorOnly=Apply Style Color Only', idName:'cmd.titler.menu.style.apply.coloronly');
+		separator();
+		menu(text:'$$$/Premiere/Menu/21602/DuplicateStyle=Duplicate Style', idName:'cmd.titler.menu.style.duplicate');
+		menu(text:'$$$/Premiere/Menu/21602/DeleteStyle=Delete Style', idName:'cmd.titler.menu.style.delete');
+		menu(text:'$$$/Premiere/Menu/21602/RenameStyle...=Rename Style...', idName:'cmd.titler.menu.style.rename');
+		separator();
+		menu(text:'$$$/Premiere/Menu/21602/ResetStyleLibrary...=Reset Style Library...', idName:'cmd.titler.menu.style.reset');
+		menu(text:'$$$/Premiere/Menu/21602/AppendStyleLIbrary...=Append Style Library...', idName:'cmd.titler.menu.style.load');
+		menu(text:'$$$/Premiere/Menu/21602/SaveStyleLIbrary...=Save Style Library...', idName:'cmd.titler.menu.style.save');
+		menu(text:'$$$/Premiere/Menu/21602/ReplaceStyleLibrary...=Replace Style Library...', idName:'cmd.titler.menu.style.replace');
+		separator();
+		menu(text:'$$$/Premiere/Menu/21602/TextOnly=Text Only', idName:'cmd.titler.menu.textonly');
+		menu(text:'$$$/Premiere/Menu/21602/SmallThumbnails=Small Thumbnails', idName:'cmd.titler.menu.thumbnails.small');
+		menu(text:'$$$/Premiere/Menu/21602/LargeThumbnails=Large Thumbnails', idName:'cmd.titler.menu.thumbnails.large');
+	}
+}

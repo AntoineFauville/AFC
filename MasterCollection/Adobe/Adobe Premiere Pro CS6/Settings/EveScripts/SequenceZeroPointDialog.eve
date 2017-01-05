@@ -1,0 +1,21 @@
+layout my_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/SequenceZeroPointDialog/kResDLGDialogTitle=Start Time', identifier:'SequenceZeroPointDialog')
+	{
+		row(child_horizontal: align_fill, horizontal: align_fill, vertical: align_fill, spacing:15)
+		{
+			column()
+			{
+				row()
+				{
+					dva_subview(identifier: 'timecodeControl', minWidth:90, minHeight:20, label: '$$$/Premiere/DLG/SequenceZeroPointDialog/kResDLGStartTimeLabel=Start Time:');
+				}
+			}
+			column(guide_mask:[@guide_baseline])
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);
+			}
+		}
+	}
+} 
+

@@ -1,0 +1,31 @@
+layout my_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/BatchCaptureDialog/kResDLGBatchCaptureDialogTitle=Batch Capture', identifier:'BatchCaptureDialog')
+	{
+		row(child_horizontal: align_fill, horizontal: align_fill, spacing:15)
+		{
+			column()
+			{
+				row()
+				{
+					dva_checkbox(identifier:'includeHandlesCheckbox', name:'$$$/Premiere/DLG/BatchCaptureDialog/kResDLGBatchCaptureCheckbox=Capture with handles:', minHeight:14, value:'false');
+					dva_hot_text_number(identifier:'handlesHotTextNumber',postLabel:'$$$/Premiere/DLG/BatchCaptureDialog/kResDLGFrames= frames', value:1, minValue:0, maxValue:999, decimalPlaces:0, increment:1, leftSpace:-10, overwritePostLabel:'false');
+				}
+				row()
+				{
+					dva_checkbox(identifier:'overrideCaptureSettingsCheckbox', name:'$$$/Premiere/DLG/BatchCaptureDialog/kResDLGOverrideCaptureSettingsCheckbox=Override Capture Settings', value:'false');
+				}
+				dva_groupbox(identifier:'captureSettings', name:'$$$/Premiere/DLG/BatchCaptureDialog/kResDLGCaptureSettingsGroupBoxTitle=Capture Settings', headerType:'static_text')
+				{
+					dva_text_edit(identifier:'captureSettingsTextEdit', minWidth:200, minHeight:100, multiLine:'true', vertical_scroll:'true', read_only:'true', topSpace:6);
+					dva_button(identifier:'editButton', name:'$$$/Premiere/DLG/BatchCaptureDialog/kBatchCaptureEditButtonString=Edit...', horizontal: align_right);
+				}
+			}
+			column(guide_mask:[@guide_baseline])
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);
+			}
+		}
+	}
+}
+

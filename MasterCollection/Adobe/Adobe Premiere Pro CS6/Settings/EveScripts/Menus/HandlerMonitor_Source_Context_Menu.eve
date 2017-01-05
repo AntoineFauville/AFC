@@ -1,0 +1,113 @@
+layout my_menu
+{
+	view menu(id:6113)
+	{
+		menu(text:'$$$/Premiere/Menu/6113/Multi-Camera=Multi-Camera', idName:'menu.multicam')
+		{
+			menu(text:'$$$/Premiere/Menu/6113/Multi-Camera/Enable=Enable', idName:'cmd.monitor.multicam.toggle');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/Properties=Properties', idName:'cmd.file.properties.selection');
+		menu(text:'$$$/Premiere/Menu/6113/Rename=Rename', idName:'cmd.clip.rename');
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/Insert=Insert', idName:'cmd.clip.insert');
+		menu(text:'$$$/Premiere/Menu/6113/Overwrite=Overwrite', idName:'cmd.clip.overlay');
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/Speed/Duration...=Speed/Duration...', idName:'cmd.clip.speed');
+		separator();
+		menu(text:'$$$/Premiere/Menu/Clip/AudioOptions/AudioGain...=Audio Gain...', idName:'cmd.clip.audiooptions.gain');
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/MakeSubclip...=Make Subclip...', idName:'cmd.clip.makesubclip');
+		menu(text:'$$$/Premiere/Menu/6113/EditSubclip...=Edit Subclip...', idName:'cmd.clip.editsubclip');
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/MarkIn=Mark In', idName:'cmd.common.setin');
+		menu(text:'$$$/Premiere/Menu/6113/MarkOut=Mark Out', idName:'cmd.common.setout');
+		menu(text:'$$$/Premiere/Menu/6113/MarkSplit=Mark Split')
+		{
+			menu(text:'$$$/Premiere/Menu/6113/SetClipMarker/VideoIn=Video In', idName:'cmd.marker.setclipmarker.videoin');
+			menu(text:'$$$/Premiere/Menu/6113/SetClipMarker/VideoOut=Video Out', idName:'cmd.marker.setclipmarker.videoout');
+			menu(text:'$$$/Premiere/Menu/6113/SetClipMarker/AudioIn=Audio In', idName:'cmd.marker.setclipmarker.audioin');
+			menu(text:'$$$/Premiere/Menu/6113/SetClipMarker/AudioOut=Audio Out', idName:'cmd.marker.setclipmarker.audiout');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/GoToIn=Go to In', idName:'cmd.goto.in');
+		menu(text:'$$$/Premiere/Menu/6113/GoToOut=Go to Out', idName:'cmd.goto.out');
+		menu(text:'$$$/Premiere/Menu/6113/GotoSplit=Go to Split')
+		{
+			menu(text:'$$$/Premiere/Menu/6113/GotoClipMarker/VideoIn=Video In', idName:'cmd.marker.gotoclipmarker.videoin');
+			menu(text:'$$$/Premiere/Menu/6113/GotoClipMarker/VideoOut=Video Out', idName:'cmd.marker.gotoclipmarker.videoout');
+			menu(text:'$$$/Premiere/Menu/6113/GotoClipMarker/AudioIn=Audio In', idName:'cmd.marker.gotoclipmarker.audioin');
+			menu(text:'$$$/Premiere/Menu/6113/GotoClipMarker/AudioOut=Audio Out', idName:'cmd.marker.gotoclipmarker.audioout');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/ClearIn=Clear In', idName:'cmd.clear.in');
+		menu(text:'$$$/Premiere/Menu/6113/ClearOut=Clear Out', idName:'cmd.clear.out');
+		menu(text:'$$$/Premiere/Menu/6113/ClearInandOut=Clear In a&nd Out', idName:'cmd.clear.inandout');
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/ClipMarker/AddMarker=Add Marker', idName:'cmd.marker.setclipmarker.unnumbered');
+		menu(text:'$$$/Premiere/Menu/6113/ClipMarker/GotoNextMarker=Go to Next Marker', idName:'cmd.marker.gotoclipmarker.next');
+		menu(text:'$$$/Premiere/Menu/6113/ClipMarker/GotoPreviousMarker=Go to Previous Marker', idName:'cmd.marker.gotoclipmarker.previous');
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/ClipMarker/ClearCurrentMarker=Clear Current Marker', idName:'cmd.marker.clearclipmarker.current');
+		menu(text:'$$$/Premiere/Menu/6113/ClipMarker/ClearAllMarkers=Clear All Markers', idName:'cmd.marker.clearclipmarker.all');
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/ClipMarker/EditMarker=Edit Marker...', idName:'cmd.marker.edit');
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/AddEncoreChapterMarker...=Add Encore Chapter Marker...', idName:'cmd.marker.setchaptermarkerdialog');
+		menu(text:'$$$/Premiere/Menu/6113/AddFlashCueMarker...=Add Flash Cue Marker...', idName:'cmd.marker.setflashcuemarkerdialog');
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/Fields=Fields')
+		{
+			menu(text:'$$$/Premiere/Menu/6113/Fields/First=Display First Field', idName:'cmd.monitor.fields.first');
+			menu(text:'$$$/Premiere/Menu/6113/Fields/Second=Display Second Field', idName:'cmd.monitor.fields.second');
+			menu(text:'$$$/Premiere/Menu/6113/Fields/Both=Display Both Fields', idName:'cmd.monitor.fields.both');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/PlaybackResolution=Playback Resolution')
+		{
+			menu(text:'$$$/Premiere/Menu/6113/PlaybackResolutionFull=Full', idName:'cmd.monitor.playback.resolution.full');
+			menu(text:'$$$/Premiere/Menu/6113/PlaybackResolutionHalf=1/2', idName:'cmd.monitor.playback.resolution.half');
+			menu(text:'$$$/Premiere/Menu/6113/PlaybackResolutionQuarter=1/4', idName:'cmd.monitor.playback.resolution.quarter');
+			menu(text:'$$$/Premiere/Menu/6113/PlaybackResolutionQuarterEighth=1/8', idName:'cmd.monitor.playback.resolution.eighth');
+			menu(text:'$$$/Premiere/Menu/6113/PlaybackResolutionQuarterSixteenth=1/16', idName:'cmd.monitor.playback.resolution.sixteenth');
+		}
+		menu(text:'$$$/Premiere/Menu/6113/PausedResolution=Paused Resolution')
+		{
+			menu(text:'$$$/Premiere/Menu/6113/PausedResolutionFull=Full', idName:'cmd.monitor.paused.resolution.full');
+			menu(text:'$$$/Premiere/Menu/6113/PausedResolutionHalf=1/2', idName:'cmd.monitor.paused.resolution.half');
+			menu(text:'$$$/Premiere/Menu/6113/PausedResolutionQuarter=1/4', idName:'cmd.monitor.paused.resolution.quarter');
+			menu(text:'$$$/Premiere/Menu/6113/PausedResolutionQuarterEighth=1/8', idName:'cmd.monitor.paused.resolution.eighth');
+			menu(text:'$$$/Premiere/Menu/6113/PausedResolutionQuarterSixteenth=1/16', idName:'cmd.monitor.paused.resolution.sixteenth');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/DisplayMode=Display Mode')
+		{
+			menu(text:'$$$/Premiere/Menu/6113/DisplayMode/CompositeVideo=Composite Video', idName:'cmd.monitor.output.composite');
+			menu(text:'$$$/Premiere/Menu/6113/DisplayMode/AudioWaveform=Audio Waveform', idName:'cmd.monitor.outputaudiowaveform');
+			menu(text:'$$$/Premiere/Menu/6113/DisplayMode/Alpha=Alpha', idName:'cmd.monitor.output.alpha');
+			menu(text:'$$$/Premiere/Menu/6113/DisplayMode/AllScopes=All Scopes', idName:'cmd.monitor.outputallscopes');
+			menu(text:'$$$/Premiere/Menu/6113/DisplayMode/Vectorscope=Vectorscope', idName:'cmd.monitor.output.vectorscope');
+			menu(text:'$$$/Premiere/Menu/6113/DisplayMode/YCWaveform=YC Waveform', idName:'cmd.monitor.output.waveform');
+			menu(text:'$$$/Premiere/Menu/6113/DisplayMode/YCbCrParade=YCbCr Parade', idName:'cmd.monitor.output.ycbcrparade');
+			menu(text:'$$$/Premiere/Menu/6113/DisplayMode/RGBParade=RGB Parade', idName:'cmd.monitor.outputrgbparade');
+			menu(text:'$$$/Premiere/Menu/6113/DisplayMode/Vect/YCWave/YCbCrParade=Vect/YC Wave/YCbCr Parade', idName:'cmd.monitor.outputvectwaveyparade');
+			menu(text:'$$$/Premiere/Menu/6113/DisplayMode/Vect/YCWave/RGBParade=Vect/YC Wave/RGB Parade', idName:'cmd.monitor.outputvectwaverparade');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/Magnification=Magnification')
+		{
+			menu(text:'$$$/Premiere/Menu/Fit=Fit', idName:'cmd.monitor.output.zoom.fit');
+			separator();
+			menu(text:'$$$/Premiere/Menu/10Percent=10%', idName:'cmd.monitor.output.zoom.10');
+			menu(text:'$$$/Premiere/Menu/25Percent=25%', idName:'cmd.monitor.output.zoom.25');
+			menu(text:'$$$/Premiere/Menu/50Percent=50%', idName:'cmd.monitor.output.zoom.50');
+			menu(text:'$$$/Premiere/Menu/75Percent=75%', idName:'cmd.monitor.output.zoom.75');
+			menu(text:'$$$/Premiere/Menu/100Percent=100%', idName:'cmd.monitor.output.zoom.100');
+			menu(text:'$$$/Premiere/Menu/150Percent=150%', idName:'cmd.monitor.output.zoom.150');
+			menu(text:'$$$/Premiere/Menu/200Percent=200%', idName:'cmd.monitor.output.zoom.200');
+			menu(text:'$$$/Premiere/Menu/400Percent=400%', idName:'cmd.monitor.output.zoom.400');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/6113/SafeMargins=Safe Margins', idName:'cmd.monitor.togglesafearea');
+	}
+}

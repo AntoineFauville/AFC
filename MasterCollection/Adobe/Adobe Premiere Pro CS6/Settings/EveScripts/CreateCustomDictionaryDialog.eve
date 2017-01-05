@@ -1,0 +1,30 @@
+layout CreateCustomDictionaryDialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/CreateCustomLanguageModelDialog/ImportScriptDialog=Import Script', identifier:'CreateCustomDictionaryDialog')
+	{
+		row(child_horizontal:align_fill, horizontal:align_fill, spacing:15)
+		{
+			column()
+			{
+				row()
+				{
+					column(child_horizontal:align_right)
+					{
+						dva_static_text(identifier:'staticText', minHeight:20, name:'$$$/Premiere/DLG/CreateCustomLanguageModelDialog/kResReferenceScript=Reference Script Name:');
+						dva_static_text(identifier:'staticText1', minHeight:20, name:'$$$/Premiere/DLG/CreateCustomLanguageModelDialog/kResEmptySpace= ');
+						dva_static_text(identifier:'staticText2', minHeight:20, name:'$$$/Premiere/DLG/CreateCustomLanguageModelDialog/kResDLGLanguage=Language:');
+					}				
+					column(spacing:13)
+					{
+						dva_text_edit(identifier:'customLanguageModelName', minWidth:200, minHeight:20, horizontal:align_left, setAsFocused:'true');
+						dva_checkbox(identifier:'scriptMatchesCheckbox', minWidth:200, minHeight:20, name:'$$$/Premiere/DLG/CreateCustomLanguageModelDialog/kResScriptMatchesDialogue=Script Text Matches Recorded Dialogue');
+						dva_popup(identifier:'languagePopup', minWidth:200, minHeight:20);
+					}
+				}
+
+				dva_text_edit(identifier:'customLanguageModelContent', minWidth:400, minHeight:300, multiLine:'true', vertical_scroll:'true', read_only:'true');
+				dva_ok_cancel_row(minWidth:80, minHeight:20);
+			}
+		}	
+	}
+}

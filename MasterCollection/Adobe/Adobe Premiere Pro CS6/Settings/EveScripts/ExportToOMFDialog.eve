@@ -1,0 +1,26 @@
+layout exportToOMFDialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/ExportToOMFDialog/kResDLGExportToOMFDialogTitle=OMF Export Settings', identifier:'ExportToOMFDialog')
+	{
+		row(child_horizontal:align_fill, horizontal:align_fill, spacing:15)
+		{
+			column()
+			{
+				dva_text_edit(identifier:'OMFTitleTextEdit', minWidth:220, minHeight:20, label:'$$$/Premiere/DLG/ExportToOMFDialog/kResDLGOMFTitle=OMF Title:', setAsFocused:'true');
+				dva_popup(identifier:'audioSampleRatePopup', minWidth:220, minHeight:20, label:'$$$/Premiere/DLG/ExportToOMFDialog/kResDLGAudioSampleRate=Sample Rate:');
+				dva_popup(identifier:'audioDepthPopup', minWidth:220, minHeight:20, label:'$$$/Premiere/DLG/ExportToOMFDialog/kResDLGBitsPerSample=Bits per Sample:');
+				dva_popup(identifier:'audioEncapsulatedPopup', minWidth:220, minHeight:20, label:'$$$/Premiere/DLG/ExportToOMFDialog/kResDLGAudioEncapsulate=Files:');
+				dva_popup(identifier:'audioFileFormatPopup', minWidth:220, minHeight:20, label:'$$$/Premiere/DLG/ExportToOMFDialog/kResDLGAudioFileFormat=Format:');
+				dva_popup(identifier:'exportWithHandles', minWidth:220, minHeight:20, label:'$$$/Premiere/DLG/ExportToOMFDialog/kResDLGexportWithHandles=Render:');
+				row (child_horizontal:align_center, horizontal:align_right, spacing:15)
+				{
+					dva_text_edit(identifier:'OMFhandleFrames', minWidth:30, minHeight:20, label:'$$$/Premiere/DLG/ExportToOMFDialog/kResDLGOMFMsec=Handle Frames:', setAsFocused:'false');
+				}
+			}
+			column()
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);
+			}
+		}		
+	}
+}

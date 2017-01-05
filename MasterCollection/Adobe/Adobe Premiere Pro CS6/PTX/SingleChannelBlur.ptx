@@ -1,0 +1,843 @@
+	.version 2.3
+	.target sm_20
+	.address_size 64
+	// compiled with C:\mightykilt64/shared/adobe/MediaCore//External/3rdParty/NVIDIA/CUDA/win/bin/../open64/lib//be.exe
+	// nvopencc 4.0 built on 2011-05-13
+
+	//-----------------------------------------------------------
+	// Compiling C:/Users/dvaeng/AppData/Local/Temp/tmpxft_00003460_00000000-11_SingleChannelBlur.cpp3.i (C:/Users/dvaeng/AppData/Local/Temp/ccBI#.a12420)
+	//-----------------------------------------------------------
+
+	//-----------------------------------------------------------
+	// Options:
+	//-----------------------------------------------------------
+	//  Target:ptx, ISA:sm_20, Endian:little, Pointer Size:64
+	//  -O3	(Optimization level)
+	//  -g0	(Debug level)
+	//  -m2	(Report advisories)
+	//-----------------------------------------------------------
+
+	.file	1	"C:/Users/dvaeng/AppData/Local/Temp/tmpxft_00003460_00000000-10_SingleChannelBlur.cudafe2.gpu"
+	.file	2	"c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h"
+	.file	3	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\crt/device_runtime.h"
+	.file	4	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\host_defines.h"
+	.file	5	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\builtin_types.h"
+	.file	6	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_types.h"
+	.file	7	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\driver_types.h"
+	.file	8	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_types.h"
+	.file	9	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_types.h"
+	.file	10	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\vector_types.h"
+	.file	11	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\builtin_types.h"
+	.file	12	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\host_defines.h"
+	.file	13	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\device_launch_parameters.h"
+	.file	14	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\crt\storage_class.h"
+	.file	15	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\INCLUDE\time.h"
+	.file	16	"C:/mightykilt64/shared/adobe/MediaCore/Renderers/RendererGPU/Src/Effects/SingleChannelBlur.cu"
+	.file	17	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\common_functions.h"
+	.file	18	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions.h"
+	.file	19	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_constants.h"
+	.file	20	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_functions.h"
+	.file	21	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_11_atomic_functions.h"
+	.file	22	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_12_atomic_functions.h"
+	.file	23	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_13_double_functions.h"
+	.file	24	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_atomic_functions.h"
+	.file	25	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_intrinsics.h"
+	.file	26	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_functions.h"
+	.file	27	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_fetch_functions.h"
+	.file	28	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions_dbl_ptx3.h"
+	.file	29	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/ColorSpaceConvert.h"
+
+
+	.entry VerticalRecursiveGaussianGRAYF32_kernel (
+		.param .u64 __cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_pOut,
+		.param .u64 __cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_pIn,
+		.param .s32 __cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_width,
+		.param .s32 __cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_height,
+		.param .s32 __cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_pitch_f,
+		.param .f32 __cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_n_plus0,
+		.param .f32 __cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_n_plus1,
+		.param .f32 __cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_neg_d_plus1,
+		.param .f32 __cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_neg_d_plus2,
+		.param .f32 __cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_n_minus1,
+		.param .f32 __cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_n_minus2,
+		.param .f32 __cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_neg_d_minus1,
+		.param .f32 __cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_neg_d_minus2)
+	{
+	.reg .u32 %r<21>;
+	.reg .u64 %rd<17>;
+	.reg .f32 %f<25>;
+	.reg .pred %p<7>;
+	.loc	16	29	0
+$LDWbegin_VerticalRecursiveGaussianGRAYF32_kernel:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %tid.x;
+	add.u32 	%r5, %r4, %r3;
+	ld.param.s32 	%r6, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_width];
+	setp.ge.s32 	%p1, %r6, %r5;
+	@%p1 bra 	$Lt_0_3074;
+	bra.uni 	$LBB14_VerticalRecursiveGaussianGRAYF32_kernel;
+$Lt_0_3074:
+	.loc	16	47	0
+	mov.s32 	%r7, %r5;
+	ld.param.s32 	%r8, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_height];
+	mov.u32 	%r9, 0;
+	setp.le.s32 	%p2, %r8, %r9;
+	@%p2 bra 	$Lt_0_5634;
+	mov.s32 	%r10, %r8;
+	ld.param.s32 	%r11, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_pitch_f];
+	cvt.s64.s32 	%rd1, %r11;
+	cvt.s64.s32 	%rd2, %r5;
+	mul.wide.s32 	%rd3, %r5, 4;
+	mul.wide.s32 	%rd4, %r11, 4;
+	ld.param.u64 	%rd5, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_pIn];
+	add.u64 	%rd6, %rd5, %rd3;
+	ld.param.u64 	%rd7, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_pOut];
+	add.u64 	%rd8, %rd7, %rd3;
+	ld.param.f32 	%f1, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_neg_d_plus2];
+	ld.param.f32 	%f2, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_neg_d_plus1];
+	ld.param.f32 	%f3, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_n_plus0];
+	ld.param.f32 	%f4, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_n_plus1];
+	mov.s32 	%r12, 0;
+	mov.f32 	%f5, 0f00000000;     	// 0
+	mov.f32 	%f6, 0f00000000;     	// 0
+	mov.f32 	%f7, 0f00000000;     	// 0
+	mov.s32 	%r13, %r10;
+$Lt_0_4098:
+ //<loop> Loop body line 47, nesting depth: 1, estimated iterations: unknown
+	.loc	16	51	0
+	ld.global.f32 	%f8, [%rd6+0];
+	.loc	16	52	0
+	mul.ftz.f32 	%f9, %f4, %f7;
+	fma.rn.ftz.f32 	%f10, %f3, %f8, %f9;
+	fma.rn.ftz.f32 	%f11, %f2, %f6, %f10;
+	fma.rn.ftz.f32 	%f12, %f1, %f5, %f11;
+	.loc	16	54	0
+	mov.f32 	%f7, %f8;
+	.loc	16	55	0
+	mov.f32 	%f5, %f6;
+	.loc	16	56	0
+	mov.f32 	%f6, %f12;
+	.loc	16	58	0
+	st.global.f32 	[%rd8+0], %f12;
+	add.s32 	%r12, %r12, 1;
+	add.u64 	%rd8, %rd8, %rd4;
+	add.u64 	%rd6, %rd6, %rd4;
+	setp.ne.s32 	%p3, %r8, %r12;
+	@%p3 bra 	$Lt_0_4098;
+	mov.s32 	%r12, %r8;
+	mul.lo.s32 	%r14, %r11, %r8;
+	add.s32 	%r7, %r5, %r14;
+	bra.uni 	$Lt_0_3586;
+$Lt_0_5634:
+	mov.s32 	%r12, 0;
+$Lt_0_3586:
+	mov.u32 	%r15, 0;
+	setp.le.s32 	%p4, %r12, %r15;
+	@%p4 bra 	$LBB14_VerticalRecursiveGaussianGRAYF32_kernel;
+	mov.s32 	%r16, %r12;
+	ld.param.s32 	%r17, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_pitch_f];
+	cvt.s64.s32 	%rd9, %r17;
+	cvt.s64.s32 	%rd10, %r7;
+	mul.wide.s32 	%rd11, %r7, 4;
+	mul.wide.s32 	%rd4, %r17, 4;
+	ld.param.u64 	%rd12, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_pIn];
+	add.u64 	%rd13, %rd12, %rd11;
+	ld.param.u64 	%rd14, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_pOut];
+	add.u64 	%rd15, %rd14, %rd11;
+	ld.param.f32 	%f13, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_neg_d_minus2];
+	ld.param.f32 	%f14, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_neg_d_minus1];
+	ld.param.f32 	%f15, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_n_minus1];
+	ld.param.f32 	%f16, [__cudaparm_VerticalRecursiveGaussianGRAYF32_kernel_n_minus2];
+	mov.f32 	%f17, 0f00000000;    	// 0
+	mov.f32 	%f5, 0f00000000;     	// 0
+	mov.f32 	%f6, 0f00000000;     	// 0
+	mov.f32 	%f7, 0f00000000;     	// 0
+	mov.s32 	%r18, %r16;
+$Lt_0_5122:
+ //<loop> Loop body line 58, nesting depth: 1, estimated iterations: unknown
+	.loc	16	72	0
+	sub.s32 	%r12, %r12, 1;
+	.loc	16	73	0
+	sub.u64 	%rd15, %rd15, %rd4;
+	sub.u64 	%rd13, %rd13, %rd4;
+	.loc	16	75	0
+	mul.ftz.f32 	%f18, %f16, %f17;
+	fma.rn.ftz.f32 	%f19, %f15, %f7, %f18;
+	fma.rn.ftz.f32 	%f20, %f14, %f6, %f19;
+	fma.rn.ftz.f32 	%f21, %f13, %f5, %f20;
+	.loc	16	77	0
+	mov.f32 	%f17, %f7;
+	.loc	16	78	0
+	ld.global.f32 	%f7, [%rd13+0];
+	.loc	16	79	0
+	mov.f32 	%f5, %f6;
+	.loc	16	80	0
+	mov.f32 	%f6, %f21;
+	.loc	16	82	0
+	ld.global.f32 	%f22, [%rd15+0];
+	add.ftz.f32 	%f23, %f22, %f21;
+	st.global.f32 	[%rd15+0], %f23;
+	mov.u32 	%r19, 0;
+	setp.ne.s32 	%p5, %r12, %r19;
+	@%p5 bra 	$Lt_0_5122;
+$LBB14_VerticalRecursiveGaussianGRAYF32_kernel:
+	.loc	16	84	0
+	exit;
+$LDWend_VerticalRecursiveGaussianGRAYF32_kernel:
+	} // VerticalRecursiveGaussianGRAYF32_kernel
+
+	.entry HorizontalRecursiveGaussianGrayF32_kernel (
+		.param .u64 __cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pOut,
+		.param .u64 __cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pIn,
+		.param .s32 __cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_width,
+		.param .s32 __cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_height,
+		.param .s32 __cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f,
+		.param .f32 __cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_n_plus0,
+		.param .f32 __cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_n_plus1,
+		.param .f32 __cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_neg_d_plus1,
+		.param .f32 __cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_neg_d_plus2,
+		.param .f32 __cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_n_minus1,
+		.param .f32 __cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_n_minus2,
+		.param .f32 __cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_neg_d_minus1,
+		.param .f32 __cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_neg_d_minus2)
+	{
+	.reg .u32 %r<164>;
+	.reg .u64 %rd<114>;
+	.reg .f32 %f<55>;
+	.reg .pred %p<29>;
+	.shared .align 4 .b8 __cuda___cuda_local_var_104846_34_non_const_smem124[4224];
+	.loc	16	93	0
+$LDWbegin_HorizontalRecursiveGaussianGrayF32_kernel:
+	ld.param.s32 	%r1, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_width];
+	mov.u32 	%r2, 0;
+	setp.le.s32 	%p1, %r1, %r2;
+	@%p1 bra 	$Lt_1_37634;
+	add.s32 	%r3, %r1, 31;
+	shr.s32 	%r4, %r3, 31;
+	mov.s32 	%r5, 31;
+	and.b32 	%r6, %r4, %r5;
+	add.s32 	%r7, %r6, %r3;
+	shr.s32 	%r8, %r7, 5;
+	mov.u32 	%r9, %ctaid.y;
+	mul.lo.u32 	%r10, %r9, 32;
+	mov.u32 	%r11, %tid.y;
+	mov.u32 	%r12, 0;
+	setp.eq.u32 	%p2, %r11, %r12;
+	add.u32 	%r13, %r10, %r11;
+	ld.param.s32 	%r14, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_height];
+	setp.gt.s32 	%p3, %r14, %r13;
+	add.s32 	%r15, %r13, 8;
+	add.s32 	%r16, %r13, 16;
+	add.s32 	%r17, %r13, 24;
+	setp.lt.s32 	%p4, %r15, %r14;
+	setp.lt.s32 	%p5, %r16, %r14;
+	setp.lt.s32 	%p6, %r17, %r14;
+	mov.s32 	%r18, 0;
+	mov.f32 	%f1, 0f00000000;     	// 0
+	mov.f32 	%f2, 0f00000000;     	// 0
+	mov.f32 	%f3, 0f00000000;     	// 0
+	mov.u64 	%rd1, __cuda___cuda_local_var_104846_34_non_const_smem124;
+	mov.s32 	%r19, %r8;
+$Lt_1_16642:
+ //<loop> Loop body line 93, nesting depth: 1, estimated iterations: unknown
+	@!%p3 bra 	$Lt_1_17410;
+	mul.lo.u32 	%r20, %r11, 33;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r22, %r20, %r21;
+	cvt.s64.s32 	%rd2, %r22;
+	mul.wide.s32 	%rd3, %r22, 4;
+	add.u64 	%rd4, %rd1, %rd3;
+	add.u32 	%r23, %r18, %r21;
+	setp.le.u32 	%p7, %r1, %r23;
+	@%p7 bra 	$Lt_1_17666;
+	.loc	16	130	0
+	ld.param.u64 	%rd5, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pIn];
+	ld.param.s32 	%r24, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	mul.lo.s32 	%r25, %r24, %r13;
+	add.s32 	%r26, %r18, %r25;
+	add.u32 	%r27, %r21, %r26;
+	cvt.s64.s32 	%rd6, %r27;
+	mul.wide.s32 	%rd7, %r27, 4;
+	add.u64 	%rd8, %rd5, %rd7;
+	ld.global.f32 	%f4, [%rd8+0];
+	st.shared.f32 	[%rd4+0], %f4;
+	bra.uni 	$Lt_1_17410;
+$Lt_1_17666:
+	.loc	16	132	0
+	mov.f32 	%f5, 0f00000000;     	// 0
+	st.shared.f32 	[%rd4+0], %f5;
+$Lt_1_17410:
+$Lt_1_16898:
+	@!%p4 bra 	$Lt_1_18434;
+	mul.lo.u32 	%r20, %r11, 33;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r28, %r20, %r21;
+	cvt.s64.s32 	%rd9, %r28;
+	mul.wide.s32 	%rd10, %r28, 4;
+	add.u64 	%rd4, %rd1, %rd10;
+	add.u32 	%r29, %r18, %r21;
+	setp.le.u32 	%p8, %r1, %r29;
+	@%p8 bra 	$Lt_1_18690;
+	.loc	16	130	0
+	ld.param.s32 	%r30, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	ld.param.u64 	%rd11, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pIn];
+	shl.b32 	%r31, %r30, 3;
+	mul.lo.s32 	%r32, %r30, %r13;
+	add.s32 	%r33, %r18, %r32;
+	add.u32 	%r34, %r21, %r33;
+	add.s32 	%r35, %r31, %r34;
+	cvt.s64.s32 	%rd12, %r35;
+	mul.wide.s32 	%rd13, %r35, 4;
+	add.u64 	%rd14, %rd11, %rd13;
+	ld.global.f32 	%f6, [%rd14+0];
+	st.shared.f32 	[%rd4+1056], %f6;
+	bra.uni 	$Lt_1_18434;
+$Lt_1_18690:
+	.loc	16	132	0
+	mov.f32 	%f7, 0f00000000;     	// 0
+	st.shared.f32 	[%rd4+1056], %f7;
+$Lt_1_18434:
+$Lt_1_17922:
+	@!%p5 bra 	$Lt_1_19458;
+	mul.lo.u32 	%r20, %r11, 33;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r36, %r20, %r21;
+	cvt.s64.s32 	%rd15, %r36;
+	mul.wide.s32 	%rd16, %r36, 4;
+	add.u64 	%rd4, %rd1, %rd16;
+	add.u32 	%r37, %r18, %r21;
+	setp.le.u32 	%p9, %r1, %r37;
+	@%p9 bra 	$Lt_1_19714;
+	.loc	16	130	0
+	ld.param.s32 	%r30, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	shl.b32 	%r38, %r30, 3;
+	ld.param.u64 	%rd17, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pIn];
+	mul.lo.s32 	%r39, %r30, %r13;
+	add.s32 	%r40, %r18, %r39;
+	add.u32 	%r41, %r21, %r40;
+	add.s32 	%r42, %r38, %r41;
+	add.s32 	%r43, %r38, %r42;
+	cvt.s64.s32 	%rd18, %r43;
+	mul.wide.s32 	%rd19, %r43, 4;
+	add.u64 	%rd20, %rd17, %rd19;
+	ld.global.f32 	%f8, [%rd20+0];
+	st.shared.f32 	[%rd4+2112], %f8;
+	bra.uni 	$Lt_1_19458;
+$Lt_1_19714:
+	.loc	16	132	0
+	mov.f32 	%f9, 0f00000000;     	// 0
+	st.shared.f32 	[%rd4+2112], %f9;
+$Lt_1_19458:
+$Lt_1_18946:
+	@!%p6 bra 	$Lt_1_20482;
+	mul.lo.u32 	%r20, %r11, 33;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r44, %r20, %r21;
+	cvt.s64.s32 	%rd21, %r44;
+	mul.wide.s32 	%rd22, %r44, 4;
+	add.u64 	%rd4, %rd1, %rd22;
+	add.u32 	%r45, %r18, %r21;
+	setp.le.u32 	%p10, %r1, %r45;
+	@%p10 bra 	$Lt_1_20738;
+	.loc	16	130	0
+	ld.param.s32 	%r30, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	shl.b32 	%r38, %r30, 3;
+	ld.param.u64 	%rd23, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pIn];
+	add.s32 	%r46, %r38, %r38;
+	mul.lo.s32 	%r47, %r30, %r13;
+	add.s32 	%r48, %r18, %r47;
+	add.u32 	%r49, %r21, %r48;
+	add.s32 	%r50, %r38, %r49;
+	add.s32 	%r51, %r46, %r50;
+	cvt.s64.s32 	%rd24, %r51;
+	mul.wide.s32 	%rd25, %r51, 4;
+	add.u64 	%rd26, %rd23, %rd25;
+	ld.global.f32 	%f10, [%rd26+0];
+	st.shared.f32 	[%rd4+3168], %f10;
+	bra.uni 	$Lt_1_20482;
+$Lt_1_20738:
+	.loc	16	132	0
+	mov.f32 	%f11, 0f00000000;    	// 0
+	st.shared.f32 	[%rd4+3168], %f11;
+$Lt_1_20482:
+$Lt_1_19970:
+	.loc	16	137	0
+	bar.sync 	0;
+	@!%p2 bra 	$Lt_1_20994;
+	mov.u32 	%r52, %tid.x;
+	mul.lo.u32 	%r53, %r52, 33;
+	mov.s32 	%r54, %r53;
+	add.s32 	%r55, %r53, 32;
+	cvt.s64.s32 	%rd27, %r53;
+	mul.wide.s32 	%rd28, %r53, 4;
+	add.u64 	%rd29, %rd1, %rd28;
+	ld.param.f32 	%f12, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_neg_d_plus2];
+	ld.param.f32 	%f13, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_neg_d_plus1];
+	ld.param.f32 	%f14, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_n_plus0];
+	ld.param.f32 	%f15, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_n_plus1];
+$Lt_1_22018:
+ //<loop> Loop body line 137, nesting depth: 2, iterations: 32
+	.loc	16	147	0
+	ld.shared.f32 	%f16, [%rd29+0];
+	.loc	16	148	0
+	mul.ftz.f32 	%f17, %f15, %f3;
+	fma.rn.ftz.f32 	%f18, %f14, %f16, %f17;
+	fma.rn.ftz.f32 	%f19, %f13, %f2, %f18;
+	fma.rn.ftz.f32 	%f20, %f12, %f1, %f19;
+	.loc	16	150	0
+	mov.f32 	%f3, %f16;
+	.loc	16	151	0
+	mov.f32 	%f1, %f2;
+	.loc	16	152	0
+	mov.f32 	%f2, %f20;
+	.loc	16	154	0
+	st.shared.f32 	[%rd29+0], %f20;
+	add.s32 	%r54, %r54, 1;
+	add.u64 	%rd29, %rd29, 4;
+	setp.ne.s32 	%p11, %r54, %r55;
+	@%p11 bra 	$Lt_1_22018;
+$Lt_1_20994:
+	.loc	16	159	0
+	bar.sync 	0;
+	@!%p3 bra 	$Lt_1_23042;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r56, %r18, %r21;
+	setp.le.u32 	%p12, %r1, %r56;
+	@%p12 bra 	$Lt_1_23042;
+	.loc	16	171	0
+	mul.lo.u32 	%r57, %r11, 33;
+	add.u32 	%r58, %r21, %r57;
+	cvt.s64.s32 	%rd30, %r58;
+	mul.wide.s32 	%rd31, %r58, 4;
+	add.u64 	%rd32, %rd1, %rd31;
+	ld.shared.f32 	%f21, [%rd32+0];
+	ld.param.u64 	%rd33, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pOut];
+	ld.param.s32 	%r59, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	mul.lo.s32 	%r60, %r59, %r13;
+	add.s32 	%r61, %r18, %r60;
+	add.u32 	%r62, %r21, %r61;
+	cvt.s64.s32 	%rd34, %r62;
+	mul.wide.s32 	%rd35, %r62, 4;
+	add.u64 	%rd36, %rd33, %rd35;
+	st.global.f32 	[%rd36+0], %f21;
+$Lt_1_23042:
+$Lt_1_22530:
+	@!%p4 bra 	$Lt_1_24066;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r63, %r18, %r21;
+	setp.le.u32 	%p13, %r1, %r63;
+	@%p13 bra 	$Lt_1_24066;
+	ld.param.s32 	%r30, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	mul.lo.u32 	%r64, %r11, 33;
+	add.u32 	%r65, %r21, %r64;
+	cvt.s64.s32 	%rd37, %r65;
+	mul.wide.s32 	%rd38, %r65, 4;
+	add.u64 	%rd39, %rd1, %rd38;
+	ld.shared.f32 	%f22, [%rd39+1056];
+	ld.param.u64 	%rd40, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pOut];
+	shl.b32 	%r66, %r30, 3;
+	mul.lo.s32 	%r67, %r30, %r13;
+	add.s32 	%r68, %r18, %r67;
+	add.u32 	%r69, %r21, %r68;
+	add.s32 	%r70, %r66, %r69;
+	cvt.s64.s32 	%rd41, %r70;
+	mul.wide.s32 	%rd42, %r70, 4;
+	add.u64 	%rd43, %rd40, %rd42;
+	st.global.f32 	[%rd43+0], %f22;
+$Lt_1_24066:
+$Lt_1_23554:
+	@!%p5 bra 	$Lt_1_25090;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r71, %r18, %r21;
+	setp.le.u32 	%p14, %r1, %r71;
+	@%p14 bra 	$Lt_1_25090;
+	ld.param.s32 	%r30, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	shl.b32 	%r38, %r30, 3;
+	mul.lo.u32 	%r72, %r11, 33;
+	add.u32 	%r73, %r21, %r72;
+	cvt.s64.s32 	%rd44, %r73;
+	mul.wide.s32 	%rd45, %r73, 4;
+	add.u64 	%rd46, %rd1, %rd45;
+	ld.shared.f32 	%f23, [%rd46+2112];
+	ld.param.u64 	%rd47, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pOut];
+	mul.lo.s32 	%r74, %r30, %r13;
+	add.s32 	%r75, %r18, %r74;
+	add.u32 	%r76, %r21, %r75;
+	add.s32 	%r77, %r38, %r76;
+	add.s32 	%r78, %r38, %r77;
+	cvt.s64.s32 	%rd48, %r78;
+	mul.wide.s32 	%rd49, %r78, 4;
+	add.u64 	%rd50, %rd47, %rd49;
+	st.global.f32 	[%rd50+0], %f23;
+$Lt_1_25090:
+$Lt_1_24578:
+	@!%p6 bra 	$Lt_1_26114;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r79, %r18, %r21;
+	setp.le.u32 	%p15, %r1, %r79;
+	@%p15 bra 	$Lt_1_26114;
+	ld.param.s32 	%r30, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	shl.b32 	%r38, %r30, 3;
+	mul.lo.u32 	%r80, %r11, 33;
+	add.u32 	%r81, %r21, %r80;
+	cvt.s64.s32 	%rd51, %r81;
+	mul.wide.s32 	%rd52, %r81, 4;
+	add.u64 	%rd53, %rd1, %rd52;
+	ld.shared.f32 	%f24, [%rd53+3168];
+	ld.param.u64 	%rd54, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pOut];
+	add.s32 	%r82, %r38, %r38;
+	mul.lo.s32 	%r83, %r30, %r13;
+	add.s32 	%r84, %r18, %r83;
+	add.u32 	%r85, %r21, %r84;
+	add.s32 	%r86, %r38, %r85;
+	add.s32 	%r87, %r82, %r86;
+	cvt.s64.s32 	%rd55, %r87;
+	mul.wide.s32 	%rd56, %r87, 4;
+	add.u64 	%rd57, %rd54, %rd56;
+	st.global.f32 	[%rd57+0], %f24;
+$Lt_1_26114:
+$Lt_1_25602:
+	.loc	16	177	0
+	bar.sync 	0;
+	add.s32 	%r18, %r18, 32;
+	setp.gt.s32 	%p16, %r1, %r18;
+	@%p16 bra 	$Lt_1_16642;
+	bra.uni 	$Lt_1_16130;
+$Lt_1_37634:
+	mov.s32 	%r18, 0;
+	mov.u64 	%rd1, __cuda___cuda_local_var_104846_34_non_const_smem124;
+$Lt_1_16130:
+	mov.u32 	%r88, 0;
+	setp.le.s32 	%p17, %r18, %r88;
+	@%p17 bra 	$Lt_1_26882;
+	add.s32 	%r89, %r18, 31;
+	shr.s32 	%r90, %r89, 31;
+	mov.s32 	%r91, 31;
+	and.b32 	%r92, %r90, %r91;
+	add.s32 	%r93, %r92, %r89;
+	shr.s32 	%r94, %r93, 5;
+	mov.u32 	%r95, %ctaid.y;
+	mul.lo.u32 	%r96, %r95, 32;
+	mov.u32 	%r11, %tid.y;
+	mov.u32 	%r97, 0;
+	setp.eq.u32 	%p2, %r11, %r97;
+	add.u32 	%r13, %r96, %r11;
+	ld.param.s32 	%r98, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_height];
+	setp.gt.s32 	%p3, %r98, %r13;
+	add.s32 	%r99, %r13, 8;
+	add.s32 	%r100, %r13, 16;
+	add.s32 	%r101, %r13, 24;
+	setp.lt.s32 	%p4, %r99, %r98;
+	setp.lt.s32 	%p5, %r100, %r98;
+	setp.lt.s32 	%p6, %r101, %r98;
+	mov.f32 	%f25, 0f00000000;    	// 0
+	mov.f32 	%f1, 0f00000000;     	// 0
+	mov.f32 	%f2, 0f00000000;     	// 0
+	mov.f32 	%f3, 0f00000000;     	// 0
+	mov.s32 	%r102, %r94;
+$Lt_1_27394:
+ //<loop> Loop body line 177, nesting depth: 1, estimated iterations: unknown
+	.loc	16	190	0
+	sub.s32 	%r18, %r18, 32;
+	@!%p3 bra 	$Lt_1_28162;
+	mul.lo.u32 	%r20, %r11, 33;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r103, %r20, %r21;
+	cvt.s64.s32 	%rd58, %r103;
+	mul.wide.s32 	%rd59, %r103, 4;
+	add.u64 	%rd4, %rd1, %rd59;
+	add.u32 	%r104, %r18, %r21;
+	setp.le.u32 	%p18, %r1, %r104;
+	@%p18 bra 	$Lt_1_28418;
+	.loc	16	201	0
+	ld.param.u64 	%rd60, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pIn];
+	ld.param.s32 	%r105, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	mul.lo.s32 	%r106, %r105, %r13;
+	add.s32 	%r107, %r18, %r106;
+	add.u32 	%r108, %r21, %r107;
+	cvt.s64.s32 	%rd61, %r108;
+	mul.wide.s32 	%rd62, %r108, 4;
+	add.u64 	%rd63, %rd60, %rd62;
+	ld.global.f32 	%f26, [%rd63+0];
+	st.shared.f32 	[%rd4+0], %f26;
+	bra.uni 	$Lt_1_28162;
+$Lt_1_28418:
+	.loc	16	203	0
+	mov.f32 	%f27, 0f00000000;    	// 0
+	st.shared.f32 	[%rd4+0], %f27;
+$Lt_1_28162:
+$Lt_1_27650:
+	@!%p4 bra 	$Lt_1_29186;
+	mul.lo.u32 	%r20, %r11, 33;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r109, %r20, %r21;
+	cvt.s64.s32 	%rd64, %r109;
+	mul.wide.s32 	%rd65, %r109, 4;
+	add.u64 	%rd4, %rd1, %rd65;
+	add.u32 	%r110, %r18, %r21;
+	setp.le.u32 	%p19, %r1, %r110;
+	@%p19 bra 	$Lt_1_29442;
+	.loc	16	201	0
+	ld.param.s32 	%r30, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	ld.param.u64 	%rd66, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pIn];
+	shl.b32 	%r111, %r30, 3;
+	mul.lo.s32 	%r112, %r30, %r13;
+	add.s32 	%r113, %r18, %r112;
+	add.u32 	%r114, %r21, %r113;
+	add.s32 	%r115, %r111, %r114;
+	cvt.s64.s32 	%rd67, %r115;
+	mul.wide.s32 	%rd68, %r115, 4;
+	add.u64 	%rd69, %rd66, %rd68;
+	ld.global.f32 	%f28, [%rd69+0];
+	st.shared.f32 	[%rd4+1056], %f28;
+	bra.uni 	$Lt_1_29186;
+$Lt_1_29442:
+	.loc	16	203	0
+	mov.f32 	%f29, 0f00000000;    	// 0
+	st.shared.f32 	[%rd4+1056], %f29;
+$Lt_1_29186:
+$Lt_1_28674:
+	@!%p5 bra 	$Lt_1_30210;
+	mul.lo.u32 	%r20, %r11, 33;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r116, %r20, %r21;
+	cvt.s64.s32 	%rd70, %r116;
+	mul.wide.s32 	%rd71, %r116, 4;
+	add.u64 	%rd4, %rd1, %rd71;
+	add.u32 	%r117, %r18, %r21;
+	setp.le.u32 	%p20, %r1, %r117;
+	@%p20 bra 	$Lt_1_30466;
+	.loc	16	201	0
+	ld.param.s32 	%r30, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	shl.b32 	%r38, %r30, 3;
+	ld.param.u64 	%rd72, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pIn];
+	mul.lo.s32 	%r118, %r30, %r13;
+	add.s32 	%r119, %r18, %r118;
+	add.u32 	%r120, %r21, %r119;
+	add.s32 	%r121, %r38, %r120;
+	add.s32 	%r122, %r38, %r121;
+	cvt.s64.s32 	%rd73, %r122;
+	mul.wide.s32 	%rd74, %r122, 4;
+	add.u64 	%rd75, %rd72, %rd74;
+	ld.global.f32 	%f30, [%rd75+0];
+	st.shared.f32 	[%rd4+2112], %f30;
+	bra.uni 	$Lt_1_30210;
+$Lt_1_30466:
+	.loc	16	203	0
+	mov.f32 	%f31, 0f00000000;    	// 0
+	st.shared.f32 	[%rd4+2112], %f31;
+$Lt_1_30210:
+$Lt_1_29698:
+	@!%p6 bra 	$Lt_1_31234;
+	mul.lo.u32 	%r20, %r11, 33;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r123, %r20, %r21;
+	cvt.s64.s32 	%rd76, %r123;
+	mul.wide.s32 	%rd77, %r123, 4;
+	add.u64 	%rd4, %rd1, %rd77;
+	add.u32 	%r124, %r18, %r21;
+	setp.le.u32 	%p21, %r1, %r124;
+	@%p21 bra 	$Lt_1_31490;
+	.loc	16	201	0
+	ld.param.s32 	%r30, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	shl.b32 	%r38, %r30, 3;
+	ld.param.u64 	%rd78, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pIn];
+	add.s32 	%r125, %r38, %r38;
+	mul.lo.s32 	%r126, %r30, %r13;
+	add.s32 	%r127, %r18, %r126;
+	add.u32 	%r128, %r21, %r127;
+	add.s32 	%r129, %r38, %r128;
+	add.s32 	%r130, %r125, %r129;
+	cvt.s64.s32 	%rd79, %r130;
+	mul.wide.s32 	%rd80, %r130, 4;
+	add.u64 	%rd81, %rd78, %rd80;
+	ld.global.f32 	%f32, [%rd81+0];
+	st.shared.f32 	[%rd4+3168], %f32;
+	bra.uni 	$Lt_1_31234;
+$Lt_1_31490:
+	.loc	16	203	0
+	mov.f32 	%f33, 0f00000000;    	// 0
+	st.shared.f32 	[%rd4+3168], %f33;
+$Lt_1_31234:
+$Lt_1_30722:
+	.loc	16	208	0
+	bar.sync 	0;
+	@!%p2 bra 	$Lt_1_31746;
+	.loc	16	213	0
+	mov.u32 	%r131, %tid.x;
+	mul.lo.u32 	%r132, %r131, 33;
+	add.s32 	%r133, %r132, 31;
+	cvt.s64.s32 	%rd82, %r133;
+	mul.wide.s32 	%rd83, %r133, 4;
+	add.u64 	%rd84, %rd1, %rd83;
+	ld.param.f32 	%f34, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_neg_d_minus2];
+	ld.param.f32 	%f35, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_neg_d_minus1];
+	ld.param.f32 	%f36, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_n_minus1];
+	ld.param.f32 	%f37, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_n_minus2];
+	mov.s32 	%r134, 31;
+$Lt_1_32770:
+ //<loop> Loop body line 213, nesting depth: 1, iterations: 32
+	.loc	16	216	0
+	mul.ftz.f32 	%f38, %f37, %f25;
+	fma.rn.ftz.f32 	%f39, %f36, %f3, %f38;
+	fma.rn.ftz.f32 	%f40, %f35, %f2, %f39;
+	fma.rn.ftz.f32 	%f41, %f34, %f1, %f40;
+	.loc	16	218	0
+	mov.f32 	%f25, %f3;
+	.loc	16	219	0
+	ld.shared.f32 	%f3, [%rd84+0];
+	.loc	16	220	0
+	mov.f32 	%f1, %f2;
+	.loc	16	221	0
+	mov.f32 	%f2, %f41;
+	.loc	16	223	0
+	st.shared.f32 	[%rd84+0], %f41;
+	.loc	16	224	0
+	sub.u64 	%rd84, %rd84, 4;
+	sub.s32 	%r134, %r134, 1;
+	mov.u32 	%r135, -1;
+	setp.ne.s32 	%p22, %r134, %r135;
+	@%p22 bra 	$Lt_1_32770;
+$Lt_1_31746:
+	.loc	16	227	0
+	bar.sync 	0;
+	@!%p3 bra 	$Lt_1_33794;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r136, %r18, %r21;
+	setp.le.u32 	%p23, %r1, %r136;
+	@%p23 bra 	$Lt_1_33794;
+	.loc	16	238	0
+	ld.param.s32 	%r137, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	mul.lo.s32 	%r138, %r137, %r13;
+	ld.param.u64 	%rd85, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pOut];
+	add.s32 	%r139, %r138, %r18;
+	add.u32 	%r140, %r21, %r139;
+	cvt.s64.s32 	%rd86, %r140;
+	mul.wide.s32 	%rd87, %r140, 4;
+	add.u64 	%rd88, %rd85, %rd87;
+	ld.global.f32 	%f42, [%rd88+0];
+	mul.lo.u32 	%r141, %r11, 33;
+	add.u32 	%r142, %r21, %r141;
+	cvt.s64.s32 	%rd89, %r142;
+	mul.wide.s32 	%rd90, %r142, 4;
+	add.u64 	%rd91, %rd1, %rd90;
+	ld.shared.f32 	%f43, [%rd91+0];
+	add.ftz.f32 	%f44, %f42, %f43;
+	st.global.f32 	[%rd88+0], %f44;
+$Lt_1_33794:
+$Lt_1_33282:
+	@!%p4 bra 	$Lt_1_34818;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r143, %r18, %r21;
+	setp.le.u32 	%p24, %r1, %r143;
+	@%p24 bra 	$Lt_1_34818;
+	ld.param.s32 	%r30, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	shl.b32 	%r38, %r30, 3;
+	mul.lo.s32 	%r138, %r30, %r13;
+	add.s32 	%r144, %r138, %r18;
+	ld.param.u64 	%rd92, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pOut];
+	add.u32 	%r145, %r144, %r21;
+	add.s32 	%r146, %r38, %r145;
+	cvt.s64.s32 	%rd93, %r146;
+	mul.wide.s32 	%rd94, %r146, 4;
+	add.u64 	%rd95, %rd92, %rd94;
+	ld.global.f32 	%f45, [%rd95+0];
+	mul.lo.u32 	%r147, %r11, 33;
+	add.u32 	%r148, %r21, %r147;
+	cvt.s64.s32 	%rd96, %r148;
+	mul.wide.s32 	%rd97, %r148, 4;
+	add.u64 	%rd98, %rd1, %rd97;
+	ld.shared.f32 	%f46, [%rd98+1056];
+	add.ftz.f32 	%f47, %f45, %f46;
+	st.global.f32 	[%rd95+0], %f47;
+$Lt_1_34818:
+$Lt_1_34306:
+	@!%p5 bra 	$Lt_1_35842;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r149, %r18, %r21;
+	setp.le.u32 	%p25, %r1, %r149;
+	@%p25 bra 	$Lt_1_35842;
+	ld.param.s32 	%r30, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	shl.b32 	%r38, %r30, 3;
+	mul.lo.s32 	%r138, %r30, %r13;
+	add.s32 	%r144, %r138, %r18;
+	add.u32 	%r150, %r144, %r21;
+	ld.param.u64 	%rd99, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pOut];
+	add.s32 	%r151, %r38, %r150;
+	add.s32 	%r152, %r38, %r151;
+	cvt.s64.s32 	%rd100, %r152;
+	mul.wide.s32 	%rd101, %r152, 4;
+	add.u64 	%rd102, %rd99, %rd101;
+	ld.global.f32 	%f48, [%rd102+0];
+	mul.lo.u32 	%r153, %r11, 33;
+	add.u32 	%r154, %r21, %r153;
+	cvt.s64.s32 	%rd103, %r154;
+	mul.wide.s32 	%rd104, %r154, 4;
+	add.u64 	%rd105, %rd1, %rd104;
+	ld.shared.f32 	%f49, [%rd105+2112];
+	add.ftz.f32 	%f50, %f48, %f49;
+	st.global.f32 	[%rd102+0], %f50;
+$Lt_1_35842:
+$Lt_1_35330:
+	@!%p6 bra 	$Lt_1_36866;
+	mov.u32 	%r21, %tid.x;
+	add.u32 	%r155, %r18, %r21;
+	setp.le.u32 	%p26, %r1, %r155;
+	@%p26 bra 	$Lt_1_36866;
+	ld.param.s32 	%r30, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pitch_f];
+	shl.b32 	%r38, %r30, 3;
+	mul.lo.s32 	%r138, %r30, %r13;
+	add.s32 	%r144, %r138, %r18;
+	add.u32 	%r156, %r144, %r21;
+	add.s32 	%r157, %r38, %r156;
+	ld.param.u64 	%rd106, [__cudaparm_HorizontalRecursiveGaussianGrayF32_kernel_pOut];
+	add.s32 	%r158, %r157, %r38;
+	add.s32 	%r159, %r38, %r158;
+	cvt.s64.s32 	%rd107, %r159;
+	mul.wide.s32 	%rd108, %r159, 4;
+	add.u64 	%rd109, %rd106, %rd108;
+	ld.global.f32 	%f51, [%rd109+0];
+	mul.lo.u32 	%r160, %r11, 33;
+	add.u32 	%r161, %r21, %r160;
+	cvt.s64.s32 	%rd110, %r161;
+	mul.wide.s32 	%rd111, %r161, 4;
+	add.u64 	%rd112, %rd1, %rd111;
+	ld.shared.f32 	%f52, [%rd112+3168];
+	add.ftz.f32 	%f53, %f51, %f52;
+	st.global.f32 	[%rd109+0], %f53;
+$Lt_1_36866:
+$Lt_1_36354:
+	.loc	16	244	0
+	bar.sync 	0;
+	mov.u32 	%r162, 0;
+	setp.gt.s32 	%p27, %r18, %r162;
+	@%p27 bra 	$Lt_1_27394;
+$Lt_1_26882:
+	.loc	16	246	0
+	exit;
+$LDWend_HorizontalRecursiveGaussianGrayF32_kernel:
+	} // HorizontalRecursiveGaussianGrayF32_kernel
+	.const .align 4 .b8 kRGB32f_To_601YPbPr[36] = {135,22,153,62,162,69,22,63,213,120,233,61,33,201,44,190,111,155,169,190,0,0,0,63,0,0,0,63,70,94,214,190,232,134,166,189};
+	.const .align 4 .b8 k601YPbPr_To_RGB32f[36] = {0,0,128,63,0,0,0,0,188,116,179,63,0,0,128,63,152,50,176,190,158,209,54,191,0,0,128,63,229,208,226,63,0,0,0,0};
+	.const .align 4 .b8 kRGB32f_To_601YCbCr[36] = {70,246,130,66,145,141,0,67,94,186,199,65,33,48,23,194,240,103,148,194,0,0,224,66,0,0,224,66,111,146,187,194,70,182,145,193};
+	.const .align 4 .b8 k601YCbCr_To_RGB32f[36] = {37,160,149,59,0,0,0,0,182,23,205,59,37,160,149,59,40,15,201,186,156,239,80,187,37,160,149,59,236,155,1,60,0,0,0,0};
+	.const .align 4 .b8 kRGB8u_To_601YCbCr[36] = {219,121,131,62,152,14,1,63,18,131,200,61,174,199,23,190,238,252,148,190,197,224,224,62,197,224,224,62,217,78,188,190,174,71,146,189};
+	.const .align 4 .b8 k601YCbCr_To_RGB8u[36] = {127,10,149,63,0,0,0,0,160,74,204,63,127,10,149,63,254,148,200,190,184,30,80,191,127,10,149,63,78,26,1,64,0,0,0,0};
+	.const .align 4 .b8 kRGB8u_To_601YCbCrFullRange[36] = {135,22,153,62,162,69,22,63,213,120,233,61,166,27,44,190,39,241,168,190,250,254,254,62,250,254,254,62,43,135,213,190,59,223,165,189};
+	.const .align 4 .b8 k601YCbCrFullRange_To_RGB8u[36] = {0,0,128,63,0,0,0,0,72,193,178,63,0,0,128,63,143,130,175,190,225,26,54,191,0,0,128,63,20,238,225,63,0,0,0,0};
+	.const .align 4 .b8 kRGB32f_To_601YCbCrFullRange[36] = {113,125,152,66,92,175,21,67,92,143,232,65,158,111,43,194,49,72,168,194,0,0,254,66,0,0,254,66,170,177,212,194,88,57,165,193};
+	.const .align 4 .b8 k601YCbCrFullRange_To_RGB32f[36] = {129,128,128,59,0,0,0,0,188,116,179,59,129,128,128,59,194,50,176,186,179,209,54,187,129,128,128,59,229,208,226,59,0,0,0,0};
+	.const .align 4 .b8 kRGB32f_To_709YPbPr[36] = {208,179,89,62,89,23,55,63,152,221,147,61,186,164,234,189,210,86,197,190,0,0,0,63,0,0,0,63,190,134,232,190,16,202,59,189};
+	.const .align 4 .b8 k709YPbPr_To_RGB32f[36] = {0,0,128,63,0,0,0,0,12,147,201,63,0,0,128,63,221,209,63,190,243,173,239,190,0,0,128,63,77,132,237,63,0,0,0,0};
+	.const .align 4 .b8 kRGB32f_To_709YCbCr[36] = {106,60,58,66,6,161,28,67,244,253,124,65,223,79,205,193,8,172,172,194,0,0,224,66,0,0,224,66,195,117,203,194,236,81,36,193};
+	.const .align 4 .b8 k709YCbCr_To_RGB32f[36] = {37,160,149,59,0,0,0,0,239,94,230,59,37,160,149,59,33,57,91,186,178,245,8,187,37,160,149,59,82,185,7,60,0,0,0,0};
+	.const .align 4 .b8 k709YCbCrFullRange_To_RGB32f[36] = {131,128,128,59,0,0,0,0,28,147,201,59,131,128,128,59,61,210,63,186,248,173,239,186,131,128,128,59,82,132,237,59,0,0,0,0};
+	.const .align 4 .b8 kRGB8u_To_709YCbCr[36] = {207,247,58,62,53,62,29,63,231,251,125,61,147,24,206,61,23,89,173,190,197,224,224,62,197,224,224,62,12,66,204,190,195,245,36,189};
+	.const .align 4 .b8 k709YCbCr_To_RGB8u[36] = {127,10,149,63,0,0,0,0,147,120,229,63,127,10,149,63,53,94,90,190,205,108,8,191,127,10,149,63,154,49,7,64,0,0,0,0};
+	.const .align 4 .b8 k709YCbCr_To_601YCbCr[36] = {0,0,128,63,23,100,203,61,1,77,68,62,0,0,0,0,18,103,125,63,10,158,226,189,0,0,0,0,61,98,148,189,249,191,123,63};
+	.const .align 4 .b8 k601YCbCr_To_709YCbCr[36] = {0,0,128,63,122,165,236,189,179,237,84,190,0,0,0,0,204,98,130,63,216,188,234,61,0,0,0,0,74,179,153,61,234,61,131,63};
+	.const .align 4 .b8 kYCbCrOffset[12] = {0,0,128,65,0,0,0,67,0,0,0,67};
+	.const .align 4 .b8 kYCbCrFullRangeOffset[12] = {0,0,0,0,0,0,0,67,0,0,0,67};
+

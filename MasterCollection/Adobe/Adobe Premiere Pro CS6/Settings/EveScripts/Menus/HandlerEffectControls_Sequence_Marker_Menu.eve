@@ -1,0 +1,24 @@
+layout my_menu
+{
+	view menu(id:18485)
+	{
+		menu(text:'$$$/Premiere/Menu/18485/SetSequenceMarker/MarkIn=Mark In', idName:'cmd.common.setin');
+		menu(text:'$$$/Premiere/Menu/18485/SetSequenceMarker/MarkOut=Mark Out', idName:'cmd.common.setout');
+		separator();
+		menu(text:'$$$/Premiere/Menu/18485/GotoSequenceMarker/GoToIn=Go To In', idName:'cmd.goto.in');
+		menu(text:'$$$/Premiere/Menu/18485/GotoSequenceMarker/GoToOut=Go To Out', idName:'cmd.goto.out');
+		separator();
+		menu(text:'$$$/Premiere/Menu/18485/ClearSequenceMarker/ClearIn=Clear In', idName:'cmd.clear.in');
+		menu(text:'$$$/Premiere/Menu/18485/ClearSequenceMarker/ClearOut=Clear Out', idName:'cmd.clear.out');
+		menu(text:'$$$/Premiere/Menu/18485/ClearSequenceMarker/ClearInandOut=Clear In and Out', idName:'cmd.clear.inandout');
+		separator();
+		menu(text:'$$$/Premiere/Menu/18485/SetSequenceMarker/AddMarker=Add Marker', idName:'cmd.set.marker.unnumbered');
+		menu(text:'$$$/Premiere/Menu/18485/GotoSequenceMarker/GoToNextMarker=Go To Next Marker', idName:'cmd.marker.gotomarker.next');
+		menu(text:'$$$/Premiere/Menu/18485/GotoSequenceMarker/GoToPreviousMarker=Go To Previous Marker', idName:'cmd.marker.gotomarker.previous');
+		separator();
+		menu(text:'$$$/Premiere/Menu/18485/ClearSequenceMarker/ClearCurrentMarker=Clear Current Marker', idName:'cmd.marker.clearmarker.current');
+		menu(text:'$$$/Premiere/Menu/18485/ClearSequenceMarker/ClearAllMarkers=Clear All Markers', idName:'cmd.marker.clearmarker.all');
+		separator();
+		menu(text:'$$$/Premiere/Menu/18485/EditSequenceMarker/EditMarker=Edit Marker...', idName:'cmd.marker.edit');
+	}
+}

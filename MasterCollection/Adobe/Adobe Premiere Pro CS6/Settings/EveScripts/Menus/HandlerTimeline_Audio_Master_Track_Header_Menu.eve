@@ -1,0 +1,8 @@
+layout my_menu
+{
+	view menu(id:5302)
+	{
+		menu(text:'$$$/Premiere/Menu/5302/AddTracks...=Add Tracks...', idName:'cmd.sequence.addtracks');
+		menu(text:'$$$/Premiere/Menu/5302/DeleteTracks...=Delete Tracks...', idName:'cmd.sequence.deletetracks');
+	}
+}

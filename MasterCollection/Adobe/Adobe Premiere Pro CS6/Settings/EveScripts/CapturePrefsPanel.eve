@@ -1,0 +1,10 @@
+layout Capture
+{
+	view dva_panel_view(name: '$$$/Premiere/DLG/PrefsDialog/kResDLGCapture=Capture', identifier: 'panelCapture', guide_mask:[@guide_label, @guide_baseline])
+	{
+		dva_checkbox(identifier:'abortDroppedCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGAbortCapture=Abort capture on dropped frames', minHeight:16);
+		dva_checkbox(identifier:'reportDroppedCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGReportDropped=Report dropped frames', minHeight:16);
+		dva_checkbox(identifier:'generateBatchCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGGenerateLog=Generate batch log file only on unsuccessful completion', minHeight:16);
+		dva_checkbox(identifier:'useDeviceTimecodeCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGUseTimecode=Use device control timecode', minHeight:16);
+	}
+}

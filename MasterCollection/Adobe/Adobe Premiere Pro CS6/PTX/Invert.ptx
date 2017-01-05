@@ -1,0 +1,923 @@
+	.version 2.3
+	.target sm_20
+	.address_size 64
+	// compiled with C:\mightykilt64/shared/adobe/MediaCore//External/3rdParty/NVIDIA/CUDA/win/bin/../open64/lib//be.exe
+	// nvopencc 4.0 built on 2011-05-13
+
+	.visible .func (.param .align 16 .b8 __cudaretf__Z15ConvertRGBtoHSL8PixelRGB[16]) _Z15ConvertRGBtoHSL8PixelRGB (.param .align 16 .b8 __cudaparmf1__Z15ConvertRGBtoHSL8PixelRGB[16])
+
+	.visible .func (.param .align 16 .b8 __cudaretf__Z15ConvertHSLtoRGB8PixelHSL[16]) _Z15ConvertHSLtoRGB8PixelHSL (.param .align 16 .b8 __cudaparmf1__Z15ConvertHSLtoRGB8PixelHSL[16])
+
+	.visible .func (.param .align 16 .b8 __cudaretf__Z15ConvertRGBtoYIQ8PixelRGB[16]) _Z15ConvertRGBtoYIQ8PixelRGB (.param .align 16 .b8 __cudaparmf1__Z15ConvertRGBtoYIQ8PixelRGB[16])
+
+	.visible .func (.param .align 16 .b8 __cudaretf__Z15ConvertYIQtoRGB6float4[16]) _Z15ConvertYIQtoRGB6float4 (.param .align 16 .b8 __cudaparmf1__Z15ConvertYIQtoRGB6float4[16])
+
+	//-----------------------------------------------------------
+	// Compiling C:/Users/dvaeng/AppData/Local/Temp/tmpxft_000036d8_00000000-11_Invert.cpp3.i (C:/Users/dvaeng/AppData/Local/Temp/ccBI#.a13148)
+	//-----------------------------------------------------------
+
+	//-----------------------------------------------------------
+	// Options:
+	//-----------------------------------------------------------
+	//  Target:ptx, ISA:sm_20, Endian:little, Pointer Size:64
+	//  -O3	(Optimization level)
+	//  -g0	(Debug level)
+	//  -m2	(Report advisories)
+	//-----------------------------------------------------------
+
+	.file	1	"C:/Users/dvaeng/AppData/Local/Temp/tmpxft_000036d8_00000000-10_Invert.cudafe2.gpu"
+	.file	2	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/DevicePixelFormat.h"
+	.file	3	"C:\mightykilt64\shared\adobe\MediaCore\Renderers\RendererGPU\Inc\Effects/Invert.h"
+	.file	4	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/PixelRGB.h"
+	.file	5	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/PixelHSL.h"
+	.file	6	"c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h"
+	.file	7	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\crt/device_runtime.h"
+	.file	8	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\host_defines.h"
+	.file	9	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\builtin_types.h"
+	.file	10	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_types.h"
+	.file	11	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\driver_types.h"
+	.file	12	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_types.h"
+	.file	13	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_types.h"
+	.file	14	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\vector_types.h"
+	.file	15	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\builtin_types.h"
+	.file	16	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\host_defines.h"
+	.file	17	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\device_launch_parameters.h"
+	.file	18	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\crt\storage_class.h"
+	.file	19	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\INCLUDE\time.h"
+	.file	20	"C:/mightykilt64/shared/adobe/MediaCore/Renderers/RendererGPU/Src/Effects/Invert.cu"
+	.file	21	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\common_functions.h"
+	.file	22	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions.h"
+	.file	23	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_constants.h"
+	.file	24	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_functions.h"
+	.file	25	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_11_atomic_functions.h"
+	.file	26	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_12_atomic_functions.h"
+	.file	27	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_13_double_functions.h"
+	.file	28	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_atomic_functions.h"
+	.file	29	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_intrinsics.h"
+	.file	30	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_functions.h"
+	.file	31	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_fetch_functions.h"
+	.file	32	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions_dbl_ptx3.h"
+	.file	33	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/ColorSpaceConvert.h"
+
+
+	.visible .func (.param .align 16 .b8 __cudaretf__Z15ConvertRGBtoHSL8PixelRGB[16]) _Z15ConvertRGBtoHSL8PixelRGB (.param .align 16 .b8 __cudaparmf1__Z15ConvertRGBtoHSL8PixelRGB[16])
+	{
+	.reg .u32 %r<20>;
+	.reg .f32 %f<35>;
+	.reg .pred %p<11>;
+	// __cuda_local_var_105314_2780_non_const_result = 16
+	.loc	20	36	0
+$LDWbegin__Z15ConvertRGBtoHSL8PixelRGB:
+	ld.param.f32 	%f1, [__cudaparmf1__Z15ConvertRGBtoHSL8PixelRGB+0];
+	mov.f32 	%f2, %f1;
+	ld.param.f32 	%f3, [__cudaparmf1__Z15ConvertRGBtoHSL8PixelRGB+4];
+	mov.f32 	%f4, %f3;
+	ld.param.f32 	%f5, [__cudaparmf1__Z15ConvertRGBtoHSL8PixelRGB+8];
+	mov.f32 	%f6, %f5;
+	setp.le.ftz.f32 	%p1, %f2, %f6;
+	setp.le.ftz.f32 	%p2, %f4, %f6;
+	selp.s32 	%r1, 1, 0, %p1;
+	selp.s32 	%r2, 1, 0, %p2;
+	sub.ftz.f32 	%f7, %f4, %f2;
+	mov.f32 	%f8, %f9;
+	and.b32 	%r3, %r1, %r2;
+	neg.s32 	%r4, %r3;
+	slct.f32.s32 	%f10, %f8, %f7, %r4;
+	mov.f32 	%f11, %f6;
+	setp.le.ftz.f32 	%p3, %f2, %f4;
+	selp.s32 	%r5, 1, 0, %p3;
+	set.ge.ftz.u32.f32 	%r6, %f4, %f6;
+	neg.s32 	%r7, %r6;
+	and.b32 	%r8, %r5, %r7;
+	mov.u32 	%r9, 0;
+	setp.eq.s32 	%p4, %r8, %r9;
+	@%p4 bra 	$Lt_0_9218;
+	mov.f32 	%f11, %f4;
+	sub.ftz.f32 	%f10, %f2, %f6;
+	mov.f32 	%f12, 0f40000000;    	// 2
+	bra.uni 	$Lt_0_8962;
+$Lt_0_9218:
+	mov.f32 	%f12, 0f00000000;    	// 0
+$Lt_0_8962:
+	setp.ge.ftz.f32 	%p5, %f2, %f4;
+	selp.s32 	%r10, 1, 0, %p5;
+	set.ge.ftz.u32.f32 	%r11, %f2, %f6;
+	neg.s32 	%r12, %r11;
+	and.b32 	%r13, %r10, %r12;
+	mov.u32 	%r14, 0;
+	setp.eq.s32 	%p6, %r13, %r14;
+	@%p6 bra 	$Lt_0_9474;
+	mov.f32 	%f11, %f2;
+	sub.ftz.f32 	%f10, %f6, %f4;
+	mov.f32 	%f12, 0f40800000;    	// 4
+$Lt_0_9474:
+	.loc	24	544	0
+	and.b32 	%r15, %r1, %r5;
+	and.b32 	%r16, %r2, %r10;
+	neg.s32 	%r17, %r16;
+	slct.f32.s32 	%f13, %f6, %f4, %r17;
+	neg.s32 	%r18, %r15;
+	slct.f32.s32 	%f14, %f13, %f2, %r18;
+	add.ftz.f32 	%f15, %f14, %f11;
+	mov.f32 	%f16, 0f40000000;    	// 2
+	div.approx.ftz.f32 	%f17, %f15, %f16;
+	.loc	20	36	0
+	mov.f32 	%f18, 0f38d1b717;    	// 0.0001
+	setp.gt.ftz.f32 	%p7, %f17, %f18;
+	@!%p7 bra 	$Lt_0_10242;
+	sub.ftz.f32 	%f19, %f11, %f14;
+	mov.f32 	%f20, %f19;
+	mov.f32 	%f21, 0f38d1b717;    	// 0.0001
+	setp.gt.ftz.f32 	%p8, %f19, %f21;
+	@!%p8 bra 	$Lt_0_10754;
+	div.approx.ftz.f32 	%f22, %f10, %f19;
+	add.ftz.f32 	%f23, %f12, %f22;
+	mov.f32 	%f24, 0f40c00000;    	// 6
+	add.ftz.f32 	%f25, %f23, %f24;
+	mov.f32 	%f26, 0f00000000;    	// 0
+	setp.lt.ftz.f32 	%p9, %f23, %f26;
+	selp.f32 	%f27, %f25, %f23, %p9;
+	mov.f32 	%f28, 0f40c00000;    	// 6
+	div.approx.ftz.f32 	%f10, %f27, %f28;
+	bra.uni 	$Lt_0_9986;
+$Lt_0_10754:
+	mov.f32 	%f10, 0f00000000;    	// 0
+	mov.f32 	%f20, 0f00000000;    	// 0
+	bra.uni 	$Lt_0_9986;
+$Lt_0_10242:
+	mov.f32 	%f10, 0f00000000;    	// 0
+	mov.f32 	%f20, 0f00000000;    	// 0
+$Lt_0_9986:
+	mov.f32 	%f29, %f10;
+	st.param.f32 	[__cudaretf__Z15ConvertRGBtoHSL8PixelRGB+0], %f29;
+	mov.f32 	%f30, %f20;
+	st.param.f32 	[__cudaretf__Z15ConvertRGBtoHSL8PixelRGB+4], %f30;
+	mov.f32 	%f31, %f17;
+	st.param.f32 	[__cudaretf__Z15ConvertRGBtoHSL8PixelRGB+8], %f31;
+	mov.f32 	%f32, %f33;
+	st.param.f32 	[__cudaretf__Z15ConvertRGBtoHSL8PixelRGB+12], %f32;
+	ret;
+$LDWend__Z15ConvertRGBtoHSL8PixelRGB:
+	} // _Z15ConvertRGBtoHSL8PixelRGB
+
+	.visible .func (.param .align 16 .b8 __cudaretf__Z15ConvertHSLtoRGB8PixelHSL[16]) _Z15ConvertHSLtoRGB8PixelHSL (.param .align 16 .b8 __cudaparmf1__Z15ConvertHSLtoRGB8PixelHSL[16])
+	{
+	.reg .u32 %r<9>;
+	.reg .f32 %f<60>;
+	.reg .pred %p<10>;
+$LDWbegin__Z15ConvertHSLtoRGB8PixelHSL:
+	ld.param.f32 	%f1, [__cudaparmf1__Z15ConvertHSLtoRGB8PixelHSL+0];
+	mov.f32 	%f2, %f1;
+	ld.param.f32 	%f3, [__cudaparmf1__Z15ConvertHSLtoRGB8PixelHSL+4];
+	mov.f32 	%f4, %f3;
+	ld.param.f32 	%f5, [__cudaparmf1__Z15ConvertHSLtoRGB8PixelHSL+8];
+	mov.f32 	%f6, %f5;
+	mov.f32 	%f7, 0f3f000000;     	// 0.5
+	setp.le.ftz.f32 	%p1, %f6, %f7;
+	@!%p1 bra 	$Lt_1_4354;
+	mov.f32 	%f8, 0f3f800000;     	// 1
+	add.ftz.f32 	%f9, %f4, %f8;
+	mul.ftz.f32 	%f10, %f6, %f9;
+	bra.uni 	$Lt_1_4098;
+$Lt_1_4354:
+	add.ftz.f32 	%f11, %f4, %f6;
+	mul.ftz.f32 	%f12, %f4, %f6;
+	sub.ftz.f32 	%f10, %f11, %f12;
+$Lt_1_4098:
+	mov.f32 	%f13, %f10;
+	mov.f32 	%f14, 0f00000000;    	// 0
+	setp.gt.ftz.f32 	%p2, %f13, %f14;
+	@!%p2 bra 	$Lt_1_4866;
+	mov.f32 	%f15, 0f40c00000;    	// 6
+	mul.ftz.f32 	%f16, %f2, %f15;
+	cvt.rzi.ftz.s32.f32 	%r1, %f16;
+	mov.u32 	%r2, 0;
+	setp.eq.s32 	%p3, %r1, %r2;
+	@%p3 bra 	$Lt_1_258;
+	mov.u32 	%r3, 1;
+	setp.eq.s32 	%p4, %r1, %r3;
+	@%p4 bra 	$Lt_1_770;
+	mov.u32 	%r4, 2;
+	setp.eq.s32 	%p5, %r1, %r4;
+	@%p5 bra 	$Lt_1_1026;
+	mov.u32 	%r5, 3;
+	setp.eq.s32 	%p6, %r1, %r5;
+	@%p6 bra 	$Lt_1_1282;
+	mov.u32 	%r6, 4;
+	setp.eq.s32 	%p7, %r1, %r6;
+	@%p7 bra 	$Lt_1_1538;
+	mov.u32 	%r7, 5;
+	setp.eq.s32 	%p8, %r1, %r7;
+	@%p8 bra 	$Lt_1_1794;
+	mov.f32 	%f17, 0f00000000;    	// 0
+	mov.f32 	%f18, 0f00000000;    	// 0
+	mov.f32 	%f19, 0f00000000;    	// 0
+	bra.uni 	$Lt_1_4610;
+$Lt_1_258:
+	mov.f32 	%f17, %f13;
+	add.ftz.f32 	%f20, %f6, %f6;
+	sub.ftz.f32 	%f21, %f20, %f13;
+	sub.ftz.f32 	%f22, %f13, %f21;
+	div.approx.ftz.f32 	%f23, %f22, %f13;
+	mul.ftz.f32 	%f24, %f13, %f23;
+	cvt.rn.f32.s32 	%f25, %r1;
+	sub.ftz.f32 	%f26, %f16, %f25;
+	fma.rn.ftz.f32 	%f18, %f24, %f26, %f21;
+	mov.f32 	%f19, %f21;
+	bra.uni 	$Lt_1_4610;
+$Lt_1_770:
+	add.ftz.f32 	%f20, %f6, %f6;
+	sub.ftz.f32 	%f21, %f20, %f13;
+	sub.ftz.f32 	%f27, %f13, %f21;
+	div.approx.ftz.f32 	%f28, %f27, %f13;
+	mul.ftz.f32 	%f29, %f13, %f28;
+	cvt.rn.f32.s32 	%f30, %r1;
+	sub.ftz.f32 	%f31, %f16, %f30;
+	mul.ftz.f32 	%f32, %f29, %f31;
+	sub.ftz.f32 	%f17, %f13, %f32;
+	mov.f32 	%f18, %f13;
+	mov.f32 	%f19, %f21;
+	bra.uni 	$Lt_1_4610;
+$Lt_1_1026:
+	add.ftz.f32 	%f20, %f6, %f6;
+	sub.ftz.f32 	%f21, %f20, %f13;
+	mov.f32 	%f17, %f21;
+	mov.f32 	%f18, %f13;
+	sub.ftz.f32 	%f33, %f13, %f21;
+	div.approx.ftz.f32 	%f34, %f33, %f13;
+	mul.ftz.f32 	%f35, %f13, %f34;
+	cvt.rn.f32.s32 	%f36, %r1;
+	sub.ftz.f32 	%f37, %f16, %f36;
+	fma.rn.ftz.f32 	%f19, %f35, %f37, %f21;
+	bra.uni 	$Lt_1_4610;
+$Lt_1_1282:
+	add.ftz.f32 	%f20, %f6, %f6;
+	sub.ftz.f32 	%f21, %f20, %f13;
+	mov.f32 	%f17, %f21;
+	sub.ftz.f32 	%f38, %f13, %f21;
+	div.approx.ftz.f32 	%f39, %f38, %f13;
+	mul.ftz.f32 	%f40, %f13, %f39;
+	cvt.rn.f32.s32 	%f41, %r1;
+	sub.ftz.f32 	%f42, %f16, %f41;
+	mul.ftz.f32 	%f43, %f40, %f42;
+	sub.ftz.f32 	%f18, %f13, %f43;
+	mov.f32 	%f19, %f13;
+	bra.uni 	$Lt_1_4610;
+$Lt_1_1538:
+	add.ftz.f32 	%f20, %f6, %f6;
+	sub.ftz.f32 	%f21, %f20, %f13;
+	sub.ftz.f32 	%f44, %f13, %f21;
+	div.approx.ftz.f32 	%f45, %f44, %f13;
+	mul.ftz.f32 	%f46, %f13, %f45;
+	cvt.rn.f32.s32 	%f47, %r1;
+	sub.ftz.f32 	%f48, %f16, %f47;
+	fma.rn.ftz.f32 	%f17, %f46, %f48, %f21;
+	mov.f32 	%f18, %f21;
+	mov.f32 	%f19, %f13;
+	bra.uni 	$Lt_1_4610;
+$Lt_1_1794:
+	mov.f32 	%f17, %f13;
+	add.ftz.f32 	%f20, %f6, %f6;
+	sub.ftz.f32 	%f21, %f20, %f13;
+	mov.f32 	%f18, %f21;
+	sub.ftz.f32 	%f49, %f13, %f21;
+	div.approx.ftz.f32 	%f50, %f49, %f13;
+	mul.ftz.f32 	%f51, %f13, %f50;
+	cvt.rn.f32.s32 	%f52, %r1;
+	sub.ftz.f32 	%f53, %f16, %f52;
+	mul.ftz.f32 	%f54, %f51, %f53;
+	sub.ftz.f32 	%f19, %f13, %f54;
+	bra.uni 	$Lt_1_4610;
+$Lt_1_4866:
+	mov.f32 	%f17, 0f00000000;    	// 0
+	mov.f32 	%f18, 0f00000000;    	// 0
+	mov.f32 	%f19, 0f00000000;    	// 0
+$Lt_1_4610:
+	mov.f32 	%f55, %f19;
+	st.param.f32 	[__cudaretf__Z15ConvertHSLtoRGB8PixelHSL+0], %f55;
+	mov.f32 	%f56, %f18;
+	st.param.f32 	[__cudaretf__Z15ConvertHSLtoRGB8PixelHSL+4], %f56;
+	mov.f32 	%f57, %f17;
+	st.param.f32 	[__cudaretf__Z15ConvertHSLtoRGB8PixelHSL+8], %f57;
+	mov.f32 	%f58, 0f00000000;    	// 0
+	st.param.f32 	[__cudaretf__Z15ConvertHSLtoRGB8PixelHSL+12], %f58;
+	ret;
+$LDWend__Z15ConvertHSLtoRGB8PixelHSL:
+	} // _Z15ConvertHSLtoRGB8PixelHSL
+
+	.visible .func (.param .align 16 .b8 __cudaretf__Z15ConvertRGBtoYIQ8PixelRGB[16]) _Z15ConvertRGBtoYIQ8PixelRGB (.param .align 16 .b8 __cudaparmf1__Z15ConvertRGBtoYIQ8PixelRGB[16])
+	{
+	.reg .f32 %f<29>;
+$LDWbegin__Z15ConvertRGBtoYIQ8PixelRGB:
+	ld.param.f32 	%f1, [__cudaparmf1__Z15ConvertRGBtoYIQ8PixelRGB+0];
+	mov.f32 	%f2, %f1;
+	ld.param.f32 	%f3, [__cudaparmf1__Z15ConvertRGBtoYIQ8PixelRGB+4];
+	mov.f32 	%f4, %f3;
+	ld.param.f32 	%f5, [__cudaparmf1__Z15ConvertRGBtoYIQ8PixelRGB+8];
+	mov.f32 	%f6, %f5;
+	ld.param.f32 	%f7, [__cudaparmf1__Z15ConvertRGBtoYIQ8PixelRGB+12];
+	mov.f32 	%f8, %f7;
+	mov.f32 	%f9, %f8;
+	st.param.f32 	[__cudaretf__Z15ConvertRGBtoYIQ8PixelRGB+0], %f9;
+	mov.f32 	%f10, 0f3f1645a2;    	// 0.587
+	mul.ftz.f32 	%f11, %f4, %f10;
+	mov.f32 	%f12, 0f3e991687;    	// 0.299
+	fma.rn.ftz.f32 	%f13, %f12, %f6, %f11;
+	mov.f32 	%f14, 0f3de978d5;    	// 0.114
+	fma.rn.ftz.f32 	%f15, %f14, %f2, %f13;
+	st.param.f32 	[__cudaretf__Z15ConvertRGBtoYIQ8PixelRGB+4], %f15;
+	mov.f32 	%f16, 0fbe8c851b;    	// -0.274453
+	mul.ftz.f32 	%f17, %f4, %f16;
+	mov.f32 	%f18, 0f3f1880d8;    	// 0.595716
+	fma.rn.ftz.f32 	%f19, %f18, %f6, %f17;
+	mov.f32 	%f20, 0fbea47c95;    	// -0.321263
+	fma.rn.ftz.f32 	%f21, %f20, %f2, %f19;
+	st.param.f32 	[__cudaretf__Z15ConvertRGBtoYIQ8PixelRGB+8], %f21;
+	mov.f32 	%f22, 0fbf05c886;    	// -0.522591
+	mul.ftz.f32 	%f23, %f4, %f22;
+	mov.f32 	%f24, 0f3e5887ec;    	// 0.211456
+	fma.rn.ftz.f32 	%f25, %f24, %f6, %f23;
+	mov.f32 	%f26, 0f3e9f4d16;    	// 0.311135
+	fma.rn.ftz.f32 	%f27, %f26, %f2, %f25;
+	st.param.f32 	[__cudaretf__Z15ConvertRGBtoYIQ8PixelRGB+12], %f27;
+	ret;
+$LDWend__Z15ConvertRGBtoYIQ8PixelRGB:
+	} // _Z15ConvertRGBtoYIQ8PixelRGB
+
+	.visible .func (.param .align 16 .b8 __cudaretf__Z15ConvertYIQtoRGB6float4[16]) _Z15ConvertYIQtoRGB6float4 (.param .align 16 .b8 __cudaparmf1__Z15ConvertYIQtoRGB6float4[16])
+	{
+	.reg .f32 %f<23>;
+$LDWbegin__Z15ConvertYIQtoRGB6float4:
+	ld.param.f32 	%f1, [__cudaparmf1__Z15ConvertYIQtoRGB6float4+0];
+	mov.f32 	%f2, %f1;
+	ld.param.f32 	%f3, [__cudaparmf1__Z15ConvertYIQtoRGB6float4+4];
+	mov.f32 	%f4, %f3;
+	ld.param.f32 	%f5, [__cudaparmf1__Z15ConvertYIQtoRGB6float4+8];
+	mov.f32 	%f6, %f5;
+	ld.param.f32 	%f7, [__cudaparmf1__Z15ConvertYIQtoRGB6float4+12];
+	mov.f32 	%f8, %f7;
+	mov.f32 	%f9, 0fbf8db22d;     	// -1.107
+	fma.rn.ftz.f32 	%f10, %f9, %f6, %f4;
+	mov.f32 	%f11, 0f3fda3055;    	// 1.7046
+	fma.rn.ftz.f32 	%f12, %f11, %f8, %f10;
+	st.param.f32 	[__cudaretf__Z15ConvertYIQtoRGB6float4+0], %f12;
+	mov.f32 	%f13, 0fbe8b50b1;    	// -0.2721
+	fma.rn.ftz.f32 	%f14, %f13, %f6, %f4;
+	mov.f32 	%f15, 0fbf25bc02;    	// -0.6474
+	fma.rn.ftz.f32 	%f16, %f15, %f8, %f14;
+	st.param.f32 	[__cudaretf__Z15ConvertYIQtoRGB6float4+4], %f16;
+	mov.f32 	%f17, 0f3f74d014;    	// 0.9563
+	fma.rn.ftz.f32 	%f18, %f17, %f6, %f4;
+	mov.f32 	%f19, 0f3f1ef9db;    	// 0.621
+	fma.rn.ftz.f32 	%f20, %f19, %f8, %f18;
+	st.param.f32 	[__cudaretf__Z15ConvertYIQtoRGB6float4+8], %f20;
+	mov.f32 	%f21, %f2;
+	st.param.f32 	[__cudaretf__Z15ConvertYIQtoRGB6float4+12], %f21;
+	ret;
+$LDWend__Z15ConvertYIQtoRGB6float4:
+	} // _Z15ConvertYIQtoRGB6float4
+
+	.entry InvertKernel (
+		.param .u32 __cudaparm_InvertKernel_inDeviceFormat,
+		.param .u64 __cudaparm_InvertKernel_inOutput,
+		.param .s32 __cudaparm_InvertKernel_inWidth,
+		.param .s32 __cudaparm_InvertKernel_inHeight,
+		.param .s32 __cudaparm_InvertKernel_inOutputPitch,
+		.param .u64 __cudaparm_InvertKernel_inInput,
+		.param .s32 __cudaparm_InvertKernel_inInputPitch,
+		.param .u32 __cudaparm_InvertKernel_inChannel,
+		.param .f32 __cudaparm_InvertKernel_inBlend)
+	{
+	.reg .u32 %r<82>;
+	.reg .u64 %rd<14>;
+	.reg .f32 %f<164>;
+	.reg .pred %p<44>;
+	// __cuda_local_var_105314_962_non_const_inv = 16
+	// __cuda_local_var_105314_2780_non_const_result = 32
+$LDWbegin_InvertKernel:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.y;
+	mov.u32 	%r5, %ntid.y;
+	mul.lo.u32 	%r6, %r4, %r5;
+	mov.u32 	%r7, %tid.x;
+	add.u32 	%r8, %r7, %r3;
+	mov.u32 	%r9, %tid.y;
+	add.u32 	%r10, %r9, %r6;
+	ld.param.s32 	%r11, [__cudaparm_InvertKernel_inWidth];
+	set.le.u32.s32 	%r12, %r11, %r8;
+	neg.s32 	%r13, %r12;
+	ld.param.s32 	%r14, [__cudaparm_InvertKernel_inHeight];
+	set.le.u32.s32 	%r15, %r14, %r10;
+	neg.s32 	%r16, %r15;
+	or.b32 	%r17, %r13, %r16;
+	mov.u32 	%r18, 0;
+	setp.eq.s32 	%p1, %r17, %r18;
+	@%p1 bra 	$Lt_4_25602;
+	bra.uni 	$LBB83_InvertKernel;
+$Lt_4_25602:
+	ld.param.u32 	%r19, [__cudaparm_InvertKernel_inDeviceFormat];
+	mov.s32 	%r20, 0;
+	setp.eq.s32 	%p2, %r19, %r20;
+	ld.param.s32 	%r21, [__cudaparm_InvertKernel_inInputPitch];
+	mul.lo.s32 	%r22, %r21, %r10;
+	add.s32 	%r23, %r8, %r22;
+	cvt.s64.s32 	%rd1, %r23;
+	ld.param.u64 	%rd2, [__cudaparm_InvertKernel_inInput];
+	@!%p2 bra 	$Lt_4_26370;
+	mul.lo.u64 	%rd3, %rd1, 8;
+	add.u64 	%rd4, %rd2, %rd3;
+	ld.global.v4.u16 	{%r24,%r25,%r26,%r27}, [%rd4+0];
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r24;
+	cvt.ftz.f32.f16	%f1, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r25;
+	cvt.ftz.f32.f16	%f2, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r26;
+	cvt.ftz.f32.f16	%f3, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r27;
+	cvt.ftz.f32.f16	%f4, %b1; }
+	bra.uni 	$Lt_4_26114;
+$Lt_4_26370:
+	mul.lo.u64 	%rd5, %rd1, 16;
+	add.u64 	%rd6, %rd2, %rd5;
+	ld.global.v4.f32 	{%f1,%f2,%f3,%f4}, [%rd6+0];
+$Lt_4_26114:
+	cvt.ftz.sat.f32.f32 	%f5, %f3;
+	cvt.ftz.sat.f32.f32 	%f6, %f2;
+	cvt.ftz.sat.f32.f32 	%f7, %f1;
+	cvt.ftz.sat.f32.f32 	%f8, %f4;
+	mov.f32 	%f9, %f8;
+	ld.param.u32 	%r28, [__cudaparm_InvertKernel_inChannel];
+	mov.u32 	%r29, 15;
+	setp.eq.s32 	%p3, %r28, %r29;
+	@%p3 bra 	$Lt_4_258;
+	mov.u32 	%r30, 0;
+	setp.eq.s32 	%p4, %r28, %r30;
+	@%p4 bra 	$Lt_4_770;
+	mov.u32 	%r31, 1;
+	setp.eq.s32 	%p5, %r28, %r31;
+	@%p5 bra 	$Lt_4_1026;
+	mov.u32 	%r32, 2;
+	setp.eq.s32 	%p6, %r28, %r32;
+	@%p6 bra 	$Lt_4_1282;
+	mov.u32 	%r33, 3;
+	setp.eq.s32 	%p7, %r28, %r33;
+	@%p7 bra 	$Lt_4_1538;
+	mov.s32 	%r34, 5;
+	setp.eq.s32 	%p8, %r28, %r34;
+	@%p8 bra 	$Lt_4_1794;
+	mov.u32 	%r35, 6;
+	setp.eq.s32 	%p9, %r28, %r35;
+	@%p9 bra 	$Lt_4_1794;
+	mov.u32 	%r36, 7;
+	setp.eq.s32 	%p10, %r28, %r36;
+	@%p10 bra 	$Lt_4_1794;
+	mov.u32 	%r37, 8;
+	setp.eq.s32 	%p11, %r28, %r37;
+	@%p11 bra 	$Lt_4_1794;
+	mov.s32 	%r38, 10;
+	setp.eq.s32 	%p12, %r28, %r38;
+	@%p12 bra 	$Lt_4_4866;
+	mov.u32 	%r39, 11;
+	setp.eq.s32 	%p13, %r28, %r39;
+	@%p13 bra 	$Lt_4_4866;
+	mov.u32 	%r40, 12;
+	setp.eq.s32 	%p14, %r28, %r40;
+	@%p14 bra 	$Lt_4_4866;
+	mov.u32 	%r41, 13;
+	setp.eq.s32 	%p15, %r28, %r41;
+	@%p15 bra 	$Lt_4_4866;
+	bra.uni 	$Lt_4_514;
+$Lt_4_258:
+	ld.param.f32 	%f10, [__cudaparm_InvertKernel_inBlend];
+	mov.f32 	%f11, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f12, %f11, %f8;
+	mov.f32 	%f13, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f14, %f13, %f10;
+	mul.ftz.f32 	%f15, %f12, %f14;
+	fma.rn.ftz.f32 	%f9, %f10, %f8, %f15;
+	bra.uni 	$Lt_4_514;
+$Lt_4_770:
+	mov.f32 	%f16, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f17, %f16, %f5;
+	mov.f32 	%f18, %f17;
+	mov.f32 	%f19, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f20, %f19, %f6;
+	mov.f32 	%f21, %f20;
+	mov.f32 	%f22, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f23, %f22, %f7;
+	mov.f32 	%f24, %f23;
+	bra.uni 	$Lt_4_514;
+$Lt_4_1026:
+	mov.f32 	%f25, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f26, %f25, %f5;
+	mov.f32 	%f18, %f26;
+	mov.f32 	%f21, %f6;
+	mov.f32 	%f24, %f7;
+	bra.uni 	$Lt_4_514;
+$Lt_4_1282:
+	mov.f32 	%f18, %f5;
+	mov.f32 	%f27, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f28, %f27, %f6;
+	mov.f32 	%f21, %f28;
+	mov.f32 	%f24, %f7;
+	bra.uni 	$Lt_4_514;
+$Lt_4_1538:
+	mov.f32 	%f18, %f5;
+	mov.f32 	%f21, %f6;
+	mov.f32 	%f29, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f30, %f29, %f7;
+	mov.f32 	%f24, %f30;
+	bra.uni 	$Lt_4_514;
+$Lt_4_1794:
+$Lt_4_2050:
+$Lt_4_2306:
+$Lt_4_2562:
+	setp.ge.ftz.f32 	%p16, %f5, %f7;
+	setp.ge.ftz.f32 	%p17, %f5, %f6;
+	selp.s32 	%r42, 1, 0, %p16;
+	selp.s32 	%r43, 1, 0, %p17;
+	and.b32 	%r44, %r42, %r43;
+	mov.u32 	%r45, 0;
+	setp.eq.s32 	%p18, %r44, %r45;
+	@%p18 bra 	$Lt_4_26626;
+	sub.ftz.f32 	%f31, %f6, %f7;
+	mov.f32 	%f32, %f31;
+$Lt_4_26626:
+	mov.f32 	%f33, %f5;
+	setp.ge.ftz.f32 	%p19, %f6, %f7;
+	selp.s32 	%r46, 1, 0, %p19;
+	set.le.ftz.u32.f32 	%r47, %f5, %f6;
+	neg.s32 	%r48, %r47;
+	and.b32 	%r49, %r46, %r48;
+	mov.u32 	%r50, 0;
+	setp.eq.s32 	%p20, %r49, %r50;
+	@%p20 bra 	$Lt_4_27394;
+	mov.f32 	%f33, %f6;
+	sub.ftz.f32 	%f34, %f7, %f5;
+	mov.f32 	%f32, %f34;
+	mov.f32 	%f35, 0f40000000;    	// 2
+	bra.uni 	$Lt_4_27138;
+$Lt_4_27394:
+	mov.f32 	%f35, 0f00000000;    	// 0
+$Lt_4_27138:
+	setp.le.ftz.f32 	%p21, %f6, %f7;
+	selp.s32 	%r51, 1, 0, %p21;
+	set.le.ftz.u32.f32 	%r52, %f5, %f7;
+	neg.s32 	%r53, %r52;
+	and.b32 	%r54, %r51, %r53;
+	mov.u32 	%r55, 0;
+	setp.eq.s32 	%p22, %r54, %r55;
+	@%p22 bra 	$Lt_4_27650;
+	mov.f32 	%f33, %f7;
+	sub.ftz.f32 	%f36, %f5, %f6;
+	mov.f32 	%f32, %f36;
+	mov.f32 	%f35, 0f40800000;    	// 4
+$Lt_4_27650:
+	and.b32 	%r56, %r42, %r46;
+	and.b32 	%r57, %r43, %r51;
+	neg.s32 	%r58, %r57;
+	slct.f32.s32 	%f37, %f5, %f6, %r58;
+	neg.s32 	%r59, %r56;
+	slct.f32.s32 	%f38, %f37, %f7, %r59;
+	add.ftz.f32 	%f39, %f38, %f33;
+	mov.f32 	%f40, 0f40000000;    	// 2
+	div.approx.ftz.f32 	%f41, %f39, %f40;
+	mov.f32 	%f42, 0f38d1b717;    	// 0.0001
+	setp.gt.ftz.f32 	%p23, %f41, %f42;
+	@!%p23 bra 	$Lt_4_28418;
+	sub.ftz.f32 	%f43, %f33, %f38;
+	mov.f32 	%f44, %f43;
+	mov.f32 	%f45, 0f38d1b717;    	// 0.0001
+	setp.gt.ftz.f32 	%p24, %f43, %f45;
+	@!%p24 bra 	$Lt_4_28930;
+	mov.f32 	%f46, %f32;
+	div.approx.ftz.f32 	%f47, %f46, %f43;
+	add.ftz.f32 	%f48, %f35, %f47;
+	mov.f32 	%f49, 0f40c00000;    	// 6
+	add.ftz.f32 	%f50, %f48, %f49;
+	mov.f32 	%f51, 0f00000000;    	// 0
+	setp.lt.ftz.f32 	%p25, %f48, %f51;
+	selp.f32 	%f52, %f50, %f48, %p25;
+	mov.f32 	%f53, 0f40c00000;    	// 6
+	div.approx.ftz.f32 	%f54, %f52, %f53;
+	bra.uni 	$Lt_4_28162;
+$Lt_4_28930:
+	mov.f32 	%f54, 0f00000000;    	// 0
+	mov.f32 	%f44, 0f00000000;    	// 0
+	bra.uni 	$Lt_4_28162;
+$Lt_4_28418:
+	mov.f32 	%f54, 0f00000000;    	// 0
+	mov.f32 	%f44, 0f00000000;    	// 0
+$Lt_4_28162:
+	mov.f32 	%f55, %f54;
+	mov.f32 	%f56, %f44;
+	mov.f32 	%f57, %f56;
+	mov.f32 	%f58, %f41;
+	@%p8 bra 	$Lt_4_2818;
+	mov.u32 	%r60, 6;
+	setp.eq.s32 	%p26, %r28, %r60;
+	@%p26 bra 	$Lt_4_3330;
+	mov.u32 	%r61, 7;
+	setp.eq.s32 	%p27, %r28, %r61;
+	@%p27 bra 	$Lt_4_3586;
+	mov.u32 	%r62, 8;
+	setp.eq.s32 	%p28, %r28, %r62;
+	@%p28 bra 	$Lt_4_3842;
+	bra.uni 	$Lt_4_3074;
+$Lt_4_2818:
+	mov.f32 	%f59, 0f3f000000;    	// 0.5
+	sub.ftz.f32 	%f60, %f59, %f54;
+	mov.f32 	%f61, 0f3f800000;    	// 1
+	add.ftz.f32 	%f62, %f60, %f61;
+	mov.f32 	%f63, 0f00000000;    	// 0
+	setp.lt.ftz.f32 	%p29, %f60, %f63;
+	selp.f32 	%f55, %f62, %f60, %p29;
+	mov.f32 	%f64, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f58, %f64, %f41;
+	mov.f32 	%f65, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f57, %f65, %f56;
+	bra.uni 	$Lt_4_3074;
+$Lt_4_3330:
+	mov.f32 	%f66, 0f3f000000;    	// 0.5
+	sub.ftz.f32 	%f67, %f66, %f54;
+	mov.f32 	%f68, 0f3f800000;    	// 1
+	add.ftz.f32 	%f69, %f67, %f68;
+	mov.f32 	%f70, 0f00000000;    	// 0
+	setp.lt.ftz.f32 	%p30, %f67, %f70;
+	selp.f32 	%f55, %f69, %f67, %p30;
+	bra.uni 	$Lt_4_3074;
+$Lt_4_3586:
+	mov.f32 	%f71, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f58, %f71, %f41;
+	bra.uni 	$Lt_4_3074;
+$Lt_4_3842:
+	mov.f32 	%f72, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f57, %f72, %f56;
+$Lt_4_3074:
+	mov.f32 	%f73, 0f3f000000;    	// 0.5
+	setp.le.ftz.f32 	%p31, %f58, %f73;
+	@!%p31 bra 	$Lt_4_29442;
+	mov.f32 	%f74, 0f3f800000;    	// 1
+	add.ftz.f32 	%f75, %f57, %f74;
+	mul.ftz.f32 	%f76, %f58, %f75;
+	bra.uni 	$Lt_4_29186;
+$Lt_4_29442:
+	add.ftz.f32 	%f77, %f57, %f58;
+	mul.ftz.f32 	%f78, %f57, %f58;
+	sub.ftz.f32 	%f76, %f77, %f78;
+$Lt_4_29186:
+	mov.f32 	%f79, %f76;
+	mov.f32 	%f80, 0f00000000;    	// 0
+	setp.gt.ftz.f32 	%p32, %f79, %f80;
+	@!%p32 bra 	$Lt_4_29954;
+	mov.f32 	%f81, 0f40c00000;    	// 6
+	mul.ftz.f32 	%f82, %f55, %f81;
+	cvt.rzi.ftz.s32.f32 	%r63, %f82;
+	mov.u32 	%r64, 0;
+	setp.eq.s32 	%p33, %r63, %r64;
+	@%p33 bra 	$Lt_4_8450;
+	mov.u32 	%r65, 1;
+	setp.eq.s32 	%p34, %r63, %r65;
+	@%p34 bra 	$Lt_4_8962;
+	mov.u32 	%r66, 2;
+	setp.eq.s32 	%p35, %r63, %r66;
+	@%p35 bra 	$Lt_4_9218;
+	mov.u32 	%r67, 3;
+	setp.eq.s32 	%p36, %r63, %r67;
+	@%p36 bra 	$Lt_4_9474;
+	mov.u32 	%r68, 4;
+	setp.eq.s32 	%p37, %r63, %r68;
+	@%p37 bra 	$Lt_4_9730;
+	mov.u32 	%r69, 5;
+	setp.eq.s32 	%p38, %r63, %r69;
+	@%p38 bra 	$Lt_4_9986;
+	mov.f32 	%f83, 0f00000000;    	// 0
+	mov.f32 	%f84, 0f00000000;    	// 0
+	mov.f32 	%f85, 0f00000000;    	// 0
+	bra.uni 	$Lt_4_29698;
+$Lt_4_8450:
+	mov.f32 	%f83, %f79;
+	add.ftz.f32 	%f86, %f58, %f58;
+	sub.ftz.f32 	%f87, %f86, %f79;
+	sub.ftz.f32 	%f88, %f79, %f87;
+	div.approx.ftz.f32 	%f89, %f88, %f79;
+	mul.ftz.f32 	%f90, %f79, %f89;
+	cvt.rn.f32.s32 	%f91, %r63;
+	sub.ftz.f32 	%f92, %f82, %f91;
+	fma.rn.ftz.f32 	%f84, %f90, %f92, %f87;
+	mov.f32 	%f85, %f87;
+	bra.uni 	$Lt_4_29698;
+$Lt_4_8962:
+	add.ftz.f32 	%f86, %f58, %f58;
+	sub.ftz.f32 	%f87, %f86, %f79;
+	sub.ftz.f32 	%f93, %f79, %f87;
+	div.approx.ftz.f32 	%f94, %f93, %f79;
+	mul.ftz.f32 	%f95, %f79, %f94;
+	cvt.rn.f32.s32 	%f96, %r63;
+	sub.ftz.f32 	%f97, %f82, %f96;
+	mul.ftz.f32 	%f98, %f95, %f97;
+	sub.ftz.f32 	%f83, %f79, %f98;
+	mov.f32 	%f84, %f79;
+	mov.f32 	%f85, %f87;
+	bra.uni 	$Lt_4_29698;
+$Lt_4_9218:
+	add.ftz.f32 	%f86, %f58, %f58;
+	sub.ftz.f32 	%f87, %f86, %f79;
+	mov.f32 	%f83, %f87;
+	mov.f32 	%f84, %f79;
+	sub.ftz.f32 	%f99, %f79, %f87;
+	div.approx.ftz.f32 	%f100, %f99, %f79;
+	mul.ftz.f32 	%f101, %f79, %f100;
+	cvt.rn.f32.s32 	%f102, %r63;
+	sub.ftz.f32 	%f103, %f82, %f102;
+	fma.rn.ftz.f32 	%f85, %f101, %f103, %f87;
+	bra.uni 	$Lt_4_29698;
+$Lt_4_9474:
+	add.ftz.f32 	%f86, %f58, %f58;
+	sub.ftz.f32 	%f87, %f86, %f79;
+	mov.f32 	%f83, %f87;
+	sub.ftz.f32 	%f104, %f79, %f87;
+	div.approx.ftz.f32 	%f105, %f104, %f79;
+	mul.ftz.f32 	%f106, %f79, %f105;
+	cvt.rn.f32.s32 	%f107, %r63;
+	sub.ftz.f32 	%f108, %f82, %f107;
+	mul.ftz.f32 	%f109, %f106, %f108;
+	sub.ftz.f32 	%f84, %f79, %f109;
+	mov.f32 	%f85, %f79;
+	bra.uni 	$Lt_4_29698;
+$Lt_4_9730:
+	add.ftz.f32 	%f86, %f58, %f58;
+	sub.ftz.f32 	%f87, %f86, %f79;
+	sub.ftz.f32 	%f110, %f79, %f87;
+	div.approx.ftz.f32 	%f111, %f110, %f79;
+	mul.ftz.f32 	%f112, %f79, %f111;
+	cvt.rn.f32.s32 	%f113, %r63;
+	sub.ftz.f32 	%f114, %f82, %f113;
+	fma.rn.ftz.f32 	%f83, %f112, %f114, %f87;
+	mov.f32 	%f84, %f87;
+	mov.f32 	%f85, %f79;
+	bra.uni 	$Lt_4_29698;
+$Lt_4_9986:
+	mov.f32 	%f83, %f79;
+	add.ftz.f32 	%f86, %f58, %f58;
+	sub.ftz.f32 	%f87, %f86, %f79;
+	mov.f32 	%f84, %f87;
+	sub.ftz.f32 	%f115, %f79, %f87;
+	div.approx.ftz.f32 	%f116, %f115, %f79;
+	mul.ftz.f32 	%f117, %f79, %f116;
+	cvt.rn.f32.s32 	%f118, %r63;
+	sub.ftz.f32 	%f119, %f82, %f118;
+	mul.ftz.f32 	%f120, %f117, %f119;
+	sub.ftz.f32 	%f85, %f79, %f120;
+	bra.uni 	$Lt_4_29698;
+$Lt_4_29954:
+	mov.f32 	%f83, 0f00000000;    	// 0
+	mov.f32 	%f84, 0f00000000;    	// 0
+	mov.f32 	%f85, 0f00000000;    	// 0
+$Lt_4_29698:
+	mov.f32 	%f24, %f85;
+	mov.f32 	%f21, %f84;
+	mov.f32 	%f18, %f83;
+	bra.uni 	$Lt_4_514;
+$Lt_4_4866:
+$Lt_4_5122:
+$Lt_4_5378:
+$Lt_4_5634:
+	mov.f32 	%f121, 0f3f1645a2;   	// 0.587
+	mul.ftz.f32 	%f122, %f6, %f121;
+	mov.f32 	%f123, 0f3e991687;   	// 0.299
+	fma.rn.ftz.f32 	%f124, %f123, %f5, %f122;
+	mov.f32 	%f125, 0f3de978d5;   	// 0.114
+	fma.rn.ftz.f32 	%f126, %f125, %f7, %f124;
+	mov.f32 	%f127, %f126;
+	mov.f32 	%f128, 0fbe8c851b;   	// -0.274453
+	mul.ftz.f32 	%f129, %f6, %f128;
+	mov.f32 	%f130, 0f3f1880d8;   	// 0.595716
+	fma.rn.ftz.f32 	%f131, %f130, %f5, %f129;
+	mov.f32 	%f132, 0fbea47c95;   	// -0.321263
+	fma.rn.ftz.f32 	%f133, %f132, %f7, %f131;
+	mov.f32 	%f134, %f133;
+	mov.f32 	%f135, 0fbf05c886;   	// -0.522591
+	mul.ftz.f32 	%f136, %f6, %f135;
+	mov.f32 	%f137, 0f3e5887ec;   	// 0.211456
+	fma.rn.ftz.f32 	%f138, %f137, %f5, %f136;
+	mov.f32 	%f139, 0f3e9f4d16;   	// 0.311135
+	fma.rn.ftz.f32 	%f140, %f139, %f7, %f138;
+	mov.f32 	%f141, %f140;
+	@%p12 bra 	$Lt_4_5890;
+	mov.u32 	%r70, 11;
+	setp.eq.s32 	%p39, %r28, %r70;
+	@%p39 bra 	$Lt_4_6402;
+	mov.u32 	%r71, 12;
+	setp.eq.s32 	%p40, %r28, %r71;
+	@%p40 bra 	$Lt_4_6658;
+	mov.u32 	%r72, 13;
+	setp.eq.s32 	%p41, %r28, %r72;
+	@%p41 bra 	$Lt_4_6914;
+	bra.uni 	$Lt_4_6146;
+$Lt_4_5890:
+	mov.f32 	%f142, 0f3f800000;   	// 1
+	sub.ftz.f32 	%f127, %f142, %f126;
+	neg.ftz.f32 	%f134, %f133;
+	neg.ftz.f32 	%f141, %f140;
+	bra.uni 	$Lt_4_6146;
+$Lt_4_6402:
+	mov.f32 	%f143, 0f3f800000;   	// 1
+	sub.ftz.f32 	%f127, %f143, %f126;
+	bra.uni 	$Lt_4_6146;
+$Lt_4_6658:
+	neg.ftz.f32 	%f134, %f133;
+	bra.uni 	$Lt_4_6146;
+$Lt_4_6914:
+	neg.ftz.f32 	%f141, %f140;
+$Lt_4_6146:
+	mov.f32 	%f144, 0fbf8db22d;   	// -1.107
+	fma.rn.ftz.f32 	%f145, %f144, %f134, %f127;
+	mov.f32 	%f146, 0f3fda3055;   	// 1.7046
+	fma.rn.ftz.f32 	%f147, %f146, %f141, %f145;
+	mov.f32 	%f24, %f147;
+	mov.f32 	%f148, 0fbe8b50b1;   	// -0.2721
+	fma.rn.ftz.f32 	%f149, %f148, %f134, %f127;
+	mov.f32 	%f150, 0fbf25bc02;   	// -0.6474
+	fma.rn.ftz.f32 	%f151, %f150, %f141, %f149;
+	mov.f32 	%f21, %f151;
+	mov.f32 	%f152, 0f3f74d014;   	// 0.9563
+	fma.rn.ftz.f32 	%f153, %f152, %f134, %f127;
+	mov.f32 	%f154, 0f3f1ef9db;   	// 0.621
+	fma.rn.ftz.f32 	%f155, %f154, %f141, %f153;
+	mov.f32 	%f18, %f155;
+$Lt_4_514:
+	mov.u32 	%r73, 15;
+	setp.eq.s32 	%p42, %r28, %r73;
+	@%p42 bra 	$Lt_4_30210;
+	mov.f32 	%f156, %f18;
+	ld.param.f32 	%f157, [__cudaparm_InvertKernel_inBlend];
+	sub.ftz.f32 	%f158, %f5, %f156;
+	fma.rn.ftz.f32 	%f5, %f157, %f158, %f156;
+	mov.f32 	%f159, %f21;
+	sub.ftz.f32 	%f160, %f6, %f159;
+	fma.rn.ftz.f32 	%f6, %f157, %f160, %f159;
+	mov.f32 	%f161, %f24;
+	sub.ftz.f32 	%f162, %f7, %f161;
+	fma.rn.ftz.f32 	%f7, %f157, %f162, %f161;
+$Lt_4_30210:
+	ld.param.s32 	%r74, [__cudaparm_InvertKernel_inOutputPitch];
+	mul.lo.s32 	%r75, %r74, %r10;
+	add.s32 	%r76, %r8, %r75;
+	cvt.s64.s32 	%rd7, %r76;
+	ld.param.u64 	%rd8, [__cudaparm_InvertKernel_inOutput];
+	@!%p2 bra 	$Lt_4_30978;
+	mul.lo.u64 	%rd9, %rd7, 8;
+	add.u64 	%rd10, %rd8, %rd9;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f7;
+	mov.b32		%r77, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f6;
+	mov.b32		%r78, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f5;
+	mov.b32		%r79, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f9;
+	mov.b32		%r80, %b1; }
+	st.global.v4.u16 	[%rd10+0], {%r77,%r78,%r79,%r80};
+	bra.uni 	$LBB83_InvertKernel;
+$Lt_4_30978:
+	mul.lo.u64 	%rd11, %rd7, 16;
+	add.u64 	%rd12, %rd8, %rd11;
+	st.global.v4.f32 	[%rd12+0], {%f7,%f6,%f5,%f9};
+$LBB83_InvertKernel:
+	exit;
+$LDWend_InvertKernel:
+	} // InvertKernel
+	.const .align 4 .b8 kRGB32f_To_601YPbPr[36] = {135,22,153,62,162,69,22,63,213,120,233,61,33,201,44,190,111,155,169,190,0,0,0,63,0,0,0,63,70,94,214,190,232,134,166,189};
+	.const .align 4 .b8 k601YPbPr_To_RGB32f[36] = {0,0,128,63,0,0,0,0,188,116,179,63,0,0,128,63,152,50,176,190,158,209,54,191,0,0,128,63,229,208,226,63,0,0,0,0};
+	.const .align 4 .b8 kRGB32f_To_601YCbCr[36] = {70,246,130,66,145,141,0,67,94,186,199,65,33,48,23,194,240,103,148,194,0,0,224,66,0,0,224,66,111,146,187,194,70,182,145,193};
+	.const .align 4 .b8 k601YCbCr_To_RGB32f[36] = {37,160,149,59,0,0,0,0,182,23,205,59,37,160,149,59,40,15,201,186,156,239,80,187,37,160,149,59,236,155,1,60,0,0,0,0};
+	.const .align 4 .b8 kRGB8u_To_601YCbCr[36] = {219,121,131,62,152,14,1,63,18,131,200,61,174,199,23,190,238,252,148,190,197,224,224,62,197,224,224,62,217,78,188,190,174,71,146,189};
+	.const .align 4 .b8 k601YCbCr_To_RGB8u[36] = {127,10,149,63,0,0,0,0,160,74,204,63,127,10,149,63,254,148,200,190,184,30,80,191,127,10,149,63,78,26,1,64,0,0,0,0};
+	.const .align 4 .b8 kRGB8u_To_601YCbCrFullRange[36] = {135,22,153,62,162,69,22,63,213,120,233,61,166,27,44,190,39,241,168,190,250,254,254,62,250,254,254,62,43,135,213,190,59,223,165,189};
+	.const .align 4 .b8 k601YCbCrFullRange_To_RGB8u[36] = {0,0,128,63,0,0,0,0,72,193,178,63,0,0,128,63,143,130,175,190,225,26,54,191,0,0,128,63,20,238,225,63,0,0,0,0};
+	.const .align 4 .b8 kRGB32f_To_601YCbCrFullRange[36] = {113,125,152,66,92,175,21,67,92,143,232,65,158,111,43,194,49,72,168,194,0,0,254,66,0,0,254,66,170,177,212,194,88,57,165,193};
+	.const .align 4 .b8 k601YCbCrFullRange_To_RGB32f[36] = {129,128,128,59,0,0,0,0,188,116,179,59,129,128,128,59,194,50,176,186,179,209,54,187,129,128,128,59,229,208,226,59,0,0,0,0};
+	.const .align 4 .b8 kRGB32f_To_709YPbPr[36] = {208,179,89,62,89,23,55,63,152,221,147,61,186,164,234,189,210,86,197,190,0,0,0,63,0,0,0,63,190,134,232,190,16,202,59,189};
+	.const .align 4 .b8 k709YPbPr_To_RGB32f[36] = {0,0,128,63,0,0,0,0,12,147,201,63,0,0,128,63,221,209,63,190,243,173,239,190,0,0,128,63,77,132,237,63,0,0,0,0};
+	.const .align 4 .b8 kRGB32f_To_709YCbCr[36] = {106,60,58,66,6,161,28,67,244,253,124,65,223,79,205,193,8,172,172,194,0,0,224,66,0,0,224,66,195,117,203,194,236,81,36,193};
+	.const .align 4 .b8 k709YCbCr_To_RGB32f[36] = {37,160,149,59,0,0,0,0,239,94,230,59,37,160,149,59,33,57,91,186,178,245,8,187,37,160,149,59,82,185,7,60,0,0,0,0};
+	.const .align 4 .b8 k709YCbCrFullRange_To_RGB32f[36] = {131,128,128,59,0,0,0,0,28,147,201,59,131,128,128,59,61,210,63,186,248,173,239,186,131,128,128,59,82,132,237,59,0,0,0,0};
+	.const .align 4 .b8 kRGB8u_To_709YCbCr[36] = {207,247,58,62,53,62,29,63,231,251,125,61,147,24,206,61,23,89,173,190,197,224,224,62,197,224,224,62,12,66,204,190,195,245,36,189};
+	.const .align 4 .b8 k709YCbCr_To_RGB8u[36] = {127,10,149,63,0,0,0,0,147,120,229,63,127,10,149,63,53,94,90,190,205,108,8,191,127,10,149,63,154,49,7,64,0,0,0,0};
+	.const .align 4 .b8 k709YCbCr_To_601YCbCr[36] = {0,0,128,63,23,100,203,61,1,77,68,62,0,0,0,0,18,103,125,63,10,158,226,189,0,0,0,0,61,98,148,189,249,191,123,63};
+	.const .align 4 .b8 k601YCbCr_To_709YCbCr[36] = {0,0,128,63,122,165,236,189,179,237,84,190,0,0,0,0,204,98,130,63,216,188,234,61,0,0,0,0,74,179,153,61,234,61,131,63};
+	.const .align 4 .b8 kYCbCrOffset[12] = {0,0,128,65,0,0,0,67,0,0,0,67};
+	.const .align 4 .b8 kYCbCrFullRangeOffset[12] = {0,0,0,0,0,0,0,67,0,0,0,67};
+	.global .align 4 .b8 kRGB32f_To_YIQ[36] = {135,22,153,62,162,69,22,63,213,120,233,61,216,128,24,63,27,133,140,190,149,124,164,190,236,135,88,62,134,200,5,191,22,77,159,62};
+	.global .align 4 .b8 kYIQ_To_RGB32f[36] = {0,0,128,63,20,208,116,63,219,249,30,63,0,0,128,63,177,80,139,190,2,188,37,191,0,0,128,63,45,178,141,191,85,48,218,63};
+

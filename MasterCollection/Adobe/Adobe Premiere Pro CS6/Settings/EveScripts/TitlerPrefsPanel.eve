@@ -1,0 +1,27 @@
+layout Titler
+{
+	view dva_panel_view(name: '$$$/Premiere/DLG/PrefsDialog/kResDLGTitler=Titler', identifier: 'panelTitler', guide_mask:[@guide_label, @guide_baseline])
+	{
+		row()
+		{
+			column()
+			{
+				dva_static_text(identifier:'styleSwatchesST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGStyleSwatches=Style Swatches:', horizontal:align_right);
+				dva_static_text(identifier:'fontBrowserST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGFontBrowser=Font Browser:', horizontal:align_right);
+			}
+			column()
+			{
+				row()
+				{
+					dva_text_edit(identifier:'styleSwatchesET',minWidth:80,minHeight:20,horizontal:align_left);
+					dva_static_text(identifier:'scharsST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGTwoCharacters=(2 characters)', horizontal:align_left);
+				}
+				row()
+				{
+					dva_text_edit(identifier:'fontBrowserET',minWidth:80,minHeight:20,horizontal:align_left);
+					dva_static_text(identifier:'dcharsST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGSixCharacters=(6 characters)', horizontal:align_left);
+				}
+			}
+		}
+	}
+}

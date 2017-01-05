@@ -1,0 +1,13 @@
+
+1.- Installez le programme par le biais de "MasterCollection_CS6_LS4.exe".
+
+2.- Déconnectez votre internet.
+
+3.- Placer le serial et sélectionnez la langue et les logiciels que vous voulez installer.
+
+4.- À la fin de l'installation, ne pas lancer l'un des logiciels installés, copiez et remplacez le fichier amtlib.dll (fourni) dans chaque répertoire des produits Adobe que vous avez sélectionné lors de l'installation.
+    (exemple: "C:\Program Files (x86)\Adobe\Adobe Audition CS6" pour un programme 32 bit) ou ("C:\Programmes\Adobe\Photoshop CS6\" pour un programme en 64 bit) 
+
+Bonne continuation ;)
+
+LoveBabyAngel.

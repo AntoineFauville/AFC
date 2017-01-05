@@ -1,0 +1,37 @@
+layout my_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/EncoreMarkerDialog/kResDLGEncoreMarkerDialogTitle=Encore Chapter Marker', identifier:'EncoreMarkerDialog')
+	{
+		row(child_horizontal: align_right, horizontal: align_right, spacing:15)
+		{
+			column()
+			{
+				row()
+				{
+					dva_text_edit(identifier:'nameTextEdit', minWidth:250, minHeight:100, multiLine:'true', vertical_scroll:'true', setAsFocused:'true', label:'$$$/Premiere/DLG/EncoreMarkerDialog/kResDLGName=Name:');
+				}
+				row()
+				{
+					dva_static_text(identifier:'markerNumberText', horizontal: align_left, label: '$$$/Premiere/DLG/EncoreMarkerDialog/kResDLGChapterMarker=Encore Chapter Marker:', minWidth:140, minHeight:20);
+				}
+				row(child_horizontal: align_proportional)
+				{
+					dva_static_image(identifier:'infoGraphic', minWidth: 40, minHeight: 40);
+					dva_static_text(identifier:'markerOptionsNoteStaticText', name:'$$$/Premiere/DLG/EncoreMarkerDialog/kResDLGEncoreOptionsNote=Chapter Marker 1 marks the beginning of the timeline and cannot be moved or deleted.', maxWidth:320, minHeight:40, multiLine:'true');
+				}
+			}
+			column(guide_mask:[@guide_baseline])
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);
+				row()
+				{	
+					dva_button(name: '$$$/Premiere/DLG/EncoreMarkerDialog/kResDLGPrevious=Prev', identifier:'prevButton', minWidth:80, topSpace:10);
+				}
+				row()
+				{
+					dva_button(name: '$$$/Premiere/DLG/EncoreMarkerDialog/kResDLGNext=Next', identifier:'nextButton', minWidth:80);
+				}							
+			}
+		}
+	}
+} 

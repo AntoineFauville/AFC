@@ -1,0 +1,9 @@
+layout my_menu
+{
+	view menu(id:21620)
+	{
+		menu(text:'$$$/Premiere/Menu/21620/Left=Left', id:1);
+		menu(text:'$$$/Premiere/Menu/21620/Center=Center', id:2);
+		menu(text:'$$$/Premiere/Menu/21620/Right=Right', id:3);
+	}
+}

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PremiereData Version="3">
+	<MatchNames Version="1">
+		<MatchNameItem Version="1" Index="0">
+			<Second></Second>
+			<First>ADBE Additive Dissolve</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="1">
+			<Second></Second>
+			<First>ADBE Barn Doors</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="2">
+			<Second></Second>
+			<First>ADBE Center Split</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="3">
+			<Second></Second>
+			<First>ADBE Cross Dissolve</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="4">
+			<Second></Second>
+			<First>ADBE Cube Spin</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="5">
+			<Second></Second>
+			<First>ADBE Dip To Black</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="6">
+			<Second></Second>
+			<First>ADBE Dip To White</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="7">
+			<Second></Second>
+			<First>ADBE Flip Over</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="8">
+			<Second></Second>
+			<First>ADBE Gradient Wipe</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="9">
+			<Second></Second>
+			<First>ADBE Inset</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="10">
+			<Second></Second>
+			<First>ADBE Iris Cross</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="11">
+			<Second></Second>
+			<First>ADBE Iris Diamond</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="12">
+			<Second></Second>
+			<First>ADBE Iris Round</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="13">
+			<Second></Second>
+			<First>ADBE Iris Square</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="14">
+			<Second></Second>
+			<First>ADBE Page Peel</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="15">
+			<Second></Second>
+			<First>ADBE Page Turn</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="16">
+			<Second></Second>
+			<First>ADBE Push</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="17">
+			<Second></Second>
+			<First>ADBE Slide</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="18">
+			<Second></Second>
+			<First>ADBE Split</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="19">
+			<Second></Second>
+			<First>ADBE Wipe</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="20">
+			<Second></Second>
+			<First>AE.ADBE AECrop</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="21">
+			<Second></Second>
+			<First>AE.ADBE Alpha Adjust</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="22">
+			<Second></Second>
+			<First>AE.ADBE AutoColor</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="23">
+			<Second></Second>
+			<First>AE.ADBE AutoContrast</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="24">
+			<Second></Second>
+			<First>AE.ADBE AutoLevels</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="25">
+			<Second></Second>
+			<First>AE.ADBE Fast Color Corrector</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="26">
+			<Second></Second>
+			<First>AE.ADBE Garbage Matte</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="27">
+			<Second></Second>
+			<First>AE.ADBE Garbage Matte 16</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="28">
+			<Second></Second>
+			<First>AE.ADBE Garbage Matte 8</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="29">
+			<Second></Second>
+			<First>AE.ADBE Gaussian Blur 2</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="30">
+			<Second></Second>
+			<First>AE.ADBE Legacy Key Image Matte</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="31">
+			<Second></Second>
+			<First>AE.ADBE Legacy Key Luma</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="32">
+			<Second></Second>
+			<First>AE.ADBE Legacy Key NonRed</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="33">
+			<Second></Second>
+			<First>AE.ADBE Legacy Key Remove Matte</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="34">
+			<Second></Second>
+			<First>AE.ADBE Legacy Key Track Matte</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="35">
+			<Second></Second>
+			<First>AE.ADBE LightingEffect</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="36">
+			<Second></Second>
+			<First>AE.ADBE Luma Corrector</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="37">
+			<Second></Second>
+			<First>AE.ADBE Luma Curve</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="38">
+			<Second></Second>
+			<First>AE.ADBE PPro Timecode</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="39">
+			<Second></Second>
+			<First>AE.ADBE ProcAmp</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="40">
+			<Second></Second>
+			<First>AE.ADBE RGB Color Corrector</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="41">
+			<Second></Second>
+			<First>AE.ADBE RGB Curves</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="42">
+			<Second></Second>
+			<First>AE.ADBE ShadowHighlight</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="43">
+			<Second></Second>
+			<First>AE.ADBE Three-Way Color Corrector</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="44">
+			<Second></Second>
+			<First>AE.ADBE Ultra Key</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="45">
+			<Second></Second>
+			<First>AE.ADBE Video Limiter</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="46">
+			<Second></Second>
+			<First>PPro.TimeWarp</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="47">
+			<Second></Second>
+			<First>PR.ADBE Alpha Glow</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="48">
+			<Second></Second>
+			<First>PR.ADBE Black &amp; White</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="49">
+			<Second></Second>
+			<First>PR.ADBE Color Balance</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="50">
+			<Second></Second>
+			<First>PR.ADBE Convolution Kernel New</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="51">
+			<Second></Second>
+			<First>PR.ADBE Edge Feather</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="52">
+			<Second></Second>
+			<First>PR.ADBE Extract</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="53">
+			<Second></Second>
+			<First>PR.ADBE Gamma Correction</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="54">
+			<Second></Second>
+			<First>PR.ADBE Horizontal Flip</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="55">
+			<Second></Second>
+			<First>PR.ADBE Levels</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="56">
+			<Second></Second>
+			<First>PR.ADBE Replicate</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="57">
+			<Second></Second>
+			<First>PR.ADBE Solarize</First>
+		</MatchNameItem>
+		<MatchNameItem Version="1" Index="58">
+			<Second></Second>
+			<First>PR.ADBE Vertical Flip</First>
+		</MatchNameItem>
+	</MatchNames>
+	<Guid>e61f642b-7d50-4138-bf96-fcc7ae600b45</Guid>
+	<Descriptions Version="1">
+		<DescriptionItem Version="1" Index="0">
+			<Second>de_DE tooltip here.</Second>
+			<First>de_DE</First>
+		</DescriptionItem>
+		<DescriptionItem Version="1" Index="1">
+			<Second>en_US tooltip here.</Second>
+			<First>en_US</First>
+		</DescriptionItem>
+		<DescriptionItem Version="1" Index="2">
+			<Second>es_ES tooltip here.</Second>
+			<First>es_ES</First>
+		</DescriptionItem>
+		<DescriptionItem Version="1" Index="3">
+			<Second>fr_FR tooltip here.</Second>
+			<First>fr_FR</First>
+		</DescriptionItem>
+		<DescriptionItem Version="1" Index="4">
+			<Second>it_IT tooltip here.</Second>
+			<First>it_IT</First>
+		</DescriptionItem>
+		<DescriptionItem Version="1" Index="5">
+			<Second>ja_JP tooltip here.</Second>
+			<First>ja_JP</First>
+		</DescriptionItem>
+		<DescriptionItem Version="1" Index="6">
+			<Second>ko_KR tooltip here.</Second>
+			<First>ko_KR</First>
+		</DescriptionItem>
+	</Descriptions>
+	<Name>Sample</Name>
+</PremiereData>

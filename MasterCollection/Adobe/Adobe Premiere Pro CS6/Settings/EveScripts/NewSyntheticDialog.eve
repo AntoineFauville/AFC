@@ -1,0 +1,55 @@
+layout my_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/NewSyntheticDialog/kResDLGNewSyntheticDialogTitle=New Synthetic', identifier:'NewSyntheticDialog')
+	{
+			row(child_horizontal: align_fill, horizontal: align_fill)
+			{
+				dva_groupbox(identifier:'videoSettingGroupBox', name:'$$$/Premiere/DLG/NewSyntheticDialog/kDLGResNewSyntheticDialogVideoSettingGroupboxTitle=Video Settings')
+				{
+					row(child_horizontal: align_fill, horizontal: align_fill, spacing:30)
+					{
+						column(child_horizontal: align_fill, horizontal: align_fill)
+						{
+							dva_number_edit(identifier:'widthNumberEdit', label:'$$$/Premiere/DLG/NewSyntheticDialog/kDLGResNewTitleWidth=Width:',  value:720, minValue:24, maxValue:10240, decimalPlaces:0, minWidth: 35, maxWidth: 50);
+						}
+						column(child_horizontal: align_fill, horizontal: align_fill)
+						{
+							dva_number_edit(identifier:'heightNumberEdit', label:'$$$/Premiere/DLG/NewSyntheticDialog/kDLGResNewTitleHeight=Height:',  value:480, minValue:24, maxValue:8192, decimalPlaces:0, minWidth: 35, maxWidth: 50);
+						}
+					}
+					row(child_horizontal: align_fill, horizontal: align_fill, spacing:15)
+					{
+						column(child_horizontal: align_fill, horizontal: align_fill)
+						{
+							dva_popup(identifier:'frameRatePopup', minWidth:200, minHeight:20, label:'$$$/Premiere/DLG/NewSyntheticDialog/kDLGResTimebase=Timebase:');
+						}
+					}
+					row(child_horizontal: align_fill, horizontal: align_fill, spacing:15)
+					{
+						column(child_horizontal: align_fill, horizontal: align_fill)
+						{
+							dva_popup(identifier:'parPopup', minWidth:200, minHeight:20, label:'$$$/Premiere/DLG/NewSyntheticDialog/kDLGResPAR=Pixel Aspect Ratio:');
+						}
+					}
+				}
+			}
+			row(child_horizontal: align_fill, horizontal: align_fill)
+			{
+				dva_groupbox(identifier:'audioSettingGroupBox', name:'$$$/Premiere/DLG/NewSyntheticDialog/kDLGResNewSyntheticDialogAudioSettingGroupboxTitle=Audio Settings')
+				{
+					row(child_horizontal: align_fill, horizontal: align_fill, spacing:15)
+					{
+						column(child_horizontal: align_fill, horizontal: align_fill)
+						{
+							dva_popup(identifier:'audioFrameRatePopup', minWidth:100, minHeight:20, label:'$$$/Premiere/DLG/NewSyntheticDialog/kDLGResAudioTimebase=Sample Rate:');
+						}
+					}
+				}
+			}
+			row(horizontal:align_right, guide_mask:[@guide_baseline])
+			{
+				dva_ok_cancel_row(minWidth:80, minHeight:20);
+			}
+		}
+	}
+} 

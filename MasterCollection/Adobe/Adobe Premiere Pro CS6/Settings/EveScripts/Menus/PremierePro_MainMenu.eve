@@ -1,0 +1,495 @@
+layout my_menu
+{
+	view menu(id:'MainMenu', isMainMenuBar:true)
+	{
+		menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro=Premiere Pro', condition: os == @mac)
+		{
+			menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/AboutPremierePro=About Premiere Pro', idName:'cmd.help.about');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences=Preferences')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences/General...=General...', idName:'cmd.edit.preferences.general');
+				menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences/Appearance...=Appearance...', idName:'cmd.edit.preferences.userinterface');
+				menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences/Audio...=Audio...', idName:'cmd.edit.preferences.audio');
+				menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences/AudioHardware...=Audio Hardware...', idName:'cmd.edit.preferences.audiohardware');
+				menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences/AudioOutputMapping...=Audio Output Mapping...', idName:'cmd.edit.preferences.audiomapping');
+				menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences/AutoSave...=Auto Save...', idName:'cmd.edit.preferences.autosaveundo');
+				menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences/Capture...=Capture...', idName:'cmd.edit.preferences.capture');
+				menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences/DeviceControl...=Device Control...', idName:'cmd.edit.preferences.devicecontrol');
+				menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences/LabelColors...=Label Colors...', idName:'cmd.edit.preferences.labelcolors');
+				menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences/LabelDefaults...=Label Defaults...', idName:'cmd.edit.preferences.labeldefaults');
+				menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences/Media...=Media...', idName:'cmd.edit.preferences.media');
+				menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences/Memory...=Memory...', idName:'cmd.edit.preferences.memory');
+				menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences/Playback...=Playback...', idName:'cmd.edit.preferences.playback');
+				menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences/Titler...=Titler...', idName:'cmd.edit.preferences.titler');
+				menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Preferences/Trim...=Trim...', idName:'cmd.edit.preferences.trim');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/KeyboardShortcuts...=&Keyboard Shortcuts...', idName:'cmd.edit.keyboardshortcuts');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/Services=Services', id:22000);
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/HidePremierePro=Hide Premiere Pro', id:22001);
+			menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/HideOthers=Hide Others', id:22002);
+			menu(text:'$$$/Premiere/Menu/MainMenu/PremierePro/SHowAll=Show All', id:22003);
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/Quit=Quit Premiere Pro', idName:'cmd.file.exit');
+		}
+		menu(text:'$$$/Premiere/Menu/MainMenu/File=&File')
+		{
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/New=&New')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/New/Project...=&Project...', idName:'cmd.file.new.project');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/New/Sequence...=&Sequence...', idName:'cmd.file.new.sequence');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/New/SequenceFromClip=Sequence From Clip', idName:'cmd.sequence.newsequencefromselection');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/New/Bin=&Bin', idName:'cmd.file.new.bin');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/New/OfflineFile...=&Offline File...', idName:'cmd.file.new.offlinefile');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/New/AdjustmentLayer...=&Adjustment Layer...', idName:'cmd.file.new.adjustmentlayer');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/New/Title...=&Title...', idName:'cmd.file.new.title');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/New/PhotoshopFile...=P&hotoshop File...', idName:'cmd.file.new.photoshopfile');
+			}
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/OpenProject...=&Open Project...', idName:'cmd.file.openproject');
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/OpenRecentProject=Open Recent Pro&ject', idName:'menu.project.mru')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/none=(none)', idName:'menu.project.mru.placeholder');
+			}
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/BrowseinBridge...=Bro&wse in Adobe Bridge...', idName:'cmd.file.browse');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/CloseProject=Close &Project', idName:'cmd.file.close');
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/Close=&Close', idName:'cmd.file.closepanel');
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/Save=&Save', idName:'cmd.file.save');
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/SaveAs...=Save &As...', idName:'cmd.file.saveas');
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/SaveaCopy...=Save a Cop&y...', idName:'cmd.file.savecopy');
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/Revert=&Revert', idName:'cmd.file.revert');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/Capture...=Cap&ture...', idName:'cmd.file.capture');
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/BatchCapture...=&Batch Capture...', idName:'cmd.file.batchcapture');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/AdobeDynamicLink=Adobe Dynamic Lin&k')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/AdobeDynamicLink/SendtoEncore=&Send to Encore', idName:'cmd.file.export.toencore');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/AdobeDynamicLink/ReplacewithAfterEffectsComposition=&Replace with After Effects Composition', idName:'cmd.clip.aeify');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/AdobeDynamicLink/NewAfterEffectsComposition...=&New After Effects Composition...', idName:'cmd.file.newaecomp');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/AdobeDynamicLink/ImportAfterEffectsComposition...=&Import After Effects Composition...', idName:'cmd.file.importaecomp');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/AdobeStory=Adobe Sto&ry')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/AdobeStory/AttachScriptFile=&Attach Script File...', idName:'cmd.clip.attachscriptfile');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/AdobeStory/ClearScriptData=&Clear Script Data', idName:'cmd.clip.clearscriptdata');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/Export/SendToSpeedGrade...=&Send to Adobe SpeedGrade...', idName:'cmd.file.export.speedgrade');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/ImportfromBrowser=I&mport from Media Browser', idName:'cmd.file.importfrombrowser');
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/Import...=&Import...', idName:'cmd.file.import');
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/ImportRecentFile=Import Recent &File', idName:'menu.import.mru')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/none=(none)', idName:'menu.import.mru.placeholder');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/Export=&Export')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/Export/Media...=&Media...', idName:'cmd.file.export.movie');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/Export/Title...=T&itle...', idName:'cmd.file.export.titles');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/Export/Tape...=&Tape...', idName:'cmd.file.export.totape');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/Export/EDL...=&EDL...', idName:'cmd.file.export.toedl');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/Export/OMF...=&OMF...', idName:'cmd.file.export.toomf');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/GetPropertiesfor=&Get Properties for')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/GetPropertiesfor/File...=&File...', idName:'cmd.file.properties.file');
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/GetPropertiesfor/Selection...=&Selection...', idName:'cmd.file.properties.selection');
+			}
+			menu(text:'$$$/Premiere/Menu/MainMenu/File/RevealinBridge...=Re&veal in Adobe Bridge...', idName:'cmd.file.reveal');
+			if (condition: os == @win)
+			{
+				separator();
+				menu(text:'$$$/Premiere/Menu/MainMenu/File/Exit=E&xit', idName:'cmd.file.exit');
+			}
+		}
+		menu(text:'$$$/Premiere/Menu/MainMenu/Edit=&Edit')
+		{
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Undo=&Undo', idName:'cmd.edit.undo');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Redo=&Redo', idName:'cmd.edit.redo');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Cut=Cu&t', idName:'cmd.edit.cut');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Copy=Cop&y', idName:'cmd.edit.copy');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Paste=&Paste', idName:'cmd.edit.paste');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/PasteInsert=Paste &Insert', idName:'cmd.edit.pasteinsert');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/PasteAttributes=Paste Attri&butes', idName:'cmd.edit.pasteattributes');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Clear=Cl&ear', idName:'cmd.edit.clear');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/RippleDelete=Ripple Dele&te', idName:'cmd.edit.rippledelete');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Duplicate=Dupli&cate', idName:'cmd.edit.duplicate');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/SelectAll=Select &All', idName:'cmd.edit.selectall');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/DeselectAll=&Deselect All', idName:'cmd.edit.deselectall');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Find...=&Find...', idName:'cmd.edit.find');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/FindFaces=Find Faces', idName:'cmd.edit.findfaces');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Label=&Label')
+			{
+				menu(text:'$$$/Premiere/Menu/Edit/Label/SelectLabelGroup=&Select Label Group', idName:'cmd.edit.labelgroup');
+				separator();
+				menu(text:'$$$/Premiere/Menu/Edit/Label/Cyan=Cyan', idName:'cmd.edit.label.0');
+				menu(text:'$$$/Premiere/Menu/Edit/Label/Chartreuse=Chartreuse', idName:'cmd.edit.label.1');
+				menu(text:'$$$/Premiere/Menu/Edit/Label/Green=Green', idName:'cmd.edit.label.2');
+				menu(text:'$$$/Premiere/Menu/Edit/Label/Yellow=Yellow', idName:'cmd.edit.label.3');
+				menu(text:'$$$/Premiere/Menu/Edit/Label/Orange=Orange', idName:'cmd.edit.label.4');
+				menu(text:'$$$/Premiere/Menu/Edit/Label/Pink=Pink', idName:'cmd.edit.label.5');
+				menu(text:'$$$/Premiere/Menu/Edit/Label/Lavender=Lavender', idName:'cmd.edit.label.6');
+				menu(text:'$$$/Premiere/Menu/Edit/Label/Purple=Purple', idName:'cmd.edit.label.7');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/EditOriginal=Edit &Original', idName:'cmd.edit.editoriginal');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/EditInAdobeAudition=Edit in Adobe Audition')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/EditInAdobeAudition/Clip=&Clip', idName:'cmd.edit.editinaudition');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/EditInAdobeAudition/Sequence...=&Sequence...', idName:'cmd.edit.auditionmultitrack');
+			}
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/EditinAdobePhotoshop=Edit in Adobe P&hotoshop', idName:'cmd.edit.editinphotoshop');
+			separator(condition: os == @win);
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/KeyboardShortcuts...=&Keyboard Shortcuts...', idName:'cmd.edit.keyboardshortcuts', condition: os == @win);
+			menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences=Prefere&nces', condition: os == @win)
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences/General...=&General...', idName:'cmd.edit.preferences.general');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences/Appearance...=A&ppearance...', idName:'cmd.edit.preferences.userinterface');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences/Audio...=&Audio...', idName:'cmd.edit.preferences.audio');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences/AudioHardware...=Audio &Hardware...', idName:'cmd.edit.preferences.audiohardware');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences/AudioOutputMapping...=Audio Output &Mapping...', idName:'cmd.edit.preferences.audiomapping');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences/AutoSave...=A&uto Save...', idName:'cmd.edit.preferences.autosaveundo');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences/Capture...=&Capture...', idName:'cmd.edit.preferences.capture');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences/DeviceControl...=&Device Control...', idName:'cmd.edit.preferences.devicecontrol');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences/LabelColors...=&Label Colors...', idName:'cmd.edit.preferences.labelcolors');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences/LabelDefaults...=Label De&faults...', idName:'cmd.edit.preferences.labeldefaults');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences/Media...=M&edia...', idName:'cmd.edit.preferences.media');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences/Memory...=Memor&y...', idName:'cmd.edit.preferences.memory');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences/Playback...=&Playback...', idName:'cmd.edit.preferences.playback');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences/Titler...=&Titler...', idName:'cmd.edit.preferences.titler');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Edit/Preferences/Trim...=T&rim...', idName:'cmd.edit.preferences.trim');
+			}
+		}
+		menu(text:'$$$/Premiere/Menu/MainMenu/Project=&Project')
+		{
+			menu(text:'$$$/Premiere/Menu/MainMenu/Project/ProjectSettings=&Project Settings')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Project/ProjectSettings/General...=&General...', idName:'cmd.project.settings.general');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Project/ProjectSettings/ScratchDisks...=&Scratch Disks...', idName:'cmd.project.settings.scratchdisks');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Project/LinkMedia...=&Link Media...', idName:'cmd.project.linkmedia');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Project/MakeOffline...=Make &Offline...', idName:'cmd.project.unlinkmedia');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Project/AutomatetoSequence...=&Automate to Sequence...', idName:'cmd.project.automatetosequence');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Project/ImportBatchList...=&Import Batch List...', idName:'cmd.project.importbatchlist');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Project/ExportBatchList...=&Export Batch List...', idName:'cmx.project.exportbatchlist');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Project/ProjectManager...=Project &Manager...', idName:'cmd.project.projectmanager');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Project/RemoveUnused=&Remove Unused', idName:'cmd.project.removeunused');
+		}
+		menu(text:'$$$/Premiere/Menu/MainMenu/Clip=&Clip')
+		{
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Rename...=&Rename...', idName:'cmd.clip.rename');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/MakeSubclip...=&Make Subclip...', idName:'cmd.clip.makesubclip');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/EditSubclip...=E&dit Subclip...', idName:'cmd.clip.editsubclip');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/EditOffline...=Edit &Offline...', idName:'cmd.clip.editoffline');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/SourceSettings...=Source Settings...', idName:'cmd.clip.clipsettings');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Modify=Modify')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Modify/AudioChannels...=Audio Channels...', idName:'cmd.clip.audiooptions.sourcechannelmappings');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Modify/InterpretFootage...=Interpret Footage...', idName:'cmd.file.interpretfootage');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Modify/Timecode...=Timecode...', idName:'cmd.file.timecode');
+			}
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/VideoOptions=&Video Options')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Clip/VideoOptions/FrameHold...=&Frame Hold...', idName:'cmd.clip.videooptions.framehold');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Clip/VideoOptions/FieldOptions...=Field &Options...', idName:'cmd.clip.videooptions.field');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Clip/VideoOptions/FrameBlend=Frame &Blend', idName:'cmd.clip.frameblend');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Clip/VideoOptions/ScaletoFrameSize=&Scale to Frame Size', idName:'cmd.clip.scaletoframesize');
+			}
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/AudioOptions=&Audio Options')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Clip/AudioOptions/AudioGain...=&Audio Gain...', idName:'cmd.clip.audiooptions.gain');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Clip/AudioOptions/BreakouttoMono=&Breakout to Mono', idName:'cmd.clip.audiooptions.breakouttomono');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Clip/AudioOptions/RenderandReplace=&Render and Replace', idName:'cmd.clip.renderandreplace');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Clip/AudioOptions/ExtractAudio=E&xtract Audio', idName:'cmd.clip.extractaudio');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/AnalyzeContent=Analyze Content...', idName:'cmd.clip.analyzecontent');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Speed/Duration...=&Speed/Duration...', idName:'cmd.clip.speed');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/RemoveEffects...=&Remove Effects...', idName:'cmd.clip.deleteeffects');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/CaptureSettings=&Capture Settings')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Clip/CaptureSettings/SetCaptureSettings...=&Set Capture Settings...', idName:'cmd.clip.capturesettings.set');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Clip/CaptureSettings/ClearCaptureSettings=&Clear Capture Settings', idName:'cmd.clip.capturesettings.clear');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Insert=&Insert', idName:'cmd.clip.insert');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Overwrite=&Overwrite', idName:'cmd.clip.overlay');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/ReplaceFootage...=Replace &Footage...', idName:'cmd.clip.replacefootage');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/ReplaceWithClip=Re&place With Clip', idName:'menu.replacewithclip')
+			{
+				menu(text:'Placeholder');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Enable=&Enable', idName:'cmd.clip.enable');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Link=&Link', idName:'cmd.clip.linkaudioandvideo');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Group=&Group', idName:'cmd.clip.group');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Ungroup=&Ungroup', idName:'cmd.clip.ungroup');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Synchronize=S&ynchronize...', idName:'cmd.clip.synchronizeclips');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/MergeClips...=Merge Clips...', idName:'cmd.clip.merge');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Nest=&Nest', idName:'cmd.clip.nestify');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/CreateMulticam...=Create Multi-Camera Source Sequence...', idName:'cmd.clip.create.multicam');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Multi-Camera=Mul&ti-Camera', idName:'menu.multicam', idName:'menu.multicam')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Clip/Multi-Camera/Enable=Enable', idName:'cmd.clip.multicam.toggle');
+			}
+		}
+		menu(text:'$$$/Premiere/Menu/MainMenu/Sequence=&Sequence', idName:'menu.sequence')
+		{
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/SequenceSettings...=Se&quence Settings...', idName:'cmd.sequence.sequencesettingsgeneral');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/RenderEffectsinWorkArea=&Render Effects in Work Area', idName:'cmd.sequence.preview');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/RenderEntireWorkArea=&Render Entire Work Area', idName:'cmd.sequence.previewyellow');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/RenderAudio=&Render Audio', idName:'cmd.sequence.previewaudio');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/DeleteRenderFiles=&Delete Render Files', idName:'cmd.sequence.deletevideopreviews');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/DeleteWorkAreaRenderFiles=Delete &Work Area Render Files', idName:'cmd.sequence.deleteworkareavideopreviews');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/MatchFrame=&Match Frame', idName:'cmd.sequence.matchframe');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/AddEdit=&Add Edit', idName:'cmd.sequence.razorateditline');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/AddEditToAllTracks=&Add Edit to All Tracks', idName:'cmd.sequence.razorateditline.all');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/TrimEdit=&Trim Edit', idName:'cmd.placeholder');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/ExtendSelectedEditToPlayhead=E&xtend Selected Edit to Playhead', idName:'cmd.sequence.extendselectededittoplayhead');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/ApplyVideoTransition=Apply &Video Transition', idName:'cmd.sequence.applydefaultvideotransition');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/ApplyAudioTransition=Apply &Audio Transition', idName:'cmd.sequence.applydefaultaudiotransition');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/ApplyDefaultTransitionstoSelection=Appl&y Default Transitions to Selection', idName:'cmd.sequence.applydefaulttransitions');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/Lift=&Lift', idName:'cmd.sequence.lift');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/Extract=&Extract', idName:'cmd.sequence.extract');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/ZoomIn=Zoom &In', idName:'cmd.zoom.in');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/ZoomOut=Zoom &Out', idName:'cmd.zoom.out');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/GotoGap=&Go to Gap')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/FindNextSequenceGap=&Next in Sequence', idName:'cmd.sequence.findnextsequencegap');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/FindPreviousSequenceGap=&Previous in Sequence', idName:'cmd.sequence.findprevioussequencegap');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/FindNextTrackGap=Next in &Track', idName:'cmd.sequence.findnexttrackgap');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/FindPreviousTrackGap=Previous in T&rack', idName:'cmd.sequence.findprevioustrackgap');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/Snap=&Snap', idName:'cmd.sequence.snap');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/ClosedCaptioning=Closed Captioning')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/AttachCaptionData=Attach File...', idName:'cmd.sequence.attachcaptiondata');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/ClearCaptionData=Clear Data', idName:'cmd.sequence.clearcaptiondata');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/NormalizeMasterTrack...=&Normalize Master Track...', idName:'cmd.sequence.normalizetrack');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/AddTracks...=Add &Tracks...', idName:'cmd.sequence.addtracks');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Sequence/DeleteTracks...=Delete Trac&ks...', idName:'cmd.sequence.deletetracks');
+		}
+		menu(text:'$$$/Premiere/Menu/MainMenu/Marker=&Marker')
+		{
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/MarkIn=&Mark In', idName:'cmd.common.setin');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/MarkOut=&Mark Out', idName:'cmd.common.setout');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/MarkClip=Mark &Clip', idName:'cmd.marker.setsequenceinoutmarkeraroundtargetclip');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/MarkSelection=Mark &Selection', idName:'cmd.marker.setsequenceinoutmarkeraroundselection.out');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/MarkSplit=Mark S&plit')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Marker/MarkSplit/VideoIn=&Video In', idName:'cmd.marker.setclipmarker.videoin');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Marker/MarkSplit/VideoOut=Vid&eo Out', idName:'cmd.marker.setclipmarker.videoout');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Marker/MarkSplit/AudioIn=&Audio In', idName:'cmd.marker.setclipmarker.audioin');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Marker/MarkSplit/AudioOut=Au&dio Out', idName:'cmd.marker.setclipmarker.audiout');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/GoToIn=&Go to In', idName:'cmd.goto.in');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/GoToOut=&Go to Out', idName:'cmd.goto.out');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/GotoSplit=G&o to Split')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Marker/GotoSplit/VideoIn=&Video In', idName:'cmd.marker.gotoclipmarker.videoin');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Marker/GotoSplit/VideoOut=Vid&eo Out', idName:'cmd.marker.gotoclipmarker.videoout');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Marker/GotoSplit/AudioIn=&Audio In', idName:'cmd.marker.gotoclipmarker.audioin');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Marker/GotoSplit/AudioOut=Au&dio Out', idName:'cmd.marker.gotoclipmarker.audioout');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/ClearIn=C&lear In', idName:'cmd.clear.in');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/ClearOut=C&lear Out', idName:'cmd.clear.out');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/ClearInandOut=Clear In a&nd Out', idName:'cmd.clear.inandout');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/Marker/AddMarker=Add Marker', idName:'cmd.set.marker.unnumbered');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/Marker/GotoNextMarker=Go to &Next Marker', idName:'cmd.marker.gotomarker.next');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/Marker/GotoPreviousMarker=Go to &Previous Marker', idName:'cmd.marker.gotomarker.previous');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/Marker/ClearCurrentMarker=Clear &Current Marker', idName:'cmd.marker.clearmarker.current');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/Marker/ClearAllMarkers=Clear &All Markers', idName:'cmd.marker.clearmarker.all');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/Marker/EditMarker=Edit Marker...', idName:'cmd.marker.edit');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/AddEncoreChapterMarker...=Add E&ncore Chapter Marker...', idName:'cmd.marker.setchaptermarkerdialog');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Marker/AddFlashCueMarker...=Add &Flash Cue Marker...', idName:'cmd.marker.setflashcuemarkerdialog');
+		}
+		menu(text:'$$$/Premiere/Menu/MainMenu/Title=&Title')
+		{
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/NewTitle=N&ew Title')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/NewTitle/DefaultStill...=Default &Still...', idName:'cmd.titler.new.still.title');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/NewTitle/DefaultRoll...=Default &Roll...', idName:'cmd.titler.new.roll.title');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/NewTitle/DefaultCrawl...=Default &Crawl...', idName:'cmd.titler.new.crall.title');
+				separator();
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/NewTitle/BasedonCurrentTitle=Based on Current &Title...', idName:'cmd.titler.new.current.title');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/NewTitle/BasedonTemplate...=Based on T&emplate...', idName:'cmd.titler.new.template.title');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/Font=&Font', idName:'menu.titler.font')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Font/Browse...=Browse...');
+			}
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/Size=&Size')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Size/Other...=&Other...', idName:'cmd.titler.menu.size.other');
+				separator();
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Size/48=&48', idName:'cmd.titler.menu.size.48');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Size/60=&60', idName:'cmd.titler.menu.size.60');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Size/72=&72', idName:'cmd.titler.menu.size.72');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Size/96=&96', idName:'cmd.titler.menu.size.96');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Size/120=&120', idName:'cmd.titler.menu.size.120');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Size/156=1&56', idName:'cmd.titler.menu.size.156');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Size/180=1&80', idName:'cmd.titler.menu.size.180');
+			}
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/TypeAlignment=Type &Alignment')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/TypeAlignment/Left=&Left', idName:'cmd.titler.menu.type.left');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/TypeAlignment/Center=&Center', idName:'cmd.titler.menu.type.centre');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/TypeAlignment/Right=&Right', idName:'cmd.titler.menu.type.right');
+			}
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/Orientation=&Orientation')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Orientation/Horizontal=&Horizontal', idName:'cmd.titler.menu.orient.horiz');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Orientation/Vertical=&Vertical', idName:'cmd.titler.menu.orient.vert');
+			}
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/WordWrap=&Word Wrap', idName:'cmd.titler.menu.wordwrap');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/TabStops...=&Tab Stops...', idName:'cmd.titler.menu.tabstops');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/Templates...=Te&mplates...', idName:'cmd.titler.menu.templates');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/Roll/CrawlOptions...=&Roll/Crawl Options...', idName:'cmd.titler.menu.rollcrawl');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/Logo=&Logo')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Logo/InsertLogo...=&Insert Logo...', idName:'cmd.titler.menu.logo.insert');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Logo/InsertLogointoText...=Insert Logo into &Text...', idName:'cmd.titler.menu.logo.text');
+				separator();
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Logo/RestoreLogoSize=&Restore Logo Size', idName:'cmd.titler.menu.logo.size');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Logo/RestoreLogoAspectRatio=Restore Logo &Aspect Ratio', idName:'cmd.titler.menu.logo.aspect');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/Transform=Tra&nsform')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Transform/Position...=&Position...', idName:'cmd.titler.menu.trans.pos');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Transform/Scale...=&Scale...', idName:'cmd.titler.menu.trans.scale');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Transform/Rotation...=&Rotation...', idName:'cmd.titler.menu.trans.rot');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Transform/Opacity...=&Opacity...', idName:'cmd.titler.menu.trans.alpha');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/Select=Sele&ct')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Select/FirstObjectAbove=&First Object Above', idName:'cmd.titler.menu.select.firstup');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Select/NextObjectAbove=Next Object &Above', idName:'cmd.titler.menu.select.nextup');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Select/NextObjectBelow=Next Object &Below', idName:'cmd.titler.menu.select.nextdown');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Select/LastObjectBelow=&Last Object Below', idName:'cmd.titler.menu.select.lastdown');
+			}
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/Arrange=Arran&ge')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Arrange/BringtoFront=&Bring to Front', idName:'cmd.titler.menu.arrange.front');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Arrange/BringForward=Bring &Forward', idName:'cmd.titler.menu.arrange.up');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Arrange/SendtoBack=&Send to Back', idName:'cmd.titler.menu.arrange.back');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Arrange/SendBackward=Send Bac&kward', idName:'cmd.titler.menu.arrange.down');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/Position=&Position')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Position/HorizontalCenter=&Horizontal Center', idName:'cmd.titler.menu.position.horiz');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Position/VerticalCenter=&Vertical Center', idName:'cmd.titler.menu.position.vert');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/Position/LowerThird=&Lower Third', idName:'cmd.titler.menu.position.lower');
+			}
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/AlignObjects=Align Ob&jects')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/AlignObjects/HorizontalLeft=Horizontal &Left', idName:'cmd.titler.menu.align.left');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/AlignObjects/HorizontalCenter=Horizontal &Center', idName:'cmd.titler.menu.align.centreh');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/AlignObjects/HorizontalRight=Horizontal &Right', idName:'cmd.titler.menu.align.right');
+				separator();
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/AlignObjects/VerticalTop=Vertical &Top', idName:'cmd.titler.menu.align.top');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/AlignObjects/VerticalCenter=Vertical Ce&nter', idName:'cmd.titler.menu.align.centrev');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/AlignObjects/VerticalBottom=Vertical &Bottom', idName:'cmd.titler.menu.align.bottom');
+			}
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/DistributeObjects=Distri&bute Objects')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/DistributeObjects/HorizontalLeft=Horizontal &Left', idName:'cmd.titler.menu.dist.left');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/DistributeObjects/HorizontalCenter=Horizontal &Center', idName:'cmd.titler.menu.dist.centreh');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/DistributeObjects/HorizontalRight=Horizontal &Right', idName:'cmd.titler.menu.dist.right');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/DistributeObjects/HorizontalEvenSpacing=Horizontal &Even Spacing', idName:'cmd.titler.menu.dist.evenh');
+				separator();
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/DistributeObjects/VerticalTop=Vertical &Top', idName:'cmd.titler.menu.dist.top');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/DistributeObjects/VerticalCenter=Vertical Ce&nter', idName:'cmd.titler.menu.dist.centrev');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/DistributeObjects/VerticalBottom=Vertical &Bottom', idName:'cmd.titler.menu.dist.bottom');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/DistributeObjects/VerticalEvenSpacing=Vertical E&ven Spacing', idName:'cmd.titler.menu.dist.evenv');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Title/View=&View')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/View/SafeTitleMargin=Safe &Title Margin', idName:'cmd.titler.menu.view.title');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/View/SafeActionMargin=Safe &Action Margin', idName:'cmd.titler.menu.view.action');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/View/TextBaselines=Text &Baselines', idName:'cmd.titler.menu.view.baseline');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/View/TabMarkers=Tab &Markers', idName:'cmd.titler.menu.view.tabs');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Title/View/ShowVideo=Show &Video', idName:'cmd.titler.menu.view.showvideo');
+			}
+		}
+		menu(text:'$$$/Premiere/Menu/MainMenu/Window=&Window', idName:'menu.windows')
+		{
+			menu(text:'$$$/Premiere/Menu/MainMenu/Window/Workspace=&Workspace', idName:'menu.windows.workspace')
+			{
+				menu(text:'$$$/Premiere/Menu/MainMenu/Window/Workspace/NewWorkspace...=New Workspace...', idName:'cmd.window.workspace.new');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Window/Workspace/DeleteWorkspace...=&Delete Workspace...', idName:'cmd.window.workspace.delete');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Window/Workspace/ResetCurrentWorkspace...=Reset Current Workspace...', idName:'cmd.window.workspace.revert');
+				menu(text:'$$$/Premiere/Menu/MainMenu/Window/Workspace/ImportWorkspacefromProjects=Import Workspace from Projects', idName:'cmd.window.workspace.import');
+			}
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Window/Extensions=Extensions', id:22004);
+			separator();			
+			menu(text:'$$$/Premiere/Menu/MainMenu/Window/MaximizeFrame=Maximize Frame', idName:'cmd.toggle.maximize.focused.frame');
+			separator();			
+		}
+		menu(text:'$$$/Premiere/Menu/MainMenu/Debug=&Debug', condition: debug_build == true)
+		{
+			menu(text:'$$$/Premiere/Menu/MainMenu/Debug/DVAConsole=DVA Console', idName:'cmd.debug.console');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Debug/DVAThreads=DVA Thread Panel', idName:'cmd.debug.threadpanel');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Debug/PurgeMediaManager=Purge Media Manager', idName:'cmd.debug.purgemediamanager');
+		}
+		menu(text:'$$$/Premiere/Menu/MainMenu/Help=&Help')
+		{
+			menu(text:'$$$/Premiere/Menu/MainMenu/Help/AdobePremiereProHelp...=Adobe &Premiere Pro Help...', idName:'cmd.help.contents');
+			menu(text:'$$$/Premiere/Menu/MainMenu/Help/SupportCenter...=Adobe Premiere Pro &Support Center...', idName:'cmd.help.support');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Help/AdobeProductImprovementProgram...=Adobe Product &Improvement Program...', idName:'cmd.help.productimprovement');
+			separator();
+			menu(text:'$$$/Premiere/Menu/MainMenu/Help/Keyboard...=&Keyboard...', idName:'cmd.help.keyboard');
+			if (condition: os == @win)
+			{
+				separator();
+				menu(text:'$$$/Premiere/Menu/MainMenu/Help/AboutAdobePremierePro...=&About Adobe Premiere Pro...', idName:'cmd.help.about');
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+layout saveProjectSettingsDialog
+{
+    view dva_dialog(name: '$$$/Premiere/DLG/SaveProjectSettingsDialog/kResDLGSaveProjectSettingsDialogTitle=Save Settings', identifier:'SaveProjectSettingsDialog', spacing: 4)
+    {
+		column(spacing: 4, child_horizontal: align_fill, child_vertical: align_proportional)
+		{
+			dva_static_text(
+				identifier:'savedNameStaticText', 
+				name: '$$$/Premiere/DLG/SaveProjectSettingsDialog/kResDLGName=Name:', 
+				horizontal:align_left);
+			dva_text_edit(
+				identifier:'savedNameTextEdit', 
+				minWidth:300,
+				setAsFocused:'true');
+			dva_static_text(
+				name:'$$$/Premiere/DLG/SaveProjectSettingsDialog/kResDLGDescription=Description:', 
+				identifier:'descriptionStaticText');
+			dva_text_edit(
+				identifier:'descriptionTextEdit', 
+				minWidth:300, 
+				minHeight:200, 
+				multiLine:'true', 
+				vertical_scroll:'true');
+			dva_checkbox(
+				identifier:'deviceControlCheckbox', 
+				name:'$$$/Premiere/DLG/SaveProjectSettingsDialog/kResDLGDeviceControlSettings=Include Device Control settings');
+			row(child_horizontal: align_center, horizontal: align_right)
+			{
+				dva_ok_cancel_row(minWidth:80, minHeight:20);
+			}
+		}
+    }
+} 

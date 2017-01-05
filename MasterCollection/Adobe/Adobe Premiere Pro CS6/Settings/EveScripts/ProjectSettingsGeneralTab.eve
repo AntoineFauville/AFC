@@ -1,0 +1,59 @@
+layout ProjectSettingsGeneralTab
+{
+	view dva_tab_view(name: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/ProjectSettingsGeneralTabTitle=General', identifier: 'ProjectSettingsGeneralTab', placement: place_row, horizontal: align_fill, child_horizontal: align_center)
+	{
+		column(horizontal: align_fill, vertical: align_fill)
+		{
+	
+			dva_groupbox(name:'$$$/Premiere/DLG/ProjectSettings/GeneralTab/VideoRenderingGroup=Video Rendering and Playback', identifier:'renderingGroup', horizontal: align_fill, minWidth: 400)
+			{
+				dva_popup(label: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/Renderer=Renderer:', identifier: 'rendererPopup', minWidth: 240);
+			}
+
+			dva_groupbox(name:'$$$/Premiere/DLG/ProjectSettings/GeneralTab/VideoGroup=Video', identifier:'videoGroup', horizontal: align_fill, minWidth: 400)
+			{
+				dva_popup(label: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/DisplayFormat=Display Format:', identifier: 'displayFormatVideoPopup', minWidth: 240);
+			}
+
+			dva_groupbox(name:'$$$/Premiere/DLG/ProjectSettings/GeneralTab/AudioGroup=Audio', identifier:'audioGroup', horizontal: align_fill, minWidth: 400)
+			{
+				dva_popup(label: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/DisplayFormat=Display Format:', identifier: 'displayFormatAudioPopup', minWidth: 240);
+			}
+
+			dva_groupbox(name:'$$$/Premiere/DLG/ProjectSettings/GeneralTab/CaptureGroup=Capture', identifier:'captureGroup', horizontal: align_fill, minWidth: 400)
+			{
+				row(minWidth: 400, horizontal: align_fill)
+				{
+					dva_popup(label: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/CaptureFormat=Capture Format:', identifier: 'captureFormatPopup', minWidth: 240);
+					dva_button(name: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/CustomCaptureButton1=CAPTURE1', identifier: 'captureButton1', minWidth: 80, horizontal: align_right);
+				}
+				row()
+				{
+					dva_button(label: ' ', name: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/CustomCaptureButton2=CAPTURE2', identifier: 'captureButton2', minWidth: 80);
+					dva_button(name: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/CustomCaptureButton3=CAPTURE3', identifier: 'captureButton3', minWidth: 80);
+					dva_button(name: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/CustomCaptureButton4=CAPTURE4', identifier: 'captureButton4', minWidth: 80);
+				}
+
+			}
+				dva_groupbox(name:'$$$/Premiere/DLG/ProjectSettings/GeneralTab/ActionAndTitleSafeAreasGroup=Action and Title Safe Areas', identifier:'safeAreasGroup', horizontal: align_fill, minWidth: 400)
+			{
+				row()
+				{
+					dva_number_edit(label: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/TtitleSafeArea=Title Safe Area', identifier: 'titleSafeAreaHorizontalNumberEdit',  minValue:0, maxValue:100, decimalPlaces:0, minWidth: 35);
+					dva_static_text(name: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/TitleSafeAreaPercentHorizontal=% horizontal');
+					dva_number_edit(identifier: 'titleSafeAreaVerticalNumberEdit', minValue:0, maxValue:100, decimalPlaces:0, minWidth: 35);
+					dva_static_text(name: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/TitleSafeAreaPercentVertical=% vertical');
+				}
+				row()
+				{
+					dva_number_edit(label: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/ActionSafeArea=Action Safe Area', identifier: 'actionSafeAreaHorizontalNumberEdit',  minValue:0, maxValue:100, decimalPlaces:0, minWidth: 35);
+					dva_static_text(name: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/ActionSafeAreaHorizontal=% horizontal');
+					dva_number_edit(identifier: 'actionSafeAreaVerticalNumberEdit', minValue:0, maxValue:100, decimalPlaces:0, minWidth: 35);
+					dva_static_text(name: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/ActionSafeAreaVertical=% vertical');
+				}
+			}
+
+			
+		}
+	}
+}

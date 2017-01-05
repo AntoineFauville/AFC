@@ -1,0 +1,29 @@
+layout my_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/ClipGainDialog/kResDLGNormalizeTrackTitle=Normalize Track', identifier:'NormalizeTrack')
+	{
+		column(child_horizontal: align_fill, horizontal: align_fill)
+		{
+			row(spacing: 10, child_horizontal: align_proportional, child_vertical: align_proportional, vertical: align_fill)
+			{
+				dva_hot_text_number(
+					postLabel:'$$$/Premiere/DLG/NormalizeTrackDialog/kResDLGNormalizeTrackDB=dB ', 
+					identifier:'dbLevel', 
+					value:1.0, 
+					minValue: -96.0, 
+					maxValue:96.0, 
+					decimalPlaces:1, 
+					increment:0.1, 
+					horizontal:align_center,
+					leftSpace:20,
+					minWidth:50,
+					overwritePostLabel:'false', 
+					setAsFocused:'true');
+			}
+			row(spacing: 10, child_horizontal: align_center, child_vertical: align_proportional)
+			{
+				dva_ok_cancel_row(minWidth:80, minHeight:20);			
+			}
+		}
+	}
+} 

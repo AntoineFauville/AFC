@@ -1,0 +1,13 @@
+layout my_menu
+{
+	view menu(id:17503)
+	{
+		menu(text:'$$$/Premiere/Menu/17503/PresetContextMenu/NewPresetsBin=New Presets Bin', idName:'cmd.effects.createpresetfolder');
+		menu(text:'$$$/Premiere/Menu/17503/PresetContextMenu/Delete=Delete', idName:'cmd.edit.clear');
+		separator();
+		menu(text:'$$$/Premiere/Menu/17503/PresetContextMenu/ImportPresets...=Import Presets...', idName:'cmd.effects.import.preset');
+		menu(text:'$$$/Premiere/Menu/17503/PresetContextMenu/ExportPresets...=Export Presets...', idName:'cmd.effects.export.preset');
+		separator();
+		menu(text:'$$$/Premiere/Menu/17503/PresetContextMenu/PresetProperties...=Preset Properties...', idName:'cmd.effects.preset.properties');
+	}
+}

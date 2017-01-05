@@ -1,0 +1,27 @@
+layout ImporterDPXPrefs
+{
+	view dva_dialog(name: "$$$/MediaCoreUI/ImporterDPXPrefs/dialog=Cineon Settings", identifier: 'CineonSettings', placement: place_column, spacing: 10, margin: 15)
+	{
+		dva_groupbox(name: "$$$/MediaCoreUI/ImporterDPXPrefs/ManualGroup=Main Settings", identifier: 'gbManual', headerType: 'static_text', placement: place_column, horizontal: align_fill)
+		{
+			dva_popup(label: "$$$/MediaCoreUI/ImporterDPXPrefs/PresetPopup=Preset:", identifier: 'pmPreset', minWidth: 160);
+			dva_number_edit(label: "$$$/MediaCoreUI/ImporterDPXPrefs/ConvBlackPointNumber=Converted Black Point:", identifier: 'enConvBlackPoint', minValue: 0, maxValue: 32768, decimalPlaces: 4, minWidth: 60);
+			dva_number_edit(label: "$$$/MediaCoreUI/ImporterDPXPrefs/ConvWhitePointNumber=Converted White Point:", identifier: 'enConvWhitePoint', minValue: 0, maxValue: 32768, decimalPlaces: 4, minWidth: 60);
+			dva_number_edit(label: "$$$/MediaCoreUI/ImporterDPXPrefs/10bitBlackPointNumber=10 bit Black Point:", identifier: 'en10bitBlackPoint', minValue: 0, maxValue: 1023, minWidth: 60);
+			dva_number_edit(label: "$$$/MediaCoreUI/ImporterDPXPrefs/10bitWhitePointNumber=10 bit White Point:", identifier: 'en10bitWhitePoint', minValue: 0, maxValue: 1023, minWidth: 60);
+			dva_number_edit(label: "$$$/MediaCoreUI/ImporterDPXPrefs/CurrentGamma=Current Gamma:", identifier: 'enGamma', minValue: 0.01, maxValue: 5, decimalPlaces: 4, minWidth: 60);
+			dva_number_edit(label: "$$$/MediaCoreUI/ImporterDPXPrefs/Rolloff=Highlight Rolloff:", identifier: 'enHighlightRolloff', minValue: 0, maxValue: 150, minWidth: 60, minLabelWidth: 120);
+			dva_checkbox(name: "$$$/MediaCoreUI/ImporterDPXPrefs/LogConversion=Logarithmic Conversion", identifier: 'cbLogConversion', indent: 125);
+			dva_popup(label: "$$$/MediaCoreUI/ImporterDPXPrefs/Units=Units:", identifier: 'pmUnits', minWidth: 160);
+		}
+		dva_groupbox(name: "$$$/MediaCoreUI/ImporterDPXPrefs/FormatGroup=File Format", identifier: 'gbFormat', headerType: 'static_text', horizontal: align_fill)
+		{
+			dva_radio_button_group(identifier: 'rgFormat', placement: place_column, showBorder: 'false')
+			{
+				dva_radio_button(name: "$$$/MediaCoreUI/ImporterDPXPrefs/FIDO=FIDO/Cineon 4.5", identifier: 'rbFIDO');
+				dva_radio_button(name: "$$$/MediaCoreUI/ImporterDPXPrefs/DPX=DPX", identifier: 'rbDPX');
+			}
+		}
+		dva_ok_cancel_row();
+	}
+}

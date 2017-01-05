@@ -1,0 +1,1761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PremiereData Version="3">
+	<StandardFilters Version="1">
+		<DeinterlaceState>false</DeinterlaceState>
+		<CropType>0</CropType>
+		<CropRect>0,0,0,0</CropRect>
+		<CropState>false</CropState>
+	</StandardFilters>
+	<DoEmulation>false</DoEmulation>
+	<DoVideo>true</DoVideo>
+	<DoAudio>false</DoAudio>
+	<PresetID>a539a50f-2236-4248-8f6a-9f870cf5164b</PresetID>
+	<PostProcParamContainer ObjectRef="96"/>
+	<FilterParamContainer ObjectRef="89"/>
+	<ExportParamContainer ObjectRef="1"/>
+	<ExporterFileType>1836082994</ExporterFileType>
+	<ExporterClassID>1095583008</ExporterClassID>
+	<ExporterName></ExporterName>
+	<PresetComments>IsConstrained,MCVd</PresetComments>
+	<PresetName>($$$/Premiere/SequencePreviewPresets/NTSC_DV_High_Quality=NTSC DV High Quality)</PresetName>
+	<ExporterParamContainer ObjectID="1" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="2"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="2" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ExporterChildParams ObjectRef="3"/>
+		<ParamName></ParamName>
+		<ParamIdentifier>0</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>10</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="3" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="4"/>
+			<ParamContainerItem Index="1" ObjectRef="17"/>
+			<ParamContainerItem Index="2" ObjectRef="66"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="4" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ExporterChildParams ObjectRef="5"/>
+		<ParamIdentifier>ADBEAudienceTabGroup</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>8</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="5" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="6"/>
+			<ParamContainerItem Index="1" ObjectRef="9"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="6" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>41</ParamAuxValue>
+		<ExporterChildParams ObjectRef="7"/>
+		<ParamIdentifier>41</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>8</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="7" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="8"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="8" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>muxerProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVMCMux_Type</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>2</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="9" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>47</ParamAuxValue>
+		<ExporterChildParams ObjectRef="10"/>
+		<ParamIdentifier>47</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>1</ParamOrdinalValue>
+		<ParamType>8</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="10" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="11"/>
+			<ParamContainerItem Index="1" ObjectRef="12"/>
+			<ParamContainerItem Index="2" ObjectRef="13"/>
+			<ParamContainerItem Index="3" ObjectRef="14"/>
+			<ParamContainerItem Index="4" ObjectRef="15"/>
+			<ParamContainerItem Index="5" ObjectRef="16"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="11" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>muxerProps</ParamAuxValue>
+		<ParamIdentifier>251</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>1</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="12" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>muxerProps</ParamAuxValue>
+		<ParamIdentifier>263</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>1</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="13" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>muxerProps</ParamAuxValue>
+		<ParamIdentifier>253</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>2</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>2048</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="14" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>muxerProps</ParamAuxValue>
+		<ParamIdentifier>254</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>3</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>1</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="15" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>muxerProps</ParamAuxValue>
+		<ParamIdentifier>260</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>4</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="16" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>muxerProps</ParamAuxValue>
+		<ParamIdentifier>261</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>5</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>4</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="17" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ExporterChildParams ObjectRef="18"/>
+		<ParamIdentifier>ADBEVideoTabGroup</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>1</ParamOrdinalValue>
+		<ParamType>8</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="18" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="19"/>
+			<ParamContainerItem Index="1" ObjectRef="32"/>
+			<ParamContainerItem Index="2" ObjectRef="39"/>
+			<ParamContainerItem Index="3" ObjectRef="45"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="19" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>37</ParamAuxValue>
+		<ExporterChildParams ObjectRef="20"/>
+		<ParamIdentifier>37</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>8</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="20" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="21"/>
+			<ParamContainerItem Index="1" ObjectRef="22"/>
+			<ParamContainerItem Index="2" ObjectRef="23"/>
+			<ParamContainerItem Index="3" ObjectRef="24"/>
+			<ParamContainerItem Index="4" ObjectRef="25"/>
+			<ParamContainerItem Index="5" ObjectRef="26"/>
+			<ParamContainerItem Index="6" ObjectRef="27"/>
+			<ParamContainerItem Index="7" ObjectRef="28"/>
+			<ParamContainerItem Index="8" ObjectRef="29"/>
+			<ParamContainerItem Index="9" ObjectRef="30"/>
+			<ParamContainerItem Index="10" ObjectRef="31"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="21" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ParamIdentifier>ADBEVideoCodec</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>1296258660</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="22" ClassID="018cf63d-c58d-4d39-97df-36b6b2d6ef88" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVideoQuality</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>1</ParamOrdinalValue>
+		<ParamType>3</ParamType>
+		<ParamValue>4.0399999618530273</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="23" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEMPEGCodecBroadcastStandard</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>2</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="24" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVideoWidth</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>3</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>720</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="25" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVideoHeight</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>4</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>480</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="26" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVideoFPS</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>5</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>4</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="27" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>325</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>true</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>6</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="28" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVideoFieldType</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>7</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>2</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="29" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVideoAspect</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>8</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>2</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="30" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>315</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>9</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>4</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="31" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>316</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>10</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>8</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="32" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>53</ParamAuxValue>
+		<ExporterChildParams ObjectRef="33"/>
+		<ParamIdentifier>53</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>1</ParamOrdinalValue>
+		<ParamType>8</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="33" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="34"/>
+			<ParamContainerItem Index="1" ObjectRef="35"/>
+			<ParamContainerItem Index="2" ObjectRef="36"/>
+			<ParamContainerItem Index="3" ObjectRef="37"/>
+			<ParamContainerItem Index="4" ObjectRef="38"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="34" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVideoVBR</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>1</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="35" ClassID="018cf63d-c58d-4d39-97df-36b6b2d6ef88" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVideoBitRate</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>true</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>1</ParamOrdinalValue>
+		<ParamType>3</ParamType>
+		<ParamValue>6.</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="36" ClassID="018cf63d-c58d-4d39-97df-36b6b2d6ef88" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVideoMinBitRate</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>2</ParamOrdinalValue>
+		<ParamType>3</ParamType>
+		<ParamValue>2.499000072479248</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="37" ClassID="018cf63d-c58d-4d39-97df-36b6b2d6ef88" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVideoAvgBitRate</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>3</ParamOrdinalValue>
+		<ParamType>3</ParamType>
+		<ParamValue>4.1999998092651367</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="38" ClassID="018cf63d-c58d-4d39-97df-36b6b2d6ef88" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVideoMaxBitRate</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>4</ParamOrdinalValue>
+		<ParamType>3</ParamType>
+		<ParamValue>6.</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="39" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>54</ParamAuxValue>
+		<ExporterChildParams ObjectRef="40"/>
+		<ParamIdentifier>54</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>2</ParamOrdinalValue>
+		<ParamType>8</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="40" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="41"/>
+			<ParamContainerItem Index="1" ObjectRef="42"/>
+			<ParamContainerItem Index="2" ObjectRef="43"/>
+			<ParamContainerItem Index="3" ObjectRef="44"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="41" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enumLong</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVMC_Video_M</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>3</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="42" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enumLong</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVMC_Video_N</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>1</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>15</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="43" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>466</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>2</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="44" ClassID="d0f6b8af-8ddb-4381-acf8-3e817480d07d" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVMC_AutoGOPPlacement</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>3</ParamOrdinalValue>
+		<ParamType>1</ParamType>
+		<ParamValue>false</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="45" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>38</ParamAuxValue>
+		<ExporterChildParams ObjectRef="46"/>
+		<ParamIdentifier>38</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>3</ParamOrdinalValue>
+		<ParamType>8</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="46" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="47"/>
+			<ParamContainerItem Index="1" ObjectRef="48"/>
+			<ParamContainerItem Index="2" ObjectRef="49"/>
+			<ParamContainerItem Index="3" ObjectRef="50"/>
+			<ParamContainerItem Index="4" ObjectRef="51"/>
+			<ParamContainerItem Index="5" ObjectRef="52"/>
+			<ParamContainerItem Index="6" ObjectRef="53"/>
+			<ParamContainerItem Index="7" ObjectRef="54"/>
+			<ParamContainerItem Index="8" ObjectRef="55"/>
+			<ParamContainerItem Index="9" ObjectRef="56"/>
+			<ParamContainerItem Index="10" ObjectRef="57"/>
+			<ParamContainerItem Index="11" ObjectRef="58"/>
+			<ParamContainerItem Index="12" ObjectRef="59"/>
+			<ParamContainerItem Index="13" ObjectRef="60"/>
+			<ParamContainerItem Index="14" ObjectRef="61"/>
+			<ParamContainerItem Index="15" ObjectRef="62"/>
+			<ParamContainerItem Index="16" ObjectRef="63"/>
+			<ParamContainerItem Index="17" ObjectRef="64"/>
+			<ParamContainerItem Index="18" ObjectRef="65"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="47" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>407</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>10</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="48" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>408</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>1</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>112</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="49" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>477</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>2</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="50" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>317</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>3</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="51" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>318</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>true</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>4</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>2</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="52" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>468</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>true</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>5</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>720</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="53" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>469</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>true</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>6</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>480</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="54" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>319</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>true</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>7</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>4</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="55" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>320</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>true</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>8</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>4</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="56" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>412</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>true</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>9</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>5</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="57" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>415</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>10</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>1</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="58" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>417</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>11</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>1</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="59" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>434</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>12</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>1</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="60" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>324</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>13</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="61" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>470</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>14</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="62" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>438</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>15</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="63" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>439</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>16</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="64" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>448</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>true</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>17</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>25</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="65" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>videoCodecProps</ParamAuxValue>
+		<ParamIdentifier>449</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>true</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>18</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="66" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ExporterChildParams ObjectRef="67"/>
+		<ParamIdentifier>ADBEAudioTabGroup</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>2</ParamOrdinalValue>
+		<ParamType>8</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="67" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="68"/>
+			<ParamContainerItem Index="1" ObjectRef="71"/>
+			<ParamContainerItem Index="2" ObjectRef="78"/>
+			<ParamContainerItem Index="3" ObjectRef="81"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="68" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>52</ParamAuxValue>
+		<ExporterChildParams ObjectRef="69"/>
+		<ParamIdentifier>52</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>8</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="69" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="70"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="70" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>audioMediaProps</ParamAuxValue>
+		<ParamIdentifier>214</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>1836081440</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="71" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>35</ParamAuxValue>
+		<ExporterChildParams ObjectRef="72"/>
+		<ParamIdentifier>35</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>1</ParamOrdinalValue>
+		<ParamType>8</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="72" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="73"/>
+			<ParamContainerItem Index="1" ObjectRef="74"/>
+			<ParamContainerItem Index="2" ObjectRef="75"/>
+			<ParamContainerItem Index="3" ObjectRef="76"/>
+			<ParamContainerItem Index="4" ObjectRef="77"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="73" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ParamIdentifier>ADBEAudioCodec</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>1296253301</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="74" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>AudioCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEVMC_AudioLayer</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>1</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>2</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="75" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>AudioCodecProps</ParamAuxValue>
+		<ParamIdentifier>201</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>2</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="76" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>AudioCodecProps</ParamAuxValue>
+		<ParamIdentifier>13</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>3</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>16</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="77" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>AudioCodecProps</ParamAuxValue>
+		<ParamIdentifier>50</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>4</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>48000</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="78" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>51</ParamAuxValue>
+		<ExporterChildParams ObjectRef="79"/>
+		<ParamIdentifier>51</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>2</ParamOrdinalValue>
+		<ParamType>8</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="79" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="80"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="80" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enumLong</ParamAuxType>
+		<ParamAuxValue>AudioCodecProps</ParamAuxValue>
+		<ParamIdentifier>ADBEAudioBitrate</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>224</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="81" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue>36</ParamAuxValue>
+		<ExporterChildParams ObjectRef="82"/>
+		<ParamIdentifier>36</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>3</ParamOrdinalValue>
+		<ParamType>8</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="82" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="83"/>
+			<ParamContainerItem Index="1" ObjectRef="84"/>
+			<ParamContainerItem Index="2" ObjectRef="85"/>
+			<ParamContainerItem Index="3" ObjectRef="86"/>
+			<ParamContainerItem Index="4" ObjectRef="87"/>
+			<ParamContainerItem Index="5" ObjectRef="88"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="83" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>AudioCodecProps</ParamAuxValue>
+		<ParamIdentifier>203</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>2</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="84" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>AudioCodecProps</ParamAuxValue>
+		<ParamIdentifier>204</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>1</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="85" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>AudioCodecProps</ParamAuxValue>
+		<ParamIdentifier>206</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>2</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="86" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>AudioCodecProps</ParamAuxValue>
+		<ParamIdentifier>207</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>3</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="87" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>AudioCodecProps</ParamAuxValue>
+		<ParamIdentifier>208</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>4</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="88" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType>enum</ParamAuxType>
+		<ParamAuxValue>AudioCodecProps</ParamAuxValue>
+		<ParamIdentifier>209</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>5</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="89" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="90"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="90" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ExporterChildParams ObjectRef="91"/>
+		<ParamName>Filters</ParamName>
+		<ParamIdentifier>FiltersParamsMultiGroup</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>10</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="91" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="92"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="92" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ExporterChildParams ObjectRef="93"/>
+		<ParamIdentifier>GuasianBlurFilterGroup</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>true</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>8</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="93" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="94"/>
+			<ParamContainerItem Index="1" ObjectRef="95"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="94" ClassID="018cf63d-c58d-4d39-97df-36b6b2d6ef88" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ParamIdentifier>GuasianBlurFilterGroup_Blurriness</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>3</ParamType>
+		<ParamValue>0.</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="95" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ParamIdentifier>GuasianBlurFilterGroup_BlurDimension</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>1</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="96" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="97"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="97" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ExporterChildParams ObjectRef="98"/>
+		<ParamName>Others</ParamName>
+		<ParamIdentifier>PostEncodeHostMultiGroup</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>10</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="98" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="99"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="99" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ExporterChildParams ObjectRef="100"/>
+		<ParamIdentifier>5518</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>true</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>8</ParamType>
+		<ParamValue>0</ParamValue>
+	</ExporterParam>
+	<ExporterParamContainer ObjectID="100" ClassID="5c20a4a5-5e7c-4032-85b8-26ad4531fe7b" Version="1">
+		<ContainedParamsVersion>1</ContainedParamsVersion>
+		<ParamContainerItems Version="1">
+			<ParamContainerItem Index="0" ObjectRef="101"/>
+			<ParamContainerItem Index="1" ObjectRef="102"/>
+			<ParamContainerItem Index="2" ObjectRef="103"/>
+			<ParamContainerItem Index="3" ObjectRef="104"/>
+			<ParamContainerItem Index="4" ObjectRef="105"/>
+			<ParamContainerItem Index="5" ObjectRef="106"/>
+			<ParamContainerItem Index="6" ObjectRef="107"/>
+			<ParamContainerItem Index="7" ObjectRef="108"/>
+			<ParamContainerItem Index="8" ObjectRef="109"/>
+			<ParamContainerItem Index="9" ObjectRef="110"/>
+			<ParamContainerItem Index="10" ObjectRef="111"/>
+		</ParamContainerItems>
+	</ExporterParamContainer>
+	<ExporterParam ObjectID="101" ClassID="a43ab77d-3a01-4173-b6ea-aeb9b4ae884b" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ParamIdentifier>5500</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>true</ParamDontSerializeValue>
+		<ParamOrdinalValue>0</ParamOrdinalValue>
+		<ParamType>6</ParamType>
+	</ExporterParam>
+	<ExporterParam ObjectID="102" ClassID="a43ab77d-3a01-4173-b6ea-aeb9b4ae884b" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ParamIdentifier>5522</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>true</ParamIsHidden>
+		<ParamIsDisabled>true</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>1</ParamOrdinalValue>
+		<ParamType>6</ParamType>
+		<ParamValue></ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="103" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ParamIdentifier>5501</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>2</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+		<ParamValue>21</ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="104" ClassID="a43ab77d-3a01-4173-b6ea-aeb9b4ae884b" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ParamIdentifier>5502</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>true</ParamDontSerializeValue>
+		<ParamOrdinalValue>3</ParamOrdinalValue>
+		<ParamType>6</ParamType>
+	</ExporterParam>
+	<ExporterParam ObjectID="105" ClassID="a43ab77d-3a01-4173-b6ea-aeb9b4ae884b" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ParamIdentifier>5524</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>true</ParamIsHidden>
+		<ParamIsDisabled>true</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>4</ParamOrdinalValue>
+		<ParamType>6</ParamType>
+		<ParamValue></ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="106" ClassID="a43ab77d-3a01-4173-b6ea-aeb9b4ae884b" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ParamIdentifier>5503</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>true</ParamDontSerializeValue>
+		<ParamOrdinalValue>5</ParamOrdinalValue>
+		<ParamType>6</ParamType>
+	</ExporterParam>
+	<ExporterParam ObjectID="107" ClassID="a43ab77d-3a01-4173-b6ea-aeb9b4ae884b" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ParamIdentifier>5525</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>true</ParamIsHidden>
+		<ParamIsDisabled>true</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>6</ParamOrdinalValue>
+		<ParamType>6</ParamType>
+		<ParamValue></ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="108" ClassID="a43ab77d-3a01-4173-b6ea-aeb9b4ae884b" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ParamIdentifier>5504</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>true</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>true</ParamDontSerializeValue>
+		<ParamOrdinalValue>7</ParamOrdinalValue>
+		<ParamType>6</ParamType>
+	</ExporterParam>
+	<ExporterParam ObjectID="109" ClassID="a43ab77d-3a01-4173-b6ea-aeb9b4ae884b" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ParamIdentifier>5526</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>true</ParamIsHidden>
+		<ParamIsDisabled>true</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>false</ParamDontSerializeValue>
+		<ParamOrdinalValue>8</ParamOrdinalValue>
+		<ParamType>6</ParamType>
+		<ParamValue></ParamValue>
+	</ExporterParam>
+	<ExporterParam ObjectID="110" ClassID="9f049ab7-d48f-43e9-a8ca-4d7f21233625" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ParamIdentifier>5505</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>true</ParamDontSerializeValue>
+		<ParamOrdinalValue>9</ParamOrdinalValue>
+		<ParamType>2</ParamType>
+	</ExporterParam>
+	<ExporterParam ObjectID="111" ClassID="d0f6b8af-8ddb-4381-acf8-3e817480d07d" Version="1">
+		<ParamTargetID>0</ParamTargetID>
+		<ParamAuxType></ParamAuxType>
+		<ParamAuxValue></ParamAuxValue>
+		<ParamIdentifier>5507</ParamIdentifier>
+		<ParamConstrainedListIsOptional>false</ParamConstrainedListIsOptional>
+		<ParamIsPassword>false</ParamIsPassword>
+		<ParamIsMultiLine>false</ParamIsMultiLine>
+		<ParamIsHidden>false</ParamIsHidden>
+		<ParamIsDisabled>false</ParamIsDisabled>
+		<ParamIsIndependant>false</ParamIsIndependant>
+		<ParamIsSlider>false</ParamIsSlider>
+		<ParamDontSerializeValue>true</ParamDontSerializeValue>
+		<ParamOrdinalValue>10</ParamOrdinalValue>
+		<ParamType>1</ParamType>
+	</ExporterParam>
+</PremiereData>

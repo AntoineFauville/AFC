@@ -1,0 +1,279 @@
+	.version 2.3
+	.target sm_20
+	.address_size 64
+	// compiled with C:\mightykilt64/shared/adobe/MediaCore//External/3rdParty/NVIDIA/CUDA/win/bin/../open64/lib//be.exe
+	// nvopencc 4.0 built on 2011-05-13
+
+	//-----------------------------------------------------------
+	// Compiling C:/Users/dvaeng/AppData/Local/Temp/tmpxft_00003764_00000000-11_DirectionalBlur.cpp3.i (C:/Users/dvaeng/AppData/Local/Temp/ccBI#.a12304)
+	//-----------------------------------------------------------
+
+	//-----------------------------------------------------------
+	// Options:
+	//-----------------------------------------------------------
+	//  Target:ptx, ISA:sm_20, Endian:little, Pointer Size:64
+	//  -O3	(Optimization level)
+	//  -g0	(Debug level)
+	//  -m2	(Report advisories)
+	//-----------------------------------------------------------
+
+	.file	1	"C:/Users/dvaeng/AppData/Local/Temp/tmpxft_00003764_00000000-10_DirectionalBlur.cudafe2.gpu"
+	.file	2	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/DevicePixelFormat.h"
+	.file	3	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/PixelRGB.h"
+	.file	4	"c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h"
+	.file	5	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\crt/device_runtime.h"
+	.file	6	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\host_defines.h"
+	.file	7	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\builtin_types.h"
+	.file	8	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_types.h"
+	.file	9	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\driver_types.h"
+	.file	10	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_types.h"
+	.file	11	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_types.h"
+	.file	12	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\vector_types.h"
+	.file	13	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\builtin_types.h"
+	.file	14	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\host_defines.h"
+	.file	15	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\device_launch_parameters.h"
+	.file	16	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\crt\storage_class.h"
+	.file	17	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\INCLUDE\time.h"
+	.file	18	"C:/mightykilt64/shared/adobe/MediaCore/Renderers/RendererGPU/Src/Effects/DirectionalBlur.cu"
+	.file	19	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\common_functions.h"
+	.file	20	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions.h"
+	.file	21	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_constants.h"
+	.file	22	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_functions.h"
+	.file	23	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_11_atomic_functions.h"
+	.file	24	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_12_atomic_functions.h"
+	.file	25	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_13_double_functions.h"
+	.file	26	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_atomic_functions.h"
+	.file	27	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_intrinsics.h"
+	.file	28	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_functions.h"
+	.file	29	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_fetch_functions.h"
+	.file	30	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions_dbl_ptx3.h"
+
+	.global .texref inSrcTexture;
+
+	.entry ShearHorizontalKernel (
+		.param .u64 __cudaparm_ShearHorizontalKernel_TextureinSrcTexture,
+		.param .u32 __cudaparm_ShearHorizontalKernel_inDeviceFormat,
+		.param .u64 __cudaparm_ShearHorizontalKernel_inOutput,
+		.param .s32 __cudaparm_ShearHorizontalKernel_inOutputWidth,
+		.param .s32 __cudaparm_ShearHorizontalKernel_inOutputHeight,
+		.param .s32 __cudaparm_ShearHorizontalKernel_inOutputPitch,
+		.param .s32 __cudaparm_ShearHorizontalKernel_inInputWidth,
+		.param .s32 __cudaparm_ShearHorizontalKernel_inInputHeight,
+		.param .f32 __cudaparm_ShearHorizontalKernel_inShearAmount,
+		.param .s32 __cudaparm_ShearHorizontalKernel_inOffset)
+	{
+	.reg .u32 %r<32>;
+	.reg .u64 %rd<8>;
+	.reg .f32 %f<29>;
+	.reg .pred %p<6>;
+	.loc	18	24	0
+$LDWbegin_ShearHorizontalKernel:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.y;
+	mov.u32 	%r5, %ntid.y;
+	mul.lo.u32 	%r6, %r4, %r5;
+	mov.u32 	%r7, %tid.x;
+	add.u32 	%r8, %r7, %r3;
+	mov.u32 	%r9, %tid.y;
+	add.u32 	%r10, %r9, %r6;
+	ld.param.s32 	%r11, [__cudaparm_ShearHorizontalKernel_inOutputWidth];
+	set.gt.u32.s32 	%r12, %r11, %r8;
+	neg.s32 	%r13, %r12;
+	ld.param.s32 	%r14, [__cudaparm_ShearHorizontalKernel_inOutputHeight];
+	set.gt.u32.s32 	%r15, %r14, %r10;
+	neg.s32 	%r16, %r15;
+	and.b32 	%r17, %r13, %r16;
+	mov.u32 	%r18, 0;
+	setp.eq.s32 	%p1, %r17, %r18;
+	@%p1 bra 	$Lt_0_3842;
+	ld.param.s32 	%r19, [__cudaparm_ShearHorizontalKernel_inOffset];
+	cvt.rn.f32.s32 	%f1, %r19;
+	cvt.rn.f32.s32 	%f2, %r8;
+	cvt.rn.f32.s32 	%f3, %r10;
+	ld.param.f32 	%f4, [__cudaparm_ShearHorizontalKernel_inShearAmount];
+	mul.ftz.f32 	%f5, %f3, %f4;
+	sub.ftz.f32 	%f6, %f2, %f5;
+	sub.ftz.f32 	%f7, %f6, %f1;
+	mov.f32 	%f8, 0f00000000;     	// 0
+	setp.ge.ftz.f32 	%p2, %f7, %f8;
+	@!%p2 bra 	$Lt_0_4866;
+	ld.param.s32 	%r20, [__cudaparm_ShearHorizontalKernel_inInputWidth];
+	sub.s32 	%r21, %r20, 1;
+	cvt.rn.f32.s32 	%f9, %r21;
+	setp.ge.ftz.f32 	%p3, %f9, %f7;
+	@!%p3 bra 	$L_0_3330;
+	mov.f32 	%f10, %f7;
+	mov.f32 	%f11, %f3;
+	mov.f32 	%f12, 0f00000000;    	// 0
+	mov.f32 	%f13, %f12;
+	mov.f32 	%f14, 0f00000000;    	// 0
+	mov.f32 	%f15, %f14;
+	tex.2d.v4.f32.f32 {%f16,%f17,%f18,%f19},[inSrcTexture,{%f10,%f11,%f13,%f15}];
+	mov.f32 	%f20, %f16;
+	mov.f32 	%f21, %f17;
+	mov.f32 	%f22, %f18;
+	mov.f32 	%f23, %f19;
+	mov.f32 	%f24, %f20;
+	mov.f32 	%f25, %f21;
+	mov.f32 	%f26, %f22;
+	mov.f32 	%f27, %f23;
+	bra.uni 	$L_0_3074;
+$Lt_0_4866:
+$L_0_3330:
+	mov.f32 	%f27, 0f00000000;    	// 0
+	mov.f32 	%f26, 0f00000000;    	// 0
+	mov.f32 	%f25, 0f00000000;    	// 0
+	mov.f32 	%f24, 0f00000000;    	// 0
+$L_0_3074:
+	ld.param.s32 	%r22, [__cudaparm_ShearHorizontalKernel_inOutputPitch];
+	mul.lo.s32 	%r23, %r22, %r10;
+	add.s32 	%r24, %r8, %r23;
+	cvt.s64.s32 	%rd1, %r24;
+	ld.param.u64 	%rd2, [__cudaparm_ShearHorizontalKernel_inOutput];
+	ld.param.u32 	%r25, [__cudaparm_ShearHorizontalKernel_inDeviceFormat];
+	mov.u32 	%r26, 0;
+	setp.ne.s32 	%p4, %r25, %r26;
+	@%p4 bra 	$Lt_0_4610;
+	mul.lo.u64 	%rd3, %rd1, 8;
+	add.u64 	%rd4, %rd2, %rd3;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f24;
+	mov.b32		%r27, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f25;
+	mov.b32		%r28, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f26;
+	mov.b32		%r29, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f27;
+	mov.b32		%r30, %b1; }
+	st.global.v4.u16 	[%rd4+0], {%r27,%r28,%r29,%r30};
+	bra.uni 	$Lt_0_4354;
+$Lt_0_4610:
+	mul.lo.u64 	%rd5, %rd1, 16;
+	add.u64 	%rd6, %rd2, %rd5;
+	st.global.v4.f32 	[%rd6+0], {%f24,%f25,%f26,%f27};
+$Lt_0_4354:
+$Lt_0_3842:
+	exit;
+$LDWend_ShearHorizontalKernel:
+	} // ShearHorizontalKernel
+
+	.entry ShearVerticalKernel (
+		.param .u64 __cudaparm_ShearVerticalKernel_TextureinSrcTexture,
+		.param .u32 __cudaparm_ShearVerticalKernel_inDeviceFormat,
+		.param .u64 __cudaparm_ShearVerticalKernel_inOutput,
+		.param .s32 __cudaparm_ShearVerticalKernel_inOutputWidth,
+		.param .s32 __cudaparm_ShearVerticalKernel_inOutputHeight,
+		.param .s32 __cudaparm_ShearVerticalKernel_inOutputPitch,
+		.param .s32 __cudaparm_ShearVerticalKernel_inInputWidth,
+		.param .s32 __cudaparm_ShearVerticalKernel_inInputHeight,
+		.param .f32 __cudaparm_ShearVerticalKernel_inShearAmount,
+		.param .s32 __cudaparm_ShearVerticalKernel_inOffset)
+	{
+	.reg .u32 %r<32>;
+	.reg .u64 %rd<8>;
+	.reg .f32 %f<33>;
+	.reg .pred %p<6>;
+$LDWbegin_ShearVerticalKernel:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.y;
+	mov.u32 	%r5, %ntid.y;
+	mul.lo.u32 	%r6, %r4, %r5;
+	mov.u32 	%r7, %tid.x;
+	add.u32 	%r8, %r7, %r3;
+	mov.u32 	%r9, %tid.y;
+	add.u32 	%r10, %r9, %r6;
+	ld.param.s32 	%r11, [__cudaparm_ShearVerticalKernel_inOutputWidth];
+	set.gt.u32.s32 	%r12, %r11, %r8;
+	neg.s32 	%r13, %r12;
+	ld.param.s32 	%r14, [__cudaparm_ShearVerticalKernel_inOutputHeight];
+	set.gt.u32.s32 	%r15, %r14, %r10;
+	neg.s32 	%r16, %r15;
+	and.b32 	%r17, %r13, %r16;
+	mov.u32 	%r18, 0;
+	setp.eq.s32 	%p1, %r17, %r18;
+	@%p1 bra 	$Lt_1_3842;
+	ld.param.s32 	%r19, [__cudaparm_ShearVerticalKernel_inOffset];
+	cvt.rn.f32.s32 	%f1, %r19;
+	cvt.rn.f32.s32 	%f2, %r8;
+	cvt.rn.f32.s32 	%f3, %r10;
+	ld.param.f32 	%f4, [__cudaparm_ShearVerticalKernel_inShearAmount];
+	mul.ftz.f32 	%f5, %f2, %f4;
+	sub.ftz.f32 	%f6, %f3, %f5;
+	sub.ftz.f32 	%f7, %f6, %f1;
+	mov.f32 	%f8, 0f00000000;     	// 0
+	setp.ge.ftz.f32 	%p2, %f7, %f8;
+	@!%p2 bra 	$Lt_1_4866;
+	ld.param.s32 	%r20, [__cudaparm_ShearVerticalKernel_inInputHeight];
+	sub.s32 	%r21, %r20, 1;
+	cvt.rn.f32.s32 	%f9, %r21;
+	setp.ge.ftz.f32 	%p3, %f9, %f7;
+	@!%p3 bra 	$L_1_3330;
+	mov.f32 	%f10, 0f3f000000;    	// 0.5
+	add.ftz.f32 	%f11, %f2, %f10;
+	mov.f32 	%f12, %f11;
+	mov.f32 	%f13, 0f3f000000;    	// 0.5
+	add.ftz.f32 	%f14, %f7, %f13;
+	mov.f32 	%f15, %f14;
+	mov.f32 	%f16, 0f00000000;    	// 0
+	mov.f32 	%f17, %f16;
+	mov.f32 	%f18, 0f00000000;    	// 0
+	mov.f32 	%f19, %f18;
+	tex.2d.v4.f32.f32 {%f20,%f21,%f22,%f23},[inSrcTexture,{%f12,%f15,%f17,%f19}];
+	mov.f32 	%f24, %f20;
+	mov.f32 	%f25, %f21;
+	mov.f32 	%f26, %f22;
+	mov.f32 	%f27, %f23;
+	mov.f32 	%f28, %f24;
+	mov.f32 	%f29, %f25;
+	mov.f32 	%f30, %f26;
+	mov.f32 	%f31, %f27;
+	bra.uni 	$L_1_3074;
+$Lt_1_4866:
+$L_1_3330:
+	mov.f32 	%f31, 0f00000000;    	// 0
+	mov.f32 	%f30, 0f00000000;    	// 0
+	mov.f32 	%f29, 0f00000000;    	// 0
+	mov.f32 	%f28, 0f00000000;    	// 0
+$L_1_3074:
+	ld.param.s32 	%r22, [__cudaparm_ShearVerticalKernel_inOutputPitch];
+	mul.lo.s32 	%r23, %r22, %r10;
+	add.s32 	%r24, %r8, %r23;
+	cvt.s64.s32 	%rd1, %r24;
+	ld.param.u64 	%rd2, [__cudaparm_ShearVerticalKernel_inOutput];
+	ld.param.u32 	%r25, [__cudaparm_ShearVerticalKernel_inDeviceFormat];
+	mov.u32 	%r26, 0;
+	setp.ne.s32 	%p4, %r25, %r26;
+	@%p4 bra 	$Lt_1_4610;
+	mul.lo.u64 	%rd3, %rd1, 8;
+	add.u64 	%rd4, %rd2, %rd3;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f28;
+	mov.b32		%r27, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f29;
+	mov.b32		%r28, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f30;
+	mov.b32		%r29, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f31;
+	mov.b32		%r30, %b1; }
+	st.global.v4.u16 	[%rd4+0], {%r27,%r28,%r29,%r30};
+	bra.uni 	$Lt_1_4354;
+$Lt_1_4610:
+	mul.lo.u64 	%rd5, %rd1, 16;
+	add.u64 	%rd6, %rd2, %rd5;
+	st.global.v4.f32 	[%rd6+0], {%f28,%f29,%f30,%f31};
+$Lt_1_4354:
+$Lt_1_3842:
+	exit;
+$LDWend_ShearVerticalKernel:
+	} // ShearVerticalKernel
+

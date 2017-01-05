@@ -1,0 +1,18 @@
+layout my_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/RenameClipDialog/kResDLGRenameClipDialogTitle=Rename Clip', identifier:'RenameClipDialog')
+	{
+		row(child_horizontal: align_fill, horizontal: align_fill, spacing:15)
+		{
+			dva_text_edit(
+				identifier:'clipNameTextEdit', 
+				minWidth:150, 
+				label: '$$$/Premiere/DLG/RenameClipDialog/kResDLGClipName=Clip Name:', 
+				setAsFocused:'true');
+			column(child_horizontal: align_center, horizontal: align_center)
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);
+			}
+		}
+	}
+} 

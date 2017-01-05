@@ -1,0 +1,768 @@
+	.version 2.3
+	.target sm_20
+	.address_size 64
+	// compiled with C:\mightykilt64/shared/adobe/MediaCore//External/3rdParty/NVIDIA/CUDA/win/bin/../open64/lib//be.exe
+	// nvopencc 4.0 built on 2011-05-13
+
+	.visible .func (.param .align 16 .b8 __cudaretf__Z18UnpremultiplyPixel8PixelRGB[16]) _Z18UnpremultiplyPixel8PixelRGB (.param .align 16 .b8 __cudaparmf1__Z18UnpremultiplyPixel8PixelRGB[16])
+
+	//-----------------------------------------------------------
+	// Compiling C:/Users/dvaeng/AppData/Local/Temp/tmpxft_00003674_00000000-11_Deinterlace.cpp3.i (C:/Users/dvaeng/AppData/Local/Temp/ccBI#.a04664)
+	//-----------------------------------------------------------
+
+	//-----------------------------------------------------------
+	// Options:
+	//-----------------------------------------------------------
+	//  Target:ptx, ISA:sm_20, Endian:little, Pointer Size:64
+	//  -O3	(Optimization level)
+	//  -g0	(Debug level)
+	//  -m2	(Report advisories)
+	//-----------------------------------------------------------
+
+	.file	1	"C:/Users/dvaeng/AppData/Local/Temp/tmpxft_00003674_00000000-10_Deinterlace.cudafe2.gpu"
+	.file	2	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/DevicePixelFormat.h"
+	.file	3	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/PixelRGB.h"
+	.file	4	"c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h"
+	.file	5	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\crt/device_runtime.h"
+	.file	6	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\host_defines.h"
+	.file	7	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\builtin_types.h"
+	.file	8	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_types.h"
+	.file	9	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\driver_types.h"
+	.file	10	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_types.h"
+	.file	11	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_types.h"
+	.file	12	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\vector_types.h"
+	.file	13	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\builtin_types.h"
+	.file	14	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\host_defines.h"
+	.file	15	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\device_launch_parameters.h"
+	.file	16	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\crt\storage_class.h"
+	.file	17	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\INCLUDE\time.h"
+	.file	18	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/PixelUtils.h"
+	.file	19	"C:/mightykilt64/shared/adobe/MediaCore/GPUFoundation/Src/ImageProcessing/Deinterlace.cu"
+	.file	20	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\common_functions.h"
+	.file	21	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions.h"
+	.file	22	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_constants.h"
+	.file	23	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_functions.h"
+	.file	24	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_11_atomic_functions.h"
+	.file	25	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_12_atomic_functions.h"
+	.file	26	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_13_double_functions.h"
+	.file	27	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_atomic_functions.h"
+	.file	28	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_intrinsics.h"
+	.file	29	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_functions.h"
+	.file	30	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_fetch_functions.h"
+	.file	31	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions_dbl_ptx3.h"
+
+
+	.visible .func (.param .align 16 .b8 __cudaretf__Z18UnpremultiplyPixel8PixelRGB[16]) _Z18UnpremultiplyPixel8PixelRGB (.param .align 16 .b8 __cudaparmf1__Z18UnpremultiplyPixel8PixelRGB[16])
+	{
+	.reg .f32 %f<24>;
+	.reg .pred %p<3>;
+	.loc	18	45	0
+$LDWbegin__Z18UnpremultiplyPixel8PixelRGB:
+	ld.param.f32 	%f1, [__cudaparmf1__Z18UnpremultiplyPixel8PixelRGB+0];
+	mov.f32 	%f2, %f1;
+	ld.param.f32 	%f3, [__cudaparmf1__Z18UnpremultiplyPixel8PixelRGB+4];
+	mov.f32 	%f4, %f3;
+	ld.param.f32 	%f5, [__cudaparmf1__Z18UnpremultiplyPixel8PixelRGB+8];
+	mov.f32 	%f6, %f5;
+	ld.param.f32 	%f7, [__cudaparmf1__Z18UnpremultiplyPixel8PixelRGB+12];
+	mov.f32 	%f8, %f7;
+	cvt.ftz.sat.f32.f32 	%f9, %f8;
+	mov.f32 	%f10, %f9;
+	mov.f32 	%f11, 0fb70637bd;    	// -8e-006
+	add.ftz.f32 	%f12, %f9, %f11;
+	mov.f32 	%f13, 0f00000000;    	// 0
+	setp.le.ftz.f32 	%p1, %f12, %f13;
+	@%p1 bra 	$Lt_0_1282;
+	mov.f32 	%f14, 0f3f800000;    	// 1
+	div.approx.ftz.f32 	%f15, %f14, %f9;
+	mul.ftz.f32 	%f16, %f15, %f6;
+	mul.ftz.f32 	%f17, %f15, %f4;
+	mul.ftz.f32 	%f18, %f15, %f2;
+	bra.uni 	$Lt_0_1026;
+$Lt_0_1282:
+	mov.f32 	%f16, 0f00000000;    	// 0
+	mov.f32 	%f17, 0f00000000;    	// 0
+	mov.f32 	%f18, 0f00000000;    	// 0
+	mov.f32 	%f10, 0f00000000;    	// 0
+$Lt_0_1026:
+	mov.f32 	%f19, %f18;
+	st.param.f32 	[__cudaretf__Z18UnpremultiplyPixel8PixelRGB+0], %f19;
+	mov.f32 	%f20, %f17;
+	st.param.f32 	[__cudaretf__Z18UnpremultiplyPixel8PixelRGB+4], %f20;
+	mov.f32 	%f21, %f16;
+	st.param.f32 	[__cudaretf__Z18UnpremultiplyPixel8PixelRGB+8], %f21;
+	mov.f32 	%f22, %f10;
+	st.param.f32 	[__cudaretf__Z18UnpremultiplyPixel8PixelRGB+12], %f22;
+	ret;
+$LDWend__Z18UnpremultiplyPixel8PixelRGB:
+	} // _Z18UnpremultiplyPixel8PixelRGB
+	.global .texref inSrcTexture;
+
+	.entry DeinterlaceKernel (
+		.param .u64 __cudaparm_DeinterlaceKernel_TextureinSrcTexture,
+		.param .u64 __cudaparm_DeinterlaceKernel_outDest,
+		.param .s32 __cudaparm_DeinterlaceKernel_inPitch,
+		.param .u32 __cudaparm_DeinterlaceKernel_inDeviceFormat,
+		.param .s32 __cudaparm_DeinterlaceKernel_inWidth,
+		.param .s32 __cudaparm_DeinterlaceKernel_inHeight,
+		.param .s32 __cudaparm_DeinterlaceKernel_inUpperField)
+	{
+	.reg .u32 %r<83>;
+	.reg .u64 %rd<26>;
+	.reg .f32 %f<286>;
+	.reg .pred %p<51>;
+	.loc	19	43	0
+$LDWbegin_DeinterlaceKernel:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %tid.x;
+	add.u32 	%r5, %r4, %r3;
+	ld.param.s32 	%r6, [__cudaparm_DeinterlaceKernel_inWidth];
+	setp.le.s32 	%p1, %r6, %r5;
+	@%p1 bra 	$Lt_1_60674;
+	ld.param.s32 	%r7, [__cudaparm_DeinterlaceKernel_inUpperField];
+	mov.s32 	%r8, 0;
+	setp.ne.s32 	%p2, %r7, %r8;
+	mov.u32 	%r9, %ctaid.y;
+	mov.u32 	%r10, %ntid.y;
+	mul.lo.u32 	%r11, %r9, %r10;
+	mov.u32 	%r12, %tid.y;
+	add.u32 	%r13, %r12, %r11;
+	shl.b32 	%r14, %r13, 1;
+	add.s32 	%r15, %r14, 1;
+	selp.s32 	%r16, %r15, %r14, %p2;
+	mov.s32 	%r17, 0;
+	setp.gt.s32 	%p3, %r16, %r17;
+	add.s32 	%r18, %r16, 1;
+	ld.param.s32 	%r19, [__cudaparm_DeinterlaceKernel_inHeight];
+	setp.lt.s32 	%p4, %r18, %r19;
+	@!%p3 bra 	$Lt_1_61698;
+	@!%p4 bra 	$Lt_1_61698;
+	mov.u32 	%r20, 0;
+	setp.le.s32 	%p5, %r5, %r20;
+	@%p5 bra 	$Lt_1_61698;
+	add.s32 	%r21, %r5, 1;
+	setp.le.s32 	%p6, %r6, %r21;
+	@%p6 bra 	$Lt_1_61698;
+	cvt.rn.f32.s32 	%f1, %r5;
+	mov.f32 	%f2, 0fbf000000;     	// -0.5
+	add.ftz.f32 	%f3, %f1, %f2;
+	cvt.rn.f32.s32 	%f4, %r16;
+	mov.f32 	%f5, 0fbf000000;     	// -0.5
+	add.ftz.f32 	%f6, %f4, %f5;
+	mov.f32 	%f7, %f3;
+	mov.f32 	%f8, %f6;
+	mov.f32 	%f9, 0f00000000;     	// 0
+	mov.f32 	%f10, %f9;
+	mov.f32 	%f11, 0f00000000;    	// 0
+	mov.f32 	%f12, %f11;
+	tex.2d.v4.f32.f32 {%f13,%f14,%f15,%f16},[inSrcTexture,{%f7,%f8,%f10,%f12}];
+	mov.f32 	%f17, %f13;
+	mov.f32 	%f18, %f14;
+	mov.f32 	%f19, %f15;
+	mov.f32 	%f20, %f16;
+	mov.f32 	%f21, 0f3f000000;    	// 0.5
+	add.ftz.f32 	%f22, %f1, %f21;
+	mov.f32 	%f23, %f22;
+	mov.f32 	%f24, %f6;
+	mov.f32 	%f25, 0f00000000;    	// 0
+	mov.f32 	%f26, %f25;
+	mov.f32 	%f27, 0f00000000;    	// 0
+	mov.f32 	%f28, %f27;
+	tex.2d.v4.f32.f32 {%f29,%f30,%f31,%f32},[inSrcTexture,{%f23,%f24,%f26,%f28}];
+	mov.f32 	%f33, %f29;
+	mov.f32 	%f34, %f30;
+	mov.f32 	%f35, %f31;
+	mov.f32 	%f36, %f32;
+	mov.f32 	%f37, 0f3fc00000;    	// 1.5
+	add.ftz.f32 	%f38, %f1, %f37;
+	mov.f32 	%f39, %f38;
+	mov.f32 	%f40, %f6;
+	mov.f32 	%f41, 0f00000000;    	// 0
+	mov.f32 	%f42, %f41;
+	mov.f32 	%f43, 0f00000000;    	// 0
+	mov.f32 	%f44, %f43;
+	tex.2d.v4.f32.f32 {%f45,%f46,%f47,%f48},[inSrcTexture,{%f39,%f40,%f42,%f44}];
+	mov.f32 	%f49, %f45;
+	mov.f32 	%f50, %f46;
+	mov.f32 	%f51, %f47;
+	mov.f32 	%f52, %f48;
+	mov.f32 	%f53, 0f3fc00000;    	// 1.5
+	add.ftz.f32 	%f54, %f4, %f53;
+	mov.f32 	%f55, %f3;
+	mov.f32 	%f56, %f54;
+	mov.f32 	%f57, 0f00000000;    	// 0
+	mov.f32 	%f58, %f57;
+	mov.f32 	%f59, 0f00000000;    	// 0
+	mov.f32 	%f60, %f59;
+	tex.2d.v4.f32.f32 {%f61,%f62,%f63,%f64},[inSrcTexture,{%f55,%f56,%f58,%f60}];
+	mov.f32 	%f65, %f61;
+	mov.f32 	%f66, %f62;
+	mov.f32 	%f67, %f63;
+	mov.f32 	%f68, %f64;
+	mov.f32 	%f69, %f22;
+	mov.f32 	%f70, %f54;
+	mov.f32 	%f71, 0f00000000;    	// 0
+	mov.f32 	%f72, %f71;
+	mov.f32 	%f73, 0f00000000;    	// 0
+	mov.f32 	%f74, %f73;
+	tex.2d.v4.f32.f32 {%f75,%f76,%f77,%f78},[inSrcTexture,{%f69,%f70,%f72,%f74}];
+	mov.f32 	%f79, %f75;
+	mov.f32 	%f80, %f76;
+	mov.f32 	%f81, %f77;
+	mov.f32 	%f82, %f78;
+	mov.f32 	%f83, %f38;
+	mov.f32 	%f84, %f54;
+	mov.f32 	%f85, 0f00000000;    	// 0
+	mov.f32 	%f86, %f85;
+	mov.f32 	%f87, 0f00000000;    	// 0
+	mov.f32 	%f88, %f87;
+	tex.2d.v4.f32.f32 {%f89,%f90,%f91,%f92},[inSrcTexture,{%f83,%f84,%f86,%f88}];
+	mov.f32 	%f93, %f89;
+	mov.f32 	%f94, %f90;
+	mov.f32 	%f95, %f91;
+	mov.f32 	%f96, %f92;
+	mul.ftz.f32 	%f97, %f19, %f20;
+	mul.ftz.f32 	%f98, %f95, %f96;
+	mul.ftz.f32 	%f99, %f18, %f20;
+	mul.ftz.f32 	%f100, %f94, %f96;
+	mul.ftz.f32 	%f101, %f17, %f20;
+	mul.ftz.f32 	%f102, %f93, %f96;
+	mul.ftz.f32 	%f103, %f35, %f36;
+	mul.ftz.f32 	%f104, %f81, %f82;
+	mul.ftz.f32 	%f105, %f34, %f36;
+	mul.ftz.f32 	%f106, %f80, %f82;
+	mul.ftz.f32 	%f107, %f33, %f36;
+	mul.ftz.f32 	%f108, %f79, %f82;
+	mul.ftz.f32 	%f109, %f51, %f52;
+	mul.ftz.f32 	%f110, %f67, %f68;
+	mul.ftz.f32 	%f111, %f50, %f52;
+	mul.ftz.f32 	%f112, %f66, %f68;
+	mul.ftz.f32 	%f113, %f49, %f52;
+	mul.ftz.f32 	%f114, %f65, %f68;
+	sub.ftz.f32 	%f115, %f97, %f98;
+	sub.ftz.f32 	%f116, %f99, %f100;
+	sub.ftz.f32 	%f117, %f101, %f102;
+	sub.ftz.f32 	%f118, %f103, %f104;
+	sub.ftz.f32 	%f119, %f105, %f106;
+	sub.ftz.f32 	%f120, %f107, %f108;
+	sub.ftz.f32 	%f121, %f109, %f110;
+	sub.ftz.f32 	%f122, %f111, %f112;
+	sub.ftz.f32 	%f123, %f113, %f114;
+	mul.ftz.f32 	%f124, %f115, %f115;
+	mul.ftz.f32 	%f125, %f118, %f118;
+	mul.ftz.f32 	%f126, %f121, %f121;
+	fma.rn.ftz.f32 	%f127, %f116, %f116, %f124;
+	fma.rn.ftz.f32 	%f128, %f119, %f119, %f125;
+	fma.rn.ftz.f32 	%f129, %f122, %f122, %f126;
+	fma.rn.ftz.f32 	%f130, %f117, %f117, %f127;
+	fma.rn.ftz.f32 	%f131, %f120, %f120, %f128;
+	fma.rn.ftz.f32 	%f132, %f123, %f123, %f129;
+	set.lt.ftz.u32.f32 	%r22, %f130, %f131;
+	neg.s32 	%r23, %r22;
+	set.lt.ftz.u32.f32 	%r24, %f130, %f132;
+	neg.s32 	%r25, %r24;
+	and.b32 	%r26, %r23, %r25;
+	mov.u32 	%r27, 0;
+	setp.eq.s32 	%p7, %r26, %r27;
+	@%p7 bra 	$Lt_1_43522;
+	mov.f32 	%f133, %f101;
+	mov.f32 	%f134, %f99;
+	mov.f32 	%f135, %f97;
+	mov.f32 	%f136, %f20;
+	mov.f32 	%f137, %f102;
+	mov.f32 	%f138, %f100;
+	mov.f32 	%f139, %f98;
+	mov.f32 	%f140, %f96;
+	bra.uni 	$Lt_1_43778;
+$Lt_1_43522:
+	setp.lt.ftz.f32 	%p8, %f131, %f132;
+	@!%p8 bra 	$Lt_1_44034;
+	mov.f32 	%f133, %f107;
+	mov.f32 	%f134, %f105;
+	mov.f32 	%f135, %f103;
+	mov.f32 	%f136, %f36;
+	mov.f32 	%f137, %f108;
+	mov.f32 	%f138, %f106;
+	mov.f32 	%f139, %f104;
+	mov.f32 	%f140, %f82;
+	bra.uni 	$Lt_1_43778;
+$Lt_1_44034:
+	mov.f32 	%f133, %f113;
+	mov.f32 	%f134, %f111;
+	mov.f32 	%f135, %f109;
+	mov.f32 	%f136, %f52;
+	mov.f32 	%f137, %f114;
+	mov.f32 	%f138, %f112;
+	mov.f32 	%f139, %f110;
+	mov.f32 	%f140, %f68;
+$Lt_1_43778:
+$Lt_1_43266:
+	add.ftz.f32 	%f141, %f133, %f137;
+	mov.f32 	%f142, 0f3f000000;   	// 0.5
+	mul.ftz.f32 	%f143, %f141, %f142;
+	setp.gt.ftz.f32 	%p9, %f107, %f108;
+	@!%p9 bra 	$Lt_1_44546;
+	setp.gt.ftz.f32 	%p10, %f108, %f143;
+	@!%p10 bra 	$Lt_1_45058;
+	mov.f32 	%f144, %f108;
+	bra.uni 	$Lt_1_44802;
+$Lt_1_45058:
+	setp.gt.ftz.f32 	%p11, %f107, %f143;
+	selp.f32 	%f144, %f143, %f107, %p11;
+$Lt_1_44802:
+	mov.f32 	%f145, %f144;
+	bra.uni 	$Lt_1_44290;
+$Lt_1_44546:
+	setp.lt.ftz.f32 	%p12, %f108, %f143;
+	@!%p12 bra 	$Lt_1_45570;
+	mov.f32 	%f146, %f108;
+	bra.uni 	$Lt_1_45314;
+$Lt_1_45570:
+	max.ftz.f32 	%f146, %f107, %f143;
+$Lt_1_45314:
+	mov.f32 	%f145, %f146;
+$Lt_1_44290:
+	add.ftz.f32 	%f147, %f134, %f138;
+	mov.f32 	%f148, 0f3f000000;   	// 0.5
+	mul.ftz.f32 	%f149, %f147, %f148;
+	setp.gt.ftz.f32 	%p13, %f105, %f106;
+	@!%p13 bra 	$Lt_1_46082;
+	setp.gt.ftz.f32 	%p14, %f106, %f149;
+	@!%p14 bra 	$Lt_1_46594;
+	mov.f32 	%f150, %f106;
+	bra.uni 	$Lt_1_46338;
+$Lt_1_46594:
+	setp.gt.ftz.f32 	%p15, %f105, %f149;
+	selp.f32 	%f150, %f149, %f105, %p15;
+$Lt_1_46338:
+	mov.f32 	%f151, %f150;
+	bra.uni 	$Lt_1_45826;
+$Lt_1_46082:
+	setp.lt.ftz.f32 	%p16, %f106, %f149;
+	@!%p16 bra 	$Lt_1_47106;
+	mov.f32 	%f152, %f106;
+	bra.uni 	$Lt_1_46850;
+$Lt_1_47106:
+	max.ftz.f32 	%f152, %f105, %f149;
+$Lt_1_46850:
+	mov.f32 	%f151, %f152;
+$Lt_1_45826:
+	add.ftz.f32 	%f153, %f135, %f139;
+	mov.f32 	%f154, 0f3f000000;   	// 0.5
+	mul.ftz.f32 	%f155, %f153, %f154;
+	setp.gt.ftz.f32 	%p17, %f103, %f104;
+	@!%p17 bra 	$Lt_1_47618;
+	setp.gt.ftz.f32 	%p18, %f104, %f155;
+	@!%p18 bra 	$Lt_1_48130;
+	mov.f32 	%f156, %f104;
+	bra.uni 	$Lt_1_47874;
+$Lt_1_48130:
+	setp.gt.ftz.f32 	%p19, %f103, %f155;
+	selp.f32 	%f156, %f155, %f103, %p19;
+$Lt_1_47874:
+	mov.f32 	%f157, %f156;
+	bra.uni 	$Lt_1_47362;
+$Lt_1_47618:
+	setp.lt.ftz.f32 	%p20, %f104, %f155;
+	@!%p20 bra 	$Lt_1_48642;
+	mov.f32 	%f158, %f104;
+	bra.uni 	$Lt_1_48386;
+$Lt_1_48642:
+	max.ftz.f32 	%f158, %f103, %f155;
+$Lt_1_48386:
+	mov.f32 	%f157, %f158;
+$Lt_1_47362:
+	add.ftz.f32 	%f159, %f136, %f140;
+	mov.f32 	%f160, 0f3f000000;   	// 0.5
+	mul.ftz.f32 	%f161, %f159, %f160;
+	setp.gt.ftz.f32 	%p21, %f36, %f82;
+	@!%p21 bra 	$Lt_1_49154;
+	setp.lt.ftz.f32 	%p22, %f161, %f82;
+	@!%p22 bra 	$Lt_1_49666;
+	mov.f32 	%f162, %f82;
+	bra.uni 	$Lt_1_49410;
+$Lt_1_49666:
+	setp.lt.ftz.f32 	%p23, %f161, %f36;
+	selp.f32 	%f162, %f161, %f36, %p23;
+$Lt_1_49410:
+	mov.f32 	%f163, %f162;
+	bra.uni 	$Lt_1_48898;
+$Lt_1_49154:
+	setp.gt.ftz.f32 	%p24, %f161, %f82;
+	@!%p24 bra 	$Lt_1_50178;
+	mov.f32 	%f164, %f82;
+	bra.uni 	$Lt_1_49922;
+$Lt_1_50178:
+	max.ftz.f32 	%f164, %f161, %f36;
+$Lt_1_49922:
+	mov.f32 	%f163, %f164;
+$Lt_1_48898:
+	.loc	18	45	0
+	cvt.ftz.sat.f32.f32 	%f165, %f163;
+	mov.f32 	%f166, %f165;
+	mov.f32 	%f167, 0fb70637bd;   	// -8e-006
+	add.ftz.f32 	%f168, %f165, %f167;
+	mov.f32 	%f169, 0f00000000;   	// 0
+	setp.le.ftz.f32 	%p25, %f168, %f169;
+	@%p25 bra 	$Lt_1_50690;
+	mov.f32 	%f170, 0f3f800000;   	// 1
+	div.approx.ftz.f32 	%f171, %f170, %f165;
+	mul.ftz.f32 	%f172, %f157, %f171;
+	mul.ftz.f32 	%f173, %f151, %f171;
+	mul.ftz.f32 	%f174, %f145, %f171;
+	bra.uni 	$Lt_1_50434;
+$Lt_1_50690:
+	mov.f32 	%f172, 0f00000000;   	// 0
+	mov.f32 	%f173, 0f00000000;   	// 0
+	mov.f32 	%f174, 0f00000000;   	// 0
+	mov.f32 	%f166, 0f00000000;   	// 0
+$Lt_1_50434:
+	.loc	19	43	0
+	ld.param.s32 	%r28, [__cudaparm_DeinterlaceKernel_inPitch];
+	mul.lo.s32 	%r29, %r28, %r16;
+	add.s32 	%r30, %r5, %r29;
+	cvt.s64.s32 	%rd1, %r30;
+	ld.param.u64 	%rd2, [__cudaparm_DeinterlaceKernel_outDest];
+	ld.param.u32 	%r31, [__cudaparm_DeinterlaceKernel_inDeviceFormat];
+	mov.u32 	%r32, 0;
+	setp.ne.s32 	%p26, %r31, %r32;
+	@%p26 bra 	$Lt_1_51202;
+	mul.lo.u64 	%rd3, %rd1, 8;
+	add.u64 	%rd4, %rd2, %rd3;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f174;
+	mov.b32		%r33, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f173;
+	mov.b32		%r34, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f172;
+	mov.b32		%r35, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f166;
+	mov.b32		%r36, %b1; }
+	st.global.v4.u16 	[%rd4+0], {%r33,%r34,%r35,%r36};
+	bra.uni 	$Lt_1_60674;
+$Lt_1_51202:
+	mul.lo.u64 	%rd5, %rd1, 16;
+	add.u64 	%rd6, %rd2, %rd5;
+	st.global.v4.f32 	[%rd6+0], {%f174,%f173,%f172,%f166};
+	bra.uni 	$Lt_1_60674;
+$Lt_1_61698:
+$L_1_41730:
+	selp.s32 	%r37, 1, 0, %p3;
+	selp.s32 	%r38, 1, 0, %p4;
+	and.b32 	%r39, %r37, %r38;
+	mov.u32 	%r40, 0;
+	setp.eq.s32 	%p27, %r39, %r40;
+	@%p27 bra 	$Lt_1_51714;
+	cvt.rn.f32.s32 	%f175, %r5;
+	mov.f32 	%f176, 0f3f000000;   	// 0.5
+	add.ftz.f32 	%f177, %f175, %f176;
+	cvt.rn.f32.s32 	%f178, %r16;
+	mov.f32 	%f179, %f177;
+	mov.f32 	%f180, 0fbf000000;   	// -0.5
+	add.ftz.f32 	%f181, %f178, %f180;
+	mov.f32 	%f182, %f181;
+	mov.f32 	%f183, 0f00000000;   	// 0
+	mov.f32 	%f184, %f183;
+	mov.f32 	%f185, 0f00000000;   	// 0
+	mov.f32 	%f186, %f185;
+	tex.2d.v4.f32.f32 {%f187,%f188,%f189,%f190},[inSrcTexture,{%f179,%f182,%f184,%f186}];
+	mov.f32 	%f191, %f187;
+	mov.f32 	%f192, %f188;
+	mov.f32 	%f193, %f189;
+	mov.f32 	%f194, %f190;
+	mov.f32 	%f195, %f177;
+	mov.f32 	%f196, 0f3fc00000;   	// 1.5
+	add.ftz.f32 	%f197, %f178, %f196;
+	mov.f32 	%f198, %f197;
+	mov.f32 	%f199, 0f00000000;   	// 0
+	mov.f32 	%f200, %f199;
+	mov.f32 	%f201, 0f00000000;   	// 0
+	mov.f32 	%f202, %f201;
+	tex.2d.v4.f32.f32 {%f203,%f204,%f205,%f206},[inSrcTexture,{%f195,%f198,%f200,%f202}];
+	mov.f32 	%f207, %f203;
+	mov.f32 	%f208, %f204;
+	mov.f32 	%f209, %f205;
+	mov.f32 	%f210, %f206;
+	mul.ftz.f32 	%f211, %f191, %f194;
+	mul.ftz.f32 	%f212, %f207, %f210;
+	add.ftz.f32 	%f213, %f211, %f212;
+	mov.f32 	%f214, 0f3f000000;   	// 0.5
+	mul.ftz.f32 	%f215, %f213, %f214;
+	setp.gt.ftz.f32 	%p28, %f211, %f212;
+	@!%p28 bra 	$Lt_1_52226;
+	setp.gt.ftz.f32 	%p29, %f212, %f215;
+	@!%p29 bra 	$Lt_1_52738;
+	mov.f32 	%f216, %f212;
+	bra.uni 	$Lt_1_52482;
+$Lt_1_52738:
+	setp.gt.ftz.f32 	%p30, %f211, %f215;
+	selp.f32 	%f216, %f215, %f211, %p30;
+$Lt_1_52482:
+	mov.f32 	%f217, %f216;
+	bra.uni 	$Lt_1_51970;
+$Lt_1_52226:
+	setp.lt.ftz.f32 	%p31, %f212, %f215;
+	@!%p31 bra 	$Lt_1_53250;
+	mov.f32 	%f218, %f212;
+	bra.uni 	$Lt_1_52994;
+$Lt_1_53250:
+	max.ftz.f32 	%f218, %f211, %f215;
+$Lt_1_52994:
+	mov.f32 	%f217, %f218;
+$Lt_1_51970:
+	mul.ftz.f32 	%f219, %f192, %f194;
+	mul.ftz.f32 	%f220, %f208, %f210;
+	add.ftz.f32 	%f221, %f219, %f220;
+	mov.f32 	%f222, 0f3f000000;   	// 0.5
+	mul.ftz.f32 	%f223, %f221, %f222;
+	setp.gt.ftz.f32 	%p32, %f219, %f220;
+	@!%p32 bra 	$Lt_1_53762;
+	setp.gt.ftz.f32 	%p33, %f220, %f223;
+	@!%p33 bra 	$Lt_1_54274;
+	mov.f32 	%f224, %f220;
+	bra.uni 	$Lt_1_54018;
+$Lt_1_54274:
+	setp.gt.ftz.f32 	%p34, %f219, %f223;
+	selp.f32 	%f224, %f223, %f219, %p34;
+$Lt_1_54018:
+	mov.f32 	%f225, %f224;
+	bra.uni 	$Lt_1_53506;
+$Lt_1_53762:
+	setp.lt.ftz.f32 	%p35, %f220, %f223;
+	@!%p35 bra 	$Lt_1_54786;
+	mov.f32 	%f226, %f220;
+	bra.uni 	$Lt_1_54530;
+$Lt_1_54786:
+	max.ftz.f32 	%f226, %f219, %f223;
+$Lt_1_54530:
+	mov.f32 	%f225, %f226;
+$Lt_1_53506:
+	mul.ftz.f32 	%f227, %f193, %f194;
+	mul.ftz.f32 	%f228, %f209, %f210;
+	add.ftz.f32 	%f229, %f227, %f228;
+	mov.f32 	%f230, 0f3f000000;   	// 0.5
+	mul.ftz.f32 	%f231, %f229, %f230;
+	setp.gt.ftz.f32 	%p36, %f227, %f228;
+	@!%p36 bra 	$Lt_1_55298;
+	setp.gt.ftz.f32 	%p37, %f228, %f231;
+	@!%p37 bra 	$Lt_1_55810;
+	mov.f32 	%f232, %f228;
+	bra.uni 	$Lt_1_55554;
+$Lt_1_55810:
+	setp.gt.ftz.f32 	%p38, %f227, %f231;
+	selp.f32 	%f232, %f231, %f227, %p38;
+$Lt_1_55554:
+	mov.f32 	%f233, %f232;
+	bra.uni 	$Lt_1_55042;
+$Lt_1_55298:
+	setp.lt.ftz.f32 	%p39, %f228, %f231;
+	@!%p39 bra 	$Lt_1_56322;
+	mov.f32 	%f234, %f228;
+	bra.uni 	$Lt_1_56066;
+$Lt_1_56322:
+	max.ftz.f32 	%f234, %f227, %f231;
+$Lt_1_56066:
+	mov.f32 	%f233, %f234;
+$Lt_1_55042:
+	add.ftz.f32 	%f235, %f194, %f210;
+	mov.f32 	%f236, 0f3f000000;   	// 0.5
+	mul.ftz.f32 	%f237, %f235, %f236;
+	setp.gt.ftz.f32 	%p40, %f194, %f210;
+	@!%p40 bra 	$Lt_1_56834;
+	setp.lt.ftz.f32 	%p41, %f237, %f210;
+	@!%p41 bra 	$Lt_1_57346;
+	mov.f32 	%f238, %f210;
+	bra.uni 	$Lt_1_57090;
+$Lt_1_57346:
+	setp.lt.ftz.f32 	%p42, %f237, %f194;
+	selp.f32 	%f238, %f237, %f194, %p42;
+$Lt_1_57090:
+	mov.f32 	%f239, %f238;
+	bra.uni 	$Lt_1_56578;
+$Lt_1_56834:
+	setp.gt.ftz.f32 	%p43, %f237, %f210;
+	@!%p43 bra 	$Lt_1_57858;
+	mov.f32 	%f240, %f210;
+	bra.uni 	$Lt_1_57602;
+$Lt_1_57858:
+	max.ftz.f32 	%f240, %f237, %f194;
+$Lt_1_57602:
+	mov.f32 	%f239, %f240;
+$Lt_1_56578:
+	.loc	18	45	0
+	cvt.ftz.sat.f32.f32 	%f241, %f239;
+	mov.f32 	%f166, %f241;
+	mov.f32 	%f242, 0fb70637bd;   	// -8e-006
+	add.ftz.f32 	%f243, %f241, %f242;
+	mov.f32 	%f244, 0f00000000;   	// 0
+	setp.le.ftz.f32 	%p44, %f243, %f244;
+	@%p44 bra 	$Lt_1_58370;
+	mov.f32 	%f245, 0f3f800000;   	// 1
+	div.approx.ftz.f32 	%f246, %f245, %f241;
+	mul.ftz.f32 	%f172, %f233, %f246;
+	mul.ftz.f32 	%f173, %f225, %f246;
+	mul.ftz.f32 	%f174, %f217, %f246;
+	bra.uni 	$Lt_1_58114;
+$Lt_1_58370:
+	mov.f32 	%f172, 0f00000000;   	// 0
+	mov.f32 	%f173, 0f00000000;   	// 0
+	mov.f32 	%f174, 0f00000000;   	// 0
+	mov.f32 	%f166, 0f00000000;   	// 0
+$Lt_1_58114:
+	.loc	19	43	0
+	ld.param.s32 	%r41, [__cudaparm_DeinterlaceKernel_inPitch];
+	mul.lo.s32 	%r42, %r41, %r16;
+	add.s32 	%r43, %r5, %r42;
+	cvt.s64.s32 	%rd7, %r43;
+	ld.param.u64 	%rd8, [__cudaparm_DeinterlaceKernel_outDest];
+	ld.param.u32 	%r44, [__cudaparm_DeinterlaceKernel_inDeviceFormat];
+	mov.u32 	%r45, 0;
+	setp.ne.s32 	%p45, %r44, %r45;
+	@%p45 bra 	$Lt_1_58882;
+	mul.lo.u64 	%rd9, %rd7, 8;
+	add.u64 	%rd10, %rd8, %rd9;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f174;
+	mov.b32		%r46, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f173;
+	mov.b32		%r47, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f172;
+	mov.b32		%r48, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f166;
+	mov.b32		%r49, %b1; }
+	st.global.v4.u16 	[%rd10+0], {%r46,%r47,%r48,%r49};
+	bra.uni 	$Lt_1_60674;
+$Lt_1_58882:
+	mul.lo.u64 	%rd11, %rd7, 16;
+	add.u64 	%rd12, %rd8, %rd11;
+	st.global.v4.f32 	[%rd12+0], {%f174,%f173,%f172,%f166};
+	bra.uni 	$Lt_1_60674;
+$Lt_1_51714:
+	mov.s32 	%r50, 0;
+	set.eq.u32.s32 	%r51, %r16, %r50;
+	neg.s32 	%r52, %r51;
+	mov.s32 	%r53, 0;
+	set.eq.u32.s32 	%r54, %r7, %r53;
+	neg.s32 	%r55, %r54;
+	and.b32 	%r56, %r52, %r55;
+	mov.u32 	%r57, 0;
+	setp.eq.s32 	%p46, %r56, %r57;
+	@%p46 bra 	$Lt_1_59394;
+	cvt.rn.f32.s32 	%f247, %r5;
+	mov.f32 	%f248, 0f3f000000;   	// 0.5
+	add.ftz.f32 	%f249, %f247, %f248;
+	mov.f32 	%f250, %f249;
+	mov.f32 	%f251, 0f3fc00000;   	// 1.5
+	mov.f32 	%f252, %f251;
+	mov.f32 	%f253, 0f00000000;   	// 0
+	mov.f32 	%f254, %f253;
+	mov.f32 	%f255, 0f00000000;   	// 0
+	mov.f32 	%f256, %f255;
+	tex.2d.v4.f32.f32 {%f257,%f258,%f259,%f260},[inSrcTexture,{%f250,%f252,%f254,%f256}];
+	mov.f32 	%f261, %f257;
+	mov.f32 	%f262, %f258;
+	mov.f32 	%f263, %f259;
+	mov.f32 	%f264, %f260;
+	ld.param.s32 	%r58, [__cudaparm_DeinterlaceKernel_inPitch];
+	mul.lo.s32 	%r59, %r58, %r16;
+	add.s32 	%r60, %r5, %r59;
+	cvt.s64.s32 	%rd13, %r60;
+	ld.param.u64 	%rd14, [__cudaparm_DeinterlaceKernel_outDest];
+	ld.param.u32 	%r61, [__cudaparm_DeinterlaceKernel_inDeviceFormat];
+	mov.u32 	%r62, 0;
+	setp.ne.s32 	%p47, %r61, %r62;
+	@%p47 bra 	$Lt_1_59906;
+	mul.lo.u64 	%rd15, %rd13, 8;
+	add.u64 	%rd16, %rd14, %rd15;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f261;
+	mov.b32		%r63, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f262;
+	mov.b32		%r64, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f263;
+	mov.b32		%r65, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f264;
+	mov.b32		%r66, %b1; }
+	st.global.v4.u16 	[%rd16+0], {%r63,%r64,%r65,%r66};
+	bra.uni 	$Lt_1_60674;
+$Lt_1_59906:
+	mul.lo.u64 	%rd17, %rd13, 16;
+	add.u64 	%rd18, %rd14, %rd17;
+	st.global.v4.f32 	[%rd18+0], {%f261,%f262,%f263,%f264};
+	bra.uni 	$Lt_1_60674;
+$Lt_1_59394:
+	selp.s32 	%r67, 1, 0, %p2;
+	sub.s32 	%r68, %r19, 1;
+	set.eq.u32.s32 	%r69, %r16, %r68;
+	neg.s32 	%r70, %r69;
+	and.b32 	%r71, %r67, %r70;
+	mov.u32 	%r72, 0;
+	setp.eq.s32 	%p48, %r71, %r72;
+	@%p48 bra 	$Lt_1_60674;
+	cvt.rn.f32.s32 	%f265, %r5;
+	mov.f32 	%f266, 0f3f000000;   	// 0.5
+	add.ftz.f32 	%f267, %f265, %f266;
+	mov.f32 	%f268, %f267;
+	cvt.rn.f32.s32 	%f269, %r16;
+	mov.f32 	%f270, 0fbf000000;   	// -0.5
+	add.ftz.f32 	%f271, %f269, %f270;
+	mov.f32 	%f272, %f271;
+	mov.f32 	%f273, 0f00000000;   	// 0
+	mov.f32 	%f274, %f273;
+	mov.f32 	%f275, 0f00000000;   	// 0
+	mov.f32 	%f276, %f275;
+	tex.2d.v4.f32.f32 {%f277,%f278,%f279,%f280},[inSrcTexture,{%f268,%f272,%f274,%f276}];
+	mov.f32 	%f281, %f277;
+	mov.f32 	%f282, %f278;
+	mov.f32 	%f283, %f279;
+	mov.f32 	%f284, %f280;
+	ld.param.s32 	%r73, [__cudaparm_DeinterlaceKernel_inPitch];
+	mul.lo.s32 	%r74, %r73, %r16;
+	add.s32 	%r75, %r5, %r74;
+	cvt.s64.s32 	%rd19, %r75;
+	ld.param.u64 	%rd20, [__cudaparm_DeinterlaceKernel_outDest];
+	ld.param.u32 	%r76, [__cudaparm_DeinterlaceKernel_inDeviceFormat];
+	mov.u32 	%r77, 0;
+	setp.ne.s32 	%p49, %r76, %r77;
+	@%p49 bra 	$Lt_1_60930;
+	mul.lo.u64 	%rd21, %rd19, 8;
+	add.u64 	%rd22, %rd20, %rd21;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f281;
+	mov.b32		%r78, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f282;
+	mov.b32		%r79, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f283;
+	mov.b32		%r80, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f284;
+	mov.b32		%r81, %b1; }
+	st.global.v4.u16 	[%rd22+0], {%r78,%r79,%r80,%r81};
+	bra.uni 	$Lt_1_60674;
+$Lt_1_60930:
+	mul.lo.u64 	%rd23, %rd19, 16;
+	add.u64 	%rd24, %rd20, %rd23;
+	st.global.v4.f32 	[%rd24+0], {%f281,%f282,%f283,%f284};
+$Lt_1_60674:
+$Lt_1_60162:
+$Lt_1_59138:
+$Lt_1_51458:
+$L_1_41474:
+$Lt_1_42754:
+	exit;
+$LDWend_DeinterlaceKernel:
+	} // DeinterlaceKernel
+

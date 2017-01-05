@@ -1,0 +1,11 @@
+layout my_menu
+{
+	view menu(id:21001)
+	{
+		menu(text:'$$$/Premiere/Menu/21001/Multi-CameraMonitorPanelMenu/AudioFollowsVideo=Audio Follows Video', idName:'cmd.multicam.audio.follows.video');
+		separator();
+		menu(text:'$$$/Premiere/Menu/21001/Multi-CameraMonitorPanelMenu/ShowPreviewMonitor=Show Preview Monitor', idName:'cmd.multicam.show.program');
+		separator();
+		menu(text:'$$$/Premiere/Menu/21001/Multi-CameraMonitorPanelMenu/TimeRulerNumbers=Time Ruler Numbers', idName:'cmd.multicam.toggletimerulernumbers');
+	}
+}

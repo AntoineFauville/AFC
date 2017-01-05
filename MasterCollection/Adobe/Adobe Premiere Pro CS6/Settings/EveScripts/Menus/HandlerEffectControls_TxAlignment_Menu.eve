@@ -1,0 +1,10 @@
+layout my_menu
+{
+	view menu(id:18470)
+	{
+		menu(text:'$$$/Premiere/Menu/18470/CenteratCut=Center at Cut', idName:'cmd.effectcontrols.txalign.center');
+		menu(text:'$$$/Premiere/Menu/18470/StartatCut=Start at Cut', idName:'cmd.effectcontrols.txalign.start');
+		menu(text:'$$$/Premiere/Menu/18470/EndatCut=End at Cut', idName:'cmd.effectcontrols.txalign.end');
+		menu(text:'$$$/Premiere/Menu/18470/CustomStart=Custom Start', idName:'cmd.effectcontrols.txalign.custom');
+	}
+}

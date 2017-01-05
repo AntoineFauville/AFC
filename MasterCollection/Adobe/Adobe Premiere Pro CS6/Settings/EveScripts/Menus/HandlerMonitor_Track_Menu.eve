@@ -1,0 +1,7 @@
+layout my_menu
+{
+	view menu(id:6107)
+	{
+		menu(text:'$$$/Premiere/Menu/6107/Video1=Video 1', idName:'cmd.monitor.tracks.0');
+	}
+}

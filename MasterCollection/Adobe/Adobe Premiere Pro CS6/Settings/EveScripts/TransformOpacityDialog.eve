@@ -1,0 +1,27 @@
+layout myTransformOpacityDialog
+{
+	view dva_dialog(name:'$$$/Premiere/DLG/TransformOpacityDialog/kResDLGTransformOpacityTitle=Opacity', identifier:'TransformOpacityDialog')
+	{
+		row(child_horizontal: align_fill, horizontal: align_fill, spacing: 15)
+		{
+			column(child_horizontal: align_fill, child_vertical: align_fill)
+			{
+				row(child_horizontal: align_fill, horizontal: align_fill)
+				{
+					dva_number_edit(
+						identifier:'opacityNumberEdit', 
+						minWidth:40, 
+						minValue: 0, 
+						maxValue: 100, 
+						label: '$$$/Premiere/DLG/TransformOpacityDialog/kResDLGOpacity=Opacity:',
+						setAsFocused:'true');
+					dva_static_text(name: '$$$/Premiere/DLG/kResDLGPercent=%', identifier:'perecentageSignStaticText', leftSpace: -4);
+				}
+			}
+			column()
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);
+			}
+		}
+	}
+}

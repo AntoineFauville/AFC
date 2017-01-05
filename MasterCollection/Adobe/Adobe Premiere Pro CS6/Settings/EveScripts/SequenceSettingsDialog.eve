@@ -1,0 +1,15 @@
+layout my_dialog
+{	
+	view dva_dialog(name: '$$$/Premiere/DLG/SequenceSettingsDialog/kResDLGSequenceSettingsDialogTitle=Sequence Settings', identifier:'SequenceSettingsDialog', minWidth: 300)
+	{	
+		dva_tab_container(identifier: 'TabContainer', horizontal: align_fill, vertical: align_fill, child_horizontal: align_center, minWidth: 300)
+		{
+			column(placement: place_overlay)
+			{
+				dva_layout_script(identifier: 'SequenceSettingsTab');
+			}	
+		}
+
+		dva_ok_cancel_row(minWidth:120);
+	}
+}

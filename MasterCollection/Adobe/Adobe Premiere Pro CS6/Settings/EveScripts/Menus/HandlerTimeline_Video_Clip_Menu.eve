@@ -1,0 +1,57 @@
+layout my_menu
+{
+	view menu(id:5501)
+	{
+		menu(text:'$$$/Premiere/Menu/5501/Cut=Cut', idName:'cmd.edit.cut');
+		menu(text:'$$$/Premiere/Menu/5501/Copy=Copy', idName:'cmd.edit.copy');
+		menu(text:'$$$/Premiere/Menu/5501/PasteAttributes=Paste Attributes', idName:'cmd.edit.pasteattributes');
+		menu(text:'$$$/Premiere/Menu/5501/Clear=Clear', idName:'cmd.edit.clear');
+		menu(text:'$$$/Premiere/Menu/5501/RippleDelete=Ripple Delete', idName:'cmd.edit.rippledelete');
+		separator();
+		menu(text:'$$$/Premiere/Menu/5501/ReplaceWithClip=Replace With Clip', idName:'menu.replacewithclip')
+		{
+				menu(text:'$$$/Premiere/Menu/5501/ReplaceWithClip/Placeholder=Placeholder', idName:'menu.replacewithclip.placeholder');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/5501/Enable=Enable', idName:'cmd.clip.enable');
+		menu(text:'$$$/Premiere/Menu/5501/Group=Group', idName:'cmd.clip.group');
+		menu(text:'$$$/Premiere/Menu/5501/Ungroup=Ungroup', idName:'cmd.clip.ungroup');
+		menu(text:'$$$/Premiere/Menu/5501/Synchronize=Synchronize', idName:'cmd.clip.synchronizeclips');
+		menu(text:'$$$/Premiere/Menu/5501/MergeClips=Merge Clips...', idName:'cmd.clip.merge');
+		menu(text:'$$$/Premiere/Menu/5501/Nest=Nest', idName:'cmd.clip.nestify');
+		menu(text:'$$$/Premiere/Menu/5501/Multi-Camera=Multi-Camera', idName:'menu.multicam')
+		{
+				menu(text:'$$$/Premiere/Menu/5501/Multi-Camera/Enable=Enable', idName:'cmd.clip.multicam.toggle');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/5500/Edit/Label=Label')
+		{
+			menu(text:'$$$/Premiere/Menu/Edit/Label/SelectLabelGroup=&Select Label Group', idName:'cmd.edit.labelgroup');
+			separator();
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Cyan=Cyan', idName:'cmd.edit.label.0');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Chartreuse=Chartreuse', idName:'cmd.edit.label.1');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Green=Green', idName:'cmd.edit.label.2');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Yellow=Yellow', idName:'cmd.edit.label.3');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Orange=Orange', idName:'cmd.edit.label.4');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Pink=Pink', idName:'cmd.edit.label.5');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Lavender=Lavender', idName:'cmd.edit.label.6');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Purple=Purple', idName:'cmd.edit.label.7');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/5501/Speed/Duration...=Speed/Duration...', idName:'cmd.clip.speed');
+		menu(text:'$$$/Premiere/Menu/5501/RemoveEffects...=Remove Effects...', idName:'cmd.clip.deleteeffects');
+		separator();
+		menu(text:'$$$/Premiere/Menu/5501/FrameHold...=Frame Hold...', idName:'cmd.clip.videooptions.framehold');
+		menu(text:'$$$/Premiere/Menu/5501/FieldOptions...=Field Options...', idName:'cmd.clip.videooptions.field');
+		menu(text:'$$$/Premiere/Menu/5501/FrameBlend=Frame Blend', idName:'cmd.clip.frameblend');
+		menu(text:'$$$/Premiere/Menu/5501/ScaletoFrameSize=Scale to Frame Size', idName:'cmd.clip.scaletoframesize');
+		menu(text:'$$$/Premiere/Menu/5501/AdjustmentLayer=Adjustment Layer', idName:'cmd.clip.adjustmentlayer');
+		separator();
+		menu(text:'$$$/Premiere/Menu/5501/Rename...=Rename...', idName:'cmd.clip.rename');
+		menu(text:'$$$/Premiere/Menu/5501/RevealinProject=Reveal in Project', idName:'cmd.edit.revealinproject');
+		menu(text:'$$$/Premiere/Menu/5501/EditOriginal=Edit Original', idName:'cmd.edit.editoriginal');
+		menu(text:'$$$/Premiere/Menu/5501/EditinAdobePhotoshop=Edit in Adobe Photoshop', idName:'cmd.edit.editinphotoshop');
+		menu(text:'$$$/Premiere/Menu/5501/ReplaceWithAfterEffectsComposition=Replace With After Effects Composition', idName:'cmd.clip.aeify');
+		menu(text:'$$$/Premiere/Menu/5501/Properties=Properties', idName:'cmd.file.properties.selection');
+	}
+}

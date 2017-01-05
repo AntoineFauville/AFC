@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<P2Main xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:schemas-Professional-Plug-in:P2:ClipMetadata:v3.1">
+  <ClipContent>
+    <ClipName>0002SE</ClipName>
+    <GlobalClipID>060A2B340101010501010D4313000000A9D78E01804205C9008045822CB6A243</GlobalClipID>
+    <Duration>537</Duration>
+    <EditUnit>1001/30000</EditUnit>
+    <EssenceList>
+      <Video ValidAudioFlag="false">
+        <VideoFormat>MXF</VideoFormat>
+        <Codec>DV100_1080/59.94i</Codec>
+        <FrameRate DropFrameFlag="true">59.94i</FrameRate>
+        <StartTimecode>00:43:48:08</StartTimecode>
+        <AspectRatio>16:9</AspectRatio>
+        <VideoIndex>
+          <StartByteOffset>32768</StartByteOffset>
+          <DataSize>257760000</DataSize>
+        </VideoIndex>
+      </Video>
+    </EssenceList>
+    <ClipMetadata>
+      <UserClipName>1080i60i</UserClipName>
+      <DataSource>RENDERING</DataSource>
+      <Access>
+        <CreationDate>2007-06-28T16:09:04-08:00</CreationDate>
+        <LastUpdateDate>2007-06-28T20:10:09-08:00</LastUpdateDate>
+      </Access>
+      <Thumbnail>
+        <FrameOffset>0</FrameOffset>
+        <ThumbnailFormat>BMP</ThumbnailFormat>
+        <Width>80</Width>
+        <Height>60</Height>
+      </Thumbnail>
+    </ClipMetadata>
+  </ClipContent>
+</P2Main>

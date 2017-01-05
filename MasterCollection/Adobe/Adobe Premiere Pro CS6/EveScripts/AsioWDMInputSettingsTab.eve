@@ -1,0 +1,15 @@
+layout AsioWDMInputSettingsTab
+{
+	view dva_tab_view(name: '$$$/MediaCoreUI/AsioWDMInputSettingsTab/Input=Input', identifier: 'AsioWDMInputSettingsTab', placement: place_row, horizontal: align_fill, child_horizontal: align_center)
+	{
+		column(horizontal: align_fill, vertical: align_fill)
+		{		
+			dva_groupbox(name:'$$$/MediaCoreUI/AsioWDMInputSettingsTab/EnableDevices=Enable Devices', identifier:'enableDevices', horizontal: align_fill, minWidth: 400, minHeight: 200)
+			{	
+				dva_multi_column_tree(identifier:'inputDevicesTree', minWidth: 200, minHeight: 180, horizontal: align_fill, vertical: align_fill);
+			}
+		
+			dva_checkbox(name: '$$$/MediaCoreUI/AsioWDMInputSettingsTab/32BitRecording=Device 32-bit Recording', identifier:'recording32Bit');
+		}
+	}
+}

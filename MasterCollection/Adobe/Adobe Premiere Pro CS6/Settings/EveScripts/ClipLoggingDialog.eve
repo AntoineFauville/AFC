@@ -1,0 +1,28 @@
+layout my_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/ClipLoggingDialog/kResDLGClipLoggingDialogTitle=Log Clip', identifier:'ClipLoggingDialog')
+	{
+		row(child_horizontal: align_fill, horizontal: align_fill, vertical: align_fill, spacing:15)
+		{
+			column(child_horizontal: align_fill, horizontal: align_fill, vertical: align_fill)
+			{
+				row(child_horizontal: align_fill, horizontal: align_fill, spacing:10)
+				{
+					column()
+					{
+						dva_text_edit(identifier:'clipNameTextEdit', minWidth:200, minHeight:20,  horizontal:align_left, label:'$$$/Premiere/DLG/ClipLoggingDialog/kResDLGClipName=Clip Name:', setAsFocused:'true');
+						dva_text_edit(identifier:'descriptionTextEdit', minWidth:200, minHeight:60, multiLine:'true', vertical_scroll:'true', horizontal:align_left, label:'$$$/Premiere/DLG/ClipLoggingDialog/kResDLGDescription=Description:');
+						dva_text_edit(identifier:'sceneTextEdit', minWidth:200, minHeight:20, horizontal:align_left, label:'$$$/Premiere/DLG/ClipLoggingDialog/kResDLGScene=Scene:');
+						dva_text_edit(identifier:'shotTextEdit', minWidth:200, minHeight:20, horizontal:align_left, label:'$$$/Premiere/DLG/ClipLoggingDialog/kResDLGShotTake=Shot/Take:');
+						dva_text_edit(identifier:'noteTextEdit', minWidth:200, minHeight:60, multiLine:'true', vertical_scroll:'true', horizontal:align_left, label:'$$$/Premiere/DLG/ClipLoggingDialog/kResDLGLogNote=Log Note:');
+					}
+				}
+				row(spacing: 10, child_horizontal: align_right, vertical: align_fill, child_vertical:align_fill)
+				{
+					dva_ok_cancel_row(minWidth:80, minHeight:20);
+				}
+			}
+		}
+	}
+}
+

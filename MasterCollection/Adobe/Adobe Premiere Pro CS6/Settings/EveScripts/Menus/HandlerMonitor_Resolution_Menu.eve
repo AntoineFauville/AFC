@@ -1,0 +1,13 @@
+layout my_menu
+{
+	view menu(id:6108)
+	{
+		menu(text:'$$$/Premiere/Menu/6108/PlaybackResolutionFull=Full', idName:'cmd.monitor.playback.resolution.full');
+		menu(text:'$$$/Premiere/Menu/6108/PlaybackResolutionHalf=1/2', idName:'cmd.monitor.playback.resolution.half');
+		menu(text:'$$$/Premiere/Menu/6108/PlaybackResolutionQuarter=1/4', idName:'cmd.monitor.playback.resolution.quarter');
+		menu(text:'$$$/Premiere/Menu/6108/PlaybackResolutionEighth=1/8', idName:'cmd.monitor.playback.resolution.eighth');
+		menu(text:'$$$/Premiere/Menu/6108/PlaybackResolutionSixteenth=1/16', idName:'cmd.monitor.playback.resolution.sixteenth');
+	}
+}
+
+

@@ -1,0 +1,47 @@
+layout SequenceGeneralTab
+{
+	view dva_tab_view(identifier: 'ModifyClip_TimecodeTab', 
+		name: '$$$/Premiere/DLG/ModifyClipTimecodeTab/TabTitle=Timecode', 
+		placement: place_row, 
+		horizontal: align_fill, 
+		child_horizontal: align_fill)
+	{
+		row(child_horizontal:align_fill, horizontal:align_fill, spacing:15)
+		{
+   			column()
+			{
+				dva_groupbox(identifier:'timecodeGroupBox', 
+					name:'$$$/Premiere/DLG/TimecodeDialog/kResDLGTimecodeDialogTitle=Timecode', 
+					headerType:'static_text', 
+					horizontal:align_fill,
+					child_horizontal: align_fill)
+				{
+					dva_subview(identifier:'timecodeControl', 
+						label:'$$$/Premiere/DLG/TimecodeDialog/kResDLGTimecodeLabel=Timecode:',
+						minWidth:90, minHeight:20
+						);
+					row()
+					{
+						dva_radio_button_group(identifier: 'optionsRadioGroup', showBorder: 'false')
+						{
+							column()
+							{
+								dva_radio_button(identifier:'setAtBeginningRadioButton', 
+									name: '$$$/Premiere/DLG/TimecodeDialog/kResDLGSetAtBeginning=Set at Beginning');
+									
+								dva_radio_button(identifier:'setAtCurrentFrameRadioButton', 
+									name: '$$$/Premiere/DLG/TimecodeDialog/kResDLGSetAtCurrentFrame=Set at Current Frame');
+							}
+						}
+					}
+					dva_button(identifier:'revertTimecodeButton', 
+						name:'$$$/Premiere/DLG/TimecodeDialog/kResDLGRevert=Revert', 
+						horizontal: align_right);
+				}
+			}
+		}
+	}
+}
+
+
+

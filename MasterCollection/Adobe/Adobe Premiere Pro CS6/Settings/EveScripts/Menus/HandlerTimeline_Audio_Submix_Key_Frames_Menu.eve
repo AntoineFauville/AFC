@@ -1,0 +1,10 @@
+layout my_menu
+{
+	view menu(id:5140)
+	{
+		menu(text:'$$$/Premiere/Menu/5140/ShowTrackKeyframes=Show Track Keyframes', idName:'cmd.timeline.audio.track.keyframes.show');
+		menu(text:'$$$/Premiere/Menu/5140/ShowTrackVolume=Show Track Volume', idName:'cmd.timeline.audio.track.volumehandles.show');
+		separator();
+		menu(text:'$$$/Premiere/Menu/5140/HideKeyframes=Hide Keyframes', idName:'cmd.timeline.audio.keyframes.hide');
+	}
+}

@@ -1,0 +1,10 @@
+layout my_menu
+{
+	view menu(id:7108)
+	{
+		menu(text:'$$$/Premiere/Menu/7108/Pre-Fader=Pre-Fader', idName:'cmd.audiomixer.pre');
+		menu(text:'$$$/Premiere/Menu/7108/Post-Fader=Post-Fader', idName:'cmd.audiomixer.post');
+		separator();
+		menu(text:'$$$/Premiere/Menu/7108/SafeDuringWrite=Safe During Write', idName:'cmd.audiomixer.sendsafe');
+	}
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PremiereData Version="3">
+	<SequencePreset ObjectRef="1"/>
+	<SequencePreset ObjectID="1" ClassID="5e73dd7e-4f86-4917-80eb-08ddb2f4a5f3" Version="5">
+		<PreviewVideoFrameSize>0,0,1280,1080</PreviewVideoFrameSize>
+		<AudioTracks>{"SerializerWrappedObject": [{"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}, {"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}, {"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}, {"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}]}</AudioTracks>
+		<InitialNumberOfVideoTracks>3</InitialNumberOfVideoTracks>
+		<AdaptiveNumChannels>16</AdaptiveNumChannels>
+		<VideoUseMaxRenderQuality>false</VideoUseMaxRenderQuality>
+		<VideoUseMaxBitDepth>false</VideoUseMaxBitDepth>
+		<VideoPixelAspectRatio>3,2</VideoPixelAspectRatio>
+		<PreviewPresetVideoCodec.Win>1685483057</PreviewPresetVideoCodec.Win>
+		<PreviewPresetFileName.Win>P2 1080i-1080p 60Hz DVCPROHD</PreviewPresetFileName.Win>
+		<PreviewPresetVideoCodec.Mac>1685483057</PreviewPresetVideoCodec.Mac>
+		<PreviewPresetFileName.Mac>P2 1080i-1080p 60Hz DVCPROHD</PreviewPresetFileName.Mac>
+		<EditingModeGUID.Win>5b1734e9-72dc-4a5d-82ad-f03102903125</EditingModeGUID.Win>
+		<EditingModeGUID.Mac>5b1734e9-72dc-4a5d-82ad-f03102903125</EditingModeGUID.Mac>
+		<Descriptions Version="1">
+			<DescriptionItem Version="1" Index="0">
+				<Second>Pour le montage d'un contenu au format MXF enregistré en mode 1080/24p ou 1080/24pa avec un caméscope Panasonic P2 60Hz.  Rendu progressif.</Second>
+				<First>fr_FR</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>60 Hz の Panasonic P2 ビデオカメラで、1080/24p または 1080/24pa モードで撮影した MXF 素材の編集用。&#13;プログレッシブレンダリング。</Second>
+				<First>ja_JP</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Per la modifica di materiale MXF registrato in modalità 1080/24p o 1080/24pa con videocamera Panasonic P2 a 60 Hz.  Rendering progressivo.</Second>
+				<First>it_IT</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Zum Bearbeiten von MXF-Material, das im 1080/24p- oder 1080/24pa-Modus mit einem Panasonic P2-Camcorder mit 60 Hz aufgezeichnet wurde.  Progressives Rendering.</Second>
+				<First>de_DE</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Para la edición de material MXF grabado en modo 1080/24p o 1080/24pa con videocámaras Panasonic P2 a 60 Hz.  Procesamiento progresivo.</Second>
+				<First>es_ES</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>60Hz Panasonic P2 캠코더로 1080/24p 또는 1080/24pa 모드에서 기록된 MXF 매체를 편집하는 경우.  점진적 렌더링.</Second>
+				<First>ko_KR</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>For editing MXF material recorded in 1080/24p or 1080/24pa mode with a 60Hz Panasonic P2 camcorder.  Progressive rendering.</Second>
+				<First>en_US</First>
+			</DescriptionItem>
+		</Descriptions>
+		<Names Version="1">
+			<NameItem Version="1" Index="0">
+				<Second>DVCPROHD 1080p24</Second>
+				<First>fr_FR</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>DVCPROHD 1080p24</Second>
+				<First>ja_JP</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>DVCPROHD 1080p24</Second>
+				<First>it_IT</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>DVCPROHD 1080p24</Second>
+				<First>de_DE</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>DVCPROHD 1080p24</Second>
+				<First>es_ES</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>DVCPROHD 1080p24</Second>
+				<First>ko_KR</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>DVCPROHD 1080p24</Second>
+				<First>en_US</First>
+			</NameItem>
+		</Names>
+		<VideoFieldType>0</VideoFieldType>
+		<AudioTimeDisplay>200</AudioTimeDisplay>
+		<VideoTimeDisplay>110</VideoTimeDisplay>
+		<AudioChannelType>1</AudioChannelType>
+		<AudioFrameRate>5292000</AudioFrameRate>
+		<VideoFrameSize>0,0,1280,1080</VideoFrameSize>
+		<VideoFrameRate>10594584000</VideoFrameRate>
+	</SequencePreset>
+</PremiereData>

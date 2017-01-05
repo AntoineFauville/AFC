@@ -1,0 +1,74 @@
+layout export_audition_multitrack_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/ExportAuditionMultitrackDialog/kResDLGExportAuditionMultitrackDialogTitle=Edit in Adobe Audition', identifier:'ExportAuditionMultitrackDialog')
+	{
+		column(child_horizontal: align_fill, horizontal: align_fill, spacing:15)
+		{
+			row(horizontal:align_fill)
+			{
+				dva_text_edit(
+					identifier:'nameTextEdit', 
+					label:'$$$/Premiere/DLG/ExportAuditionMultitrackDialog/kResDLGName=Name:',
+					minWidth:240, 
+					minHeight:20, 
+					setAsFocused:'true');
+			}
+			dva_groupbox(identifier:'pathGroupBox', name:'$$$/Premiere/DLG/ExportAuditionMultitrackDialog/kResDLGPath=Path', headerType:'static_text', horizontal: align_fill)
+			{
+				row(horizontal: align_fill, spacing:10)
+				{
+					dva_static_text(
+						identifier:'pathLabel',
+						name:'$$$/Premiere/DLG/ExportAuditionMultitrackDialog/kResPathString=(Some file path)',
+						horizontal: align_fill,
+						minWidth:280);
+					dva_button(
+						identifier:'browseButton',
+						name:'$$$/Premiere/DLG/kResDLGBrowse=Browse...',
+						horizontal: align_right,
+						minWidth:80);
+				}
+			}
+			row(horizontal:align_fill)
+			{
+				dva_popup(
+					identifier:'formatPopup',
+					label:'$$$/Premiere/DLG/ExportAuditionMultitrackDialog/kResDLGFormat=Selection:', 
+					minWidth:240);
+
+			}
+			row(horizontal:align_fill, minWidth: 240, spacing:10)
+			{
+				dva_number_edit(
+					identifier:'audioHandlesTextEdit', 
+					label:'$$$/Premiere/DLG/ExportAuditionMultitrackDialog/kResDLGAudioHandles=Audio Handles:',
+					minWidth:40, 
+					minHeight:20);
+				dva_static_text(
+					identifier:'audioHandlesSeconds',
+					name:'$$$/Premiere/DLG/ExportAuditionMultitrackDialog/kResDLGAudioHandlesSeconds=seconds',
+					horizontal: align_left);
+			}
+			row(horizontal:align_fill)
+			{
+				dva_checkbox(identifier:'exportVideoCheck', name:'$$$/Premiere/DLG/ExportAuditionMultitrackDialog/kResDLGExportVideo=Export Preview Video');
+			}
+			row(horizontal:align_fill)
+			{
+				dva_checkbox(identifier:'renderClipEffectsCheck', name:'$$$/Premiere/DLG/ExportAuditionMultitrackDialog/kResDLGRenderClipEffects=Render Audio Clip Effects');
+			}
+			row(horizontal:align_fill)
+			{
+				dva_checkbox(identifier:'sendClipKeyframesCheck', name:'$$$/Premiere/DLG/ExportAuditionMultitrackDialog/kResDLGSendClipKeyframes=Send Clip Volume Keyframe Metadata');
+			}
+			row(horizontal:align_fill)
+			{
+				dva_checkbox(identifier:'openInAuditionCheck', name:'$$$/Premiere/DLG/ExportAuditionMultitrackDialog/kResDLGOpenInAudition=Open in Adobe Audition');
+			}
+			row(horizontal:align_right)
+			{
+				dva_ok_cancel_row(minWidth:80, minHeight:20);
+			}
+		}
+	}
+} 

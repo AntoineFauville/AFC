@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PremiereData Version="3">
+	<SequencePreset ObjectRef="1"/>
+	<SequencePreset ObjectID="1" ClassID="5e73dd7e-4f86-4917-80eb-08ddb2f4a5f3" Version="5">
+		<PreviewVideoFrameSize>0,0,1440,1080</PreviewVideoFrameSize>
+		<AudioTracks>{"SerializerWrappedObject": [{"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}, {"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}, {"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}, {"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}]}</AudioTracks>
+		<InitialNumberOfVideoTracks>3</InitialNumberOfVideoTracks>
+		<AdaptiveNumChannels>16</AdaptiveNumChannels>
+		<VideoUseMaxRenderQuality>false</VideoUseMaxRenderQuality>
+		<VideoUseMaxBitDepth>false</VideoUseMaxBitDepth>
+		<VideoPixelAspectRatio>1920,1440</VideoPixelAspectRatio>
+		<PreviewPresetVideoCodec.Win>1297107278</PreviewPresetVideoCodec.Win>
+		<PreviewPresetFileName.Win>I-Frame Only MPEG</PreviewPresetFileName.Win>
+		<PreviewPresetVideoCodec.Mac>1297107278</PreviewPresetVideoCodec.Mac>
+		<PreviewPresetFileName.Mac>I-Frame Only MPEG</PreviewPresetFileName.Mac>
+		<EditingModeGUID.Win>e7961389-95c3-42ce-aa44-6a0fe1701436</EditingModeGUID.Win>
+		<EditingModeGUID.Mac>e7961389-95c3-42ce-aa44-6a0fe1701436</EditingModeGUID.Mac>
+		<Descriptions Version="1">
+			<DescriptionItem Version="1" Index="0">
+				<Second>Pour l'édition des formats Sony XDCAM HD.&#13;Vidéo haute définition 1080p 16:9 avec balayage progressif à 29,97 images/s.&#13;Audio 48 kHz.&#13;Numérotation de code temporel compensé.</Second>
+				<First>fr_FR</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Sony XDCAM HD 形式の編集用。&#13;29.97 フレーム/秒の 16:9 プログレッシブスキャン 1080p HD ビデオ。&#13;48kHz オーディオ。&#13;ドロップフレームタイムコード番号。</Second>
+				<First>ja_JP</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Per modificare i formati Sony XDCAM HD.&#13;Video HD 1080p 16:9 a scansione progressiva da 29.97 fotogrammi al secondo.&#13;Audio da 48 kHz.&#13;Numerazione codice di tempo con drop-frame.</Second>
+				<First>it_IT</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Zur Bearbeitung von Formaten der Kamera Sony XDCAM HD.&#13;16:9 Progressive-Scan 1080p HD-Video mit 29,97 Frames pro Sekunde.&#13;48 kHz Audio.&#13;Drop-Frame Timecode-Nummerierung.</Second>
+				<First>de_DE</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Para la edición de formatos HD XDCAM de Sony.&#13;Vídeo HD 1080p de búsqueda progresiva 16:9 a 29,97 fotogramas por segundo.&#13;Audio a 48 kHz.&#13;Numeración de Código de tiempo de fotograma eliminado.</Second>
+				<First>es_ES</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Sony XDCAM HD 형식 편집용.&#13;초당 29.97프레임으로 16:9 프로그레시브 스캔 1080p HD 비디오.&#13;48kHz 오디오.&#13;드롭 프레임 시간 코드 번호 매기기.</Second>
+				<First>ko_KR</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>For editing Sony XDCAM HD formats.&#13;16:9 progressive-scan 1080p HD video at 29.97 frames per second.&#13;48kHz audio.&#13;Drop-Frame Timecode numbering.</Second>
+				<First>en_US</First>
+			</DescriptionItem>
+		</Descriptions>
+		<Names Version="1">
+			<NameItem Version="1" Index="0">
+				<Second>XDCAM HD 1080p30</Second>
+				<First>en_US</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>XDCAM HD 1080p30</Second>
+				<First>de_DE</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>XDCAM HD 1080p30</Second>
+				<First>fr_FR</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>XDCAM HD 1080p30</Second>
+				<First>it_IT</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>XDCAM HD 1080p30</Second>
+				<First>es_ES</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>XDCAM HD 1080p30</Second>
+				<First>ko_KR</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>XDCAM HD 1080p30</Second>
+				<First>ja_JP</First>
+			</NameItem>
+		</Names>
+		<VideoFieldType>0</VideoFieldType>
+		<AudioTimeDisplay>200</AudioTimeDisplay>
+		<VideoTimeDisplay>102</VideoTimeDisplay>
+		<AudioChannelType>1</AudioChannelType>
+		<AudioFrameRate>5292000</AudioFrameRate>
+		<VideoFrameSize>0,0,1440,1080</VideoFrameSize>
+		<VideoFrameRate>8475667200</VideoFrameRate>
+	</SequencePreset>
+</PremiereData>

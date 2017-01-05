@@ -1,0 +1,15 @@
+layout aaf_export_settings_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/AAFExportSettings/AAFExportSettingsDialogTitle=AAF Export Settings', identifier:'AAFExportSettingsDialog', spacing: 6)
+	{
+		column(child_horizontal: align_fill, horizontal: align_fill, vertical: align_fill, spacing:10)
+		{
+			dva_checkbox(identifier:'legacyMode', name:'$$$/Premiere/DLG/AAFExportSettings/LegacyMode=Save as legacy AAF', minHeight:16);
+			dva_checkbox(identifier:'embedAudio', name:'$$$/Premiere/DLG/AAFExportSettings/EmbedAudio=Embed audio', minHeight:16);
+			row(child_horizontal: align_right, vertical: align_fill, child_vertical:align_fill)
+			{
+				dva_ok_cancel_row(minWidth:80, minHeight:20);
+			}
+		}
+	}
+}

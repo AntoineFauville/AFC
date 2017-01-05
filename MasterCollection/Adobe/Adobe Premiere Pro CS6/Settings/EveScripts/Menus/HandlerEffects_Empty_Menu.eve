@@ -1,0 +1,8 @@
+layout my_menu
+{
+	view menu(id:17505)
+	{
+		menu(text:'$$$/Premiere/Menu/17505/NewCustomBin=New Custom Bin', idName:'cmd.effects.createcustomfolder');
+		menu(text:'$$$/Premiere/Menu/17505/NewPresetsBin=New Presets Bin', idName:'cmd.effects.createpresetfolder');
+	}
+}

@@ -1,0 +1,31 @@
+layout Trim
+{
+	view dva_panel_view(name: '$$$/Premiere/DLG/PrefsDialog/kResDLGTrim=Trim', identifier: 'prefsTrim', guide_mask:[@guide_label, @guide_baseline])
+	{
+		column()
+		{
+			row()
+			{
+				dva_static_text(identifier:'ltoST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGLargeTrimOffset=Large Trim Offset:');
+				column()
+				{
+					row()
+					{
+						dva_number_edit(identifier:'ltoET', minValue:0, maxValue:99, decimalPlaces:0, minWidth:80, minHeight:20, horizontal:align_left);
+						dva_static_text(identifier:'ltoUnitsST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGFrames=frames', horizontal:align_left);
+					}
+					row()
+					{
+						dva_number_edit(identifier:'atoET', minValue:0, maxValue:99999, decimalPlaces:0, minWidth:80, minHeight:20, horizontal:align_left);
+						dva_static_text(identifier:'atoUnitsST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGAudioTimeUnits=Audio Time Units', horizontal:align_left);
+					}
+				}
+			}
+			row()
+			{
+				dva_checkbox(identifier:'trimWithSelectionToolModifier', minWidth:16);
+				dva_static_text(identifier:'trimWithSelectionToolModifierText', multiLine:'true', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGTrimWithSelectionToolModifier=Allow Selection tool to choose Roll and Ripple trims without modifier key', maxWidth:400, minHeight:48, leftSpace:-7, topSpace:3);
+			}
+		}
+	}
+}

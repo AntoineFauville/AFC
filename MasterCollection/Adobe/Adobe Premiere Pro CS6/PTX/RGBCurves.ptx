@@ -1,0 +1,1587 @@
+	.version 2.3
+	.target sm_20
+	.address_size 64
+	// compiled with C:\mightykilt64/shared/adobe/MediaCore//External/3rdParty/NVIDIA/CUDA/win/bin/../open64/lib//be.exe
+	// nvopencc 4.0 built on 2011-05-13
+
+	.visible .func (.param .f32 __cudaretf__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf) _Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf (.param .u64 __cudaparmf1__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf, .param .u64 __cudaparmf2__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf, .param .u64 __cudaparmf3__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf, .param .u64 __cudaparmf4__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf, .param .f32 __cudaparmf5__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf)
+
+	//-----------------------------------------------------------
+	// Compiling C:/Users/dvaeng/AppData/Local/Temp/tmpxft_0000356c_00000000-11_RGBCurves.cpp3.i (C:/Users/dvaeng/AppData/Local/Temp/ccBI#.a14016)
+	//-----------------------------------------------------------
+
+	//-----------------------------------------------------------
+	// Options:
+	//-----------------------------------------------------------
+	//  Target:ptx, ISA:sm_20, Endian:little, Pointer Size:64
+	//  -O3	(Optimization level)
+	//  -g0	(Debug level)
+	//  -m2	(Report advisories)
+	//-----------------------------------------------------------
+
+	.file	1	"C:/Users/dvaeng/AppData/Local/Temp/tmpxft_0000356c_00000000-10_RGBCurves.cudafe2.gpu"
+	.file	2	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/DevicePixelFormat.h"
+	.file	3	"C:\mightykilt64\shared\adobe\MediaCore\Renderers\RendererGPU\Inc\Effects/ColorCorrector_Curves.h"
+	.file	4	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/PixelRGB.h"
+	.file	5	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/PixelYUV.h"
+	.file	6	"c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h"
+	.file	7	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\crt/device_runtime.h"
+	.file	8	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\host_defines.h"
+	.file	9	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\builtin_types.h"
+	.file	10	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_types.h"
+	.file	11	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\driver_types.h"
+	.file	12	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_types.h"
+	.file	13	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_types.h"
+	.file	14	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\vector_types.h"
+	.file	15	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\builtin_types.h"
+	.file	16	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\host_defines.h"
+	.file	17	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\device_launch_parameters.h"
+	.file	18	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\crt\storage_class.h"
+	.file	19	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\INCLUDE\time.h"
+	.file	20	"C:/mightykilt64/shared/adobe/MediaCore/Renderers/RendererGPU/Src/Effects/RGBCurves.cu"
+	.file	21	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\common_functions.h"
+	.file	22	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions.h"
+	.file	23	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_constants.h"
+	.file	24	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_functions.h"
+	.file	25	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_11_atomic_functions.h"
+	.file	26	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_12_atomic_functions.h"
+	.file	27	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_13_double_functions.h"
+	.file	28	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_atomic_functions.h"
+	.file	29	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_intrinsics.h"
+	.file	30	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_functions.h"
+	.file	31	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_fetch_functions.h"
+	.file	32	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions_dbl_ptx3.h"
+	.file	33	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/ColorSpaceConvert.h"
+
+
+	.visible .func (.param .f32 __cudaretf__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf) _Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf (.param .u64 __cudaparmf1__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf, .param .u64 __cudaparmf2__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf, .param .u64 __cudaparmf3__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf, .param .u64 __cudaparmf4__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf, .param .f32 __cudaparmf5__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf)
+	{
+	.reg .u64 %rd<28>;
+	.reg .f32 %f<33>;
+	.reg .pred %p<6>;
+	.loc	3	42	0
+$LDWbegin__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf:
+	ld.param.u64 	%rd1, [__cudaparmf1__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf];
+	mov.s64 	%rd2, %rd1;
+	ld.param.u64 	%rd3, [__cudaparmf2__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf];
+	mov.s64 	%rd4, %rd3;
+	ld.param.u64 	%rd5, [__cudaparmf3__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf];
+	mov.s64 	%rd6, %rd5;
+	ld.param.u64 	%rd7, [__cudaparmf4__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf];
+	mov.s64 	%rd8, %rd7;
+	ld.param.f32 	%f1, [__cudaparmf5__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf];
+	mov.f32 	%f2, %f1;
+	mov.f32 	%f3, %f2;
+	sub.u64 	%rd9, %rd8, 1;
+	mov.s64 	%rd10, %rd9;
+	mov.u64 	%rd11, 1;
+	setp.le.u64 	%p1, %rd9, %rd11;
+	@%p1 bra 	$Lt_0_4866;
+	mov.u64 	%rd12, 0;
+$Lt_0_3330:
+	add.u64 	%rd13, %rd10, %rd12;
+	shr.u64 	%rd14, %rd13, 1;
+	mul.lo.u64 	%rd15, %rd14, 4;
+	add.u64 	%rd16, %rd2, %rd15;
+	ld.f32 	%f4, [%rd16+0];
+	setp.gt.ftz.f32 	%p2, %f4, %f2;
+	@!%p2 bra 	$Lt_0_3842;
+	mov.s64 	%rd10, %rd14;
+	bra.uni 	$Lt_0_3586;
+$Lt_0_3842:
+	mov.s64 	%rd12, %rd14;
+$Lt_0_3586:
+	sub.u64 	%rd17, %rd10, %rd12;
+	mov.u64 	%rd18, 1;
+	setp.gt.u64 	%p3, %rd17, %rd18;
+	@%p3 bra 	$Lt_0_3330;
+	bra.uni 	$Lt_0_2818;
+$Lt_0_4866:
+	mov.u64 	%rd12, 0;
+$Lt_0_2818:
+	mul.lo.u64 	%rd19, %rd10, 4;
+	mul.lo.u64 	%rd20, %rd12, 4;
+	add.u64 	%rd21, %rd19, %rd2;
+	add.u64 	%rd22, %rd20, %rd2;
+	ld.f32 	%f5, [%rd21+0];
+	ld.f32 	%f6, [%rd22+0];
+	sub.ftz.f32 	%f7, %f5, %f6;
+	mov.f32 	%f8, 0f00000000;     	// 0
+	setp.neu.ftz.f32 	%p4, %f7, %f8;
+	@!%p4 bra 	$Lt_0_4354;
+	sub.ftz.f32 	%f9, %f5, %f2;
+	sub.ftz.f32 	%f10, %f2, %f6;
+	div.approx.ftz.f32 	%f11, %f10, %f7;
+	div.approx.ftz.f32 	%f12, %f9, %f7;
+	add.u64 	%rd23, %rd19, %rd6;
+	ld.f32 	%f13, [%rd23+0];
+	mul.ftz.f32 	%f14, %f11, %f11;
+	mul.ftz.f32 	%f15, %f11, %f14;
+	sub.ftz.f32 	%f16, %f15, %f11;
+	mul.ftz.f32 	%f17, %f13, %f16;
+	add.u64 	%rd24, %rd20, %rd6;
+	ld.f32 	%f18, [%rd24+0];
+	mul.ftz.f32 	%f19, %f12, %f12;
+	mul.ftz.f32 	%f20, %f12, %f19;
+	sub.ftz.f32 	%f21, %f20, %f12;
+	fma.rn.ftz.f32 	%f22, %f18, %f21, %f17;
+	mul.ftz.f32 	%f23, %f7, %f7;
+	mul.ftz.f32 	%f24, %f22, %f23;
+	mov.f32 	%f25, 0f40c00000;    	// 6
+	div.approx.ftz.f32 	%f26, %f24, %f25;
+	add.u64 	%rd25, %rd19, %rd4;
+	ld.f32 	%f27, [%rd25+0];
+	mul.ftz.f32 	%f28, %f27, %f11;
+	add.u64 	%rd26, %rd20, %rd4;
+	ld.f32 	%f29, [%rd26+0];
+	fma.rn.ftz.f32 	%f30, %f29, %f12, %f28;
+	add.ftz.f32 	%f3, %f26, %f30;
+$Lt_0_4354:
+	mov.f32 	%f31, %f3;
+	st.param.f32 	[__cudaretf__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf], %f31;
+	ret;
+$LDWend__Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf:
+	} // _Z31InterpolateNaturalCubicSpline2DPKfS0_S0_yf
+
+	.entry RGBCurves_MaskKernel (
+		.param .u64 __cudaparm_RGBCurves_MaskKernel_inImage,
+		.param .s32 __cudaparm_RGBCurves_MaskKernel_inPitch,
+		.param .u64 __cudaparm_RGBCurves_MaskKernel_inSecondaryMask,
+		.param .s32 __cudaparm_RGBCurves_MaskKernel_inSecondaryPitch,
+		.param .u32 __cudaparm_RGBCurves_MaskKernel_inDeviceFormat,
+		.param .s32 __cudaparm_RGBCurves_MaskKernel_inWidth,
+		.param .s32 __cudaparm_RGBCurves_MaskKernel_inHeight)
+	{
+	.reg .u32 %r<31>;
+	.reg .u64 %rd<13>;
+	.reg .f32 %f<5>;
+	.reg .pred %p<5>;
+	.loc	20	39	0
+$LDWbegin_RGBCurves_MaskKernel:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.y;
+	mov.u32 	%r5, %ntid.y;
+	mul.lo.u32 	%r6, %r4, %r5;
+	mov.u32 	%r7, %tid.x;
+	add.u32 	%r8, %r7, %r3;
+	mov.u32 	%r9, %tid.y;
+	add.u32 	%r10, %r9, %r6;
+	ld.param.s32 	%r11, [__cudaparm_RGBCurves_MaskKernel_inWidth];
+	set.gt.u32.s32 	%r12, %r11, %r8;
+	neg.s32 	%r13, %r12;
+	ld.param.s32 	%r14, [__cudaparm_RGBCurves_MaskKernel_inHeight];
+	set.gt.u32.s32 	%r15, %r14, %r10;
+	neg.s32 	%r16, %r15;
+	and.b32 	%r17, %r13, %r16;
+	mov.u32 	%r18, 0;
+	setp.eq.s32 	%p1, %r17, %r18;
+	@%p1 bra 	$Lt_1_3842;
+	ld.param.u64 	%rd1, [__cudaparm_RGBCurves_MaskKernel_inSecondaryMask];
+	mov.u64 	%rd2, 0;
+	setp.eq.u64 	%p2, %rd1, %rd2;
+	@%p2 bra 	$Lt_1_4610;
+	ld.param.s32 	%r19, [__cudaparm_RGBCurves_MaskKernel_inSecondaryPitch];
+	mul.lo.s32 	%r20, %r19, %r10;
+	add.s32 	%r21, %r8, %r20;
+	cvt.s64.s32 	%rd3, %r21;
+	mul.wide.s32 	%rd4, %r21, 4;
+	add.u64 	%rd5, %rd1, %rd4;
+	ld.global.f32 	%f1, [%rd5+0];
+	bra.uni 	$Lt_1_4354;
+$Lt_1_4610:
+	mov.f32 	%f1, 0f3f800000;     	// 1
+$Lt_1_4354:
+	ld.param.s32 	%r22, [__cudaparm_RGBCurves_MaskKernel_inPitch];
+	mul.lo.s32 	%r23, %r22, %r10;
+	add.s32 	%r24, %r8, %r23;
+	cvt.s64.s32 	%rd6, %r24;
+	ld.param.u64 	%rd7, [__cudaparm_RGBCurves_MaskKernel_inImage];
+	ld.param.u32 	%r25, [__cudaparm_RGBCurves_MaskKernel_inDeviceFormat];
+	mov.u32 	%r26, 0;
+	setp.ne.s32 	%p3, %r25, %r26;
+	@%p3 bra 	$Lt_1_5122;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f1;
+	mov.b32		%r27, %b1; }
+	mov.s32 	%r28, %r27;
+	mul.lo.u64 	%rd8, %rd6, 8;
+	add.u64 	%rd9, %rd7, %rd8;
+	mov.f32 	%f2, 0f3f800000;     	// 1
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f2;
+	mov.b32		%r29, %b1; }
+	st.global.v4.u16 	[%rd9+0], {%r28,%r28,%r28,%r29};
+	bra.uni 	$Lt_1_4866;
+$Lt_1_5122:
+	mul.lo.u64 	%rd10, %rd6, 16;
+	add.u64 	%rd11, %rd7, %rd10;
+	mov.f32 	%f3, 0f3f800000;     	// 1
+	st.global.v4.f32 	[%rd11+0], {%f1,%f1,%f1,%f3};
+$Lt_1_4866:
+$Lt_1_3842:
+	exit;
+$LDWend_RGBCurves_MaskKernel:
+	} // RGBCurves_MaskKernel
+	.global .align 8 .b8 inSpline0[200];
+	.global .align 8 .b8 inSpline1[200];
+	.global .align 8 .b8 inSpline2[200];
+	.global .align 8 .b8 inSpline3[200];
+
+	.entry RGBCurves_LumaKernel (
+		.param .u64 __cudaparm_RGBCurves_LumaKernel_inImage,
+		.param .s32 __cudaparm_RGBCurves_LumaKernel_inPitch,
+		.param .u64 __cudaparm_RGBCurves_LumaKernel_inSecondaryMask,
+		.param .s32 __cudaparm_RGBCurves_LumaKernel_inSecondaryPitch,
+		.param .u32 __cudaparm_RGBCurves_LumaKernel_inDeviceFormat,
+		.param .s32 __cudaparm_RGBCurves_LumaKernel_inWidth,
+		.param .s32 __cudaparm_RGBCurves_LumaKernel_inHeight,
+		.param .u64 __cudaparm_RGBCurves_LumaKernel_ConstantinSpline0,
+		.param .u64 __cudaparm_RGBCurves_LumaKernel_ConstantinSpline1,
+		.param .u64 __cudaparm_RGBCurves_LumaKernel_ConstantinSpline2,
+		.param .u64 __cudaparm_RGBCurves_LumaKernel_ConstantinSpline3)
+	{
+	.reg .u32 %r<35>;
+	.reg .u64 %rd<103>;
+	.reg .f32 %f<217>;
+	.reg .pred %p<42>;
+$LDWbegin_RGBCurves_LumaKernel:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.y;
+	mov.u32 	%r5, %ntid.y;
+	mul.lo.u32 	%r6, %r4, %r5;
+	mov.u32 	%r7, %tid.x;
+	add.u32 	%r8, %r7, %r3;
+	mov.u32 	%r9, %tid.y;
+	add.u32 	%r10, %r9, %r6;
+	ld.param.s32 	%r11, [__cudaparm_RGBCurves_LumaKernel_inWidth];
+	set.gt.u32.s32 	%r12, %r11, %r8;
+	neg.s32 	%r13, %r12;
+	ld.param.s32 	%r14, [__cudaparm_RGBCurves_LumaKernel_inHeight];
+	set.gt.u32.s32 	%r15, %r14, %r10;
+	neg.s32 	%r16, %r15;
+	and.b32 	%r17, %r13, %r16;
+	mov.u32 	%r18, 0;
+	setp.eq.s32 	%p1, %r17, %r18;
+	@%p1 bra 	$Lt_2_49410;
+	ld.param.u32 	%r19, [__cudaparm_RGBCurves_LumaKernel_inDeviceFormat];
+	mov.s32 	%r20, 0;
+	setp.eq.s32 	%p2, %r19, %r20;
+	ld.param.s32 	%r21, [__cudaparm_RGBCurves_LumaKernel_inPitch];
+	mul.lo.s32 	%r22, %r21, %r10;
+	add.s32 	%r23, %r8, %r22;
+	cvt.s64.s32 	%rd1, %r23;
+	ld.param.u64 	%rd2, [__cudaparm_RGBCurves_LumaKernel_inImage];
+	@!%p2 bra 	$Lt_2_29698;
+	mul.lo.u64 	%rd3, %rd1, 8;
+	add.u64 	%rd4, %rd2, %rd3;
+	ld.global.v4.u16 	{%r24,%r25,%r26,%r27}, [%rd4+0];
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r24;
+	cvt.ftz.f32.f16	%f1, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r25;
+	cvt.ftz.f32.f16	%f2, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r26;
+	cvt.ftz.f32.f16	%f3, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r27;
+	cvt.ftz.f32.f16	%f4, %b1; }
+	bra.uni 	$Lt_2_29442;
+$Lt_2_29698:
+	mul.lo.u64 	%rd5, %rd1, 16;
+	add.u64 	%rd6, %rd2, %rd5;
+	ld.global.v4.f32 	{%f1,%f2,%f3,%f4}, [%rd6+0];
+$Lt_2_29442:
+	ld.param.u64 	%rd7, [__cudaparm_RGBCurves_LumaKernel_inSecondaryMask];
+	mov.u64 	%rd8, 0;
+	setp.eq.u64 	%p3, %rd7, %rd8;
+	@%p3 bra 	$Lt_2_30210;
+	ld.param.s32 	%r28, [__cudaparm_RGBCurves_LumaKernel_inSecondaryPitch];
+	mul.lo.s32 	%r29, %r28, %r10;
+	add.s32 	%r30, %r8, %r29;
+	cvt.s64.s32 	%rd9, %r30;
+	mul.wide.s32 	%rd10, %r30, 4;
+	add.u64 	%rd11, %rd7, %rd10;
+	ld.global.f32 	%f5, [%rd11+0];
+	bra.uni 	$Lt_2_29954;
+$Lt_2_30210:
+	mov.f32 	%f5, 0f3f800000;     	// 1
+$Lt_2_29954:
+	mov.f32 	%f6, %f1;
+	mov.f32 	%f7, %f6;
+	mov.f32 	%f8, %f2;
+	mov.f32 	%f9, %f8;
+	mov.f32 	%f10, %f3;
+	mov.f32 	%f11, %f10;
+	mov.f32 	%f12, 0f3a83126f;    	// 0.001
+	setp.gt.ftz.f32 	%p4, %f5, %f12;
+	@!%p4 bra 	$Lt_2_30466;
+	mov.f32 	%f13, 0f00000000;    	// 0
+	setp.lt.ftz.f32 	%p5, %f10, %f13;
+	@!%p5 bra 	$Lt_2_31234;
+	ld.global.f32 	%f14, [inSpline1+64];
+	add.ftz.f32 	%f15, %f14, %f10;
+	bra.uni 	$Lt_2_31490;
+$Lt_2_31234:
+	ld.global.u64 	%rd12, [inSpline1+192];
+	mov.f32 	%f16, 0f3f800000;    	// 1
+	setp.gt.ftz.f32 	%p6, %f10, %f16;
+	@!%p6 bra 	$Lt_2_31746;
+	mov.f32 	%f17, 0f3f800000;    	// 1
+	mov.u64 	%rd13, inSpline1;
+	mul.lo.u64 	%rd14, %rd12, 4;
+	add.u64 	%rd15, %rd13, %rd14;
+	ld.global.f32 	%f18, [%rd15+60];
+	sub.ftz.f32 	%f19, %f17, %f18;
+	sub.ftz.f32 	%f15, %f10, %f19;
+	bra.uni 	$Lt_2_31490;
+$Lt_2_31746:
+	.loc	3	42	0
+	mov.f32 	%f20, %f10;
+	sub.u64 	%rd16, %rd12, 1;
+	mov.s64 	%rd17, %rd16;
+	mov.u64 	%rd18, 1;
+	setp.le.u64 	%p7, %rd16, %rd18;
+	@%p7 bra 	$Lt_2_49922;
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd20, inSpline1;
+$Lt_2_32514:
+	add.u64 	%rd21, %rd17, %rd19;
+	shr.u64 	%rd22, %rd21, 1;
+	mul.lo.u64 	%rd23, %rd22, 4;
+	add.u64 	%rd24, %rd20, %rd23;
+	ld.global.f32 	%f21, [%rd24+0];
+	setp.gt.ftz.f32 	%p8, %f21, %f10;
+	@!%p8 bra 	$Lt_2_33026;
+	mov.s64 	%rd17, %rd22;
+	bra.uni 	$Lt_2_32770;
+$Lt_2_33026:
+	mov.s64 	%rd19, %rd22;
+$Lt_2_32770:
+	sub.u64 	%rd25, %rd17, %rd19;
+	mov.u64 	%rd26, 1;
+	setp.gt.u64 	%p9, %rd25, %rd26;
+	@%p9 bra 	$Lt_2_32514;
+	bra.uni 	$Lt_2_32002;
+$Lt_2_49922:
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd20, inSpline1;
+$Lt_2_32002:
+	mul.lo.u64 	%rd27, %rd17, 4;
+	add.u64 	%rd28, %rd20, %rd27;
+	mul.lo.u64 	%rd29, %rd19, 4;
+	add.u64 	%rd30, %rd20, %rd29;
+	ld.global.f32 	%f22, [%rd28+0];
+	ld.global.f32 	%f23, [%rd30+0];
+	sub.ftz.f32 	%f24, %f22, %f23;
+	mov.f32 	%f25, 0f00000000;    	// 0
+	setp.neu.ftz.f32 	%p10, %f24, %f25;
+	@!%p10 bra 	$Lt_2_33538;
+	.loc	24	544	0
+	sub.ftz.f32 	%f26, %f22, %f10;
+	sub.ftz.f32 	%f27, %f10, %f23;
+	div.approx.ftz.f32 	%f28, %f26, %f24;
+	div.approx.ftz.f32 	%f29, %f27, %f24;
+	ld.global.f32 	%f30, [%rd28+128];
+	mul.ftz.f32 	%f31, %f29, %f29;
+	mul.ftz.f32 	%f32, %f29, %f31;
+	sub.ftz.f32 	%f33, %f32, %f29;
+	mul.ftz.f32 	%f34, %f30, %f33;
+	ld.global.f32 	%f35, [%rd30+128];
+	mul.ftz.f32 	%f36, %f28, %f28;
+	mul.ftz.f32 	%f37, %f28, %f36;
+	sub.ftz.f32 	%f38, %f37, %f28;
+	fma.rn.ftz.f32 	%f39, %f35, %f38, %f34;
+	mul.ftz.f32 	%f40, %f24, %f24;
+	mul.ftz.f32 	%f41, %f39, %f40;
+	mov.f32 	%f42, 0f40c00000;    	// 6
+	div.approx.ftz.f32 	%f43, %f41, %f42;
+	.loc	3	42	0
+	ld.global.f32 	%f44, [%rd28+64];
+	mul.ftz.f32 	%f45, %f44, %f29;
+	ld.global.f32 	%f46, [%rd30+64];
+	fma.rn.ftz.f32 	%f47, %f46, %f28, %f45;
+	add.ftz.f32 	%f20, %f43, %f47;
+$Lt_2_33538:
+	.loc	20	39	0
+	mov.f32 	%f15, %f20;
+$Lt_2_31490:
+$Lt_2_30978:
+	mov.f32 	%f48, 0f00000000;    	// 0
+	setp.lt.ftz.f32 	%p11, %f15, %f48;
+	@!%p11 bra 	$Lt_2_34306;
+	ld.global.f32 	%f49, [inSpline0+64];
+	add.ftz.f32 	%f50, %f49, %f15;
+	mov.u64 	%rd31, inSpline0;
+	bra.uni 	$Lt_2_34562;
+$Lt_2_34306:
+	ld.global.u64 	%rd32, [inSpline0+192];
+	mov.f32 	%f51, 0f3f800000;    	// 1
+	setp.gt.ftz.f32 	%p12, %f15, %f51;
+	@!%p12 bra 	$Lt_2_34818;
+	mov.u64 	%rd31, inSpline0;
+	mov.f32 	%f52, 0f3f800000;    	// 1
+	mul.lo.u64 	%rd33, %rd32, 4;
+	add.u64 	%rd34, %rd31, %rd33;
+	ld.global.f32 	%f53, [%rd34+60];
+	sub.ftz.f32 	%f54, %f52, %f53;
+	sub.ftz.f32 	%f50, %f15, %f54;
+	bra.uni 	$Lt_2_34562;
+$Lt_2_34818:
+	.loc	3	42	0
+	mov.f32 	%f20, %f15;
+	sub.u64 	%rd35, %rd32, 1;
+	mov.s64 	%rd17, %rd35;
+	mov.u64 	%rd36, 1;
+	setp.le.u64 	%p13, %rd35, %rd36;
+	@%p13 bra 	$Lt_2_50178;
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd31, inSpline0;
+$Lt_2_35586:
+	add.u64 	%rd37, %rd17, %rd19;
+	shr.u64 	%rd22, %rd37, 1;
+	mul.lo.u64 	%rd38, %rd22, 4;
+	add.u64 	%rd39, %rd31, %rd38;
+	ld.global.f32 	%f55, [%rd39+0];
+	setp.gt.ftz.f32 	%p14, %f55, %f15;
+	@!%p14 bra 	$Lt_2_36098;
+	mov.s64 	%rd17, %rd22;
+	bra.uni 	$Lt_2_35842;
+$Lt_2_36098:
+	mov.s64 	%rd19, %rd22;
+$Lt_2_35842:
+	sub.u64 	%rd40, %rd17, %rd19;
+	mov.u64 	%rd41, 1;
+	setp.gt.u64 	%p15, %rd40, %rd41;
+	@%p15 bra 	$Lt_2_35586;
+	bra.uni 	$Lt_2_35074;
+$Lt_2_50178:
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd31, inSpline0;
+$Lt_2_35074:
+	mul.lo.u64 	%rd42, %rd17, 4;
+	add.u64 	%rd43, %rd31, %rd42;
+	mul.lo.u64 	%rd44, %rd19, 4;
+	add.u64 	%rd45, %rd31, %rd44;
+	ld.global.f32 	%f56, [%rd43+0];
+	ld.global.f32 	%f57, [%rd45+0];
+	sub.ftz.f32 	%f58, %f56, %f57;
+	mov.f32 	%f59, 0f00000000;    	// 0
+	setp.neu.ftz.f32 	%p16, %f58, %f59;
+	@!%p16 bra 	$Lt_2_36610;
+	.loc	24	544	0
+	sub.ftz.f32 	%f60, %f56, %f15;
+	sub.ftz.f32 	%f61, %f15, %f57;
+	div.approx.ftz.f32 	%f62, %f60, %f58;
+	div.approx.ftz.f32 	%f63, %f61, %f58;
+	ld.global.f32 	%f64, [%rd43+128];
+	mul.ftz.f32 	%f65, %f63, %f63;
+	mul.ftz.f32 	%f66, %f63, %f65;
+	sub.ftz.f32 	%f67, %f66, %f63;
+	mul.ftz.f32 	%f68, %f64, %f67;
+	ld.global.f32 	%f69, [%rd45+128];
+	mul.ftz.f32 	%f70, %f62, %f62;
+	mul.ftz.f32 	%f71, %f62, %f70;
+	sub.ftz.f32 	%f72, %f71, %f62;
+	fma.rn.ftz.f32 	%f73, %f69, %f72, %f68;
+	mul.ftz.f32 	%f74, %f58, %f58;
+	mul.ftz.f32 	%f75, %f73, %f74;
+	mov.f32 	%f76, 0f40c00000;    	// 6
+	div.approx.ftz.f32 	%f43, %f75, %f76;
+	.loc	3	42	0
+	ld.global.f32 	%f77, [%rd43+64];
+	mul.ftz.f32 	%f78, %f77, %f63;
+	ld.global.f32 	%f79, [%rd45+64];
+	fma.rn.ftz.f32 	%f80, %f79, %f62, %f78;
+	add.ftz.f32 	%f20, %f43, %f80;
+$Lt_2_36610:
+	.loc	20	39	0
+	mov.f32 	%f50, %f20;
+$Lt_2_34562:
+$Lt_2_34050:
+	sub.ftz.f32 	%f81, %f50, %f10;
+	fma.rn.ftz.f32 	%f11, %f5, %f81, %f10;
+	mov.f32 	%f82, 0f00000000;    	// 0
+	setp.lt.ftz.f32 	%p17, %f8, %f82;
+	@!%p17 bra 	$Lt_2_37378;
+	ld.global.f32 	%f83, [inSpline2+64];
+	add.ftz.f32 	%f84, %f83, %f8;
+	bra.uni 	$Lt_2_37634;
+$Lt_2_37378:
+	ld.global.u64 	%rd46, [inSpline2+192];
+	mov.f32 	%f85, 0f3f800000;    	// 1
+	setp.gt.ftz.f32 	%p18, %f8, %f85;
+	@!%p18 bra 	$Lt_2_37890;
+	mov.f32 	%f86, 0f3f800000;    	// 1
+	mov.u64 	%rd47, inSpline2;
+	mul.lo.u64 	%rd48, %rd46, 4;
+	add.u64 	%rd49, %rd47, %rd48;
+	ld.global.f32 	%f87, [%rd49+60];
+	sub.ftz.f32 	%f88, %f86, %f87;
+	sub.ftz.f32 	%f84, %f8, %f88;
+	bra.uni 	$Lt_2_37634;
+$Lt_2_37890:
+	.loc	3	42	0
+	mov.f32 	%f20, %f8;
+	sub.u64 	%rd50, %rd46, 1;
+	mov.s64 	%rd17, %rd50;
+	mov.u64 	%rd51, 1;
+	setp.le.u64 	%p19, %rd50, %rd51;
+	@%p19 bra 	$Lt_2_50434;
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd52, inSpline2;
+$Lt_2_38658:
+	add.u64 	%rd53, %rd17, %rd19;
+	shr.u64 	%rd22, %rd53, 1;
+	mul.lo.u64 	%rd54, %rd22, 4;
+	add.u64 	%rd55, %rd52, %rd54;
+	ld.global.f32 	%f89, [%rd55+0];
+	setp.gt.ftz.f32 	%p20, %f89, %f8;
+	@!%p20 bra 	$Lt_2_39170;
+	mov.s64 	%rd17, %rd22;
+	bra.uni 	$Lt_2_38914;
+$Lt_2_39170:
+	mov.s64 	%rd19, %rd22;
+$Lt_2_38914:
+	sub.u64 	%rd56, %rd17, %rd19;
+	mov.u64 	%rd57, 1;
+	setp.gt.u64 	%p21, %rd56, %rd57;
+	@%p21 bra 	$Lt_2_38658;
+	bra.uni 	$Lt_2_38146;
+$Lt_2_50434:
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd52, inSpline2;
+$Lt_2_38146:
+	mul.lo.u64 	%rd58, %rd17, 4;
+	add.u64 	%rd59, %rd52, %rd58;
+	mul.lo.u64 	%rd60, %rd19, 4;
+	add.u64 	%rd61, %rd52, %rd60;
+	ld.global.f32 	%f90, [%rd59+0];
+	ld.global.f32 	%f91, [%rd61+0];
+	sub.ftz.f32 	%f92, %f90, %f91;
+	mov.f32 	%f93, 0f00000000;    	// 0
+	setp.neu.ftz.f32 	%p22, %f92, %f93;
+	@!%p22 bra 	$Lt_2_39682;
+	.loc	24	544	0
+	sub.ftz.f32 	%f94, %f90, %f8;
+	sub.ftz.f32 	%f95, %f8, %f91;
+	div.approx.ftz.f32 	%f96, %f94, %f92;
+	div.approx.ftz.f32 	%f97, %f95, %f92;
+	ld.global.f32 	%f98, [%rd59+128];
+	mul.ftz.f32 	%f99, %f97, %f97;
+	mul.ftz.f32 	%f100, %f97, %f99;
+	sub.ftz.f32 	%f101, %f100, %f97;
+	mul.ftz.f32 	%f102, %f98, %f101;
+	ld.global.f32 	%f103, [%rd61+128];
+	mul.ftz.f32 	%f104, %f96, %f96;
+	mul.ftz.f32 	%f105, %f96, %f104;
+	sub.ftz.f32 	%f106, %f105, %f96;
+	fma.rn.ftz.f32 	%f107, %f103, %f106, %f102;
+	mul.ftz.f32 	%f108, %f92, %f92;
+	mul.ftz.f32 	%f109, %f107, %f108;
+	mov.f32 	%f110, 0f40c00000;   	// 6
+	div.approx.ftz.f32 	%f43, %f109, %f110;
+	.loc	3	42	0
+	ld.global.f32 	%f111, [%rd59+64];
+	mul.ftz.f32 	%f112, %f111, %f97;
+	ld.global.f32 	%f113, [%rd61+64];
+	fma.rn.ftz.f32 	%f114, %f113, %f96, %f112;
+	add.ftz.f32 	%f20, %f43, %f114;
+$Lt_2_39682:
+	.loc	20	39	0
+	mov.f32 	%f84, %f20;
+$Lt_2_37634:
+$Lt_2_37122:
+	mov.f32 	%f115, 0f00000000;   	// 0
+	setp.lt.ftz.f32 	%p23, %f84, %f115;
+	@!%p23 bra 	$Lt_2_40450;
+	ld.global.f32 	%f116, [inSpline0+64];
+	add.ftz.f32 	%f117, %f116, %f84;
+	bra.uni 	$Lt_2_40706;
+$Lt_2_40450:
+	ld.global.u64 	%rd32, [inSpline0+192];
+	mov.f32 	%f118, 0f3f800000;   	// 1
+	setp.gt.ftz.f32 	%p24, %f84, %f118;
+	@!%p24 bra 	$Lt_2_40962;
+	mov.f32 	%f119, 0f3f800000;   	// 1
+	mul.lo.u64 	%rd62, %rd32, 4;
+	add.u64 	%rd63, %rd31, %rd62;
+	ld.global.f32 	%f120, [%rd63+60];
+	sub.ftz.f32 	%f121, %f119, %f120;
+	sub.ftz.f32 	%f117, %f84, %f121;
+	bra.uni 	$Lt_2_40706;
+$Lt_2_40962:
+	.loc	3	42	0
+	mov.f32 	%f20, %f84;
+	sub.u64 	%rd35, %rd32, 1;
+	mov.s64 	%rd17, %rd35;
+	mov.u64 	%rd64, 1;
+	setp.le.u64 	%p25, %rd35, %rd64;
+	@%p25 bra 	$Lt_2_50690;
+	mov.u64 	%rd19, 0;
+$Lt_2_41730:
+	add.u64 	%rd65, %rd17, %rd19;
+	shr.u64 	%rd22, %rd65, 1;
+	mul.lo.u64 	%rd66, %rd22, 4;
+	add.u64 	%rd67, %rd31, %rd66;
+	ld.global.f32 	%f122, [%rd67+0];
+	setp.gt.ftz.f32 	%p26, %f122, %f84;
+	@!%p26 bra 	$Lt_2_42242;
+	mov.s64 	%rd17, %rd22;
+	bra.uni 	$Lt_2_41986;
+$Lt_2_42242:
+	mov.s64 	%rd19, %rd22;
+$Lt_2_41986:
+	sub.u64 	%rd68, %rd17, %rd19;
+	mov.u64 	%rd69, 1;
+	setp.gt.u64 	%p27, %rd68, %rd69;
+	@%p27 bra 	$Lt_2_41730;
+	bra.uni 	$Lt_2_41218;
+$Lt_2_50690:
+	mov.u64 	%rd19, 0;
+$Lt_2_41218:
+	mul.lo.u64 	%rd70, %rd17, 4;
+	add.u64 	%rd43, %rd31, %rd70;
+	mul.lo.u64 	%rd71, %rd19, 4;
+	add.u64 	%rd45, %rd31, %rd71;
+	ld.global.f32 	%f56, [%rd43+0];
+	ld.global.f32 	%f57, [%rd45+0];
+	sub.ftz.f32 	%f58, %f56, %f57;
+	mov.f32 	%f123, 0f00000000;   	// 0
+	setp.neu.ftz.f32 	%p28, %f58, %f123;
+	@!%p28 bra 	$Lt_2_42754;
+	.loc	24	544	0
+	sub.ftz.f32 	%f124, %f56, %f84;
+	sub.ftz.f32 	%f125, %f84, %f57;
+	div.approx.ftz.f32 	%f126, %f124, %f58;
+	div.approx.ftz.f32 	%f127, %f125, %f58;
+	ld.global.f32 	%f128, [%rd43+128];
+	mul.ftz.f32 	%f129, %f127, %f127;
+	mul.ftz.f32 	%f130, %f127, %f129;
+	sub.ftz.f32 	%f131, %f130, %f127;
+	mul.ftz.f32 	%f132, %f128, %f131;
+	ld.global.f32 	%f133, [%rd45+128];
+	mul.ftz.f32 	%f134, %f126, %f126;
+	mul.ftz.f32 	%f135, %f126, %f134;
+	sub.ftz.f32 	%f136, %f135, %f126;
+	fma.rn.ftz.f32 	%f137, %f133, %f136, %f132;
+	mul.ftz.f32 	%f138, %f58, %f58;
+	mul.ftz.f32 	%f139, %f137, %f138;
+	mov.f32 	%f140, 0f40c00000;   	// 6
+	div.approx.ftz.f32 	%f43, %f139, %f140;
+	.loc	3	42	0
+	ld.global.f32 	%f141, [%rd43+64];
+	mul.ftz.f32 	%f142, %f141, %f127;
+	ld.global.f32 	%f143, [%rd45+64];
+	fma.rn.ftz.f32 	%f144, %f143, %f126, %f142;
+	add.ftz.f32 	%f20, %f43, %f144;
+$Lt_2_42754:
+	.loc	20	39	0
+	mov.f32 	%f117, %f20;
+$Lt_2_40706:
+$Lt_2_40194:
+	sub.ftz.f32 	%f145, %f117, %f8;
+	fma.rn.ftz.f32 	%f9, %f5, %f145, %f8;
+	mov.f32 	%f146, 0f00000000;   	// 0
+	setp.lt.ftz.f32 	%p29, %f6, %f146;
+	@!%p29 bra 	$Lt_2_43522;
+	ld.global.f32 	%f147, [inSpline3+64];
+	add.ftz.f32 	%f148, %f147, %f6;
+	bra.uni 	$Lt_2_43778;
+$Lt_2_43522:
+	ld.global.u64 	%rd72, [inSpline3+192];
+	mov.f32 	%f149, 0f3f800000;   	// 1
+	setp.gt.ftz.f32 	%p30, %f6, %f149;
+	@!%p30 bra 	$Lt_2_44034;
+	mov.f32 	%f150, 0f3f800000;   	// 1
+	mov.u64 	%rd73, inSpline3;
+	mul.lo.u64 	%rd74, %rd72, 4;
+	add.u64 	%rd75, %rd73, %rd74;
+	ld.global.f32 	%f151, [%rd75+60];
+	sub.ftz.f32 	%f152, %f150, %f151;
+	sub.ftz.f32 	%f148, %f6, %f152;
+	bra.uni 	$Lt_2_43778;
+$Lt_2_44034:
+	.loc	3	42	0
+	mov.f32 	%f20, %f6;
+	sub.u64 	%rd76, %rd72, 1;
+	mov.s64 	%rd17, %rd76;
+	mov.u64 	%rd77, 1;
+	setp.le.u64 	%p31, %rd76, %rd77;
+	@%p31 bra 	$Lt_2_50946;
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd78, inSpline3;
+$Lt_2_44802:
+	add.u64 	%rd79, %rd17, %rd19;
+	shr.u64 	%rd22, %rd79, 1;
+	mul.lo.u64 	%rd80, %rd22, 4;
+	add.u64 	%rd81, %rd78, %rd80;
+	ld.global.f32 	%f153, [%rd81+0];
+	setp.gt.ftz.f32 	%p32, %f153, %f6;
+	@!%p32 bra 	$Lt_2_45314;
+	mov.s64 	%rd17, %rd22;
+	bra.uni 	$Lt_2_45058;
+$Lt_2_45314:
+	mov.s64 	%rd19, %rd22;
+$Lt_2_45058:
+	sub.u64 	%rd82, %rd17, %rd19;
+	mov.u64 	%rd83, 1;
+	setp.gt.u64 	%p33, %rd82, %rd83;
+	@%p33 bra 	$Lt_2_44802;
+	bra.uni 	$Lt_2_44290;
+$Lt_2_50946:
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd78, inSpline3;
+$Lt_2_44290:
+	mul.lo.u64 	%rd84, %rd17, 4;
+	add.u64 	%rd85, %rd78, %rd84;
+	mul.lo.u64 	%rd86, %rd19, 4;
+	add.u64 	%rd87, %rd78, %rd86;
+	ld.global.f32 	%f154, [%rd85+0];
+	ld.global.f32 	%f155, [%rd87+0];
+	sub.ftz.f32 	%f156, %f154, %f155;
+	mov.f32 	%f157, 0f00000000;   	// 0
+	setp.neu.ftz.f32 	%p34, %f156, %f157;
+	@!%p34 bra 	$Lt_2_45826;
+	.loc	24	544	0
+	sub.ftz.f32 	%f158, %f154, %f6;
+	sub.ftz.f32 	%f159, %f6, %f155;
+	div.approx.ftz.f32 	%f160, %f158, %f156;
+	div.approx.ftz.f32 	%f161, %f159, %f156;
+	ld.global.f32 	%f162, [%rd85+128];
+	mul.ftz.f32 	%f163, %f161, %f161;
+	mul.ftz.f32 	%f164, %f161, %f163;
+	sub.ftz.f32 	%f165, %f164, %f161;
+	mul.ftz.f32 	%f166, %f162, %f165;
+	ld.global.f32 	%f167, [%rd87+128];
+	mul.ftz.f32 	%f168, %f160, %f160;
+	mul.ftz.f32 	%f169, %f160, %f168;
+	sub.ftz.f32 	%f170, %f169, %f160;
+	fma.rn.ftz.f32 	%f171, %f167, %f170, %f166;
+	mul.ftz.f32 	%f172, %f156, %f156;
+	mul.ftz.f32 	%f173, %f171, %f172;
+	mov.f32 	%f174, 0f40c00000;   	// 6
+	div.approx.ftz.f32 	%f43, %f173, %f174;
+	.loc	3	42	0
+	ld.global.f32 	%f175, [%rd85+64];
+	mul.ftz.f32 	%f176, %f175, %f161;
+	ld.global.f32 	%f177, [%rd87+64];
+	fma.rn.ftz.f32 	%f178, %f177, %f160, %f176;
+	add.ftz.f32 	%f20, %f43, %f178;
+$Lt_2_45826:
+	.loc	20	39	0
+	mov.f32 	%f148, %f20;
+$Lt_2_43778:
+$Lt_2_43266:
+	mov.f32 	%f179, 0f00000000;   	// 0
+	setp.lt.ftz.f32 	%p35, %f148, %f179;
+	@!%p35 bra 	$Lt_2_46594;
+	ld.global.f32 	%f180, [inSpline0+64];
+	add.ftz.f32 	%f181, %f180, %f148;
+	bra.uni 	$Lt_2_46850;
+$Lt_2_46594:
+	ld.global.u64 	%rd32, [inSpline0+192];
+	mov.f32 	%f182, 0f3f800000;   	// 1
+	setp.gt.ftz.f32 	%p36, %f148, %f182;
+	@!%p36 bra 	$Lt_2_47106;
+	mov.f32 	%f183, 0f3f800000;   	// 1
+	mul.lo.u64 	%rd88, %rd32, 4;
+	add.u64 	%rd89, %rd31, %rd88;
+	ld.global.f32 	%f184, [%rd89+60];
+	sub.ftz.f32 	%f185, %f183, %f184;
+	sub.ftz.f32 	%f181, %f148, %f185;
+	bra.uni 	$Lt_2_46850;
+$Lt_2_47106:
+	.loc	3	42	0
+	mov.f32 	%f20, %f148;
+	sub.u64 	%rd35, %rd32, 1;
+	mov.s64 	%rd17, %rd35;
+	mov.u64 	%rd90, 1;
+	setp.le.u64 	%p37, %rd35, %rd90;
+	@%p37 bra 	$Lt_2_51202;
+	mov.u64 	%rd19, 0;
+$Lt_2_47874:
+	add.u64 	%rd91, %rd17, %rd19;
+	shr.u64 	%rd22, %rd91, 1;
+	mul.lo.u64 	%rd92, %rd22, 4;
+	add.u64 	%rd93, %rd31, %rd92;
+	ld.global.f32 	%f186, [%rd93+0];
+	setp.gt.ftz.f32 	%p38, %f186, %f148;
+	@!%p38 bra 	$Lt_2_48386;
+	mov.s64 	%rd17, %rd22;
+	bra.uni 	$Lt_2_48130;
+$Lt_2_48386:
+	mov.s64 	%rd19, %rd22;
+$Lt_2_48130:
+	sub.u64 	%rd94, %rd17, %rd19;
+	mov.u64 	%rd95, 1;
+	setp.gt.u64 	%p39, %rd94, %rd95;
+	@%p39 bra 	$Lt_2_47874;
+	bra.uni 	$Lt_2_47362;
+$Lt_2_51202:
+	mov.u64 	%rd19, 0;
+$Lt_2_47362:
+	mul.lo.u64 	%rd96, %rd17, 4;
+	add.u64 	%rd43, %rd31, %rd96;
+	mul.lo.u64 	%rd97, %rd19, 4;
+	add.u64 	%rd45, %rd31, %rd97;
+	ld.global.f32 	%f56, [%rd43+0];
+	ld.global.f32 	%f57, [%rd45+0];
+	sub.ftz.f32 	%f58, %f56, %f57;
+	mov.f32 	%f187, 0f00000000;   	// 0
+	setp.neu.ftz.f32 	%p40, %f58, %f187;
+	@!%p40 bra 	$Lt_2_48898;
+	.loc	24	544	0
+	sub.ftz.f32 	%f188, %f56, %f148;
+	sub.ftz.f32 	%f189, %f148, %f57;
+	div.approx.ftz.f32 	%f190, %f188, %f58;
+	div.approx.ftz.f32 	%f191, %f189, %f58;
+	ld.global.f32 	%f192, [%rd43+128];
+	mul.ftz.f32 	%f193, %f191, %f191;
+	mul.ftz.f32 	%f194, %f191, %f193;
+	sub.ftz.f32 	%f195, %f194, %f191;
+	mul.ftz.f32 	%f196, %f192, %f195;
+	ld.global.f32 	%f197, [%rd45+128];
+	mul.ftz.f32 	%f198, %f190, %f190;
+	mul.ftz.f32 	%f199, %f190, %f198;
+	sub.ftz.f32 	%f200, %f199, %f190;
+	fma.rn.ftz.f32 	%f201, %f197, %f200, %f196;
+	mul.ftz.f32 	%f202, %f58, %f58;
+	mul.ftz.f32 	%f203, %f201, %f202;
+	mov.f32 	%f204, 0f40c00000;   	// 6
+	div.approx.ftz.f32 	%f43, %f203, %f204;
+	.loc	3	42	0
+	ld.global.f32 	%f205, [%rd43+64];
+	mul.ftz.f32 	%f206, %f205, %f191;
+	ld.global.f32 	%f207, [%rd45+64];
+	fma.rn.ftz.f32 	%f208, %f207, %f190, %f206;
+	add.ftz.f32 	%f20, %f43, %f208;
+$Lt_2_48898:
+	.loc	20	39	0
+	mov.f32 	%f181, %f20;
+$Lt_2_46850:
+$Lt_2_46338:
+	sub.ftz.f32 	%f209, %f181, %f6;
+	fma.rn.ftz.f32 	%f7, %f5, %f209, %f6;
+$Lt_2_30466:
+	mov.f32 	%f210, 0f3f1645a2;   	// 0.587
+	mul.ftz.f32 	%f211, %f9, %f210;
+	mov.f32 	%f212, 0f3e991687;   	// 0.299
+	fma.rn.ftz.f32 	%f213, %f212, %f11, %f211;
+	mov.f32 	%f214, 0f3de978d5;   	// 0.114
+	fma.rn.ftz.f32 	%f215, %f214, %f7, %f213;
+	@!%p2 bra 	$Lt_2_49666;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f215;
+	mov.b32		%r31, %b1; }
+	mov.s32 	%r32, %r31;
+	mul.lo.u64 	%rd98, %rd1, 8;
+	add.u64 	%rd99, %rd2, %rd98;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f4;
+	mov.b32		%r33, %b1; }
+	st.global.v4.u16 	[%rd99+0], {%r32,%r32,%r32,%r33};
+	bra.uni 	$Lt_2_49410;
+$Lt_2_49666:
+	mul.lo.u64 	%rd100, %rd1, 16;
+	add.u64 	%rd101, %rd2, %rd100;
+	st.global.v4.f32 	[%rd101+0], {%f215,%f215,%f215,%f4};
+$Lt_2_49410:
+$Lt_2_28930:
+	exit;
+$LDWend_RGBCurves_LumaKernel:
+	} // RGBCurves_LumaKernel
+
+	.entry RGBCurves_CompositeKernel (
+		.param .u64 __cudaparm_RGBCurves_CompositeKernel_inImage,
+		.param .s32 __cudaparm_RGBCurves_CompositeKernel_inPitch,
+		.param .u64 __cudaparm_RGBCurves_CompositeKernel_inSecondaryMask,
+		.param .s32 __cudaparm_RGBCurves_CompositeKernel_inSecondaryPitch,
+		.param .u32 __cudaparm_RGBCurves_CompositeKernel_inDeviceFormat,
+		.param .s32 __cudaparm_RGBCurves_CompositeKernel_inWidth,
+		.param .s32 __cudaparm_RGBCurves_CompositeKernel_inHeight,
+		.param .u64 __cudaparm_RGBCurves_CompositeKernel_ConstantinSpline0,
+		.param .u64 __cudaparm_RGBCurves_CompositeKernel_ConstantinSpline1,
+		.param .u64 __cudaparm_RGBCurves_CompositeKernel_ConstantinSpline2,
+		.param .u64 __cudaparm_RGBCurves_CompositeKernel_ConstantinSpline3)
+	{
+	.reg .u32 %r<36>;
+	.reg .u64 %rd<103>;
+	.reg .f32 %f<211>;
+	.reg .pred %p<42>;
+$LDWbegin_RGBCurves_CompositeKernel:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.y;
+	mov.u32 	%r5, %ntid.y;
+	mul.lo.u32 	%r6, %r4, %r5;
+	mov.u32 	%r7, %tid.x;
+	add.u32 	%r8, %r7, %r3;
+	mov.u32 	%r9, %tid.y;
+	add.u32 	%r10, %r9, %r6;
+	ld.param.s32 	%r11, [__cudaparm_RGBCurves_CompositeKernel_inWidth];
+	set.gt.u32.s32 	%r12, %r11, %r8;
+	neg.s32 	%r13, %r12;
+	ld.param.s32 	%r14, [__cudaparm_RGBCurves_CompositeKernel_inHeight];
+	set.gt.u32.s32 	%r15, %r14, %r10;
+	neg.s32 	%r16, %r15;
+	and.b32 	%r17, %r13, %r16;
+	mov.u32 	%r18, 0;
+	setp.eq.s32 	%p1, %r17, %r18;
+	@%p1 bra 	$Lt_3_49410;
+	ld.param.u32 	%r19, [__cudaparm_RGBCurves_CompositeKernel_inDeviceFormat];
+	mov.s32 	%r20, 0;
+	setp.eq.s32 	%p2, %r19, %r20;
+	ld.param.s32 	%r21, [__cudaparm_RGBCurves_CompositeKernel_inPitch];
+	mul.lo.s32 	%r22, %r21, %r10;
+	add.s32 	%r23, %r8, %r22;
+	cvt.s64.s32 	%rd1, %r23;
+	ld.param.u64 	%rd2, [__cudaparm_RGBCurves_CompositeKernel_inImage];
+	@!%p2 bra 	$Lt_3_29698;
+	mul.lo.u64 	%rd3, %rd1, 8;
+	add.u64 	%rd4, %rd2, %rd3;
+	ld.global.v4.u16 	{%r24,%r25,%r26,%r27}, [%rd4+0];
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r24;
+	cvt.ftz.f32.f16	%f1, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r25;
+	cvt.ftz.f32.f16	%f2, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r26;
+	cvt.ftz.f32.f16	%f3, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r27;
+	cvt.ftz.f32.f16	%f4, %b1; }
+	bra.uni 	$Lt_3_29442;
+$Lt_3_29698:
+	mul.lo.u64 	%rd5, %rd1, 16;
+	add.u64 	%rd6, %rd2, %rd5;
+	ld.global.v4.f32 	{%f1,%f2,%f3,%f4}, [%rd6+0];
+$Lt_3_29442:
+	ld.param.u64 	%rd7, [__cudaparm_RGBCurves_CompositeKernel_inSecondaryMask];
+	mov.u64 	%rd8, 0;
+	setp.eq.u64 	%p3, %rd7, %rd8;
+	@%p3 bra 	$Lt_3_30210;
+	ld.param.s32 	%r28, [__cudaparm_RGBCurves_CompositeKernel_inSecondaryPitch];
+	mul.lo.s32 	%r29, %r28, %r10;
+	add.s32 	%r30, %r8, %r29;
+	cvt.s64.s32 	%rd9, %r30;
+	mul.wide.s32 	%rd10, %r30, 4;
+	add.u64 	%rd11, %rd7, %rd10;
+	ld.global.f32 	%f5, [%rd11+0];
+	bra.uni 	$Lt_3_29954;
+$Lt_3_30210:
+	mov.f32 	%f5, 0f3f800000;     	// 1
+$Lt_3_29954:
+	mov.f32 	%f6, %f1;
+	mov.f32 	%f7, %f6;
+	mov.f32 	%f8, %f2;
+	mov.f32 	%f9, %f8;
+	mov.f32 	%f10, %f3;
+	mov.f32 	%f11, %f10;
+	mov.f32 	%f12, 0f3a83126f;    	// 0.001
+	setp.gt.ftz.f32 	%p4, %f5, %f12;
+	@!%p4 bra 	$Lt_3_30466;
+	mov.f32 	%f13, 0f00000000;    	// 0
+	setp.lt.ftz.f32 	%p5, %f10, %f13;
+	@!%p5 bra 	$Lt_3_31234;
+	ld.global.f32 	%f14, [inSpline1+64];
+	add.ftz.f32 	%f15, %f14, %f10;
+	bra.uni 	$Lt_3_31490;
+$Lt_3_31234:
+	ld.global.u64 	%rd12, [inSpline1+192];
+	mov.f32 	%f16, 0f3f800000;    	// 1
+	setp.gt.ftz.f32 	%p6, %f10, %f16;
+	@!%p6 bra 	$Lt_3_31746;
+	mov.f32 	%f17, 0f3f800000;    	// 1
+	mov.u64 	%rd13, inSpline1;
+	mul.lo.u64 	%rd14, %rd12, 4;
+	add.u64 	%rd15, %rd13, %rd14;
+	ld.global.f32 	%f18, [%rd15+60];
+	sub.ftz.f32 	%f19, %f17, %f18;
+	sub.ftz.f32 	%f15, %f10, %f19;
+	bra.uni 	$Lt_3_31490;
+$Lt_3_31746:
+	.loc	3	42	0
+	mov.f32 	%f20, %f10;
+	sub.u64 	%rd16, %rd12, 1;
+	mov.s64 	%rd17, %rd16;
+	mov.u64 	%rd18, 1;
+	setp.le.u64 	%p7, %rd16, %rd18;
+	@%p7 bra 	$Lt_3_49922;
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd20, inSpline1;
+$Lt_3_32514:
+	add.u64 	%rd21, %rd17, %rd19;
+	shr.u64 	%rd22, %rd21, 1;
+	mul.lo.u64 	%rd23, %rd22, 4;
+	add.u64 	%rd24, %rd20, %rd23;
+	ld.global.f32 	%f21, [%rd24+0];
+	setp.gt.ftz.f32 	%p8, %f21, %f10;
+	@!%p8 bra 	$Lt_3_33026;
+	mov.s64 	%rd17, %rd22;
+	bra.uni 	$Lt_3_32770;
+$Lt_3_33026:
+	mov.s64 	%rd19, %rd22;
+$Lt_3_32770:
+	sub.u64 	%rd25, %rd17, %rd19;
+	mov.u64 	%rd26, 1;
+	setp.gt.u64 	%p9, %rd25, %rd26;
+	@%p9 bra 	$Lt_3_32514;
+	bra.uni 	$Lt_3_32002;
+$Lt_3_49922:
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd20, inSpline1;
+$Lt_3_32002:
+	mul.lo.u64 	%rd27, %rd17, 4;
+	add.u64 	%rd28, %rd20, %rd27;
+	mul.lo.u64 	%rd29, %rd19, 4;
+	add.u64 	%rd30, %rd20, %rd29;
+	ld.global.f32 	%f22, [%rd28+0];
+	ld.global.f32 	%f23, [%rd30+0];
+	sub.ftz.f32 	%f24, %f22, %f23;
+	mov.f32 	%f25, 0f00000000;    	// 0
+	setp.neu.ftz.f32 	%p10, %f24, %f25;
+	@!%p10 bra 	$Lt_3_33538;
+	.loc	24	544	0
+	sub.ftz.f32 	%f26, %f22, %f10;
+	sub.ftz.f32 	%f27, %f10, %f23;
+	div.approx.ftz.f32 	%f28, %f26, %f24;
+	div.approx.ftz.f32 	%f29, %f27, %f24;
+	ld.global.f32 	%f30, [%rd28+128];
+	mul.ftz.f32 	%f31, %f29, %f29;
+	mul.ftz.f32 	%f32, %f29, %f31;
+	sub.ftz.f32 	%f33, %f32, %f29;
+	mul.ftz.f32 	%f34, %f30, %f33;
+	ld.global.f32 	%f35, [%rd30+128];
+	mul.ftz.f32 	%f36, %f28, %f28;
+	mul.ftz.f32 	%f37, %f28, %f36;
+	sub.ftz.f32 	%f38, %f37, %f28;
+	fma.rn.ftz.f32 	%f39, %f35, %f38, %f34;
+	mul.ftz.f32 	%f40, %f24, %f24;
+	mul.ftz.f32 	%f41, %f39, %f40;
+	mov.f32 	%f42, 0f40c00000;    	// 6
+	div.approx.ftz.f32 	%f43, %f41, %f42;
+	.loc	3	42	0
+	ld.global.f32 	%f44, [%rd28+64];
+	mul.ftz.f32 	%f45, %f44, %f29;
+	ld.global.f32 	%f46, [%rd30+64];
+	fma.rn.ftz.f32 	%f47, %f46, %f28, %f45;
+	add.ftz.f32 	%f20, %f43, %f47;
+$Lt_3_33538:
+	.loc	20	39	0
+	mov.f32 	%f15, %f20;
+$Lt_3_31490:
+$Lt_3_30978:
+	mov.f32 	%f48, 0f00000000;    	// 0
+	setp.lt.ftz.f32 	%p11, %f15, %f48;
+	@!%p11 bra 	$Lt_3_34306;
+	ld.global.f32 	%f49, [inSpline0+64];
+	add.ftz.f32 	%f50, %f49, %f15;
+	mov.u64 	%rd31, inSpline0;
+	bra.uni 	$Lt_3_34562;
+$Lt_3_34306:
+	ld.global.u64 	%rd32, [inSpline0+192];
+	mov.f32 	%f51, 0f3f800000;    	// 1
+	setp.gt.ftz.f32 	%p12, %f15, %f51;
+	@!%p12 bra 	$Lt_3_34818;
+	mov.u64 	%rd31, inSpline0;
+	mov.f32 	%f52, 0f3f800000;    	// 1
+	mul.lo.u64 	%rd33, %rd32, 4;
+	add.u64 	%rd34, %rd31, %rd33;
+	ld.global.f32 	%f53, [%rd34+60];
+	sub.ftz.f32 	%f54, %f52, %f53;
+	sub.ftz.f32 	%f50, %f15, %f54;
+	bra.uni 	$Lt_3_34562;
+$Lt_3_34818:
+	.loc	3	42	0
+	mov.f32 	%f20, %f15;
+	sub.u64 	%rd35, %rd32, 1;
+	mov.s64 	%rd17, %rd35;
+	mov.u64 	%rd36, 1;
+	setp.le.u64 	%p13, %rd35, %rd36;
+	@%p13 bra 	$Lt_3_50178;
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd31, inSpline0;
+$Lt_3_35586:
+	add.u64 	%rd37, %rd17, %rd19;
+	shr.u64 	%rd22, %rd37, 1;
+	mul.lo.u64 	%rd38, %rd22, 4;
+	add.u64 	%rd39, %rd31, %rd38;
+	ld.global.f32 	%f55, [%rd39+0];
+	setp.gt.ftz.f32 	%p14, %f55, %f15;
+	@!%p14 bra 	$Lt_3_36098;
+	mov.s64 	%rd17, %rd22;
+	bra.uni 	$Lt_3_35842;
+$Lt_3_36098:
+	mov.s64 	%rd19, %rd22;
+$Lt_3_35842:
+	sub.u64 	%rd40, %rd17, %rd19;
+	mov.u64 	%rd41, 1;
+	setp.gt.u64 	%p15, %rd40, %rd41;
+	@%p15 bra 	$Lt_3_35586;
+	bra.uni 	$Lt_3_35074;
+$Lt_3_50178:
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd31, inSpline0;
+$Lt_3_35074:
+	mul.lo.u64 	%rd42, %rd17, 4;
+	add.u64 	%rd43, %rd31, %rd42;
+	mul.lo.u64 	%rd44, %rd19, 4;
+	add.u64 	%rd45, %rd31, %rd44;
+	ld.global.f32 	%f56, [%rd43+0];
+	ld.global.f32 	%f57, [%rd45+0];
+	sub.ftz.f32 	%f58, %f56, %f57;
+	mov.f32 	%f59, 0f00000000;    	// 0
+	setp.neu.ftz.f32 	%p16, %f58, %f59;
+	@!%p16 bra 	$Lt_3_36610;
+	.loc	24	544	0
+	sub.ftz.f32 	%f60, %f56, %f15;
+	sub.ftz.f32 	%f61, %f15, %f57;
+	div.approx.ftz.f32 	%f62, %f60, %f58;
+	div.approx.ftz.f32 	%f63, %f61, %f58;
+	ld.global.f32 	%f64, [%rd43+128];
+	mul.ftz.f32 	%f65, %f63, %f63;
+	mul.ftz.f32 	%f66, %f63, %f65;
+	sub.ftz.f32 	%f67, %f66, %f63;
+	mul.ftz.f32 	%f68, %f64, %f67;
+	ld.global.f32 	%f69, [%rd45+128];
+	mul.ftz.f32 	%f70, %f62, %f62;
+	mul.ftz.f32 	%f71, %f62, %f70;
+	sub.ftz.f32 	%f72, %f71, %f62;
+	fma.rn.ftz.f32 	%f73, %f69, %f72, %f68;
+	mul.ftz.f32 	%f74, %f58, %f58;
+	mul.ftz.f32 	%f75, %f73, %f74;
+	mov.f32 	%f76, 0f40c00000;    	// 6
+	div.approx.ftz.f32 	%f43, %f75, %f76;
+	.loc	3	42	0
+	ld.global.f32 	%f77, [%rd43+64];
+	mul.ftz.f32 	%f78, %f77, %f63;
+	ld.global.f32 	%f79, [%rd45+64];
+	fma.rn.ftz.f32 	%f80, %f79, %f62, %f78;
+	add.ftz.f32 	%f20, %f43, %f80;
+$Lt_3_36610:
+	.loc	20	39	0
+	mov.f32 	%f50, %f20;
+$Lt_3_34562:
+$Lt_3_34050:
+	sub.ftz.f32 	%f81, %f50, %f10;
+	fma.rn.ftz.f32 	%f11, %f5, %f81, %f10;
+	mov.f32 	%f82, 0f00000000;    	// 0
+	setp.lt.ftz.f32 	%p17, %f8, %f82;
+	@!%p17 bra 	$Lt_3_37378;
+	ld.global.f32 	%f83, [inSpline2+64];
+	add.ftz.f32 	%f84, %f83, %f8;
+	bra.uni 	$Lt_3_37634;
+$Lt_3_37378:
+	ld.global.u64 	%rd46, [inSpline2+192];
+	mov.f32 	%f85, 0f3f800000;    	// 1
+	setp.gt.ftz.f32 	%p18, %f8, %f85;
+	@!%p18 bra 	$Lt_3_37890;
+	mov.f32 	%f86, 0f3f800000;    	// 1
+	mov.u64 	%rd47, inSpline2;
+	mul.lo.u64 	%rd48, %rd46, 4;
+	add.u64 	%rd49, %rd47, %rd48;
+	ld.global.f32 	%f87, [%rd49+60];
+	sub.ftz.f32 	%f88, %f86, %f87;
+	sub.ftz.f32 	%f84, %f8, %f88;
+	bra.uni 	$Lt_3_37634;
+$Lt_3_37890:
+	.loc	3	42	0
+	mov.f32 	%f20, %f8;
+	sub.u64 	%rd50, %rd46, 1;
+	mov.s64 	%rd17, %rd50;
+	mov.u64 	%rd51, 1;
+	setp.le.u64 	%p19, %rd50, %rd51;
+	@%p19 bra 	$Lt_3_50434;
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd52, inSpline2;
+$Lt_3_38658:
+	add.u64 	%rd53, %rd17, %rd19;
+	shr.u64 	%rd22, %rd53, 1;
+	mul.lo.u64 	%rd54, %rd22, 4;
+	add.u64 	%rd55, %rd52, %rd54;
+	ld.global.f32 	%f89, [%rd55+0];
+	setp.gt.ftz.f32 	%p20, %f89, %f8;
+	@!%p20 bra 	$Lt_3_39170;
+	mov.s64 	%rd17, %rd22;
+	bra.uni 	$Lt_3_38914;
+$Lt_3_39170:
+	mov.s64 	%rd19, %rd22;
+$Lt_3_38914:
+	sub.u64 	%rd56, %rd17, %rd19;
+	mov.u64 	%rd57, 1;
+	setp.gt.u64 	%p21, %rd56, %rd57;
+	@%p21 bra 	$Lt_3_38658;
+	bra.uni 	$Lt_3_38146;
+$Lt_3_50434:
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd52, inSpline2;
+$Lt_3_38146:
+	mul.lo.u64 	%rd58, %rd17, 4;
+	add.u64 	%rd59, %rd52, %rd58;
+	mul.lo.u64 	%rd60, %rd19, 4;
+	add.u64 	%rd61, %rd52, %rd60;
+	ld.global.f32 	%f90, [%rd59+0];
+	ld.global.f32 	%f91, [%rd61+0];
+	sub.ftz.f32 	%f92, %f90, %f91;
+	mov.f32 	%f93, 0f00000000;    	// 0
+	setp.neu.ftz.f32 	%p22, %f92, %f93;
+	@!%p22 bra 	$Lt_3_39682;
+	.loc	24	544	0
+	sub.ftz.f32 	%f94, %f90, %f8;
+	sub.ftz.f32 	%f95, %f8, %f91;
+	div.approx.ftz.f32 	%f96, %f94, %f92;
+	div.approx.ftz.f32 	%f97, %f95, %f92;
+	ld.global.f32 	%f98, [%rd59+128];
+	mul.ftz.f32 	%f99, %f97, %f97;
+	mul.ftz.f32 	%f100, %f97, %f99;
+	sub.ftz.f32 	%f101, %f100, %f97;
+	mul.ftz.f32 	%f102, %f98, %f101;
+	ld.global.f32 	%f103, [%rd61+128];
+	mul.ftz.f32 	%f104, %f96, %f96;
+	mul.ftz.f32 	%f105, %f96, %f104;
+	sub.ftz.f32 	%f106, %f105, %f96;
+	fma.rn.ftz.f32 	%f107, %f103, %f106, %f102;
+	mul.ftz.f32 	%f108, %f92, %f92;
+	mul.ftz.f32 	%f109, %f107, %f108;
+	mov.f32 	%f110, 0f40c00000;   	// 6
+	div.approx.ftz.f32 	%f43, %f109, %f110;
+	.loc	3	42	0
+	ld.global.f32 	%f111, [%rd59+64];
+	mul.ftz.f32 	%f112, %f111, %f97;
+	ld.global.f32 	%f113, [%rd61+64];
+	fma.rn.ftz.f32 	%f114, %f113, %f96, %f112;
+	add.ftz.f32 	%f20, %f43, %f114;
+$Lt_3_39682:
+	.loc	20	39	0
+	mov.f32 	%f84, %f20;
+$Lt_3_37634:
+$Lt_3_37122:
+	mov.f32 	%f115, 0f00000000;   	// 0
+	setp.lt.ftz.f32 	%p23, %f84, %f115;
+	@!%p23 bra 	$Lt_3_40450;
+	ld.global.f32 	%f116, [inSpline0+64];
+	add.ftz.f32 	%f117, %f116, %f84;
+	bra.uni 	$Lt_3_40706;
+$Lt_3_40450:
+	ld.global.u64 	%rd32, [inSpline0+192];
+	mov.f32 	%f118, 0f3f800000;   	// 1
+	setp.gt.ftz.f32 	%p24, %f84, %f118;
+	@!%p24 bra 	$Lt_3_40962;
+	mov.f32 	%f119, 0f3f800000;   	// 1
+	mul.lo.u64 	%rd62, %rd32, 4;
+	add.u64 	%rd63, %rd31, %rd62;
+	ld.global.f32 	%f120, [%rd63+60];
+	sub.ftz.f32 	%f121, %f119, %f120;
+	sub.ftz.f32 	%f117, %f84, %f121;
+	bra.uni 	$Lt_3_40706;
+$Lt_3_40962:
+	.loc	3	42	0
+	mov.f32 	%f20, %f84;
+	sub.u64 	%rd35, %rd32, 1;
+	mov.s64 	%rd17, %rd35;
+	mov.u64 	%rd64, 1;
+	setp.le.u64 	%p25, %rd35, %rd64;
+	@%p25 bra 	$Lt_3_50690;
+	mov.u64 	%rd19, 0;
+$Lt_3_41730:
+	add.u64 	%rd65, %rd17, %rd19;
+	shr.u64 	%rd22, %rd65, 1;
+	mul.lo.u64 	%rd66, %rd22, 4;
+	add.u64 	%rd67, %rd31, %rd66;
+	ld.global.f32 	%f122, [%rd67+0];
+	setp.gt.ftz.f32 	%p26, %f122, %f84;
+	@!%p26 bra 	$Lt_3_42242;
+	mov.s64 	%rd17, %rd22;
+	bra.uni 	$Lt_3_41986;
+$Lt_3_42242:
+	mov.s64 	%rd19, %rd22;
+$Lt_3_41986:
+	sub.u64 	%rd68, %rd17, %rd19;
+	mov.u64 	%rd69, 1;
+	setp.gt.u64 	%p27, %rd68, %rd69;
+	@%p27 bra 	$Lt_3_41730;
+	bra.uni 	$Lt_3_41218;
+$Lt_3_50690:
+	mov.u64 	%rd19, 0;
+$Lt_3_41218:
+	mul.lo.u64 	%rd70, %rd17, 4;
+	add.u64 	%rd43, %rd31, %rd70;
+	mul.lo.u64 	%rd71, %rd19, 4;
+	add.u64 	%rd45, %rd31, %rd71;
+	ld.global.f32 	%f56, [%rd43+0];
+	ld.global.f32 	%f57, [%rd45+0];
+	sub.ftz.f32 	%f58, %f56, %f57;
+	mov.f32 	%f123, 0f00000000;   	// 0
+	setp.neu.ftz.f32 	%p28, %f58, %f123;
+	@!%p28 bra 	$Lt_3_42754;
+	.loc	24	544	0
+	sub.ftz.f32 	%f124, %f56, %f84;
+	sub.ftz.f32 	%f125, %f84, %f57;
+	div.approx.ftz.f32 	%f126, %f124, %f58;
+	div.approx.ftz.f32 	%f127, %f125, %f58;
+	ld.global.f32 	%f128, [%rd43+128];
+	mul.ftz.f32 	%f129, %f127, %f127;
+	mul.ftz.f32 	%f130, %f127, %f129;
+	sub.ftz.f32 	%f131, %f130, %f127;
+	mul.ftz.f32 	%f132, %f128, %f131;
+	ld.global.f32 	%f133, [%rd45+128];
+	mul.ftz.f32 	%f134, %f126, %f126;
+	mul.ftz.f32 	%f135, %f126, %f134;
+	sub.ftz.f32 	%f136, %f135, %f126;
+	fma.rn.ftz.f32 	%f137, %f133, %f136, %f132;
+	mul.ftz.f32 	%f138, %f58, %f58;
+	mul.ftz.f32 	%f139, %f137, %f138;
+	mov.f32 	%f140, 0f40c00000;   	// 6
+	div.approx.ftz.f32 	%f43, %f139, %f140;
+	.loc	3	42	0
+	ld.global.f32 	%f141, [%rd43+64];
+	mul.ftz.f32 	%f142, %f141, %f127;
+	ld.global.f32 	%f143, [%rd45+64];
+	fma.rn.ftz.f32 	%f144, %f143, %f126, %f142;
+	add.ftz.f32 	%f20, %f43, %f144;
+$Lt_3_42754:
+	.loc	20	39	0
+	mov.f32 	%f117, %f20;
+$Lt_3_40706:
+$Lt_3_40194:
+	sub.ftz.f32 	%f145, %f117, %f8;
+	fma.rn.ftz.f32 	%f9, %f5, %f145, %f8;
+	mov.f32 	%f146, 0f00000000;   	// 0
+	setp.lt.ftz.f32 	%p29, %f6, %f146;
+	@!%p29 bra 	$Lt_3_43522;
+	ld.global.f32 	%f147, [inSpline3+64];
+	add.ftz.f32 	%f148, %f147, %f6;
+	bra.uni 	$Lt_3_43778;
+$Lt_3_43522:
+	ld.global.u64 	%rd72, [inSpline3+192];
+	mov.f32 	%f149, 0f3f800000;   	// 1
+	setp.gt.ftz.f32 	%p30, %f6, %f149;
+	@!%p30 bra 	$Lt_3_44034;
+	mov.f32 	%f150, 0f3f800000;   	// 1
+	mov.u64 	%rd73, inSpline3;
+	mul.lo.u64 	%rd74, %rd72, 4;
+	add.u64 	%rd75, %rd73, %rd74;
+	ld.global.f32 	%f151, [%rd75+60];
+	sub.ftz.f32 	%f152, %f150, %f151;
+	sub.ftz.f32 	%f148, %f6, %f152;
+	bra.uni 	$Lt_3_43778;
+$Lt_3_44034:
+	.loc	3	42	0
+	mov.f32 	%f20, %f6;
+	sub.u64 	%rd76, %rd72, 1;
+	mov.s64 	%rd17, %rd76;
+	mov.u64 	%rd77, 1;
+	setp.le.u64 	%p31, %rd76, %rd77;
+	@%p31 bra 	$Lt_3_50946;
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd78, inSpline3;
+$Lt_3_44802:
+	add.u64 	%rd79, %rd17, %rd19;
+	shr.u64 	%rd22, %rd79, 1;
+	mul.lo.u64 	%rd80, %rd22, 4;
+	add.u64 	%rd81, %rd78, %rd80;
+	ld.global.f32 	%f153, [%rd81+0];
+	setp.gt.ftz.f32 	%p32, %f153, %f6;
+	@!%p32 bra 	$Lt_3_45314;
+	mov.s64 	%rd17, %rd22;
+	bra.uni 	$Lt_3_45058;
+$Lt_3_45314:
+	mov.s64 	%rd19, %rd22;
+$Lt_3_45058:
+	sub.u64 	%rd82, %rd17, %rd19;
+	mov.u64 	%rd83, 1;
+	setp.gt.u64 	%p33, %rd82, %rd83;
+	@%p33 bra 	$Lt_3_44802;
+	bra.uni 	$Lt_3_44290;
+$Lt_3_50946:
+	mov.u64 	%rd19, 0;
+	mov.u64 	%rd78, inSpline3;
+$Lt_3_44290:
+	mul.lo.u64 	%rd84, %rd17, 4;
+	add.u64 	%rd85, %rd78, %rd84;
+	mul.lo.u64 	%rd86, %rd19, 4;
+	add.u64 	%rd87, %rd78, %rd86;
+	ld.global.f32 	%f154, [%rd85+0];
+	ld.global.f32 	%f155, [%rd87+0];
+	sub.ftz.f32 	%f156, %f154, %f155;
+	mov.f32 	%f157, 0f00000000;   	// 0
+	setp.neu.ftz.f32 	%p34, %f156, %f157;
+	@!%p34 bra 	$Lt_3_45826;
+	.loc	24	544	0
+	sub.ftz.f32 	%f158, %f154, %f6;
+	sub.ftz.f32 	%f159, %f6, %f155;
+	div.approx.ftz.f32 	%f160, %f158, %f156;
+	div.approx.ftz.f32 	%f161, %f159, %f156;
+	ld.global.f32 	%f162, [%rd85+128];
+	mul.ftz.f32 	%f163, %f161, %f161;
+	mul.ftz.f32 	%f164, %f161, %f163;
+	sub.ftz.f32 	%f165, %f164, %f161;
+	mul.ftz.f32 	%f166, %f162, %f165;
+	ld.global.f32 	%f167, [%rd87+128];
+	mul.ftz.f32 	%f168, %f160, %f160;
+	mul.ftz.f32 	%f169, %f160, %f168;
+	sub.ftz.f32 	%f170, %f169, %f160;
+	fma.rn.ftz.f32 	%f171, %f167, %f170, %f166;
+	mul.ftz.f32 	%f172, %f156, %f156;
+	mul.ftz.f32 	%f173, %f171, %f172;
+	mov.f32 	%f174, 0f40c00000;   	// 6
+	div.approx.ftz.f32 	%f43, %f173, %f174;
+	.loc	3	42	0
+	ld.global.f32 	%f175, [%rd85+64];
+	mul.ftz.f32 	%f176, %f175, %f161;
+	ld.global.f32 	%f177, [%rd87+64];
+	fma.rn.ftz.f32 	%f178, %f177, %f160, %f176;
+	add.ftz.f32 	%f20, %f43, %f178;
+$Lt_3_45826:
+	.loc	20	39	0
+	mov.f32 	%f148, %f20;
+$Lt_3_43778:
+$Lt_3_43266:
+	mov.f32 	%f179, 0f00000000;   	// 0
+	setp.lt.ftz.f32 	%p35, %f148, %f179;
+	@!%p35 bra 	$Lt_3_46594;
+	ld.global.f32 	%f180, [inSpline0+64];
+	add.ftz.f32 	%f181, %f180, %f148;
+	bra.uni 	$Lt_3_46850;
+$Lt_3_46594:
+	ld.global.u64 	%rd32, [inSpline0+192];
+	mov.f32 	%f182, 0f3f800000;   	// 1
+	setp.gt.ftz.f32 	%p36, %f148, %f182;
+	@!%p36 bra 	$Lt_3_47106;
+	mov.f32 	%f183, 0f3f800000;   	// 1
+	mul.lo.u64 	%rd88, %rd32, 4;
+	add.u64 	%rd89, %rd31, %rd88;
+	ld.global.f32 	%f184, [%rd89+60];
+	sub.ftz.f32 	%f185, %f183, %f184;
+	sub.ftz.f32 	%f181, %f148, %f185;
+	bra.uni 	$Lt_3_46850;
+$Lt_3_47106:
+	.loc	3	42	0
+	mov.f32 	%f20, %f148;
+	sub.u64 	%rd35, %rd32, 1;
+	mov.s64 	%rd17, %rd35;
+	mov.u64 	%rd90, 1;
+	setp.le.u64 	%p37, %rd35, %rd90;
+	@%p37 bra 	$Lt_3_51202;
+	mov.u64 	%rd19, 0;
+$Lt_3_47874:
+	add.u64 	%rd91, %rd17, %rd19;
+	shr.u64 	%rd22, %rd91, 1;
+	mul.lo.u64 	%rd92, %rd22, 4;
+	add.u64 	%rd93, %rd31, %rd92;
+	ld.global.f32 	%f186, [%rd93+0];
+	setp.gt.ftz.f32 	%p38, %f186, %f148;
+	@!%p38 bra 	$Lt_3_48386;
+	mov.s64 	%rd17, %rd22;
+	bra.uni 	$Lt_3_48130;
+$Lt_3_48386:
+	mov.s64 	%rd19, %rd22;
+$Lt_3_48130:
+	sub.u64 	%rd94, %rd17, %rd19;
+	mov.u64 	%rd95, 1;
+	setp.gt.u64 	%p39, %rd94, %rd95;
+	@%p39 bra 	$Lt_3_47874;
+	bra.uni 	$Lt_3_47362;
+$Lt_3_51202:
+	mov.u64 	%rd19, 0;
+$Lt_3_47362:
+	mul.lo.u64 	%rd96, %rd17, 4;
+	add.u64 	%rd43, %rd31, %rd96;
+	mul.lo.u64 	%rd97, %rd19, 4;
+	add.u64 	%rd45, %rd31, %rd97;
+	ld.global.f32 	%f56, [%rd43+0];
+	ld.global.f32 	%f57, [%rd45+0];
+	sub.ftz.f32 	%f58, %f56, %f57;
+	mov.f32 	%f187, 0f00000000;   	// 0
+	setp.neu.ftz.f32 	%p40, %f58, %f187;
+	@!%p40 bra 	$Lt_3_48898;
+	.loc	24	544	0
+	sub.ftz.f32 	%f188, %f56, %f148;
+	sub.ftz.f32 	%f189, %f148, %f57;
+	div.approx.ftz.f32 	%f190, %f188, %f58;
+	div.approx.ftz.f32 	%f191, %f189, %f58;
+	ld.global.f32 	%f192, [%rd43+128];
+	mul.ftz.f32 	%f193, %f191, %f191;
+	mul.ftz.f32 	%f194, %f191, %f193;
+	sub.ftz.f32 	%f195, %f194, %f191;
+	mul.ftz.f32 	%f196, %f192, %f195;
+	ld.global.f32 	%f197, [%rd45+128];
+	mul.ftz.f32 	%f198, %f190, %f190;
+	mul.ftz.f32 	%f199, %f190, %f198;
+	sub.ftz.f32 	%f200, %f199, %f190;
+	fma.rn.ftz.f32 	%f201, %f197, %f200, %f196;
+	mul.ftz.f32 	%f202, %f58, %f58;
+	mul.ftz.f32 	%f203, %f201, %f202;
+	mov.f32 	%f204, 0f40c00000;   	// 6
+	div.approx.ftz.f32 	%f43, %f203, %f204;
+	.loc	3	42	0
+	ld.global.f32 	%f205, [%rd43+64];
+	mul.ftz.f32 	%f206, %f205, %f191;
+	ld.global.f32 	%f207, [%rd45+64];
+	fma.rn.ftz.f32 	%f208, %f207, %f190, %f206;
+	add.ftz.f32 	%f20, %f43, %f208;
+$Lt_3_48898:
+	.loc	20	39	0
+	mov.f32 	%f181, %f20;
+$Lt_3_46850:
+$Lt_3_46338:
+	sub.ftz.f32 	%f209, %f181, %f6;
+	fma.rn.ftz.f32 	%f7, %f5, %f209, %f6;
+$Lt_3_30466:
+	@!%p2 bra 	$Lt_3_49666;
+	mul.lo.u64 	%rd98, %rd1, 8;
+	add.u64 	%rd99, %rd2, %rd98;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f7;
+	mov.b32		%r31, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f9;
+	mov.b32		%r32, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f11;
+	mov.b32		%r33, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f4;
+	mov.b32		%r34, %b1; }
+	st.global.v4.u16 	[%rd99+0], {%r31,%r32,%r33,%r34};
+	bra.uni 	$Lt_3_49410;
+$Lt_3_49666:
+	mul.lo.u64 	%rd100, %rd1, 16;
+	add.u64 	%rd101, %rd2, %rd100;
+	st.global.v4.f32 	[%rd101+0], {%f7,%f9,%f11,%f4};
+$Lt_3_49410:
+$Lt_3_28930:
+	exit;
+$LDWend_RGBCurves_CompositeKernel:
+	} // RGBCurves_CompositeKernel
+	.global .align 4 .b8 kRGB32f_To_601YPbPr[36] = {135,22,153,62,162,69,22,63,213,120,233,61,33,201,44,190,111,155,169,190,0,0,0,63,0,0,0,63,70,94,214,190,232,134,166,189};
+	.const .align 4 .b8 k601YPbPr_To_RGB32f[36] = {0,0,128,63,0,0,0,0,188,116,179,63,0,0,128,63,152,50,176,190,158,209,54,191,0,0,128,63,229,208,226,63,0,0,0,0};
+	.const .align 4 .b8 kRGB32f_To_601YCbCr[36] = {70,246,130,66,145,141,0,67,94,186,199,65,33,48,23,194,240,103,148,194,0,0,224,66,0,0,224,66,111,146,187,194,70,182,145,193};
+	.const .align 4 .b8 k601YCbCr_To_RGB32f[36] = {37,160,149,59,0,0,0,0,182,23,205,59,37,160,149,59,40,15,201,186,156,239,80,187,37,160,149,59,236,155,1,60,0,0,0,0};
+	.const .align 4 .b8 kRGB8u_To_601YCbCr[36] = {219,121,131,62,152,14,1,63,18,131,200,61,174,199,23,190,238,252,148,190,197,224,224,62,197,224,224,62,217,78,188,190,174,71,146,189};
+	.const .align 4 .b8 k601YCbCr_To_RGB8u[36] = {127,10,149,63,0,0,0,0,160,74,204,63,127,10,149,63,254,148,200,190,184,30,80,191,127,10,149,63,78,26,1,64,0,0,0,0};
+	.const .align 4 .b8 kRGB8u_To_601YCbCrFullRange[36] = {135,22,153,62,162,69,22,63,213,120,233,61,166,27,44,190,39,241,168,190,250,254,254,62,250,254,254,62,43,135,213,190,59,223,165,189};
+	.const .align 4 .b8 k601YCbCrFullRange_To_RGB8u[36] = {0,0,128,63,0,0,0,0,72,193,178,63,0,0,128,63,143,130,175,190,225,26,54,191,0,0,128,63,20,238,225,63,0,0,0,0};
+	.const .align 4 .b8 kRGB32f_To_601YCbCrFullRange[36] = {113,125,152,66,92,175,21,67,92,143,232,65,158,111,43,194,49,72,168,194,0,0,254,66,0,0,254,66,170,177,212,194,88,57,165,193};
+	.const .align 4 .b8 k601YCbCrFullRange_To_RGB32f[36] = {129,128,128,59,0,0,0,0,188,116,179,59,129,128,128,59,194,50,176,186,179,209,54,187,129,128,128,59,229,208,226,59,0,0,0,0};
+	.const .align 4 .b8 kRGB32f_To_709YPbPr[36] = {208,179,89,62,89,23,55,63,152,221,147,61,186,164,234,189,210,86,197,190,0,0,0,63,0,0,0,63,190,134,232,190,16,202,59,189};
+	.const .align 4 .b8 k709YPbPr_To_RGB32f[36] = {0,0,128,63,0,0,0,0,12,147,201,63,0,0,128,63,221,209,63,190,243,173,239,190,0,0,128,63,77,132,237,63,0,0,0,0};
+	.const .align 4 .b8 kRGB32f_To_709YCbCr[36] = {106,60,58,66,6,161,28,67,244,253,124,65,223,79,205,193,8,172,172,194,0,0,224,66,0,0,224,66,195,117,203,194,236,81,36,193};
+	.const .align 4 .b8 k709YCbCr_To_RGB32f[36] = {37,160,149,59,0,0,0,0,239,94,230,59,37,160,149,59,33,57,91,186,178,245,8,187,37,160,149,59,82,185,7,60,0,0,0,0};
+	.const .align 4 .b8 k709YCbCrFullRange_To_RGB32f[36] = {131,128,128,59,0,0,0,0,28,147,201,59,131,128,128,59,61,210,63,186,248,173,239,186,131,128,128,59,82,132,237,59,0,0,0,0};
+	.const .align 4 .b8 kRGB8u_To_709YCbCr[36] = {207,247,58,62,53,62,29,63,231,251,125,61,147,24,206,61,23,89,173,190,197,224,224,62,197,224,224,62,12,66,204,190,195,245,36,189};
+	.const .align 4 .b8 k709YCbCr_To_RGB8u[36] = {127,10,149,63,0,0,0,0,147,120,229,63,127,10,149,63,53,94,90,190,205,108,8,191,127,10,149,63,154,49,7,64,0,0,0,0};
+	.const .align 4 .b8 k709YCbCr_To_601YCbCr[36] = {0,0,128,63,23,100,203,61,1,77,68,62,0,0,0,0,18,103,125,63,10,158,226,189,0,0,0,0,61,98,148,189,249,191,123,63};
+	.const .align 4 .b8 k601YCbCr_To_709YCbCr[36] = {0,0,128,63,122,165,236,189,179,237,84,190,0,0,0,0,204,98,130,63,216,188,234,61,0,0,0,0,74,179,153,61,234,61,131,63};
+	.const .align 4 .b8 kYCbCrOffset[12] = {0,0,128,65,0,0,0,67,0,0,0,67};
+	.const .align 4 .b8 kYCbCrFullRangeOffset[12] = {0,0,0,0,0,0,0,67,0,0,0,67};
+

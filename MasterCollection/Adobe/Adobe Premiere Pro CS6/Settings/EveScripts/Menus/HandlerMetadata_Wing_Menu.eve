@@ -1,0 +1,7 @@
+layout my_menu
+{
+	view menu(id:29000)
+	{
+		menu(text:'$$$/Premiere/Menu/29000/MetadataPanelMenu/MetadataDisplay...=Metadata Display...', idName:'cmd.metadataeditor.wingtip.metadatadisplay');
+	}
+}

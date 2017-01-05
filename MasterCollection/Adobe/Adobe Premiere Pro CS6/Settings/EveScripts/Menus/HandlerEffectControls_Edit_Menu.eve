@@ -1,0 +1,16 @@
+layout my_menu
+{
+	view menu(id:18480)
+	{
+		menu(text:'$$$/Premiere/Menu/18480/SavePreset...=Save Preset...', idName:'cmd.effectcontrols.save.preset');
+		separator();
+		menu(text:'$$$/Premiere/Menu/18480/Undo=Undo', idName:'cmd.edit.undo');
+		separator();
+		menu(text:'$$$/Premiere/Menu/18480/Cut=Cut', idName:'cmd.edit.cut');
+		menu(text:'$$$/Premiere/Menu/18480/Copy=Copy', idName:'cmd.edit.copy');
+		menu(text:'$$$/Premiere/Menu/18480/Paste=Paste', idName:'cmd.edit.paste');
+		menu(text:'$$$/Premiere/Menu/18480/Clear=Clear', idName:'cmd.edit.clear');
+		separator();
+		menu(text:'$$$/Premiere/Menu/18480/SelectAll=Select All', idName:'cmd.edit.selectall');
+	}
+}

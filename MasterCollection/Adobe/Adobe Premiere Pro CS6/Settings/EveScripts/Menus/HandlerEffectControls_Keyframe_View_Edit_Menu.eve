@@ -1,0 +1,15 @@
+layout my_menu
+{
+	view menu(id:18483)
+	{
+		menu(text:'$$$/Premiere/Menu/18483/Undo=Undo', idName:'cmd.edit.undo');
+		separator();
+		menu(text:'$$$/Premiere/Menu/18483/Cut=Cut', idName:'cmd.edit.cut');
+		menu(text:'$$$/Premiere/Menu/18483/Copy=Copy', idName:'cmd.edit.copy');
+		menu(text:'$$$/Premiere/Menu/18483/Paste=Paste', idName:'cmd.edit.paste');
+		menu(text:'$$$/Premiere/Menu/18483/Clear=Clear', idName:'cmd.edit.clear');
+		menu(text:'$$$/Premiere/Menu/18483/ClearAllKeyframes=Clear All Keyframes', idName:'cmd.effectcontrols.keyframes.clearall');
+		separator();
+		menu(text:'$$$/Premiere/Menu/18483/SelectAll=Select All', idName:'cmd.edit.selectall');
+	}
+}

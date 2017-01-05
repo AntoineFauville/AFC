@@ -1,0 +1,18 @@
+layout Memory
+{
+	view dva_panel_view(name: '$$$/Premiere/DLG/PrefsDialog/kResDLGMemory=Memory', identifier: 'prefsMemory', horizontal:align_fill)
+	{
+		dva_groupbox(identifier: 'memory', name: '$$$/Premiere/DLG/PrefsDialog/kResDLGMemory=Memory', headerType:'static_text', horizontal:align_fill)
+		{
+			dva_static_text(identifier: 'placeholderSharedMemoryPreferenceSubView', minHeight:100, name:'$$$/dynamiclinkui/SharedPrefPane/SharedNote=This shared setting affects After Effects, Premiere Pro, Encore, and Adobe Media Encoder.', horizontal:align_right);
+		}
+		row(guide_mask:[@guide_label])
+		{
+			dva_popup(identifier:'renderOptimizationPopup', minWidth:140, minHeigth:20, label: '$$$/Premiere/DLG/PrefsDialog/kResDLGOptimizeRenderingFor=Optimize rendering for:')
+			{
+				dva_popup_item(identifier:'plusOptItem1', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGPerformance=Performance');
+				dva_popup_item(identifier:'plusOptItem2', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGMemory=Memory');
+			}
+		}
+	}
+}

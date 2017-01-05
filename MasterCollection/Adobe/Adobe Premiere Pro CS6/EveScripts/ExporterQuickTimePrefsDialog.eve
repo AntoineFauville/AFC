@@ -1,0 +1,11 @@
+layout ExporterQuickTimePrefsDialog
+{
+	view dva_dialog(name: "$$$/MediaCoreUI/CodecSettings/dialog=Codec Settings", identifier: 'ExporterQuickTimePrefsDialog', placement: place_column, spacing: 10, margin: 15)
+	{
+		dva_static_text(name: '$$$/MediaCoreUI/CodecSettings/WaitingText=Adjust the settings in the dialog provided by the codec, then close it when finished.', identifier:'WaitForQuickTimeLabel', topSpace:3);			
+		row(child_horizontal: align_right, horizontal: align_fill)
+		{
+			dva_button(name: '$$$/MediaCoreUI/WaitForQuickTime/BringToFront=Bring to front', identifier:'bringToFront', minWidth:80);
+		}
+	}
+}

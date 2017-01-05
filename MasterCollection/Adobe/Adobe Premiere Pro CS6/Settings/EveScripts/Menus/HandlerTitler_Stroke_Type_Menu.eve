@@ -1,0 +1,9 @@
+layout my_menu
+{
+	view menu(id:21616)
+	{
+		menu(text:'$$$/Premiere/Menu/21616/Depth=Depth', id:1);
+		menu(text:'$$$/Premiere/Menu/21616/Edge=Edge', id:2);
+		menu(text:'$$$/Premiere/Menu/21616/DropFace=Drop Face', id:3);
+	}
+}

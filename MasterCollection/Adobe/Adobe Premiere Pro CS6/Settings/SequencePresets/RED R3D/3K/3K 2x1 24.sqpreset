@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PremiereData Version="3">
+	<SequencePreset ObjectRef="1"/>
+	<SequencePreset ObjectID="1" ClassID="5e73dd7e-4f86-4917-80eb-08ddb2f4a5f3" Version="5">
+		<PreviewVideoFrameSize>0,0,1920,960</PreviewVideoFrameSize>
+		<AudioTracks>{"SerializerWrappedObject": [{"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}, {"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}, {"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}, {"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}]}</AudioTracks>
+		<InitialNumberOfVideoTracks>3</InitialNumberOfVideoTracks>
+		<AdaptiveNumChannels>16</AdaptiveNumChannels>
+		<VideoUseMaxRenderQuality>false</VideoUseMaxRenderQuality>
+		<VideoUseMaxBitDepth>false</VideoUseMaxBitDepth>
+		<VideoPixelAspectRatio>1,1</VideoPixelAspectRatio>
+		<PreviewPresetVideoCodec.Win>1297107278</PreviewPresetVideoCodec.Win>
+		<PreviewPresetFileName.Win>I-Frame Only MPEG</PreviewPresetFileName.Win>
+		<PreviewPresetVideoCodec.Mac>1297107278</PreviewPresetVideoCodec.Mac>
+		<PreviewPresetFileName.Mac>I-Frame Only MPEG</PreviewPresetFileName.Mac>
+		<EditingModeGUID.Win>d8484cf3-c96c-4622-ab1f-ac1a16e196f9</EditingModeGUID.Win>
+		<EditingModeGUID.Mac>d8484cf3-c96c-4622-ab1f-ac1a16e196f9</EditingModeGUID.Mac>
+		<Descriptions Version="1">
+			<DescriptionItem Version="1" Index="0">
+				<Second>For editing with RED R3D files at 3K resolution (3072h x 1536v).&#13;2:1 progressive-scan video at 24 frames per second.&#13;48kHz (16 bit) audio.&#10;</Second>
+				<First>en_US</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Für die Proxy-Bearbeitung von RED R3D-Dateien mit 3K Auflösung (3072h x 1536v).&#13;2:1 Progressive-Scan-Video mit 24 Frames pro Sekunde.&#13;48 kHz (16 Bit) Audio.</Second>
+				<First>de_DE</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Pour le montage avec des fichiers RED R3D à une résolution de 3K (3072 H x 1536 V).&#13;Vidéo 2:1 avec balayage progressif en 24 images/s.&#13;Audio 48 kHz (16 bits).</Second>
+				<First>fr_FR</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Per modificare con i file RED R3D con risoluzione da 3K (3072h x 1536v).&#13;Video a scansione progressiva a 2:1 a 24 fotogrammi al secondo.&#13;Audio a 48 kHz (16 bit).</Second>
+				<First>it_IT</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Para edición con archivos RED R3D a una resolución de 3K (3072h x 1536v).&#13;Vídeo de búsqueda progresiva de 2:1 a 24 fotogramas por segundo.&#13;Audio de 48 kHz (16 bits).</Second>
+				<First>es_ES</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>3K 해상도(3072h x 1536v)에서 RED R3D 파일로 프록시 편집하는 경우.&#13;초당 24프레임의 2:1 프로그레시브-스캔 비디오.&#13;48kHz(16비트) 오디오.</Second>
+				<First>ko_KR</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>解像度 3K (3072h x 1536v) での RED R3D の編集用。&#13;24 フレーム/秒の 2:1 プログレッシブスキャンビデオ。&#13;48 kHz (16 bit) オーディオ。</Second>
+				<First>ja_JP</First>
+			</DescriptionItem>
+		</Descriptions>
+		<Names Version="1">
+			<NameItem Version="1" Index="0">
+				<Second>3K 2x1 24</Second>
+				<First>en_US</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>3K 2x1 24</Second>
+				<First>de_DE</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>3K 2x1 24</Second>
+				<First>fr_FR</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>3K 2x1 24</Second>
+				<First>it_IT</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>3K 2x1 24</Second>
+				<First>es_ES</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>3K 2x1 24</Second>
+				<First>ko_KR</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>3K 2x1 24</Second>
+				<First>ja_JP</First>
+			</NameItem>
+		</Names>
+		<VideoFieldType>0</VideoFieldType>
+		<AudioTimeDisplay>200</AudioTimeDisplay>
+		<VideoTimeDisplay>100</VideoTimeDisplay>
+		<AudioChannelType>1</AudioChannelType>
+		<AudioFrameRate>5292000</AudioFrameRate>
+		<VideoFrameSize>0,0,3072,1536</VideoFrameSize>
+		<VideoFrameRate>10584000000</VideoFrameRate>
+	</SequencePreset>
+</PremiereData>

@@ -1,0 +1,77 @@
+layout my_menu
+{
+	view menu(id:4002)
+	{
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/Cut=Cut', idName:'cmd.edit.cut');
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/Copy=Copy', idName:'cmd.edit.copy');
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/Paste=Paste', idName:'cmd.edit.paste');
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/Clear=Clear', idName:'cmd.edit.clear');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/Duplicate=Duplicate', idName:'cmd.edit.duplicate');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/Modify=Modify')
+		{
+				menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/Modify/AudioChannels...=Audio Channels...', idName:'cmd.clip.audiooptions.sourcechannelmappings');
+				menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/Modify/InterpretFootage...=Interpret Footage...', idName:'cmd.file.interpretfootage');
+				menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/Modify/Timecode...=Timecode...', idName:'cmd.file.timecode');
+		}
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/Properties...=Properties...', idName:'cmd.file.properties.selection');
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/SourceSettings...=Source Settings...', idName:'cmd.clip.clipsettings');
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/SequenceSettings...=Sequence Settings...', idName:'cmd.sequence.sequencesettingsgeneral');
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/RevealinBridge=Reveal in Adobe Bridge...', idName:'cmd.file.reveal');
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/RevealinExplorer=Reveal in Explorer...', idName:'cmd.file.revealsystem', condition: os == @win);
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/RevealProjectInExplorer=Reveal Project in Explorer...', idName:'cmd.file.project.revealsystem', condition: os == @win);
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/RevealinFinder=Reveal in Finder...', idName:'cmd.file.revealsystem', condition: os == @mac);
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/RevealProjectInFinder=Reveal Project in Finder...', idName:'cmd.file.project.revealsystem', condition: os == @mac);
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/Rename=Rename', idName:'cmd.clip.rename');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/AnalyzeContent=Analyze Content...', idName:'cmd.clip.analyzecontent');
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/AttachScriptFile=Attach Script File...', idName:'cmd.clip.attachscriptfile');
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/ClearScriptData=Clear Script Data', idName:'cmd.clip.clearscriptdata');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/Insert=Insert', idName:'cmd.clip.insert');
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/Overwrite=Overwrite', idName:'cmd.clip.overlay');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/NewSequenceFromClip=New Sequence From Clip', idName:'cmd.sequence.newsequencefromselection');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/ReplaceFootage...=Replace Footage...', idName:'cmd.clip.replacefootage');
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/LinkMedia...=Link Media...', idName:'cmd.project.linkmedia');
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/MakeOffline...=Make Offline...', idName:'cmd.project.unlinkmedia');
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/EditOffline...=Edit &Offline...', idName:'cmd.clip.editoffline');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/BatchCapture...=Batch Capture...', idName:'cmd.file.batchcapture');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/Speed/Duration...=Speed/Duration...', idName:'cmd.clip.speed');
+		separator();
+		menu(text:'$$$/Premiere/Menu/Clip/AudioOptions/AudioGain...=Audio Gain...', idName:'cmd.clip.audiooptions.gain');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4002/Edit/Label=Label')
+		{
+			menu(text:'$$$/Premiere/Menu/Edit/Label/SelectLabelGroup=&Select Label Group', idName:'cmd.edit.labelgroup');
+			separator();
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Cyan=Cyan', idName:'cmd.edit.label.0');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Chartreuse=Chartreuse', idName:'cmd.edit.label.1');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Green=Green', idName:'cmd.edit.label.2');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Yellow=Yellow', idName:'cmd.edit.label.3');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Orange=Orange', idName:'cmd.edit.label.4');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Pink=Pink', idName:'cmd.edit.label.5');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Lavender=Lavender', idName:'cmd.edit.label.6');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Purple=Purple', idName:'cmd.edit.label.7');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/EditSubclip...=Edit Subclip...', idName:'cmd.clip.editsubclip');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/OpeninSourceMonitor=Open in Source Monitor', idName:'cmd.project.openinsource');
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/OpeninTimeline=Open in Timeline', idName:'cmd.project.openintimeline');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/PosterFrame=Set Poster Frame', idName:'cmd.posterframe.set');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/EditOriginal=Edit Original', idName:'cmd.edit.editoriginal');
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/EditinAdobeAudition=Edit in Adobe Audition')
+		{
+			menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/EditinAdobeAudition/Clip=Clip', idName:'cmd.edit.editinaudition');
+			menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/EditinAdobeAudition/Sequence...=Sequence...', idName:'cmd.edit.auditionmultitrack');
+		}
+		menu(text:'$$$/Premiere/Menu/4002/ClipContextMenu/EditinAdobePhotoshop=Edit in Adobe Photoshop', idName:'cmd.edit.editinphotoshop');
+	}
+}

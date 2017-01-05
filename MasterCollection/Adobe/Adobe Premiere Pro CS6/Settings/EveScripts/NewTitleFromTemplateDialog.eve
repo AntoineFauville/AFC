@@ -1,0 +1,47 @@
+layout myTemplateDialog
+{
+	view dva_dialog(name:'$$$/Premiere/DLG/TemplateDialog/kResDLGTemplateTitle=Templates', identifier:'NewTitleFromTemplateDialog', canResize: 'true', resizeChildren: 'true')
+	{
+		dva_arrangement(identifier: 'rootArrangement', arrangementType: 'row', horizontalSpacing: 10, verticalSpacing: 10, leftMargin: 15, rightMargin: 15, topMargin: 15, bottomMargin: 15)
+		{
+			dva_arrangement(arrangementType: 'column', horizontalSpacing: 10, verticalSpacing: 10)
+			{
+				dva_arrangement(arrangementType: 'row', horizontalSpacing: 10, verticalSpacing: 10)
+				{
+					dva_arrangement()
+					{
+						dva_subview(identifier: 'hierarchyControl', minWidth:260, minHeight:100);
+					}
+
+					dva_arrangement(arrangementType: 'column', horizontalAlignment: 'right', horizontalSpacing: 10, verticalSpacing: 10)
+					{
+						dva_picture_popup(identifier:'templateOptions', displayBorder:'never', minWidth:20, minHeigth:20)
+						{
+							dva_popup_item(name:'$$$/Premiere/DLG/TemplateDialog/kResDLGTemplateCurrentTitle=Import Current Title as Template...');
+							dva_popup_item(name:'$$$/Premiere/DLG/TemplateDialog/kResDLGTemplateImport=Import File as Template...');
+							dva_popup_item(name:'');
+							dva_popup_item(name:'$$$/Premiere/DLG/TemplateDialog/kResDLGTemplateSetAsDefault=Set Template as Default');
+							dva_popup_item(name:'$$$/Premiere/DLG/TemplateDialog/kResDLGTemplateSetAsDefaultStill=Set Template as Default Still');
+							dva_popup_item(name:'$$$/Premiere/DLG/TemplateDialog/kResDLGTemplateSetAsDefaultRoll=Set Template as Default Roll');
+							dva_popup_item(name:'$$$/Premiere/DLG/TemplateDialog/kResDLGTemplateSetAsDefaultCrawl=Set Template as Default Crawl');
+							dva_popup_item(name:'$$$/Premiere/DLG/TemplateDialog/kResDLGTemplateRestoreDefaults=Restore Default Templates');
+							dva_popup_item(name:'');
+							dva_popup_item(name:'$$$/Premiere/DLG/TemplateDialog/kResDLGTemplateRename=Rename Template...');
+							dva_popup_item(name:'$$$/Premiere/DLG/TemplateDialog/kResDLGTemplateDelete=Delete Template...');
+						}
+						dva_arrangement()
+						{
+							dva_subview(identifier: 'previewControl', minWidth:300, minHeight:225);
+						}
+					}
+				}
+
+				dva_arrangement(arrangementType: 'row', horizontalSpacing: 10, verticalSpacing: 10)
+				{
+					dva_text_edit(identifier:'newTitleName', label:'$$$/Premiere/DLG/TemplateDialog/kResDLGNewTitleName=Name:', minWidth:100, bindRight:'true');
+					dva_ok_cancel_row(minWidth:80, minHeight:20);
+				}
+			}
+		}
+	}
+}

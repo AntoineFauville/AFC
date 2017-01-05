@@ -1,0 +1,37 @@
+layout EditProjectColumnsDialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/kResDLGEditProjectColumnsTitle=Edit Columns', identifier:'EditProjectColumns')
+	{
+		row(child_horizontal: align_fill, horizontal: align_fill, spacing:15)
+		{
+			column()
+			{
+				dva_listbox(name:'$$$/Premiere/DLG/kResDLGEditProjectColumnsColumnList=ColumnList', identifier:'columnList', direction:'vertical', useCheckboxes:'true', minWidth:280, minHeight:400);
+			}
+			column(guide_mask:[@guide_baseline])
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);				
+				row()
+				{
+					dva_button(name:'$$$/Premiere/DLG/kResDLGEditProjectColumnsRename=Rename', identifier:'renameButton', minWidth:80, topSpace:20);
+				}
+				row()
+				{
+					dva_button(name:'$$$/Premiere/DLG/kResDLGEditProjectColumnsAdd=Add', identifier:'addButton', minWidth:80);
+				}
+				row()
+				{
+					dva_button(name:'$$$/Premiere/DLG/kResDLGEditProjectColumnsRemove=Remove', identifier:'removeButton', minWidth:80);
+				}
+				row()
+				{
+					dva_button(name:'$$$/Premiere/DLG/kResDLGEditProjectColumnsMoveUp=Move Up', identifier:'moveUpButton', minWidth:80, topSpace:20);
+				}
+				row()
+				{
+					dva_button(name:'$$$/Premiere/DLG/kResDLGEditProjectColumnsMoveDown=Move Down', identifier:'moveDownButton', minWidth:80);
+				}
+			}
+		}
+	}
+} 

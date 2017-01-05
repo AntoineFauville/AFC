@@ -1,0 +1,62 @@
+layout my_menu
+{
+	view menu(id:5500)
+	{
+		menu(text:'$$$/Premiere/Menu/5500/Cut=Cut', idName:'cmd.edit.cut');
+		menu(text:'$$$/Premiere/Menu/5500/Copy=Copy', idName:'cmd.edit.copy');
+		menu(text:'$$$/Premiere/Menu/5500/PasteAttributes=Paste Attributes', idName:'cmd.edit.pasteattributes');
+		menu(text:'$$$/Premiere/Menu/5500/Clear=Clear', idName:'cmd.edit.clear');
+		menu(text:'$$$/Premiere/Menu/5500/RippleDelete=Ripple Delete', idName:'cmd.edit.rippledelete');
+		separator();
+		menu(text:'$$$/Premiere/Menu/5500/ReplaceWithClip=Replace With Clip', idName:'menu.replacewithclip')
+		{
+				menu(text:'$$$/Premiere/Menu/5500/ReplaceWithClip/Placeholder=Placeholder', idName:'menu.replacewithclip.placeholder');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/5500/Enable=Enable', idName:'cmd.clip.enable');
+		menu(text:'$$$/Premiere/Menu/5500/Unlink=Unlink', idName:'cmd.clip.linkaudioandvideo');
+		menu(text:'$$$/Premiere/Menu/5500/Group=Group', idName:'cmd.clip.group');
+		menu(text:'$$$/Premiere/Menu/5500/Ungroup=Ungroup', idName:'cmd.clip.ungroup');
+		menu(text:'$$$/Premiere/Menu/5500/Synchronize=Synchronize', idName:'cmd.clip.synchronizeclips');
+		menu(text:'$$$/Premiere/Menu/5500/MergeClips=Merge Clips...', idName:'cmd.clip.merge');
+		menu(text:'$$$/Premiere/Menu/5500/Nest=Nest', idName:'cmd.clip.nestify');
+		menu(text:'$$$/Premiere/Menu/5500/Multi-Camera=Multi-Camera', idName:'menu.multicam')
+		{
+				menu(text:'$$$/Premiere/Menu/5500/Multi-Camera/Enable=Enable', idName:'cmd.clip.multicam.toggle');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/5500/Edit/Label=Label')
+		{
+			menu(text:'$$$/Premiere/Menu/Edit/Label/SelectLabelGroup=&Select Label Group', idName:'cmd.edit.labelgroup');
+			separator();
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Cyan=Cyan', idName:'cmd.edit.label.0');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Chartreuse=Chartreuse', idName:'cmd.edit.label.1');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Green=Green', idName:'cmd.edit.label.2');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Yellow=Yellow', idName:'cmd.edit.label.3');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Orange=Orange', idName:'cmd.edit.label.4');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Pink=Pink', idName:'cmd.edit.label.5');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Lavender=Lavender', idName:'cmd.edit.label.6');
+			menu(text:'$$$/Premiere/Menu/Edit/Label/Purple=Purple', idName:'cmd.edit.label.7');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/5500/Speed/Duration...=Speed/Duration...', idName:'cmd.clip.speed');
+		menu(text:'$$$/Premiere/Menu/5500/RemoveEffects...=Remove Effects...', idName:'cmd.clip.deleteeffects');
+		separator();
+		menu(text:'$$$/Premiere/Menu/5500/AudioGain...=Audio Gain...', idName:'cmd.clip.audiooptions.gain');
+		menu(text:'$$$/Premiere/Menu/5502/AudioChannels...=Audio Channels...', idName:'cmd.clip.audiooptions.sourcechannelmappings');
+		separator();
+		menu(text:'$$$/Premiere/Menu/5500/FrameHold...=Frame Hold...', idName:'cmd.clip.videooptions.framehold');
+		menu(text:'$$$/Premiere/Menu/5500/FieldOptions...=Field Options...', idName:'cmd.clip.videooptions.field');
+		menu(text:'$$$/Premiere/Menu/5500/FrameBlend=Frame Blend', idName:'cmd.clip.frameblend');
+		menu(text:'$$$/Premiere/Menu/5500/ScaletoFrameSize=Scale to Frame Size', idName:'cmd.clip.scaletoframesize');
+		menu(text:'$$$/Premiere/Menu/5500/AdjustmentLayer=Adjustment Layer', idName:'cmd.clip.adjustmentlayer');
+		separator();
+		menu(text:'$$$/Premiere/Menu/5500/Rename...=Rename...', idName:'cmd.clip.rename');
+		menu(text:'$$$/Premiere/Menu/5500/MakeSubclip...=Make Subclip...', idName:'cmd.clip.makesubclip');
+		menu(text:'$$$/Premiere/Menu/5500/RevealinProject=Reveal in Project', idName:'cmd.edit.revealinproject');
+		menu(text:'$$$/Premiere/Menu/5500/EditOriginal=Edit Original', idName:'cmd.edit.editoriginal');
+		menu(text:'$$$/Premiere/Menu/5500/EditInAdobeAudition=Edit Clip In Adobe Audition', idName:'cmd.edit.editinaudition');
+		menu(text:'$$$/Premiere/Menu/5500/ReplaceWithAfterEffectsComposition=Replace With After Effects Composition', idName:'cmd.clip.aeify');
+		menu(text:'$$$/Premiere/Menu/5500/Properties=Properties', idName:'cmd.file.properties.selection');
+	}
+}

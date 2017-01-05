@@ -1,0 +1,29 @@
+layout exportToHDVDialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/ExportToHDVDialog/kResDLGExportToHDVDialogTitle=Export to HDV', identifier:'ExportToHDVDialog', spacing: 4, minWidth:294)
+	{
+		row(child_horizontal: align_fill, horizontal: align_fill, minWidth: 294 )
+		{
+			column(child_horizontal: align_fill, child_vertical: align_proportional)
+			{
+				dva_groupbox(identifier:'exportStatus', name: '$$$/Premiere/DLG/ExportToHDVDialog/kResDLGExportToHDVDialogExportStatus=Export Status', headerType:'static_text', minWidth:150)
+				{
+					row(spacing: 15)
+					{
+						column()
+						{
+							dva_static_text(identifier:'statusStaticText', name:'$$$/Premiere/DLG/ExportToHDVDialog/kResStatusString=Ready...', label:'$$$/Premiere/DLG/ExportToHDVDialog/kResStatus=Status:', minWidth:194);
+							dva_static_text(identifier:'currentTimeCodeStaticText', name:'$$$/Premiere/DLG/ExportToHDVDialog/kResCurrentTimeCodeString=00;00;00;00', label:'$$$/Premiere/DLG/ExportToHDVDialog/kResCurrentTimecode=Current Timecode:');
+						}
+					}
+				}
+				
+				row(child_horizontal: align_right, horizontal: align_right)
+				{
+					dva_button(name: '$$$/Premiere/DLG/ExportToHDVDialog/kResDLGExportToHDVDialogRenderAndRecord=Render and Record', identifier:'renderAndRecordButton', minWidth:160); 
+					dva_button(name: '$$$/Premiere/DLG/ExportToHDVDialog/kResDLGExportToHDVDialogDone=Done', identifier:'doneButton', minWidth:80);
+				} 
+			}
+		}
+	}
+}

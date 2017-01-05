@@ -1,0 +1,17 @@
+layout my_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/SelectSequenceDialog/kResDLGSelectSequenceTitle=Select Sequence', identifier:'SelectSequence')
+	{
+		column()
+		{
+			row(child_horizontal: align_fill, horizontal: align_fill, spacing: 15)
+			{
+				dva_popup(identifier:'sequenceNamePopup', minWidth:200, minHeigth:20, label:'$$$/Premiere/DLG/SelectSequenceDialog/kDLGResSequenceName=Sequence:');
+			}
+			row(child_horizontal: align_fill, horizontal: align_fill, spacing: 15)
+			{	
+				dva_ok_cancel_row();			
+			}
+		}
+	}
+} 

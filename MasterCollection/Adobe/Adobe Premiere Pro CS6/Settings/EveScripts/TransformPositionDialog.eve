@@ -1,0 +1,30 @@
+layout myTransformPositionDialog
+{
+	view dva_dialog(name:'$$$/Premiere/DLG/TransformPositionDialog/kResDLGTransformPositionTitle=Position', identifier:'TransformPositionDialog')
+	{
+		row(child_horizontal: align_fill, horizontal: align_fill, spacing: 15)
+		{
+			column()
+			{
+				dva_number_edit(
+					identifier:'xPositionTextEdit', 
+					minWidth:56, 
+					minValue: -5000, 
+					maxValue: 5000, 
+					label:'$$$/Premiere/DLG/TransformPositionDialog/kResDLGXPosition=X Position:',
+					setAsFocused:'true');				
+				dva_number_edit(
+					identifier:'yPositionTextEdit', 
+					minWidth:56, 
+					minValue: -5000, 
+					maxValue: 5000, 
+					label:'$$$/Premiere/DLG/TransformPositionDialog/kResDLGYPosition=Y Position:',
+					setAsFocused:'true');				
+			} 
+			column()
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);
+			}
+		}
+	}
+}

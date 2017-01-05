@@ -1,0 +1,115 @@
+layout my_menu
+{
+	view menu(id:23101)
+	{
+		menu(text:'$$$/Premiere/Menu/23101/Cut=Cut', idName:'cmd.edit.cut');
+		menu(text:'$$$/Premiere/Menu/23101/Copy=Copy', idName:'cmd.edit.copy');
+		menu(text:'$$$/Premiere/Menu/23101/Paste=Paste', idName:'cmd.edit.paste');
+		menu(text:'$$$/Premiere/Menu/23101/Clear=Clear', idName:'cmd.edit.clear');
+		separator();
+		menu(text:'$$$/Premiere/Menu/23101/Font=Font');
+		menu(text:'$$$/Premiere/Menu/23101/Size=Size')
+		{
+			menu(text:'$$$/Premiere/Menu/23101/Size/Other...=Other...', idName:'cmd.titler.menu.size.other');
+			separator();
+			menu(text:'$$$/Premiere/Menu/23101/Size/48=48', idName:'cmd.titler.menu.size.48');
+			menu(text:'$$$/Premiere/Menu/23101/Size/60=60', idName:'cmd.titler.menu.size.60');
+			menu(text:'$$$/Premiere/Menu/23101/Size/72=72', idName:'cmd.titler.menu.size.72');
+			menu(text:'$$$/Premiere/Menu/23101/Size/96=96', idName:'cmd.titler.menu.size.96');
+			menu(text:'$$$/Premiere/Menu/23101/Size/120=120', idName:'cmd.titler.menu.size.120');
+			menu(text:'$$$/Premiere/Menu/23101/Size/156=156', idName:'cmd.titler.menu.size.156');
+			menu(text:'$$$/Premiere/Menu/23101/Size/180=180', idName:'cmd.titler.menu.size.180');
+		}
+		menu(text:'$$$/Premiere/Menu/23101/TypeAlignment=Type Alignment')
+		{
+			menu(text:'$$$/Premiere/Menu/23101/TypeAlignment/Left=Left', idName:'cmd.titler.menu.type.left');
+			menu(text:'$$$/Premiere/Menu/23101/TypeAlignment/Center=Center', idName:'cmd.titler.menu.type.centre');
+			menu(text:'$$$/Premiere/Menu/23101/TypeAlignment/Right=Right', idName:'cmd.titler.menu.type.right');
+		}
+		menu(text:'$$$/Premiere/Menu/23101/WordWrap=Word Wrap', idName:'cmd.titler.menu.wordwrap');
+		menu(text:'$$$/Premiere/Menu/23101/TabStops...=Tab Stops...', idName:'cmd.titler.menu.tabstops');
+		separator();
+		menu(text:'$$$/Premiere/Menu/23101/GraphicType=Graphic Type')
+		{
+			menu(text:'$$$/Premiere/Menu/23101/GraphicType/Rectangle=Rectangle', idName:'cmd.titler.menu.graphic.rectangle');
+			menu(text:'$$$/Premiere/Menu/23101/GraphicType/Ellipse=Ellipse', idName:'cmd.titler.menu.graphic.ellipse');
+			menu(text:'$$$/Premiere/Menu/23101/GraphicType/Arc=Arc', idName:'cmd.titler.menu.graphic.arc');
+			menu(text:'$$$/Premiere/Menu/23101/GraphicType/Wedge=Wedge', idName:'cmd.titler.menu.graphic.wedge');
+			menu(text:'$$$/Premiere/Menu/23101/GraphicType/RoundedCornerRectangle=Rounded Corner Rectangle', idName:'cmd.titler.menu.graphic.rectangle.roundedcorner');
+			menu(text:'$$$/Premiere/Menu/23101/GraphicType/ClippedCornerRectangle=Clipped Corner Rectangle', idName:'cmd.titler.menu.graphic.rectangle.clippedcorner');
+			menu(text:'$$$/Premiere/Menu/23101/GraphicType/RoundRectangle=Round Rectangle', idName:'cmd.titler.menu.graphic.rectangle.round');
+			menu(text:'$$$/Premiere/Menu/23101/GraphicType/Logo=Logo', idName:'cmd.titler.menu.graphic.logo');
+			menu(text:'$$$/Premiere/Menu/23101/GraphicType/OpenBezier=Open Bezier', idName:'cmd.titler.menu.graphic.bezier.open');
+			menu(text:'$$$/Premiere/Menu/23101/GraphicType/ClosedBezier=Closed Bezier', idName:'cmd.titler.menu.graphic.bezier.closed');
+			menu(text:'$$$/Premiere/Menu/23101/GraphicType/FilledBezier=Filled Bezier', idName:'cmd.titler.menu.graphic.bezier.filled');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/23101/Logo=Logo')
+		{
+			menu(text:'$$$/Premiere/Menu/23101/Logo/InsertLogo...=Insert Logo...', idName:'cmd.titler.menu.logo.insert');
+			menu(text:'$$$/Premiere/Menu/23101/Logo/InsertLogointoText...=Insert Logo into Text...', idName:'cmd.titler.menu.logo.text');
+			separator();
+			menu(text:'$$$/Premiere/Menu/23101/Logo/RestoreLogoSize=Restore Logo Size', idName:'cmd.titler.menu.logo.size');
+			menu(text:'$$$/Premiere/Menu/23101/Logo/RestoreLogoAspectRatio=Restore Logo Aspect Ratio', idName:'cmd.titler.menu.logo.aspect');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/23101/Transform=Transform')
+		{
+			menu(text:'$$$/Premiere/Menu/23101/Transform/Position...=Position...', idName:'cmd.titler.menu.trans.pos');
+			menu(text:'$$$/Premiere/Menu/23101/Transform/Scale...=Scale...', idName:'cmd.titler.menu.trans.scale');
+			menu(text:'$$$/Premiere/Menu/23101/Transform/Rotation...=Rotation...', idName:'cmd.titler.menu.trans.rot');
+			menu(text:'$$$/Premiere/Menu/23101/Transform/Opacity...=Opacity...', idName:'cmd.titler.menu.trans.alpha');
+		}
+		menu(text:'$$$/Premiere/Menu/23101/Select=Select')
+		{
+			menu(text:'$$$/Premiere/Menu/23101/Select/FirstObjectAbove=First Object Above', idName:'cmd.titler.menu.select.firstup');
+			menu(text:'$$$/Premiere/Menu/23101/Select/NextObjectAbove=Next Object Above', idName:'cmd.titler.menu.select.nextup');
+			menu(text:'$$$/Premiere/Menu/23101/Select/NextObjectBelow=Next Object Below', idName:'cmd.titler.menu.select.nextdown');
+			menu(text:'$$$/Premiere/Menu/23101/Select/LastObjectBelow=Last Object Below', idName:'cmd.titler.menu.select.lastdown');
+		}
+		menu(text:'$$$/Premiere/Menu/23101/Arrange=Arrange')
+		{
+			menu(text:'$$$/Premiere/Menu/23101/Arrange/BringtoFront=Bring to Front', idName:'cmd.titler.menu.arrange.front');
+			menu(text:'$$$/Premiere/Menu/23101/Arrange/BringForward=Bring Forward', idName:'cmd.titler.menu.arrange.up');
+			menu(text:'$$$/Premiere/Menu/23101/Arrange/SendtoBack=Send to Back', idName:'cmd.titler.menu.arrange.back');
+			menu(text:'$$$/Premiere/Menu/23101/Arrange/SendBackward=Send Backward', idName:'cmd.titler.menu.arrange.down');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/23101/Position=Position')
+		{
+			menu(text:'$$$/Premiere/Menu/23101/Position/HorizontalCenter=Horizontal Center', idName:'cmd.titler.menu.position.horiz');
+			menu(text:'$$$/Premiere/Menu/23101/Position/VerticalCenter=Vertical Center', idName:'cmd.titler.menu.position.vert');
+			menu(text:'$$$/Premiere/Menu/23101/Position/LowerThird=Lower Third', idName:'cmd.titler.menu.position.lower');
+		}
+		menu(text:'$$$/Premiere/Menu/23101/AlignObjects=Align Objects')
+		{
+			menu(text:'$$$/Premiere/Menu/23101/AlignObjects/HorizontalLeft=Horizontal Left', idName:'cmd.titler.menu.align.left');
+			menu(text:'$$$/Premiere/Menu/23101/AlignObjects/HorizontalCenter=Horizontal Center', idName:'cmd.titler.menu.align.centreh');
+			menu(text:'$$$/Premiere/Menu/23101/AlignObjects/HorizontalRight=Horizontal Right', idName:'cmd.titler.menu.align.right');
+			separator();
+			menu(text:'$$$/Premiere/Menu/23101/AlignObjects/VerticalTop=Vertical Top', idName:'cmd.titler.menu.align.top');
+			menu(text:'$$$/Premiere/Menu/23101/AlignObjects/VerticalCenter=Vertical Center', idName:'cmd.titler.menu.align.centrev');
+			menu(text:'$$$/Premiere/Menu/23101/AlignObjects/VerticalBottom=Vertical Bottom', idName:'cmd.titler.menu.align.bottom');
+		}
+		menu(text:'$$$/Premiere/Menu/23101/DistributeObjects=Distribute Objects')
+		{
+			menu(text:'$$$/Premiere/Menu/23101/DistributeObjects/HorizontalLeft=Horizontal Left', idName:'cmd.titler.menu.dist.left');
+			menu(text:'$$$/Premiere/Menu/23101/DistributeObjects/HorizontalCenter=Horizontal Center', idName:'cmd.titler.menu.dist.centreh');
+			menu(text:'$$$/Premiere/Menu/23101/DistributeObjects/HorizontalRight=Horizontal Right', idName:'cmd.titler.menu.dist.right');
+			menu(text:'$$$/Premiere/Menu/23101/DistributeObjects/HorizontalEvenSpacing=Horizontal Even Spacing', idName:'cmd.titler.menu.dist.evenh');
+			separator();
+			menu(text:'$$$/Premiere/Menu/23101/DistributeObjects/VerticalTop=Vertical Top', idName:'cmd.titler.menu.dist.top');
+			menu(text:'$$$/Premiere/Menu/23101/DistributeObjects/VerticalCenter=Vertical Center', idName:'cmd.titler.menu.dist.centrev');
+			menu(text:'$$$/Premiere/Menu/23101/DistributeObjects/VerticalBottom=Vertical Bottom', idName:'cmd.titler.menu.dist.bottom');
+			menu(text:'$$$/Premiere/Menu/23101/DistributeObjects/VerticalEvenSpacing=Vertical Even Spacing', idName:'cmd.titler.menu.dist.evenv');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/23101/View=View')
+		{
+			menu(text:'$$$/Premiere/Menu/23101/View/SafeTitleMargin=Safe Title Margin', idName:'cmd.titler.menu.view.title');
+			menu(text:'$$$/Premiere/Menu/23101/View/SafeActionMargin=Safe Action Margin', idName:'cmd.titler.menu.view.action');
+			menu(text:'$$$/Premiere/Menu/23101/View/TextBaselines=Text Baselines', idName:'cmd.titler.menu.view.baseline');
+			menu(text:'$$$/Premiere/Menu/23101/View/TabMarkers=Tab Markers', idName:'cmd.titler.menu.view.tabs');
+		}
+	}
+}

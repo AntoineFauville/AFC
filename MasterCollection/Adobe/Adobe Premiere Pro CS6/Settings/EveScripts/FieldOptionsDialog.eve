@@ -1,0 +1,24 @@
+layout my_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/kResDLGFieldOptionsDialogTitle=Field Options', identifier:'FieldOptionsDialog', spacing: 6)
+	{
+		column(child_horizontal: align_fill, horizontal: align_fill, spacing:10)
+		{
+			dva_checkbox(identifier:'reverseFieldDominanceCheckbox', name:'$$$/Premiere/DLG/FieldOptionsDialog/kResDLGReverseFieldDominanceString=Reverse Field Dominance', startValue: 'false', minHeight: 14);
+			dva_groupbox(identifier:'radioButtonGroupbox', name:'$$$/Premiere/DLG/FieldOptionsDialog/kResDLGProcessingOptions=Processing Options', headerType:'static_text', minWidth:20, minHeight:20, child_horizontal: align_left, horizontal: align_left)
+			{
+				dva_radio_button_group(identifier: 'radioGroup', showBorder: 'false', minWidth: 20, minHeight: 20)
+				{
+					dva_radio_button(identifier:'noneRadioButton', name:'$$$/Premiere/DLG/FieldOptionsDialog/kResDLGNone=None', minWidth: 40, minHeight: 12, value: 'true');
+					dva_radio_button(identifier:'interlaceConsecutiveFramesRadioButton', name:'$$$/Premiere/DLG/FieldOptionsDialog/kResDLGInterlaceConsecutiveFrames=Interlace Consecutive Frames', value: 'true', minWidth: 40, minHeight: 12);
+					dva_radio_button(identifier:'alwaysDeinterlaceRadioButton', name:'$$$/Premiere/DLG/FieldOptionsDialog/kResDLGAlwaysDeinterlace=Always Deinterlace', minWidth: 40, minHeight: 12);
+					dva_radio_button(identifier:'flickerRemovalRadioButton', name:'$$$/Premiere/DLG/FieldOptionsDialog/kResDLGFlickerRemoval=Flicker Removal', minWidth: 40, minHeight: 12);
+				}
+			}
+			row(child_horizontal: align_center, horizontal: align_center)
+			{
+				dva_ok_cancel_row(minWidth:80, minHeight:20);
+			}
+		}
+	}
+} 

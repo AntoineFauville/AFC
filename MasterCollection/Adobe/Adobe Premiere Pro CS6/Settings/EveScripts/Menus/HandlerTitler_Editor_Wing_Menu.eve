@@ -1,0 +1,16 @@
+layout my_menu
+{
+	view menu(id:21622)
+	{
+		menu(text:'$$$/Premiere/Menu/21622/Tools=Tools', idName:'cmd.titler.palette.tools');
+		menu(text:'$$$/Premiere/Menu/21622/Styles=Styles', idName:'cmd.titler.palette.style');
+		menu(text:'$$$/Premiere/Menu/21622/Actions=Actions', idName:'cmd.titler.palette.action');
+		menu(text:'$$$/Premiere/Menu/21622/Properties=Properties', idName:'cmd.titler.palette.properties');
+		separator();
+		menu(text:'$$$/Premiere/Menu/21622/SafeTitleMargin=Safe Title Margin', idName:'cmd.titler.menu.view.title');
+		menu(text:'$$$/Premiere/Menu/21622/SafeActionMargin=Safe Action Margin', idName:'cmd.titler.menu.view.action');
+		menu(text:'$$$/Premiere/Menu/21622/TextBaselines=Text Baselines', idName:'cmd.titler.menu.view.baseline');
+		menu(text:'$$$/Premiere/Menu/21622/TabMarkers=Tab Markers', idName:'cmd.titler.menu.view.tabs');
+		menu(text:'$$$/Premiere/Menu/21622/ShowVideo=Show Video', idName:'cmd.titler.menu.view.showvideo');
+	}
+}

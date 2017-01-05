@@ -1,0 +1,13 @@
+layout my_menu
+{
+	view menu(id:21603)
+	{
+		menu(text:'$$$/Premiere/Menu/21603/Solid=Solid', id:1);
+		menu(text:'$$$/Premiere/Menu/21603/LinearGradient=Linear Gradient', id:2);
+		menu(text:'$$$/Premiere/Menu/21603/RadialGradient=Radial Gradient', id:3);
+		menu(text:'$$$/Premiere/Menu/21603/4ColorGradient=4 Color Gradient', id:4);
+		menu(text:'$$$/Premiere/Menu/21603/Bevel=Bevel', id:5);
+		menu(text:'$$$/Premiere/Menu/21603/Eliminate=Eliminate', id:6);
+		menu(text:'$$$/Premiere/Menu/21603/Ghost=Ghost', id:7);
+	}
+}

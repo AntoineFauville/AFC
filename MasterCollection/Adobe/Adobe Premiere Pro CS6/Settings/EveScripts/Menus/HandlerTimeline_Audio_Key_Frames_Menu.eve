@@ -1,0 +1,13 @@
+layout my_menu
+{
+	view menu(id:5130)
+	{
+		menu(text:'$$$/Premiere/Menu/5130/ShowClipKeyframes=Show Clip Keyframes', idName:'cmd.timeline.audio.clip.keyframes.show');
+		menu(text:'$$$/Premiere/Menu/5130/ShowClipVolume=Show Clip Volume', idName:'cmd.timeline.audio.clip.volumehandles.show');
+		separator();
+		menu(text:'$$$/Premiere/Menu/5130/ShowTrackKeyframes=Show Track Keyframes', idName:'cmd.timeline.audio.track.keyframes.show');
+		menu(text:'$$$/Premiere/Menu/5130/ShowTrackVolume=Show Track Volume', idName:'cmd.timeline.audio.track.volumehandles.show');
+		separator();
+		menu(text:'$$$/Premiere/Menu/5130/HideKeyframes=Hide Keyframes', idName:'cmd.timeline.audio.keyframes.hide');
+	}
+}

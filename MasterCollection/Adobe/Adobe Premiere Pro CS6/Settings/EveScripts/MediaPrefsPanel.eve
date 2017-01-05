@@ -1,0 +1,45 @@
+layout Media
+{
+	view dva_panel_view(name: '$$$/Premiere/DLG/PrefsDialog/kResDLGMedia=Media', identifier: 'prefsMedia', guide_mask:[@guide_label, @guide_baseline])
+	{
+		dva_groupbox(identifier: 'mediaCacheFilesGB', name: '$$$/Premiere/DLG/PrefsDialog/kResDLGMediaCacheFiles=Media Cache Files', headerType:'static_text', horizontal:align_fill)
+		{
+			dva_checkbox(identifier:'sideBySideCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGSideBySide=Save Media Cache files next to originals when possible', minHeight:16);
+			dva_static_text(identifier:'filesPathMST', label:'$$$/Premiere/DLG/PrefsDialog/kResDLGLocation=Location:', maxHeight:16, guide_mask: [@guide_label], horizontal:align_fill);
+			dva_button(identifier:'filesBrowseMBU', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGBrowse=Browse...', horizontal:align_right);
+		}
+		dva_groupbox(identifier: 'mediaCacheDatabaseGB', name: '$$$/Premiere/DLG/PrefsDialog/kResDLGMediaDatabaseCache=Media Cache Database', headerType:'static_text', horizontal:align_fill)
+		{
+			dva_static_text(identifier:'pathMST', label:'$$$/Premiere/DLG/PrefsDialog/kResDLGLocation=Location:', maxWidth: 140, minWidth: 140, maxHeight:16, guide_mask: [@guide_label], horizontal:align_fill);
+			row(horizontal:align_fill)
+			{
+				dva_button(identifier:'browseMBU', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGBrowse=Browse...', horizontal:align_right);
+				dva_button(identifier:'cleanMBU', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGClean=Clean', horizontal:align_right);
+			}
+		}
+		dva_popup(identifier:'indeterminateFrameRatePopup', minWidth:200, minHeight:20, label: '$$$/Premiere/DLG/PrefsDialog/kResDLGMediaIndeterminateFrameRate=Indeterminate Media Timebase:');
+		dva_popup(identifier:'useMediaSourcePopup', minWidth:200, minHeight:20, label: '$$$/Premiere/DLG/PrefsDialog/kResDLGMediaTimecode=Timecode:')
+		{
+			dva_popup_item(identifier:'useMediaSource', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGMediaUseMediaSource=Use Media Source');
+			dva_popup_item(identifier:'startAtZeroTC', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGMediaStartAtZeroTC=Start at 00:00:00:00');
+		}
+
+		dva_popup(identifier:'frameCountOffsetPopup', minWidth:200, minHeight:20, label: '$$$/Premiere/DLG/PrefsDialog/kResDLGMediaFrameCount=Frame Count:')
+		{
+			dva_popup_item(identifier:'startAtZero', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGMediaStartAtZero=Start at 0');
+			dva_popup_item(identifier:'startAtOne', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGMediaStartAtOne=Start at 1');
+			dva_popup_item(identifier:'timecodeConversion', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGMediaTimeCodeConversion=Timecode Conversion');
+		}
+		dva_checkbox(identifier:'writeXMPIDOnImportCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGWriteXMPIDOnImport=Write XMP ID to Files on Import', minHeight:16);
+		dva_checkbox(identifier:'metadataPropertyLinkingCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGMetdataPropertyLinking=Enable Clip and XMP Metadata Linking', minHeight:16);
+		dva_groupbox(identifier: 'growingFilesGB', name: '$$$/Premiere/DLG/PrefsDialog/kResDLGGrowingFiles=Growing Files', headerType:'static_text', horizontal:align_fill)
+		{
+			dva_checkbox(identifier:'enableGrowingFilesCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGEnableGrowingFiles=Automatically Refresh Growing Files', minHeight:16);
+			row()
+			{
+				dva_number_edit(identifier:'growingIntervalET', minValue:10, maxValue:180, decimalPlaces:0, minWidth:80, minHeight:20, horizontal:align_left, label: '$$$/Premiere/DLG/PrefsDialog/kResDLGGrowingInterval=Refresh Growing Files Every');
+				dva_static_text(identifier:'secondsLabel', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGSeconds=seconds', horizontal:align_left);
+			}
+		}
+	}
+}

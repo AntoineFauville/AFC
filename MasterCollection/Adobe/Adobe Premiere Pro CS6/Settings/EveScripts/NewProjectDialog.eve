@@ -1,0 +1,41 @@
+layout my_dialog
+{
+	view dva_dialog(name:'$$$/Premiere/DLG/NewProjectDialog/kResDLGNewProjectDialogTitle=New Project', identifier:'NewProjectDialog')
+	{
+		column(horizontal:align_right)
+		{
+			dva_tab_container(identifier: 'TabContainer', horizontal: align_fill, vertical: align_fill, child_horizontal: align_center)
+			{
+				column(placement: place_overlay)
+				{	
+					dva_layout_script(identifier: 'NewProjectSettingsGeneralTab');
+					dva_layout_script(identifier: 'ProjectSettingsScratchDisksTab');
+				}	
+			}
+			
+			row(horizontal:align_fill)
+			{
+				dva_popup(
+					label:'$$$/Premiere/DLG/NewProjectDialog/kResDLGLocation=Location:', 
+					identifier:'locationPopup',
+					minWidth:340,
+					horizontal:align_fill);
+
+				dva_button(
+					name:'$$$/Premiere/DLG/kResDLGBrowse=Browse...', 
+					identifier:'browseButton', 
+					minWidth:70);
+			}
+			row(horizontal:align_fill)
+			{
+				dva_text_edit(
+					identifier:'nameTextEdit', 
+					label:'$$$/Premiere/DLG/ConvertProjectDialog/kResDLGName=Name:', 
+					minWidth:260,
+					setAsFocused:'true',
+					horizontal:align_fill);
+				dva_ok_cancel_row(minWidth:70, minHeight:20, horizontal:align_right);
+			}
+		}
+	}
+} 

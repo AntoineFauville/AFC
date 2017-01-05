@@ -1,0 +1,30 @@
+layout myTransformRotationDialog
+{
+	view dva_dialog(name:'$$$/Premiere/DLG/TransformRotationDialog/kResDLGTransformRotationTitle=Rotation', identifier:'TransformRotationDialog')
+	{
+		row(child_horizontal: align_fill, horizontal: align_fill, spacing: 15)
+		{
+			column(child_horizontal: align_fill, child_vertical: align_top)
+			{
+				row(child_horizontal: align_fill, horizontal: align_fill)
+				{
+					dva_static_text(
+						name: '$$$/Premiere/DLG/TransformRotationDialog/kResDLGAngle=Angle:', 
+						identifier:'degreesStaticText');
+					dva_number_edit(
+						identifier: 'degreesNumberEdit', 
+						minWidth: 40, 
+						minValue: -360, 
+						maxValue: 360, 
+						leftSpace: -2,
+						setAsFocused:'true');
+					dva_static_text(name: '$$$/Premiere/DLG/TransformRotationDialog/kResDLGDegrees=degrees', identifier:'degreeSymbolStaticText', leftSpace: -4);
+				} 
+			}
+			column(child_horizontal: align_fill, child_vertical: align_top)
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);
+			}
+		}
+	}
+}

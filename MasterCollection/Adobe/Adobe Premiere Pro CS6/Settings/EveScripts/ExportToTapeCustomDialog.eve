@@ -1,0 +1,10 @@
+layout my_dialog
+{
+	view dva_dialog(name:'empty', identifier:'ExportToTapeCustomDialog', visible:'false')
+	{
+		row(child_horizontal: align_fill, horizontal: align_fill, spacing: 15)
+		{
+			dva_ok_cancel_row(minWidth:80, minHeight:20);
+		}
+	}
+} 

@@ -1,0 +1,18 @@
+layout my_menu
+{
+	view menu(id:4006)
+	{
+		menu(text:'$$$/Premiere/Menu/4006/ContentAreaNoSelectionContextMenu/Paste=Paste', idName:'cmd.edit.paste');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4006/ContentAreaNoSelectionContextMenu/NewBin=New Bin', idName:'cmd.file.new.bin');
+		menu(text:'$$$/Premiere/Menu/4006/ContentAreaNoSelectionContextMenu/NewItem=New Item')
+		{
+				menu(text:'$$$/Premiere/Menu/4006/ContentAreaNoSelectionContextMenuWin/NewItem/DummyEntry=Dummy Entry', idName:'cmd.file.new.sequence');
+		}
+		separator();
+		menu(text:'$$$/Premiere/Menu/4006/ContentAreaNoSelectionContextMenuWin/Import...=Import...', idName:'cmd.file.import');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4006/ContentAreaNoSelectionContextMenuWin/Find...=Find...', idName:'cmd.edit.find');
+		menu(text:'$$$/Premiere/Menu/4006/ContentAreaNoSelectionContextMenu/FindFaces=Find Faces', idName:'cmd.edit.findfaces');
+	}
+}

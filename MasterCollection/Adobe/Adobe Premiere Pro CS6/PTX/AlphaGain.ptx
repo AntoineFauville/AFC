@@ -1,0 +1,331 @@
+	.version 2.3
+	.target sm_20
+	.address_size 64
+	// compiled with C:\mightykilt64/shared/adobe/MediaCore//External/3rdParty/NVIDIA/CUDA/win/bin/../open64/lib//be.exe
+	// nvopencc 4.0 built on 2011-05-13
+
+	.visible .func (.param .align 16 .b8 __cudaretf__Z18UnpremultiplyPixel8PixelRGB[16]) _Z18UnpremultiplyPixel8PixelRGB (.param .align 16 .b8 __cudaparmf1__Z18UnpremultiplyPixel8PixelRGB[16])
+
+	//-----------------------------------------------------------
+	// Compiling C:/Users/dvaeng/AppData/Local/Temp/tmpxft_00003518_00000000-11_AlphaGain.cpp3.i (C:/Users/dvaeng/AppData/Local/Temp/ccBI#.a13976)
+	//-----------------------------------------------------------
+
+	//-----------------------------------------------------------
+	// Options:
+	//-----------------------------------------------------------
+	//  Target:ptx, ISA:sm_20, Endian:little, Pointer Size:64
+	//  -O3	(Optimization level)
+	//  -g0	(Debug level)
+	//  -m2	(Report advisories)
+	//-----------------------------------------------------------
+
+	.file	1	"C:/Users/dvaeng/AppData/Local/Temp/tmpxft_00003518_00000000-10_AlphaGain.cudafe2.gpu"
+	.file	2	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/DevicePixelFormat.h"
+	.file	3	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/PixelRGB.h"
+	.file	4	"c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h"
+	.file	5	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\crt/device_runtime.h"
+	.file	6	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\host_defines.h"
+	.file	7	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\builtin_types.h"
+	.file	8	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_types.h"
+	.file	9	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\driver_types.h"
+	.file	10	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_types.h"
+	.file	11	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_types.h"
+	.file	12	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\vector_types.h"
+	.file	13	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\builtin_types.h"
+	.file	14	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\host_defines.h"
+	.file	15	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\device_launch_parameters.h"
+	.file	16	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\crt\storage_class.h"
+	.file	17	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\INCLUDE\time.h"
+	.file	18	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/PixelUtils.h"
+	.file	19	"C:/mightykilt64/shared/adobe/MediaCore/GPUFoundation/Src/ImageProcessing/AlphaGain.cu"
+	.file	20	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\common_functions.h"
+	.file	21	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions.h"
+	.file	22	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_constants.h"
+	.file	23	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_functions.h"
+	.file	24	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_11_atomic_functions.h"
+	.file	25	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_12_atomic_functions.h"
+	.file	26	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_13_double_functions.h"
+	.file	27	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_atomic_functions.h"
+	.file	28	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_intrinsics.h"
+	.file	29	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_functions.h"
+	.file	30	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_fetch_functions.h"
+	.file	31	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions_dbl_ptx3.h"
+
+
+	.visible .func (.param .align 16 .b8 __cudaretf__Z18UnpremultiplyPixel8PixelRGB[16]) _Z18UnpremultiplyPixel8PixelRGB (.param .align 16 .b8 __cudaparmf1__Z18UnpremultiplyPixel8PixelRGB[16])
+	{
+	.reg .f32 %f<24>;
+	.reg .pred %p<3>;
+	.loc	18	45	0
+$LDWbegin__Z18UnpremultiplyPixel8PixelRGB:
+	ld.param.f32 	%f1, [__cudaparmf1__Z18UnpremultiplyPixel8PixelRGB+0];
+	mov.f32 	%f2, %f1;
+	ld.param.f32 	%f3, [__cudaparmf1__Z18UnpremultiplyPixel8PixelRGB+4];
+	mov.f32 	%f4, %f3;
+	ld.param.f32 	%f5, [__cudaparmf1__Z18UnpremultiplyPixel8PixelRGB+8];
+	mov.f32 	%f6, %f5;
+	ld.param.f32 	%f7, [__cudaparmf1__Z18UnpremultiplyPixel8PixelRGB+12];
+	mov.f32 	%f8, %f7;
+	cvt.ftz.sat.f32.f32 	%f9, %f8;
+	mov.f32 	%f10, %f9;
+	mov.f32 	%f11, 0fb70637bd;    	// -8e-006
+	add.ftz.f32 	%f12, %f9, %f11;
+	mov.f32 	%f13, 0f00000000;    	// 0
+	setp.le.ftz.f32 	%p1, %f12, %f13;
+	@%p1 bra 	$Lt_0_1282;
+	mov.f32 	%f14, 0f3f800000;    	// 1
+	div.approx.ftz.f32 	%f15, %f14, %f9;
+	mul.ftz.f32 	%f16, %f15, %f6;
+	mul.ftz.f32 	%f17, %f15, %f4;
+	mul.ftz.f32 	%f18, %f15, %f2;
+	bra.uni 	$Lt_0_1026;
+$Lt_0_1282:
+	mov.f32 	%f16, 0f00000000;    	// 0
+	mov.f32 	%f17, 0f00000000;    	// 0
+	mov.f32 	%f18, 0f00000000;    	// 0
+	mov.f32 	%f10, 0f00000000;    	// 0
+$Lt_0_1026:
+	mov.f32 	%f19, %f18;
+	st.param.f32 	[__cudaretf__Z18UnpremultiplyPixel8PixelRGB+0], %f19;
+	mov.f32 	%f20, %f17;
+	st.param.f32 	[__cudaretf__Z18UnpremultiplyPixel8PixelRGB+4], %f20;
+	mov.f32 	%f21, %f16;
+	st.param.f32 	[__cudaretf__Z18UnpremultiplyPixel8PixelRGB+8], %f21;
+	mov.f32 	%f22, %f10;
+	st.param.f32 	[__cudaretf__Z18UnpremultiplyPixel8PixelRGB+12], %f22;
+	ret;
+$LDWend__Z18UnpremultiplyPixel8PixelRGB:
+	} // _Z18UnpremultiplyPixel8PixelRGB
+
+	.entry AlphaGainKernel (
+		.param .u64 __cudaparm_AlphaGainKernel_inSrc,
+		.param .s32 __cudaparm_AlphaGainKernel_inSrcPitch,
+		.param .u64 __cudaparm_AlphaGainKernel_outDest,
+		.param .s32 __cudaparm_AlphaGainKernel_inDestPitch,
+		.param .u32 __cudaparm_AlphaGainKernel_inDeviceFormat,
+		.param .s32 __cudaparm_AlphaGainKernel_inWidth,
+		.param .s32 __cudaparm_AlphaGainKernel_inHeight,
+		.param .f32 __cudaparm_AlphaGainKernel_inAlphaGain)
+	{
+	.reg .u32 %r<36>;
+	.reg .u64 %rd<14>;
+	.reg .f32 %f<8>;
+	.reg .pred %p<4>;
+	.loc	19	30	0
+$LDWbegin_AlphaGainKernel:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.y;
+	mov.u32 	%r5, %ntid.y;
+	mul.lo.u32 	%r6, %r4, %r5;
+	mov.u32 	%r7, %tid.x;
+	add.u32 	%r8, %r7, %r3;
+	mov.u32 	%r9, %tid.y;
+	add.u32 	%r10, %r9, %r6;
+	ld.param.s32 	%r11, [__cudaparm_AlphaGainKernel_inWidth];
+	set.gt.u32.s32 	%r12, %r11, %r8;
+	neg.s32 	%r13, %r12;
+	ld.param.s32 	%r14, [__cudaparm_AlphaGainKernel_inHeight];
+	set.gt.u32.s32 	%r15, %r14, %r10;
+	neg.s32 	%r16, %r15;
+	and.b32 	%r17, %r13, %r16;
+	mov.u32 	%r18, 0;
+	setp.eq.s32 	%p1, %r17, %r18;
+	@%p1 bra 	$Lt_1_2818;
+	ld.param.u32 	%r19, [__cudaparm_AlphaGainKernel_inDeviceFormat];
+	mov.s32 	%r20, 0;
+	setp.eq.s32 	%p2, %r19, %r20;
+	ld.param.s32 	%r21, [__cudaparm_AlphaGainKernel_inSrcPitch];
+	mul.lo.s32 	%r22, %r21, %r10;
+	add.s32 	%r23, %r8, %r22;
+	cvt.s64.s32 	%rd1, %r23;
+	ld.param.u64 	%rd2, [__cudaparm_AlphaGainKernel_inSrc];
+	@!%p2 bra 	$Lt_1_3586;
+	mul.lo.u64 	%rd3, %rd1, 8;
+	add.u64 	%rd4, %rd2, %rd3;
+	ld.global.v4.u16 	{%r24,%r25,%r26,%r27}, [%rd4+0];
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r24;
+	cvt.ftz.f32.f16	%f1, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r25;
+	cvt.ftz.f32.f16	%f2, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r26;
+	cvt.ftz.f32.f16	%f3, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r27;
+	cvt.ftz.f32.f16	%f4, %b1; }
+	bra.uni 	$Lt_1_3330;
+$Lt_1_3586:
+	mul.lo.u64 	%rd5, %rd1, 16;
+	add.u64 	%rd6, %rd2, %rd5;
+	ld.global.v4.f32 	{%f1,%f2,%f3,%f4}, [%rd6+0];
+$Lt_1_3330:
+	ld.param.f32 	%f5, [__cudaparm_AlphaGainKernel_inAlphaGain];
+	mul.ftz.f32 	%f6, %f5, %f4;
+	ld.param.s32 	%r28, [__cudaparm_AlphaGainKernel_inDestPitch];
+	mul.lo.s32 	%r29, %r28, %r10;
+	add.s32 	%r30, %r8, %r29;
+	cvt.s64.s32 	%rd7, %r30;
+	ld.param.u64 	%rd8, [__cudaparm_AlphaGainKernel_outDest];
+	@!%p2 bra 	$Lt_1_4098;
+	mul.lo.u64 	%rd9, %rd7, 8;
+	add.u64 	%rd10, %rd8, %rd9;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f1;
+	mov.b32		%r31, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f2;
+	mov.b32		%r32, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f3;
+	mov.b32		%r33, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f6;
+	mov.b32		%r34, %b1; }
+	st.global.v4.u16 	[%rd10+0], {%r31,%r32,%r33,%r34};
+	bra.uni 	$Lt_1_3842;
+$Lt_1_4098:
+	mul.lo.u64 	%rd11, %rd7, 16;
+	add.u64 	%rd12, %rd8, %rd11;
+	st.global.v4.f32 	[%rd12+0], {%f1,%f2,%f3,%f6};
+$Lt_1_3842:
+$Lt_1_2818:
+	exit;
+$LDWend_AlphaGainKernel:
+	} // AlphaGainKernel
+
+	.entry UnpremultiplyKernel (
+		.param .u64 __cudaparm_UnpremultiplyKernel_inSrc,
+		.param .s32 __cudaparm_UnpremultiplyKernel_inSrcPitch,
+		.param .u64 __cudaparm_UnpremultiplyKernel_outDest,
+		.param .s32 __cudaparm_UnpremultiplyKernel_inDestPitch,
+		.param .u32 __cudaparm_UnpremultiplyKernel_inDeviceFormat,
+		.param .s32 __cudaparm_UnpremultiplyKernel_inWidth,
+		.param .s32 __cudaparm_UnpremultiplyKernel_inHeight,
+		.param .align 16 .b8 __cudaparm_UnpremultiplyKernel_inAlphaMatteColor[16])
+	{
+	.reg .u32 %r<36>;
+	.reg .u64 %rd<14>;
+	.reg .f32 %f<30>;
+	.reg .pred %p<5>;
+$LDWbegin_UnpremultiplyKernel:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.y;
+	mov.u32 	%r5, %ntid.y;
+	mul.lo.u32 	%r6, %r4, %r5;
+	mov.u32 	%r7, %tid.x;
+	add.u32 	%r8, %r7, %r3;
+	mov.u32 	%r9, %tid.y;
+	add.u32 	%r10, %r9, %r6;
+	ld.param.s32 	%r11, [__cudaparm_UnpremultiplyKernel_inWidth];
+	set.gt.u32.s32 	%r12, %r11, %r8;
+	neg.s32 	%r13, %r12;
+	ld.param.s32 	%r14, [__cudaparm_UnpremultiplyKernel_inHeight];
+	set.gt.u32.s32 	%r15, %r14, %r10;
+	neg.s32 	%r16, %r15;
+	and.b32 	%r17, %r13, %r16;
+	mov.u32 	%r18, 0;
+	setp.eq.s32 	%p1, %r17, %r18;
+	@%p1 bra 	$Lt_2_3586;
+	ld.param.u32 	%r19, [__cudaparm_UnpremultiplyKernel_inDeviceFormat];
+	mov.s32 	%r20, 0;
+	setp.eq.s32 	%p2, %r19, %r20;
+	ld.param.s32 	%r21, [__cudaparm_UnpremultiplyKernel_inSrcPitch];
+	mul.lo.s32 	%r22, %r21, %r10;
+	add.s32 	%r23, %r8, %r22;
+	cvt.s64.s32 	%rd1, %r23;
+	ld.param.u64 	%rd2, [__cudaparm_UnpremultiplyKernel_inSrc];
+	@!%p2 bra 	$Lt_2_4354;
+	mul.lo.u64 	%rd3, %rd1, 8;
+	add.u64 	%rd4, %rd2, %rd3;
+	ld.global.v4.u16 	{%r24,%r25,%r26,%r27}, [%rd4+0];
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r24;
+	cvt.ftz.f32.f16	%f1, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r25;
+	cvt.ftz.f32.f16	%f2, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r26;
+	cvt.ftz.f32.f16	%f3, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r27;
+	cvt.ftz.f32.f16	%f4, %b1; }
+	bra.uni 	$Lt_2_4098;
+$Lt_2_4354:
+	mul.lo.u64 	%rd5, %rd1, 16;
+	add.u64 	%rd6, %rd2, %rd5;
+	ld.global.v4.f32 	{%f1,%f2,%f3,%f4}, [%rd6+0];
+$Lt_2_4098:
+	.loc	18	45	0
+	cvt.ftz.sat.f32.f32 	%f5, %f4;
+	mov.f32 	%f6, %f5;
+	mov.f32 	%f7, 0fb70637bd;     	// -8e-006
+	add.ftz.f32 	%f8, %f5, %f7;
+	mov.f32 	%f9, 0f00000000;     	// 0
+	setp.le.ftz.f32 	%p3, %f8, %f9;
+	@%p3 bra 	$Lt_2_4866;
+	mov.f32 	%f10, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f11, %f10, %f5;
+	mov.f32 	%f12, 0f3f800000;    	// 1
+	div.approx.ftz.f32 	%f13, %f12, %f5;
+	ld.param.f32 	%f14, [__cudaparm_UnpremultiplyKernel_inAlphaMatteColor+8];
+	mul.ftz.f32 	%f15, %f14, %f11;
+	sub.ftz.f32 	%f16, %f3, %f15;
+	cvt.ftz.sat.f32.f32 	%f17, %f16;
+	mul.ftz.f32 	%f18, %f13, %f17;
+	ld.param.f32 	%f19, [__cudaparm_UnpremultiplyKernel_inAlphaMatteColor+4];
+	mul.ftz.f32 	%f20, %f19, %f11;
+	sub.ftz.f32 	%f21, %f2, %f20;
+	cvt.ftz.sat.f32.f32 	%f22, %f21;
+	mul.ftz.f32 	%f23, %f13, %f22;
+	ld.param.f32 	%f24, [__cudaparm_UnpremultiplyKernel_inAlphaMatteColor+0];
+	mul.ftz.f32 	%f25, %f24, %f11;
+	sub.ftz.f32 	%f26, %f1, %f25;
+	cvt.ftz.sat.f32.f32 	%f27, %f26;
+	mul.ftz.f32 	%f28, %f13, %f27;
+	bra.uni 	$Lt_2_4610;
+$Lt_2_4866:
+	mov.f32 	%f18, 0f00000000;    	// 0
+	mov.f32 	%f23, 0f00000000;    	// 0
+	mov.f32 	%f28, 0f00000000;    	// 0
+	mov.f32 	%f6, 0f00000000;     	// 0
+$Lt_2_4610:
+	.loc	19	30	0
+	ld.param.s32 	%r28, [__cudaparm_UnpremultiplyKernel_inDestPitch];
+	mul.lo.s32 	%r29, %r28, %r10;
+	add.s32 	%r30, %r8, %r29;
+	cvt.s64.s32 	%rd7, %r30;
+	ld.param.u64 	%rd8, [__cudaparm_UnpremultiplyKernel_outDest];
+	@!%p2 bra 	$Lt_2_5378;
+	mul.lo.u64 	%rd9, %rd7, 8;
+	add.u64 	%rd10, %rd8, %rd9;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f28;
+	mov.b32		%r31, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f23;
+	mov.b32		%r32, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f18;
+	mov.b32		%r33, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f6;
+	mov.b32		%r34, %b1; }
+	st.global.v4.u16 	[%rd10+0], {%r31,%r32,%r33,%r34};
+	bra.uni 	$Lt_2_5122;
+$Lt_2_5378:
+	mul.lo.u64 	%rd11, %rd7, 16;
+	add.u64 	%rd12, %rd8, %rd11;
+	st.global.v4.f32 	[%rd12+0], {%f28,%f23,%f18,%f6};
+$Lt_2_5122:
+$Lt_2_3586:
+	exit;
+$LDWend_UnpremultiplyKernel:
+	} // UnpremultiplyKernel
+

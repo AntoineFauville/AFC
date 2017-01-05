@@ -1,0 +1,228 @@
+	.version 2.3
+	.target sm_20
+	.address_size 64
+	// compiled with C:\mightykilt64/shared/adobe/MediaCore//External/3rdParty/NVIDIA/CUDA/win/bin/../open64/lib//be.exe
+	// nvopencc 4.0 built on 2011-05-13
+
+	//-----------------------------------------------------------
+	// Compiling C:/Users/dvaeng/AppData/Local/Temp/tmpxft_000031dc_00000000-11_Sharpen.cpp3.i (C:/Users/dvaeng/AppData/Local/Temp/ccBI#.a11956)
+	//-----------------------------------------------------------
+
+	//-----------------------------------------------------------
+	// Options:
+	//-----------------------------------------------------------
+	//  Target:ptx, ISA:sm_20, Endian:little, Pointer Size:64
+	//  -O3	(Optimization level)
+	//  -g0	(Debug level)
+	//  -m2	(Report advisories)
+	//-----------------------------------------------------------
+
+	.file	1	"C:/Users/dvaeng/AppData/Local/Temp/tmpxft_000031dc_00000000-10_Sharpen.cudafe2.gpu"
+	.file	2	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/DevicePixelFormat.h"
+	.file	3	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/PixelRGB.h"
+	.file	4	"c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h"
+	.file	5	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\crt/device_runtime.h"
+	.file	6	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\host_defines.h"
+	.file	7	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\builtin_types.h"
+	.file	8	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_types.h"
+	.file	9	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\driver_types.h"
+	.file	10	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_types.h"
+	.file	11	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_types.h"
+	.file	12	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\vector_types.h"
+	.file	13	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\builtin_types.h"
+	.file	14	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\host_defines.h"
+	.file	15	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\device_launch_parameters.h"
+	.file	16	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\crt\storage_class.h"
+	.file	17	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\INCLUDE\time.h"
+	.file	18	"C:/mightykilt64/shared/adobe/MediaCore/Renderers/RendererGPU/Src/Effects/Sharpen.cu"
+	.file	19	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\common_functions.h"
+	.file	20	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions.h"
+	.file	21	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_constants.h"
+	.file	22	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_functions.h"
+	.file	23	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_11_atomic_functions.h"
+	.file	24	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_12_atomic_functions.h"
+	.file	25	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_13_double_functions.h"
+	.file	26	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_atomic_functions.h"
+	.file	27	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_intrinsics.h"
+	.file	28	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_functions.h"
+	.file	29	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_fetch_functions.h"
+	.file	30	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions_dbl_ptx3.h"
+
+	.global .texref inSrcTexture;
+
+	.entry SharpenKernel (
+		.param .u64 __cudaparm_SharpenKernel_TextureinSrcTexture,
+		.param .u64 __cudaparm_SharpenKernel_outDest,
+		.param .s32 __cudaparm_SharpenKernel_inPitch,
+		.param .u32 __cudaparm_SharpenKernel_inDeviceFormat,
+		.param .s32 __cudaparm_SharpenKernel_inWidth,
+		.param .s32 __cudaparm_SharpenKernel_inHeight,
+		.param .f32 __cudaparm_SharpenKernel_inCenterCoeff,
+		.param .f32 __cudaparm_SharpenKernel_inSurroundCoeff)
+	{
+	.reg .u32 %r<29>;
+	.reg .u64 %rd<8>;
+	.reg .f32 %f<122>;
+	.reg .pred %p<4>;
+	.loc	18	28	0
+$LDWbegin_SharpenKernel:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.y;
+	mov.u32 	%r5, %ntid.y;
+	mul.lo.u32 	%r6, %r4, %r5;
+	mov.u32 	%r7, %tid.x;
+	add.u32 	%r8, %r7, %r3;
+	mov.u32 	%r9, %tid.y;
+	add.u32 	%r10, %r9, %r6;
+	ld.param.s32 	%r11, [__cudaparm_SharpenKernel_inWidth];
+	set.gt.u32.s32 	%r12, %r11, %r8;
+	neg.s32 	%r13, %r12;
+	ld.param.s32 	%r14, [__cudaparm_SharpenKernel_inHeight];
+	set.gt.u32.s32 	%r15, %r14, %r10;
+	neg.s32 	%r16, %r15;
+	and.b32 	%r17, %r13, %r16;
+	mov.u32 	%r18, 0;
+	setp.eq.s32 	%p1, %r17, %r18;
+	@%p1 bra 	$Lt_0_2050;
+	cvt.rn.f32.s32 	%f1, %r8;
+	cvt.rn.f32.s32 	%f2, %r10;
+	mov.f32 	%f3, 0f3f000000;     	// 0.5
+	add.ftz.f32 	%f4, %f1, %f3;
+	mov.f32 	%f5, %f4;
+	mov.f32 	%f6, 0fbf000000;     	// -0.5
+	add.ftz.f32 	%f7, %f2, %f6;
+	mov.f32 	%f8, %f7;
+	mov.f32 	%f9, 0f00000000;     	// 0
+	mov.f32 	%f10, %f9;
+	mov.f32 	%f11, 0f00000000;    	// 0
+	mov.f32 	%f12, %f11;
+	tex.2d.v4.f32.f32 {%f13,%f14,%f15,%f16},[inSrcTexture,{%f5,%f8,%f10,%f12}];
+	mov.f32 	%f17, %f13;
+	mov.f32 	%f18, %f14;
+	mov.f32 	%f19, %f15;
+	mov.f32 	%f20, %f16;
+	mov.f32 	%f21, 0f3f000000;    	// 0.5
+	add.ftz.f32 	%f22, %f2, %f21;
+	mov.f32 	%f23, 0fbf000000;    	// -0.5
+	add.ftz.f32 	%f24, %f1, %f23;
+	mov.f32 	%f25, %f24;
+	mov.f32 	%f26, %f22;
+	mov.f32 	%f27, 0f00000000;    	// 0
+	mov.f32 	%f28, %f27;
+	mov.f32 	%f29, 0f00000000;    	// 0
+	mov.f32 	%f30, %f29;
+	tex.2d.v4.f32.f32 {%f31,%f32,%f33,%f34},[inSrcTexture,{%f25,%f26,%f28,%f30}];
+	mov.f32 	%f35, %f31;
+	mov.f32 	%f36, %f32;
+	mov.f32 	%f37, %f33;
+	mov.f32 	%f38, %f34;
+	mov.f32 	%f39, %f4;
+	mov.f32 	%f40, %f22;
+	mov.f32 	%f41, 0f00000000;    	// 0
+	mov.f32 	%f42, %f41;
+	mov.f32 	%f43, 0f00000000;    	// 0
+	mov.f32 	%f44, %f43;
+	tex.2d.v4.f32.f32 {%f45,%f46,%f47,%f48},[inSrcTexture,{%f39,%f40,%f42,%f44}];
+	mov.f32 	%f49, %f45;
+	mov.f32 	%f50, %f46;
+	mov.f32 	%f51, %f47;
+	mov.f32 	%f52, %f48;
+	mov.f32 	%f53, 0f3fc00000;    	// 1.5
+	add.ftz.f32 	%f54, %f1, %f53;
+	mov.f32 	%f55, %f54;
+	mov.f32 	%f56, %f22;
+	mov.f32 	%f57, 0f00000000;    	// 0
+	mov.f32 	%f58, %f57;
+	mov.f32 	%f59, 0f00000000;    	// 0
+	mov.f32 	%f60, %f59;
+	tex.2d.v4.f32.f32 {%f61,%f62,%f63,%f64},[inSrcTexture,{%f55,%f56,%f58,%f60}];
+	mov.f32 	%f65, %f61;
+	mov.f32 	%f66, %f62;
+	mov.f32 	%f67, %f63;
+	mov.f32 	%f68, %f64;
+	mov.f32 	%f69, %f4;
+	mov.f32 	%f70, 0f3fc00000;    	// 1.5
+	add.ftz.f32 	%f71, %f2, %f70;
+	mov.f32 	%f72, %f71;
+	mov.f32 	%f73, 0f00000000;    	// 0
+	mov.f32 	%f74, %f73;
+	mov.f32 	%f75, 0f00000000;    	// 0
+	mov.f32 	%f76, %f75;
+	tex.2d.v4.f32.f32 {%f77,%f78,%f79,%f80},[inSrcTexture,{%f69,%f72,%f74,%f76}];
+	mov.f32 	%f81, %f77;
+	mov.f32 	%f82, %f78;
+	mov.f32 	%f83, %f79;
+	mov.f32 	%f84, %f80;
+	ld.param.f32 	%f85, [__cudaparm_SharpenKernel_inCenterCoeff];
+	mul.ftz.f32 	%f86, %f49, %f85;
+	add.ftz.f32 	%f87, %f17, %f35;
+	ld.param.f32 	%f88, [__cudaparm_SharpenKernel_inSurroundCoeff];
+	mov.f32 	%f89, 0f40800000;    	// 4
+	fma.rn.ftz.f32 	%f90, %f89, %f88, %f85;
+	mul.ftz.f32 	%f91, %f50, %f85;
+	add.ftz.f32 	%f92, %f18, %f36;
+	mul.ftz.f32 	%f93, %f51, %f85;
+	add.ftz.f32 	%f94, %f19, %f37;
+	mul.ftz.f32 	%f95, %f52, %f85;
+	add.ftz.f32 	%f96, %f20, %f38;
+	add.ftz.f32 	%f97, %f87, %f65;
+	add.ftz.f32 	%f98, %f92, %f66;
+	add.ftz.f32 	%f99, %f94, %f67;
+	add.ftz.f32 	%f100, %f96, %f68;
+	add.ftz.f32 	%f101, %f97, %f81;
+	add.ftz.f32 	%f102, %f98, %f82;
+	add.ftz.f32 	%f103, %f99, %f83;
+	add.ftz.f32 	%f104, %f100, %f84;
+	mul.ftz.f32 	%f105, %f101, %f88;
+	mul.ftz.f32 	%f106, %f102, %f88;
+	mul.ftz.f32 	%f107, %f103, %f88;
+	mul.ftz.f32 	%f108, %f104, %f88;
+	ld.param.s32 	%r19, [__cudaparm_SharpenKernel_inPitch];
+	mul.lo.s32 	%r20, %r19, %r10;
+	add.s32 	%r21, %r8, %r20;
+	cvt.s64.s32 	%rd1, %r21;
+	add.ftz.f32 	%f109, %f86, %f105;
+	add.ftz.f32 	%f110, %f91, %f106;
+	add.ftz.f32 	%f111, %f93, %f107;
+	add.ftz.f32 	%f112, %f95, %f108;
+	ld.param.u64 	%rd2, [__cudaparm_SharpenKernel_outDest];
+	ld.param.u32 	%r22, [__cudaparm_SharpenKernel_inDeviceFormat];
+	mov.u32 	%r23, 0;
+	setp.ne.s32 	%p2, %r22, %r23;
+	@%p2 bra 	$Lt_0_2818;
+	mul.lo.u64 	%rd3, %rd1, 8;
+	add.u64 	%rd4, %rd2, %rd3;
+	div.approx.ftz.f32 	%f113, %f109, %f90;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f113;
+	mov.b32		%r24, %b1; }
+	div.approx.ftz.f32 	%f114, %f110, %f90;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f114;
+	mov.b32		%r25, %b1; }
+	div.approx.ftz.f32 	%f115, %f111, %f90;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f115;
+	mov.b32		%r26, %b1; }
+	div.approx.ftz.f32 	%f116, %f112, %f90;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f116;
+	mov.b32		%r27, %b1; }
+	st.global.v4.u16 	[%rd4+0], {%r24,%r25,%r26,%r27};
+	bra.uni 	$Lt_0_2562;
+$Lt_0_2818:
+	mul.lo.u64 	%rd5, %rd1, 16;
+	add.u64 	%rd6, %rd2, %rd5;
+	div.approx.ftz.f32 	%f117, %f109, %f90;
+	div.approx.ftz.f32 	%f118, %f110, %f90;
+	div.approx.ftz.f32 	%f119, %f111, %f90;
+	div.approx.ftz.f32 	%f120, %f112, %f90;
+	st.global.v4.f32 	[%rd6+0], {%f117,%f118,%f119,%f120};
+$Lt_0_2562:
+$Lt_0_2050:
+	exit;
+$LDWend_SharpenKernel:
+	} // SharpenKernel
+

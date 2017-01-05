@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PremiereData Version="3">
+	<SequencePreset ObjectRef="1"/>
+	<SequencePreset ObjectID="1" ClassID="5e73dd7e-4f86-4917-80eb-08ddb2f4a5f3" Version="1">
+		<InitialNumberOfFiveOneSubmixTracks>0</InitialNumberOfFiveOneSubmixTracks>
+		<InitialNumberOfStereoSubmixTracks>0</InitialNumberOfStereoSubmixTracks>
+		<InitialNumberOfMonoSubmixTracks>0</InitialNumberOfMonoSubmixTracks>
+		<InitialNumberOfFiveOneTracks>0</InitialNumberOfFiveOneTracks>
+		<InitialNumberOfStereoTracks>3</InitialNumberOfStereoTracks>
+		<InitialNumberOfMonoTracks>0</InitialNumberOfMonoTracks>
+		<InitialNumberOfVideoTracks>3</InitialNumberOfVideoTracks>
+		<PreviewPresetVideoCodec.Win>1297107278</PreviewPresetVideoCodec.Win>
+		<PreviewPresetVideoCodec.Mac>1297107278</PreviewPresetVideoCodec.Mac>
+		<PreviewPresetFileName.Win>I-Frame Only MPEG</PreviewPresetFileName.Win>
+		<PreviewPresetFileName.Mac>I-Frame Only MPEG</PreviewPresetFileName.Mac>
+		<VideoUseMaxBitDepth>false</VideoUseMaxBitDepth>
+		<VideoPixelAspectRatio>1,1</VideoPixelAspectRatio>
+		<EditingModeGUID.Win>400965a2-6807-43f1-9e5a-ee98039580bc</EditingModeGUID.Win>
+		<EditingModeGUID.Mac>400965a2-6807-43f1-9e5a-ee98039580bc</EditingModeGUID.Mac>
+		<Descriptions Version="1">
+			<DescriptionItem Version="1" Index="0">
+				<Second>Pour l'édition des formats Sony XDCAM EX.&#13;Vidéo haute définition 720p 16:9 avec balayage progressif à 50 images/s.&#13;Audio 48 kHz.</Second>
+				<First>fr_FR</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Sony XDCAM EX 形式の編集用。&#13;50 フレーム/秒の 16:9 プログレッシブスキャン 720p HD ビデオ。&#13;48kHz オーディオ。</Second>
+				<First>ja_JP</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Per modificare i formati Sony XDCAM EX.&#13;Video HD 720p 16:9 a scansione progressiva da 50 fotogrammi al secondo.&#13;Audio da 48 kHz.</Second>
+				<First>it_IT</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Zur Bearbeitung von Formaten der Kamera Sony XDCAM EX.&#13;16:9 Progressive-Scan 720p HD-Video mit 50 Frames pro Sekunde.&#13;48 kHz Audio.</Second>
+				<First>de_DE</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Para la edición de formatos EX XDCAM de Sony.&#13;Vídeo HD 720p de búsqueda progresiva 16:9 a 50 fotogramas por segundo.&#13;Audio a 48 kHz.</Second>
+				<First>es_ES</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Sony XDCAM EX 형식 편집용.&#13;초당 50프레임으로 16:9 프로그레시브 스캔 720p HD 비디오.&#13;48kHz 오디오.</Second>
+				<First>ko_KR</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>For editing Sony XDCAM EX formats.&#13;16:9 progressive-scan 720p HD video at 50 frames per second.&#13;48kHz audio.</Second>
+				<First>en_US</First>
+			</DescriptionItem>
+		</Descriptions>
+		<Names Version="1">
+			<NameItem Version="1" Index="0">
+				<Second>XDCAM EX 720p50</Second>
+				<First>en_US</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>XDCAM EX 720p50</Second>
+				<First>de_DE</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>XDCAM EX 720p50</Second>
+				<First>fr_FR</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>XDCAM EX 720p50</Second>
+				<First>it_IT</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>XDCAM EX 720p50</Second>
+				<First>es_ES</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>XDCAM EX 720p50</Second>
+				<First>ko_KR</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>XDCAM EX 720p50</Second>
+				<First>ja_JP</First>
+			</NameItem>
+		</Names>
+		<VideoFieldType>0</VideoFieldType>
+		<AudioTimeDisplay>200</AudioTimeDisplay>
+		<VideoTimeDisplay>105</VideoTimeDisplay>
+		<AudioChannelType>1</AudioChannelType>
+		<AudioFrameRate>5292000</AudioFrameRate>
+		<VideoFrameSize>0,0,1280,720</VideoFrameSize>
+		<VideoFrameRate>5080320000</VideoFrameRate>
+	</SequencePreset>
+</PremiereData>

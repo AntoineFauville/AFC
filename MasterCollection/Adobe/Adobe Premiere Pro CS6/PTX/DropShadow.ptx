@@ -1,0 +1,340 @@
+	.version 2.3
+	.target sm_20
+	.address_size 64
+	// compiled with C:\mightykilt64/shared/adobe/MediaCore//External/3rdParty/NVIDIA/CUDA/win/bin/../open64/lib//be.exe
+	// nvopencc 4.0 built on 2011-05-13
+
+	//-----------------------------------------------------------
+	// Compiling C:/Users/dvaeng/AppData/Local/Temp/tmpxft_000017a0_00000000-11_DropShadow.cpp3.i (C:/Users/dvaeng/AppData/Local/Temp/ccBI#.a11212)
+	//-----------------------------------------------------------
+
+	//-----------------------------------------------------------
+	// Options:
+	//-----------------------------------------------------------
+	//  Target:ptx, ISA:sm_20, Endian:little, Pointer Size:64
+	//  -O3	(Optimization level)
+	//  -g0	(Debug level)
+	//  -m2	(Report advisories)
+	//-----------------------------------------------------------
+
+	.file	1	"C:/Users/dvaeng/AppData/Local/Temp/tmpxft_000017a0_00000000-10_DropShadow.cudafe2.gpu"
+	.file	2	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/DevicePixelFormat.h"
+	.file	3	"C:\mightykilt64\shared\adobe\MediaCore\GPUFoundation\API\Inc\GPUFoundation/KernelSupport/PixelRGB.h"
+	.file	4	"c:\program files (x86)\microsoft visual studio 10.0\vc\include\codeanalysis\sourceannotations.h"
+	.file	5	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\crt/device_runtime.h"
+	.file	6	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\host_defines.h"
+	.file	7	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\builtin_types.h"
+	.file	8	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_types.h"
+	.file	9	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\driver_types.h"
+	.file	10	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_types.h"
+	.file	11	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_types.h"
+	.file	12	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\vector_types.h"
+	.file	13	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\builtin_types.h"
+	.file	14	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\host_defines.h"
+	.file	15	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\device_launch_parameters.h"
+	.file	16	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\crt\storage_class.h"
+	.file	17	"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\INCLUDE\time.h"
+	.file	18	"C:/mightykilt64/shared/adobe/MediaCore/Renderers/RendererGPU/Src/Effects/DropShadow.cu"
+	.file	19	"C:\mightykilt64\shared\adobe\MediaCore\External\3rdParty\NVIDIA\CUDA\win\include\common_functions.h"
+	.file	20	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions.h"
+	.file	21	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_constants.h"
+	.file	22	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\device_functions.h"
+	.file	23	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_11_atomic_functions.h"
+	.file	24	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_12_atomic_functions.h"
+	.file	25	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_13_double_functions.h"
+	.file	26	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_atomic_functions.h"
+	.file	27	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\sm_20_intrinsics.h"
+	.file	28	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\surface_functions.h"
+	.file	29	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\texture_fetch_functions.h"
+	.file	30	"c:\mightykilt64\shared\adobe\mediacore\external\3rdparty\nvidia\cuda\win\include\math_functions_dbl_ptx3.h"
+
+
+	.entry CreateShadowMask (
+		.param .u64 __cudaparm_CreateShadowMask_inSrc,
+		.param .s32 __cudaparm_CreateShadowMask_inSrcPitch,
+		.param .s32 __cudaparm_CreateShadowMask_inSrcWidth,
+		.param .s32 __cudaparm_CreateShadowMask_inSrcHeight,
+		.param .u64 __cudaparm_CreateShadowMask_inMask,
+		.param .s32 __cudaparm_CreateShadowMask_inMaskPitch,
+		.param .s32 __cudaparm_CreateShadowMask_inMaskWidth,
+		.param .s32 __cudaparm_CreateShadowMask_inMaskHeight,
+		.param .u32 __cudaparm_CreateShadowMask_inDeviceFormat,
+		.param .s32 __cudaparm_CreateShadowMask_inShadowOffsetX,
+		.param .s32 __cudaparm_CreateShadowMask_inShadowOffsetY)
+	{
+	.reg .u32 %r<37>;
+	.reg .u64 %rd<12>;
+	.reg .f32 %f<4>;
+	.reg .pred %p<8>;
+	.loc	18	25	0
+$LDWbegin_CreateShadowMask:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.y;
+	mov.u32 	%r5, %ntid.y;
+	mul.lo.u32 	%r6, %r4, %r5;
+	mov.u32 	%r7, %tid.x;
+	add.u32 	%r8, %r7, %r3;
+	mov.u32 	%r9, %tid.y;
+	add.u32 	%r10, %r9, %r6;
+	ld.param.s32 	%r11, [__cudaparm_CreateShadowMask_inMaskWidth];
+	set.gt.u32.s32 	%r12, %r11, %r8;
+	neg.s32 	%r13, %r12;
+	ld.param.s32 	%r14, [__cudaparm_CreateShadowMask_inMaskHeight];
+	set.gt.u32.s32 	%r15, %r14, %r10;
+	neg.s32 	%r16, %r15;
+	and.b32 	%r17, %r13, %r16;
+	mov.u32 	%r18, 0;
+	setp.eq.s32 	%p1, %r17, %r18;
+	@%p1 bra 	$Lt_0_4866;
+	ld.param.s32 	%r19, [__cudaparm_CreateShadowMask_inShadowOffsetX];
+	sub.s32 	%r20, %r8, %r19;
+	mov.u32 	%r21, 0;
+	setp.lt.s32 	%p2, %r20, %r21;
+	@%p2 bra 	$Lt_0_6402;
+	ld.param.s32 	%r22, [__cudaparm_CreateShadowMask_inSrcWidth];
+	setp.le.s32 	%p3, %r22, %r20;
+	@%p3 bra 	$Lt_0_6402;
+	ld.param.s32 	%r23, [__cudaparm_CreateShadowMask_inShadowOffsetY];
+	sub.s32 	%r24, %r10, %r23;
+	mov.u32 	%r25, 0;
+	setp.lt.s32 	%p4, %r24, %r25;
+	@%p4 bra 	$Lt_0_6402;
+	ld.param.s32 	%r26, [__cudaparm_CreateShadowMask_inSrcHeight];
+	setp.le.s32 	%p5, %r26, %r24;
+	@%p5 bra 	$Lt_0_6402;
+	ld.param.s32 	%r27, [__cudaparm_CreateShadowMask_inSrcPitch];
+	mul.lo.s32 	%r28, %r27, %r24;
+	add.s32 	%r29, %r20, %r28;
+	cvt.s64.s32 	%rd1, %r29;
+	ld.param.u64 	%rd2, [__cudaparm_CreateShadowMask_inSrc];
+	ld.param.u32 	%r30, [__cudaparm_CreateShadowMask_inDeviceFormat];
+	mov.u32 	%r31, 0;
+	setp.ne.s32 	%p6, %r30, %r31;
+	@%p6 bra 	$Lt_0_5634;
+	mul.lo.u64 	%rd3, %rd1, 8;
+	add.u64 	%rd4, %rd2, %rd3;
+	ld.global.u16 	%r32, [%rd4+6];
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r32;
+	cvt.ftz.f32.f16	%f1, %b1; }
+	bra.uni 	$Lt_0_5378;
+$Lt_0_5634:
+	mul.lo.u64 	%rd5, %rd1, 16;
+	add.u64 	%rd6, %rd2, %rd5;
+	ld.global.f32 	%f1, [%rd6+12];
+$Lt_0_5378:
+	mov.f32 	%f2, %f1;
+	bra.uni 	$L_0_3586;
+$Lt_0_6402:
+$L_0_3842:
+	mov.f32 	%f2, 0f00000000;     	// 0
+$L_0_3586:
+	ld.param.u64 	%rd7, [__cudaparm_CreateShadowMask_inMask];
+	ld.param.s32 	%r33, [__cudaparm_CreateShadowMask_inMaskPitch];
+	mul.lo.s32 	%r34, %r33, %r10;
+	add.s32 	%r35, %r8, %r34;
+	cvt.s64.s32 	%rd8, %r35;
+	mul.wide.s32 	%rd9, %r35, 4;
+	add.u64 	%rd10, %rd7, %rd9;
+	st.global.f32 	[%rd10+0], %f2;
+$Lt_0_4866:
+	exit;
+$LDWend_CreateShadowMask:
+	} // CreateShadowMask
+
+	.entry CompositeShadowMask (
+		.param .u64 __cudaparm_CompositeShadowMask_inSrc,
+		.param .s32 __cudaparm_CompositeShadowMask_inSrcPitch,
+		.param .s32 __cudaparm_CompositeShadowMask_inSrcWidth,
+		.param .s32 __cudaparm_CompositeShadowMask_inSrcHeight,
+		.param .u64 __cudaparm_CompositeShadowMask_inMask,
+		.param .s32 __cudaparm_CompositeShadowMask_inMaskPitch,
+		.param .u64 __cudaparm_CompositeShadowMask_outDest,
+		.param .s32 __cudaparm_CompositeShadowMask_inDestPitch,
+		.param .s32 __cudaparm_CompositeShadowMask_inDestWidth,
+		.param .s32 __cudaparm_CompositeShadowMask_inDestHeight,
+		.param .s32 __cudaparm_CompositeShadowMask_inSrcOffsetX,
+		.param .s32 __cudaparm_CompositeShadowMask_inSrcOffsetY,
+		.param .u32 __cudaparm_CompositeShadowMask_inDeviceFormat,
+		.param .f32 __cudaparm_CompositeShadowMask_inColorB,
+		.param .f32 __cudaparm_CompositeShadowMask_inColorG,
+		.param .f32 __cudaparm_CompositeShadowMask_inColorR,
+		.param .f32 __cudaparm_CompositeShadowMask_inOpacity,
+		.param .s32 __cudaparm_CompositeShadowMask_inShadowOnly)
+	{
+	.reg .u32 %r<53>;
+	.reg .u64 %rd<18>;
+	.reg .f32 %f<35>;
+	.reg .pred %p<10>;
+$LDWbegin_CompositeShadowMask:
+	mov.u32 	%r1, %ctaid.x;
+	mov.u32 	%r2, %ntid.x;
+	mul.lo.u32 	%r3, %r1, %r2;
+	mov.u32 	%r4, %ctaid.y;
+	mov.u32 	%r5, %ntid.y;
+	mul.lo.u32 	%r6, %r4, %r5;
+	mov.u32 	%r7, %tid.x;
+	add.u32 	%r8, %r7, %r3;
+	mov.u32 	%r9, %tid.y;
+	add.u32 	%r10, %r9, %r6;
+	ld.param.s32 	%r11, [__cudaparm_CompositeShadowMask_inDestWidth];
+	set.gt.u32.s32 	%r12, %r11, %r8;
+	neg.s32 	%r13, %r12;
+	ld.param.s32 	%r14, [__cudaparm_CompositeShadowMask_inDestHeight];
+	set.gt.u32.s32 	%r15, %r14, %r10;
+	neg.s32 	%r16, %r15;
+	and.b32 	%r17, %r13, %r16;
+	mov.u32 	%r18, 0;
+	setp.eq.s32 	%p1, %r17, %r18;
+	@%p1 bra 	$Lt_1_9218;
+	ld.param.u64 	%rd1, [__cudaparm_CompositeShadowMask_inMask];
+	ld.param.s32 	%r19, [__cudaparm_CompositeShadowMask_inMaskPitch];
+	mul.lo.s32 	%r20, %r19, %r10;
+	add.s32 	%r21, %r8, %r20;
+	cvt.s64.s32 	%rd2, %r21;
+	mul.wide.s32 	%rd3, %r21, 4;
+	add.u64 	%rd4, %rd1, %rd3;
+	ld.global.f32 	%f1, [%rd4+0];
+	ld.param.f32 	%f2, [__cudaparm_CompositeShadowMask_inOpacity];
+	mul.ftz.f32 	%f3, %f2, %f1;
+	ld.param.s32 	%r22, [__cudaparm_CompositeShadowMask_inShadowOnly];
+	mov.u32 	%r23, 0;
+	setp.eq.s32 	%p2, %r22, %r23;
+	@%p2 bra 	$Lt_1_7938;
+	ld.param.f32 	%f4, [__cudaparm_CompositeShadowMask_inColorB];
+	ld.param.f32 	%f5, [__cudaparm_CompositeShadowMask_inColorG];
+	ld.param.f32 	%f6, [__cudaparm_CompositeShadowMask_inColorR];
+	mov.f32 	%f7, %f3;
+	ld.param.u32 	%r24, [__cudaparm_CompositeShadowMask_inDeviceFormat];
+	mov.s32 	%r25, 0;
+	setp.eq.s32 	%p3, %r24, %r25;
+	bra.uni 	$Lt_1_8706;
+$Lt_1_7938:
+	ld.param.s32 	%r26, [__cudaparm_CompositeShadowMask_inSrcOffsetX];
+	sub.s32 	%r27, %r8, %r26;
+	mov.u32 	%r28, 0;
+	setp.lt.s32 	%p4, %r27, %r28;
+	@%p4 bra 	$Lt_1_10242;
+	ld.param.s32 	%r29, [__cudaparm_CompositeShadowMask_inSrcWidth];
+	setp.le.s32 	%p5, %r29, %r27;
+	@%p5 bra 	$Lt_1_10242;
+	ld.param.s32 	%r30, [__cudaparm_CompositeShadowMask_inSrcOffsetY];
+	sub.s32 	%r31, %r10, %r30;
+	mov.u32 	%r32, 0;
+	setp.lt.s32 	%p6, %r31, %r32;
+	@%p6 bra 	$Lt_1_10242;
+	ld.param.s32 	%r33, [__cudaparm_CompositeShadowMask_inSrcHeight];
+	setp.le.s32 	%p7, %r33, %r31;
+	@%p7 bra 	$Lt_1_10242;
+	ld.param.u32 	%r34, [__cudaparm_CompositeShadowMask_inDeviceFormat];
+	mov.s32 	%r35, 0;
+	setp.eq.s32 	%p3, %r34, %r35;
+	ld.param.s32 	%r36, [__cudaparm_CompositeShadowMask_inSrcPitch];
+	mul.lo.s32 	%r37, %r36, %r31;
+	add.s32 	%r38, %r27, %r37;
+	cvt.s64.s32 	%rd5, %r38;
+	ld.param.u64 	%rd6, [__cudaparm_CompositeShadowMask_inSrc];
+	@!%p3 bra 	$Lt_1_8450;
+	mul.lo.u64 	%rd7, %rd5, 8;
+	add.u64 	%rd8, %rd6, %rd7;
+	ld.global.v4.u16 	{%r39,%r40,%r41,%r42}, [%rd8+0];
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r39;
+	cvt.ftz.f32.f16	%f8, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r40;
+	cvt.ftz.f32.f16	%f9, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r41;
+	cvt.ftz.f32.f16	%f10, %b1; }
+	{ .reg .b32 %b1;
+	mov.b32		%b1, %r42;
+	cvt.ftz.f32.f16	%f11, %b1; }
+	bra.uni 	$Lt_1_8194;
+$Lt_1_8450:
+	mul.lo.u64 	%rd9, %rd5, 16;
+	add.u64 	%rd10, %rd6, %rd9;
+	ld.global.v4.f32 	{%f8,%f9,%f10,%f11}, [%rd10+0];
+$Lt_1_8194:
+	mov.f32 	%f12, %f8;
+	mov.f32 	%f13, %f9;
+	mov.f32 	%f14, %f10;
+	mov.f32 	%f15, %f11;
+	bra.uni 	$L_1_5890;
+$Lt_1_10242:
+$L_1_6146:
+	ld.param.u32 	%r43, [__cudaparm_CompositeShadowMask_inDeviceFormat];
+	mov.s32 	%r44, 0;
+	setp.eq.s32 	%p3, %r43, %r44;
+	mov.f32 	%f15, 0f00000000;    	// 0
+	mov.f32 	%f14, 0f00000000;    	// 0
+	mov.f32 	%f13, 0f00000000;    	// 0
+	mov.f32 	%f12, 0f00000000;    	// 0
+$L_1_5890:
+	cvt.ftz.sat.f32.f32 	%f15, %f15;
+	mov.f32 	%f16, 0f3f800000;    	// 1
+	sub.ftz.f32 	%f17, %f16, %f15;
+	cvt.ftz.sat.f32.f32 	%f18, %f3;
+	mul.ftz.f32 	%f19, %f17, %f18;
+	add.ftz.f32 	%f20, %f19, %f15;
+	mov.f32 	%f21, 0fb70637bd;    	// -8e-006
+	add.ftz.f32 	%f22, %f20, %f21;
+	mov.f32 	%f23, 0f00000000;    	// 0
+	setp.le.ftz.f32 	%p8, %f22, %f23;
+	@!%p8 bra 	$Lt_1_8962;
+	mov.f32 	%f6, 0f00000000;     	// 0
+	mov.f32 	%f5, 0f00000000;     	// 0
+	mov.f32 	%f4, 0f00000000;     	// 0
+	mov.f32 	%f7, 0f00000000;     	// 0
+	bra.uni 	$Lt_1_8706;
+$Lt_1_8962:
+	mov.f32 	%f7, %f20;
+	rcp.approx.ftz.f32 	%f24, %f20;
+	mul.ftz.f32 	%f25, %f15, %f12;
+	ld.param.f32 	%f26, [__cudaparm_CompositeShadowMask_inColorB];
+	fma.rn.ftz.f32 	%f27, %f26, %f19, %f25;
+	mul.ftz.f32 	%f4, %f24, %f27;
+	mul.ftz.f32 	%f28, %f15, %f13;
+	ld.param.f32 	%f29, [__cudaparm_CompositeShadowMask_inColorG];
+	fma.rn.ftz.f32 	%f30, %f19, %f29, %f28;
+	mul.ftz.f32 	%f5, %f24, %f30;
+	mul.ftz.f32 	%f31, %f15, %f14;
+	ld.param.f32 	%f32, [__cudaparm_CompositeShadowMask_inColorR];
+	fma.rn.ftz.f32 	%f33, %f19, %f32, %f31;
+	mul.ftz.f32 	%f6, %f24, %f33;
+$Lt_1_8706:
+$Lt_1_7682:
+	ld.param.s32 	%r45, [__cudaparm_CompositeShadowMask_inDestPitch];
+	mul.lo.s32 	%r46, %r45, %r10;
+	add.s32 	%r47, %r8, %r46;
+	cvt.s64.s32 	%rd11, %r47;
+	ld.param.u64 	%rd12, [__cudaparm_CompositeShadowMask_outDest];
+	@!%p3 bra 	$Lt_1_9474;
+	mul.lo.u64 	%rd13, %rd11, 8;
+	add.u64 	%rd14, %rd12, %rd13;
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f4;
+	mov.b32		%r48, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f5;
+	mov.b32		%r49, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f6;
+	mov.b32		%r50, %b1; }
+	{ .reg .b32 %b1;
+	cvt.rn.ftz.f16.f32	%b1, %f7;
+	mov.b32		%r51, %b1; }
+	st.global.v4.u16 	[%rd14+0], {%r48,%r49,%r50,%r51};
+	bra.uni 	$Lt_1_9218;
+$Lt_1_9474:
+	mul.lo.u64 	%rd15, %rd11, 16;
+	add.u64 	%rd16, %rd12, %rd15;
+	st.global.v4.f32 	[%rd16+0], {%f4,%f5,%f6,%f7};
+$Lt_1_9218:
+$Lt_1_7170:
+	exit;
+$LDWend_CompositeShadowMask:
+	} // CompositeShadowMask
+

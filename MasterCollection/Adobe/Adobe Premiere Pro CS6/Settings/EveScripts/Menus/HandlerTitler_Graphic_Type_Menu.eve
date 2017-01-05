@@ -1,0 +1,17 @@
+layout my_menu
+{
+	view menu(id:21615)
+	{
+		menu(text:'$$$/Premiere/Menu/21615/Rectangle=Rectangle', id:1);
+		menu(text:'$$$/Premiere/Menu/21615/Ellipse=Ellipse', id:2);
+		menu(text:'$$$/Premiere/Menu/21615/Arc=Arc', id:3);
+		menu(text:'$$$/Premiere/Menu/21615/Wedge=Wedge', id:4);
+		menu(text:'$$$/Premiere/Menu/21615/RoundedCornerRectangle=Rounded Corner Rectangle', id:5);
+		menu(text:'$$$/Premiere/Menu/21615/ClippedCornerRectangle=Clipped Corner Rectangle', id:6);
+		menu(text:'$$$/Premiere/Menu/21615/RoundRectangle=Round Rectangle', id:7);
+		menu(text:'$$$/Premiere/Menu/21615/Logo=Logo', id:8);
+		menu(text:'$$$/Premiere/Menu/21615/OpenBezier=Open Bezier', id:9);
+		menu(text:'$$$/Premiere/Menu/21615/ClosedBezier=Closed Bezier', id:10);
+		menu(text:'$$$/Premiere/Menu/21615/FilledBezier=Filled Bezier', id:11);
+	}
+}

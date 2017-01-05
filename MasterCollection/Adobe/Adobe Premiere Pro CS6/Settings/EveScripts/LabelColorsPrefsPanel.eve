@@ -1,0 +1,31 @@
+layout LabelColors
+{
+	view dva_panel_view(name: '$$$/Premiere/DLG/PrefsDialog/kResDLGLabelColors=Label Colors', identifier: 'prefsLabelColors', guide_mask:[@guide_label, @guide_baseline])
+	{
+		row()
+		{
+			column()
+			{
+				dva_text_edit(identifier:'colorET0', minWidth:140, minHeigth:20);
+				dva_text_edit(identifier:'colorET1', minWidth:140, minHeigth:20);
+				dva_text_edit(identifier:'colorET2', minWidth:140, minHeigth:20);
+				dva_text_edit(identifier:'colorET3', minWidth:140, minHeigth:20);
+				dva_text_edit(identifier:'colorET4', minWidth:140, minHeigth:20);
+				dva_text_edit(identifier:'colorET5', minWidth:140, minHeigth:20);
+				dva_text_edit(identifier:'colorET6', minWidth:140, minHeigth:20);
+				dva_text_edit(identifier:'colorET7', minWidth:140, minHeigth:20);
+			}
+			column()
+			{
+				dva_static_text(identifier:'colorButton0', minWidth:80);
+				dva_static_text(identifier:'colorButton1', minWidth:80);
+				dva_static_text(identifier:'colorButton2', minWidth:80);
+				dva_static_text(identifier:'colorButton3', minWidth:80);
+				dva_static_text(identifier:'colorButton4', minWidth:80);
+				dva_static_text(identifier:'colorButton5', minWidth:80);
+				dva_static_text(identifier:'colorButton6', minWidth:80);
+				dva_static_text(identifier:'colorButton7', minWidth:80);
+			}
+		}
+	}
+}

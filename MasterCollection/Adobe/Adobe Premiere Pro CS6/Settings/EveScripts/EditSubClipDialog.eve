@@ -1,0 +1,58 @@
+layout my_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/EditSubclipDialog/kResDLGEditSubclipDialogTitle=Edit Subclip', identifier:'EditSubClipDialog')
+	{
+		row(child_horizontal: align_fill, horizontal: align_fill, vertical: align_fill, spacing:15)
+		{
+			column(horizontal:align_fill, child_horizontal: align_fill, vertical: align_fill)
+			{
+				dva_groupbox(identifier:'masterClipGroupBox', name:'$$$/Premiere/DLG/EditSubclipDialog/kResDLGMasterClip=Master Clip', headerType:'static_text')
+				{
+					row()
+					{
+						column()
+						{
+							dva_static_text(identifier:'startMasterClipTimecodeStaticText', name:'00;00;00;00000', label:'$$$/Premiere/DLG/EditSubclipDialog/kResDLGStart=Start:');
+						}
+						column()
+						{
+							dva_static_text(identifier:'endMasterClipTimecodeStaticText', name:'00;00;00;00000', label:'$$$/Premiere/DLG/EditSubclipDialog/kResDLGEnd=End:');
+							dva_static_text(identifier:'durationMasterClipTimecodeStaticText', name:'00;00;00;00000', label:'$$$/Premiere/DLG/EditSubclipDialog/kResDLGDuration=Duration:');
+						}
+					}
+				}
+				dva_groupbox(identifier:'SubClipGroupBox', name:'$$$/Premiere/DLG/EditSubclipDialog/kResDLGSubclip=Subclip', headerType:'static_text')
+				{
+					row()
+					{
+						column()
+						{
+							dva_subview(identifier: 'subclipStartTimecodeControl', minWidth:90, minHeight:20, label:'$$$/Premiere/DLG/EditSubclipDialog/kResDLGStart=Start:');
+							dva_static_text(identifier:'startShiftSubclipTimecodeStaticText', name:'+00;00;00;00000 ', label:'$$$/Premiere/DLG/EditSubclipDialog/kResDLGStartShift=Start Shift:');
+						}
+						column()
+						{
+							dva_subview(identifier: 'subclipEndTimecodeControl', minWidth:90, minHeight:20, label:'$$$/Premiere/DLG/EditSubclipDialog/kResDLGEnd=End:');
+							dva_static_text(identifier:'endShiftSubclipTimecodeStaticText', name:'+00;00;00;00000 ', label:'$$$/Premiere/DLG/EditSubclipDialog/kResDLGEndShift=End Shift:');
+							dva_static_text(identifier:'durationSubclipTimecodeStaticText', name:'00;00;00;00000', label:'$$$/Premiere/DLG/EditSubclipDialog/kResDLGDuration=Duration:');
+						}
+					}
+					row()
+					{
+						dva_checkbox(identifier:'convertToMasterClipCheckbox', name:'$$$/Premiere/DLG/SetNumberedMarkerDialog/kResDLGConvertToMasterClip=Convert to Master Clip');
+					}
+				}
+			}
+			column(guide_mask:[@guide_baseline])
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);
+			}
+		}
+		row()
+		{
+			dva_static_image(identifier:'infoGraphic', minWidth: 40, minHeight: 40);
+			dva_static_text(identifier:'subclipsNoteStaticText', maxWidth:380, multiLine:'true', name:'$$$/Premiere/DLG/EditMarkerDialog/kResDLGSubclipNote=When subclips are used in a sequence, shifting the subclip Start/End is restricted to prevent frames from being eliminated in the sequence.', horizontal:align_fill, minHeight:40);
+		}
+	}
+}
+

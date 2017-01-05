@@ -1,0 +1,29 @@
+layout my_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/ColorMatteNameDialog/kResDLGColorMatteNameDialogTitle=Choose Name', identifier:'ColorMatteNameDialog', spacing: 6)
+	{
+		column(child_horizontal: align_fill, horizontal: align_fill, vertical: align_fill, spacing:10)
+		{
+			row(child_horizontal: align_left, horizontal: align_fill, spacing:10)
+			{
+				dva_static_text(
+					identifier:'nameTextLabel', 
+					horizontal:align_left, 
+					label:'$$$/Premiere/DLG/ColorMatteNameDialog/kResDLGChooseNameForMatte=Choose name for new matte:');
+			}
+			row(child_horizontal: align_fill, horizontal: align_fill, spacing:10)
+			{
+				dva_text_edit(
+					identifier:'nameTextEdit', 
+					minWidth:160, 
+					minHeight:20,  
+					horizontal:align_left, 
+					setAsFocused:'true');
+			}
+			row(child_horizontal: align_right, vertical: align_fill, child_vertical:align_fill)
+			{
+				dva_ok_cancel_row(minWidth:80, minHeight:20);
+			}
+		}
+	}
+}

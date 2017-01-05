@@ -1,0 +1,33 @@
+layout my_menu
+{
+	view menu(id:18482)
+	{
+		menu(text:'$$$/Premiere/Menu/18482/Undo=Undo', idName:'cmd.edit.undo');
+		separator();
+		menu(text:'$$$/Premiere/Menu/18482/Cut=Cut', idName:'cmd.edit.cut');
+		menu(text:'$$$/Premiere/Menu/18482/Copy=Copy', idName:'cmd.edit.copy');
+		menu(text:'$$$/Premiere/Menu/18482/Paste=Paste', idName:'cmd.edit.paste');
+		menu(text:'$$$/Premiere/Menu/18482/Clear=Clear', idName:'cmd.edit.clear');
+		separator();
+		menu(text:'$$$/Premiere/Menu/18482/SelectAll=Select All', idName:'cmd.edit.selectall');
+		separator();
+		menu(text:'$$$/Premiere/Menu/18482/TemporalInterpolation=Temporal Interpolation')
+		{
+				menu(text:'$$$/Premiere/Menu/18482/TemporalInterpolation/Linear=Linear', idName:'cmd.effectcontrols.interpolation.linear');
+				menu(text:'$$$/Premiere/Menu/18482/TemporalInterpolation/Bezier=Bezier', idName:'cmd.effectcontrols.interpolation.bezier');
+				menu(text:'$$$/Premiere/Menu/18482/TemporalInterpolation/AutoBezier=Auto Bezier', idName:'cmd.effectcontrols.interpolation.bezier.auto');
+				menu(text:'$$$/Premiere/Menu/18482/TemporalInterpolation/ContinuousBezier=Continuous Bezier', idName:'cmd.effectcontrols.interpolation.bezier.continuous');
+				menu(text:'$$$/Premiere/Menu/18482/TemporalInterpolation/Hold=Hold', idName:'cmd.effectcontrols.interpolation.hold');
+				separator();
+				menu(text:'$$$/Premiere/Menu/18482/TemporalInterpolation/EaseIn=Ease In', idName:'cmd.effectcontrols.interpolation.easein');
+				menu(text:'$$$/Premiere/Menu/18482/TemporalInterpolation/EaseOut=Ease Out', idName:'cmd.effectcontrols.interpolation.easeout');
+		}
+		menu(text:'$$$/Premiere/Menu/18482/SpatialInterpolation=Spatial Interpolation')
+		{
+				menu(text:'$$$/Premiere/Menu/18482/SpatialInterpolation/Linear=Linear', idName:'cmd.effectcontrols.interpolation.spatial.linear');
+				menu(text:'$$$/Premiere/Menu/18482/SpatialInterpolation/Bezier=Bezier', idName:'cmd.effectcontrols.interpolation.spatial.bezier');
+				menu(text:'$$$/Premiere/Menu/18482/SpatialInterpolation/AutoBezier=Auto Bezier', idName:'cmd.effectcontrols.interpolation.spatial.bezier.auto');
+				menu(text:'$$$/Premiere/Menu/18482/SpatialInterpolation/ContinuousBezier=Continuous Bezier', idName:'cmd.effectcontrols.interpolation.spatial.bezier.continuous');
+		}
+	}
+}

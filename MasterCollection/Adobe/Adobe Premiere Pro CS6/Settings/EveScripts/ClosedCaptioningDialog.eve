@@ -1,0 +1,26 @@
+layout my_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/kResDLGClosedCaptioningTitle=Closed Captioning Display Settings', identifier:'ClosedCaptioningDialog')
+	{
+		column(child_horizontal: align_right, horizontal: align_right)
+		{
+			dva_popup(identifier:'analogPopup', label:'$$$/Premiere/DLG/ClosedCaptioningDialog/kRes608=Analog (CEA-608):', minWidth:200, topSpace:3)
+			{
+				dva_popup_item(identifier:'CC1MenuItem', name:'$$$/Premiere/DLG/ClosedCaptioningDialog/kResDLGCC1=CC1');
+				dva_popup_item(identifier:'CC1MenuItem', name:'$$$/Premiere/DLG/ClosedCaptioningDialog/kResDLGCC2=CC2');
+				dva_popup_item(identifier:'CC1MenuItem', name:'$$$/Premiere/DLG/ClosedCaptioningDialog/kResDLGCC3=CC3');
+				dva_popup_item(identifier:'CC1MenuItem', name:'$$$/Premiere/DLG/ClosedCaptioningDialog/kResDLGCC4=CC4');
+			}
+			dva_popup(identifier:'digitalPopup', label:'$$$/Premiere/DLG/ClosedCaptioningDialog/kRes708=Digital (CEA-708):', minWidth:200, topSpace:3)
+			{
+				dva_popup_item(identifier:'service1MenuItem', name:'$$$/Premiere/DLG/ClosedCaptioningDialog/kResDLGService1=Service 1');
+				dva_popup_item(identifier:'service2MenuItem', name:'$$$/Premiere/DLG/ClosedCaptioningDialog/kResDLGService2=Service 2');
+				dva_popup_item(identifier:'service3MenuItem', name:'$$$/Premiere/DLG/ClosedCaptioningDialog/kResDLGService3=Service 3');
+				dva_popup_item(identifier:'service4MenuItem', name:'$$$/Premiere/DLG/ClosedCaptioningDialog/kResDLGService4=Service 4');
+				dva_popup_item(identifier:'service5MenuItem', name:'$$$/Premiere/DLG/ClosedCaptioningDialog/kResDLGService5=Service 5');
+				dva_popup_item(identifier:'service6MenuItem', name:'$$$/Premiere/DLG/ClosedCaptioningDialog/kResDLGService6=Service 6');
+			}
+			dva_ok_cancel_row();
+		}
+	}
+} 

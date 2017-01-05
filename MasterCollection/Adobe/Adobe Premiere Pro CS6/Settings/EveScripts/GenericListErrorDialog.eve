@@ -1,0 +1,27 @@
+layout genericListErrorDialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/GenericListErrorDialog/kResDLGError=Error', identifier:'genericListErrorDialog', canResize:'true')
+	{
+		row(child_horizontal: align_left, horizontal: align_fill, spacing:15)
+		{
+			dva_listbox(identifier:'errorListbox', minWidth:500, minHeight:100, horizontal:align_left, direction:'vertical');
+		}
+		row(horizontal:align_fill, child_horizontal:align_fill)
+		{
+			dva_groupbox(identifier:'errorMessageGroupBox', name:'$$$/Premiere/DLG/GenericListErrorDialog/kResDLGErrorMessage=Error Message', headerType:'static_text', topFrame:4)
+			{
+				dva_static_text(
+					identifier:'errorMessageStaticText', 
+					name:'place holder string', 
+					horizontal:align_fill,
+					maxWidth:420, 
+					minHeight:40, 
+					multiLine:'true');
+			}
+		}
+		row(child_horizontal: align_left, horizontal: align_fill, spacing:15)
+		{
+			dva_button(name: '$$$/Premiere/DLG/kResDLGOK=OK', identifier:'okButton', default: true, setAsFocused:'true', minWidth:80, horizontal:align_center); 
+		}
+	}
+}

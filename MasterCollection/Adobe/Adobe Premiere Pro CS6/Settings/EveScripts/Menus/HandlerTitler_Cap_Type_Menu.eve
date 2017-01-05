@@ -1,0 +1,9 @@
+layout my_menu
+{
+	view menu(id:21613)
+	{
+		menu(text:'$$$/Premiere/Menu/21613/Butt=Butt', id:1);
+		menu(text:'$$$/Premiere/Menu/21613/Round=Round', id:2);
+		menu(text:'$$$/Premiere/Menu/21613/Square=Square', id:3);
+	}
+}

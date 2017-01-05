@@ -1,0 +1,51 @@
+layout Audio
+{
+	view dva_panel_view(name: '$$$/Premiere/DLG/PrefsDialog/kResDLGAudio=Audio', identifier: 'prefsAudio', guide_mask:[@guide_label, @guide_baseline])
+	{
+		row()
+		{
+			dva_static_text(identifier:'automatchST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGAutomatchTime=Automatch Time:');
+			dva_number_edit(identifier:'automatchET',  minValue:0.001, maxValue:5, decimalPlaces:3, minWidth:80,minHeight:20);
+			dva_static_text(identifier:'automatchUnitsST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGSeconds=seconds');
+		}
+		row(guide_mask:[@guide_label])
+		{
+			dva_popup(identifier:'51mixdownPopup', minWidth:140, minHeigth:20, label: '$$$/Premiere/DLG/PrefsDialog/kResDLGFiveOneMixdown=5.1 Mixdown Type:')
+			{
+				dva_popup_item(identifier:'mixdownItem1', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGFrontOnly=Front Only');
+				dva_popup_item(identifier:'mixdownItem2', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGFrontPlusRear=Front + Rear');
+				dva_popup_item(identifier:'mixdownItem3', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGFrontPlusLFE=Front + LFE');
+				dva_popup_item(identifier:'mixdownItem4', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGFrontPlusRearPlusLFE=Front + Rear + LFE');
+			}
+		}
+		dva_checkbox(identifier:'playAudioCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGPlayAudioWhileScrubbing=Play audio while scrubbing', minHeight:16);
+		dva_checkbox(identifier:'muteInputCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGMuteInputDuringRecording=Mute input during timeline recording', minHeight:16);
+		row(guide_mask:[@guide_label])
+		{
+			dva_groupbox(identifier: 'sourceChannelMappingGB', name: '$$$/Premiere/DLG/PrefsDialog/kResDLGDefaultAudioTracks=Default Audio Tracks', headerType:'static_text')
+			{
+				column()
+				{
+					dva_popup(identifier:'defMonoTrackFormatPopup', minWidth:140, minHeigth:20, label: '$$$/Premiere/DLG/PrefsDialog/kResDLGMasterClipAudioChannelsMono=Mono Media:');
+					dva_popup(identifier:'defStereoTrackFormatPopup', minWidth:140, minHeigth:20, label: '$$$/Premiere/DLG/PrefsDialog/kResDLGMasterClipAudioChannelsStereo=Stereo Media:');
+					dva_popup(identifier:'def51TrackFormatPopup', minWidth:140, minHeigth:20, label: '$$$/Premiere/DLG/PrefsDialog/kResDLGMasterClipAudioChannels51=5.1 Media:');
+					dva_popup(identifier:'defMultiMonoTrackFormatPopup', minWidth:140, minHeigth:20, label: '$$$/Premiere/DLG/PrefsDialog/kResDLGMasterClipAudioChannelsMultiMono=Multichannel Mono Media:');
+				}
+			}
+		}											
+		row()
+		{
+			dva_groupbox(identifier: 'autoKeyframeGB', name: '$$$/Premiere/DLG/PrefsDialog/kResDLGAutomationKeyframeOptimization=Automation Keyframe Optimization', headerType:'static_text', minWidth:320)
+			{
+				dva_checkbox(identifier:'linearKeyCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGLinearKeyframeThinning=Linear keyframe thinning', minHeight:16);
+				dva_checkbox(identifier:'minimumTimeCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGMinimumTimeThinning=Minimum time interval thinning', minHeight:16);
+				row()
+				{
+					dva_static_text(identifier:'minimumTimeST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGMinimumTime=Minimum time:');
+					dva_number_edit(identifier:'minimumTimeET', minValue:1, maxValue:2000, decimalPlaces:0, minWidth:80,minHeight:20);
+					dva_static_text(identifier:'minimumTimeUnitsST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGMSeconds=milliseconds');
+				}
+			}
+		}											
+	}
+}

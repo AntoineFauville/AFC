@@ -1,0 +1,27 @@
+layout CaptureSettings
+{
+	column(horizontal: align_fill, vertical: align_fill)
+	{			
+		dva_groupbox(name:'$$$/Premiere/DLG/ProjectSettings/GeneralTab/CaptureGroup=Capture', identifier:'captureGroup', horizontal: align_fill, minWidth: 400)
+		{
+			row(minWidth: 400, horizontal: align_fill)
+			{
+				dva_popup(label: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/CaptureFormat=Capture Format:', identifier: 'captureFormatPopup', minWidth: 240);
+				dva_button(name: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/CustomCaptureButton1=CAPTURE1', identifier: 'captureButton1', minWidth: 80, horizontal: align_right);
+			}
+			row(horizontal: align_right)
+			{
+				dva_button(name: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/CustomCaptureButton2=CAPTURE2', identifier: 'captureButton2', minWidth: 80);
+			}
+			row(horizontal: align_right)
+			{
+				dva_button(name: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/CustomCaptureButton3=CAPTURE3', identifier: 'captureButton3', minWidth: 80);
+			}
+			
+			row(horizontal: align_right)
+			{
+				dva_button(name: '$$$/Premiere/DLG/ProjectSettings/GeneralTab/CustomCaptureButton4=CAPTURE4', identifier: 'captureButton4', minWidth: 80);
+			}
+		}
+	}
+}

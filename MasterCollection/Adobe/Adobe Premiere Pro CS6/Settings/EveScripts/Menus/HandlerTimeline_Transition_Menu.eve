@@ -1,0 +1,7 @@
+layout my_menu
+{
+	view menu(id:5504)
+	{
+		menu(text:'$$$/Premiere/Menu/5504/Clear=Clear', idName:'cmd.edit.clear');
+	}
+}

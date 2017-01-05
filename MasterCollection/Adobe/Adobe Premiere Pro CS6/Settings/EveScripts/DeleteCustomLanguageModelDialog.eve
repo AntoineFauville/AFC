@@ -1,0 +1,14 @@
+layout DeleteCustomLanguageModelDialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/DeleteCustomLanguageModelDialog/DeleteDialog=Remove Reference Script', identifier:'DeleteCustomLanguageModelDialog')
+	{
+		row(child_horizontal:align_fill, horizontal:align_fill, spacing:15)
+		{
+			column()
+			{	
+				dva_popup(identifier:'scriptPopup', minWidth:150, minHeight:20, label:'$$$/Premiere/DLG/DeleteCustomLanguageModelDialog/kResDLGReferenceScript=Reference Script:');
+				dva_ok_cancel_row(minWidth:80, minHeight:20);
+			}
+		}	
+	}
+}

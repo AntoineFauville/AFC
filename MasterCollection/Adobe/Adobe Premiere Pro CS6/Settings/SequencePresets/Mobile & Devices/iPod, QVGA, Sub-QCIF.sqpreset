@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PremiereData Version="3">
+	<SequencePreset ObjectRef="1"/>
+	<SequencePreset ObjectID="1" ClassID="5e73dd7e-4f86-4917-80eb-08ddb2f4a5f3" Version="1">
+		<InitialNumberOfFiveOneSubmixTracks>0</InitialNumberOfFiveOneSubmixTracks>
+		<InitialNumberOfStereoSubmixTracks>0</InitialNumberOfStereoSubmixTracks>
+		<InitialNumberOfMonoSubmixTracks>0</InitialNumberOfMonoSubmixTracks>
+		<InitialNumberOfFiveOneTracks>0</InitialNumberOfFiveOneTracks>
+		<InitialNumberOfStereoTracks>3</InitialNumberOfStereoTracks>
+		<InitialNumberOfMonoTracks>0</InitialNumberOfMonoTracks>
+		<InitialNumberOfVideoTracks>3</InitialNumberOfVideoTracks>
+		<PreviewPresetVideoCodec.Win>1129730893</PreviewPresetVideoCodec.Win>
+		<PreviewPresetVideoCodec.Mac>1835692082</PreviewPresetVideoCodec.Mac>
+		<PreviewPresetFileName.Win>Microsoft AVI</PreviewPresetFileName.Win>
+		<PreviewPresetFileName.Mac>QuickTime</PreviewPresetFileName.Mac>
+		<VideoUseMaxBitDepth>false</VideoUseMaxBitDepth>
+		<VideoPixelAspectRatio>1,1</VideoPixelAspectRatio>
+		<EditingModeGUID.Win>9678AF98-A7B7-4bdb-B477-7AC9C8DF4A4E</EditingModeGUID.Win>
+		<EditingModeGUID.Mac>795454d9-d3c2-429d-9474-923ab13b7018</EditingModeGUID.Mac>
+		<Descriptions Version="1">
+			<DescriptionItem Version="1" Index="0">
+				<Second>Format de montage VGA 640x480 pour la création de contenu 4:3 destiné à être lu sur des appareils mobiles prenant en charge les vidéos QVGA ou Sub-QCIF.&#13;&#13;Faites le montage à une taille d’image supérieure, puis utilisez les préconfigurations appropriées dans Adobe Media Encoder pour obtenir une taille d'image de sortie de 320x240 ou 128x96.</Second>
+				<First>fr_FR</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>640 x 480 の VGA サイズ編集形式。QVGA または Sub-QCIF ビデオ対応のモバイルデバイスでの再生を目的とした 4:3 コンテンツのオーサリング用。&#13;&#13;編集しやすい大きいフレームサイズでプロジェクトを編集し、Adobe Media Encoder で適切なプリセットを使用してフレームサイズ 320 x 240 または 128 x 96 のファイルを出力します。</Second>
+				<First>ja_JP</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Formato di modifica VGA 640x480 per authoring di contenuti 4:3 per la riproduzione su dispositivi mobili con supporto di video QVGA o Sub-QCIF.&#13;&#13;Lavorate con questa dimensione di fotogrammi maggiore, quindi usate il predefinito adeguato in Adobe Media Encoder per generare file con dimensione fotogrammi da 320x240 o 128x96.</Second>
+				<First>it_IT</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>640 x 480-VGA-Bearbeitungsformat für das Authoring von 4:3-Inhalten, die ausschließlich auf mobilen Geräten mit QVGA- oder Sub-QCIF-Videounterstützung wiedergegeben werden sollen.&#13;&#13;Bearbeiten Sie die Inhalte in dieser größeren Framegröße und verwenden Sie dann die entsprechenden Vorgaben in Adobe Media Encoder, um Dateien mit der Framegröße 320 x 240 oder 128 x 96 auszugeben.</Second>
+				<First>de_DE</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Formato de edición VGA 640 x 480 para creación de contenido 4:3 destinado a la reproducción en dispositivos móviles que admitan vídeo QVGA o Sub-QCIF.&#13;&#13;Edite a este tamaño de fotograma mayor; a continuación, use los ajustes preestablecidos correspondientes de Adobe Media Encoder para reproducir archivos en tamaños de fotograma de 320 x 240 o 128 x 96.</Second>
+				<First>es_ES</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>4:3 콘텐트를 제작하는 640x480 VGA 편집 형식은 QVGA 또는 Sub-QCIF 비디오를 지원하는 모바일 장치에서 재생하기 위한 것입니다.&#13;&#13;나중에 더 큰 프레임 크기로 편집하려면 Adobe Media Encoder에서 적절한 사전 설정을 사용하여 320x240 또는 128x96 프레임 크기로 파일을 출력합니다.</Second>
+				<First>ko_KR</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>640x480 VGA editing format for authoring 4:3 content intended for playback on mobile devices supporting QVGA or Sub-QCIF video.&#13;&#13;Edit at this larger frame size, then use the appropriate presets in Adobe Media Encoder to output files at 320x240 or 128x96 frame sizes.</Second>
+				<First>en_US</First>
+			</DescriptionItem>
+		</Descriptions>
+		<Names Version="1">
+			<NameItem Version="1" Index="0">
+				<Second>iPod, QVGA, Sub-QCIF</Second>
+				<First>en_US</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>iPod, QVGA, Sub-QCIF</Second>
+				<First>de_DE</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>iPod, QVGA, Sub-QCIF</Second>
+				<First>fr_FR</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>iPod, QVGA, Sub-QCIF</Second>
+				<First>it_IT</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>iPod, QVGA, Sub-QCIF</Second>
+				<First>es_ES</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>iPod, QVGA, Sub-QCIF</Second>
+				<First>ko_KR</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>iPod、QVGA、Sub-QCIF</Second>
+				<First>ja_JP</First>
+			</NameItem>
+		</Names>
+		<VideoFieldType>0</VideoFieldType>
+		<AudioTimeDisplay>200</AudioTimeDisplay>
+		<VideoTimeDisplay>104</VideoTimeDisplay>
+		<AudioChannelType>1</AudioChannelType>
+		<AudioFrameRate>5292000</AudioFrameRate>
+		<VideoFrameSize>0,0,640,480</VideoFrameSize>
+		<VideoFrameRate>16934400000</VideoFrameRate>
+	</SequencePreset>
+</PremiereData>

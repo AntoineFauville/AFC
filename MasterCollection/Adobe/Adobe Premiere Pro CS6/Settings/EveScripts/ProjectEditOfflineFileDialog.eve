@@ -1,0 +1,48 @@
+layout ProjectEditOfflineFileDialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/ProjectEditOfflineDialog/kResDLGProjectEditOfflineDialogTitle=Edit Offline File', identifier:'ProjectEditOfflineFileDialog')
+	{
+		row(child_horizontal: align_fill, horizontal: align_fill, spacing:15)
+		{
+			column(child_horizontal: align_fill, horizontal: align_fill)
+			{
+				dva_groupbox(identifier:'generalGroupbox', name:'$$$/Premiere/DLG/ProjectEditOfflineDialog/kResDLGProjectEditOfflineDialogGeneralGroupBoxName=General', headerType:'static_text')
+				{
+					column()
+					{
+						dva_popup(identifier:'containsPopup', minWidth:220, label:'$$$/Premiere/DLG/ProjectEditOfflineDialog/kResDLGContains=Contains:');
+						dva_popup(identifier:'audioFormatPopup', minWidth:220, label:'$$$/Premiere/DLG/ProjectEditOfflineDialog/kResDLGAudioFormat=Audio Format:');
+						dva_text_edit(identifier:'tapeNameEditText', minWidth:220, minHeight:21, multiLine:'false', label:'$$$/Premiere/DLG/ProjectEditOfflineDialog/kResDLGTapeName=Tape Name:', setAsFocused:'true');
+						dva_text_edit(identifier:'filenameEditText', minWidth:220, minHeight:21, multiLine:'false', label:'$$$/Premiere/DLG/ProjectEditOfflineDialog/kResDLGFileName=File Name:');
+						dva_text_edit(identifier:'descriptionEditText', minWidth:220, minHeight:70, multiLine:'true', vertical_scroll: 'true', label:'$$$/Premiere/DLG/ProjectEditOfflineDialog/kResDLGDescription=Description:');
+						dva_text_edit(identifier:'sceneEditText', minWidth:220, minHeight:21, multiLine:'false', label:'$$$/Premiere/DLG/ProjectEditOfflineDialog/kResDLGScene=Scene:');
+						dva_text_edit(identifier:'shotTakeEditText', minWidth:220, minHeight:21, multiLine:'false', label:'$$$/Premiere/DLG/ProjectEditOfflineDialog/kResDLGShotTake=Shot/Take:');
+						dva_text_edit(identifier:'logNoteEditText', minWidth:220, minHeight:70, multiLine:'true', vertical_scroll: 'true', label:'$$$/Premiere/DLG/ProjectEditOfflineDialog/kResDLGLogNote=Log Note:');
+					}
+				}
+				dva_groupbox(identifier:'timecodeGroupbox', name:'$$$/Premiere/DLG/ProjectEditOfflineDialog/kResDLGProjectEditOfflineDialogTimecodeGroupBoxName=Timecode', headerType:'static_text')
+				{
+					row(child_horizontal: align_left, horizontal: align_left, spacing:0)
+					{
+						column()
+						{
+							dva_static_text(identifier:'s1', name:'$$$/Premiere/DLG/ProjectEditOfflineDialog/kResDLGMediaStart=Media Start:', horizontal:align_right);
+							dva_static_text(identifier:'s2', name:'$$$/Premiere/DLG/ProjectEditOfflineDialog/kResDLGMediaEnd=Media End:', horizontal:align_right);
+							dva_static_text(identifier:'s3', name:'$$$/Premiere/DLG/ProjectEditOfflineDialog/kResDLGMediaDuration=Media Duration:', horizontal:align_right);
+						}
+						column()
+						{
+							dva_subview(identifier: 'mediaStartTimecodeControl', minWidth:90, minHeight:20);
+							dva_subview(identifier: 'mediaEndTimecodeControl', minWidth:90, minHeight:20);
+							dva_subview(identifier: 'mediaDurationTimecodeControl', minWidth:90, minHeight:20);
+						}
+					}
+				}
+			}
+			column(vertical: align_fill, guide_mask:[@guide_baseline])
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);
+			}
+		}
+	}
+}

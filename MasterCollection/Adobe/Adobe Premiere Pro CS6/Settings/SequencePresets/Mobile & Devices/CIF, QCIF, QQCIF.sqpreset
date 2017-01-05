@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PremiereData Version="3">
+	<SequencePreset ObjectRef="1"/>
+	<SequencePreset ObjectID="1" ClassID="5e73dd7e-4f86-4917-80eb-08ddb2f4a5f3" Version="1">
+		<InitialNumberOfFiveOneSubmixTracks>0</InitialNumberOfFiveOneSubmixTracks>
+		<InitialNumberOfStereoSubmixTracks>0</InitialNumberOfStereoSubmixTracks>
+		<InitialNumberOfMonoSubmixTracks>0</InitialNumberOfMonoSubmixTracks>
+		<InitialNumberOfFiveOneTracks>0</InitialNumberOfFiveOneTracks>
+		<InitialNumberOfStereoTracks>3</InitialNumberOfStereoTracks>
+		<InitialNumberOfMonoTracks>0</InitialNumberOfMonoTracks>
+		<InitialNumberOfVideoTracks>3</InitialNumberOfVideoTracks>
+		<PreviewPresetVideoCodec.Win>1129730893</PreviewPresetVideoCodec.Win>
+		<PreviewPresetVideoCodec.Mac>1835692082</PreviewPresetVideoCodec.Mac>
+		<PreviewPresetFileName.Win>Microsoft AVI</PreviewPresetFileName.Win>
+		<PreviewPresetFileName.Mac>QuickTime</PreviewPresetFileName.Mac>
+		<VideoUseMaxBitDepth>false</VideoUseMaxBitDepth>
+		<VideoPixelAspectRatio>1,1</VideoPixelAspectRatio>
+		<EditingModeGUID.Win>9678AF98-A7B7-4bdb-B477-7AC9C8DF4A4E</EditingModeGUID.Win>
+		<EditingModeGUID.Mac>795454d9-d3c2-429d-9474-923ab13b7018</EditingModeGUID.Mac>
+		<Descriptions Version="1">
+			<DescriptionItem Version="1" Index="0">
+				<Second>Format de montage CIF 352x288 pour la création de contenu 11:9 exclusivement destiné à être lu sur des appareils mobiles prenant en charge les vidéos 3GP2.&#13;&#13;Faites le montage à une taille d’image supérieure, puis utilisez les préconfigurations appropriées dans Adobe Media Encoder pour obtenir une taille d'image de sortie de 176x144 ou 88x72 avec des fichiers H.264 3GP.</Second>
+				<First>fr_FR</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>352 x 288 の CIF サイズ編集形式。3GP2 ビデオ対応のモバイルデバイスでの再生を目的とした 11:9 コンテンツのオーサリング用。&#13;&#13;編集しやすい大きいフレームサイズでプロジェクトを編集し、Adobe Media Encoder で適切なプリセットを使用してフレームサイズ 176 x 144 または 88 x 72 の H.264 3GP ファイルを出力します。</Second>
+				<First>ja_JP</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Formato di modifica CIF 352x288 per authoring di contenuti 11:9 esclusivamente per la riproduzione su dispositivi mobili con supporto di video 3GP2.&#13;&#13;Lavorate con questa dimensione di fotogrammi maggiore, quindi usate il predefinito adeguato in Adobe Media Encoder per generare file 3GP H.264 con dimensione fotogrammi da 176x144 o 88x72.</Second>
+				<First>it_IT</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>352 x 288-CIF-Bearbeitungsformat für das Authoring von 11:9-Inhalten, die ausschließlich auf mobilen Geräten mit 3GP2-Videounterstützung wiedergegeben werden sollen.&#13;&#13;Bearbeiten Sie die Inhalte in dieser größeren Framegröße und verwenden Sie dann die entsprechenden Vorgaben in Adobe Media Encoder, um H.264-3GP-Dateien mit der Framegröße 176 x 144 oder 88 x 72 auszugeben.</Second>
+				<First>de_DE</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Formato de edición CIF 352 x 288 para creación de contenido 11:9 destinado exclusivamente a la reproducción en dispositivos móviles que admitan vídeo 3GP2.&#13;&#13;Edite a este tamaño de fotograma mayor; a continuación, use los ajustes preestablecidos correspondientes de Adobe Media Encoder para reproducir archivos H.264 3GP en tamaños de fotograma de 176 x 144 u 88 x 72.</Second>
+				<First>es_ES</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>11:9 콘텐트를 제작하는 352x288 CIF 편집 형식은 3GP2 비디오를 지원하는 모바일 장치에서 단독으로 재생하기 위한 것입니다.&#13;&#13;나중에 더 큰 프레임 크기로 편집하려면 Adobe Media Encoder에서 적절한 사전 설정을 사용하여 176x144 또는 88x72 프레임 크기로 H.264 3GP 파일을 출력합니다.</Second>
+				<First>ko_KR</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>352x288 CIF editing format for authoring 11:9 content intended exclusively for playback on mobile devices supporting 3GP2 video.&#13;&#13;Edit at this larger frame size, then use the appropriate presets in Adobe Media Encoder to output H.264 3GP files at 176x144 or 88x72 frame sizes.</Second>
+				<First>en_US</First>
+			</DescriptionItem>
+		</Descriptions>
+		<Names Version="1">
+			<NameItem Version="1" Index="0">
+				<Second>CIF, QCIF, QQCIF</Second>
+				<First>en_US</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>CIF, QCIF, QQCIF</Second>
+				<First>de_DE</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>CIF, QCIF, QQCIF</Second>
+				<First>fr_FR</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>CIF, QCIF, QQCIF</Second>
+				<First>it_IT</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>CIF, QCIF, QQCIF</Second>
+				<First>es_ES</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>CIF, QCIF, QQCIF</Second>
+				<First>ko_KR</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>CIF、QCIF、QQCIF</Second>
+				<First>ja_JP</First>
+			</NameItem>
+		</Names>
+		<VideoFieldType>0</VideoFieldType>
+		<AudioTimeDisplay>200</AudioTimeDisplay>
+		<VideoTimeDisplay>104</VideoTimeDisplay>
+		<AudioChannelType>1</AudioChannelType>
+		<AudioFrameRate>5292000</AudioFrameRate>
+		<VideoFrameSize>0,0,352,288</VideoFrameSize>
+		<VideoFrameRate>16934400000</VideoFrameRate>
+	</SequencePreset>
+</PremiereData>

@@ -1,0 +1,21 @@
+GeForce GTX 285
+GeForce GTX 470
+GeForce GTX 570
+GeForce GTX 580
+Quadro CX
+Quadro FX 3700M
+Quadro FX 3800
+Quadro FX 3800M
+Quadro FX 4800
+Quadro FX 5800
+Quadro 2000
+Quadro 2000D
+Quadro 2000M
+Quadro 3000M
+Quadro 4000
+Quadro 4000M
+Quadro 5000
+Quadro 5000M
+Quadro 5010M
+Quadro 6000
+Tesla C2075

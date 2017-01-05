@@ -1,0 +1,13 @@
+layout my_menu
+{
+	view menu(id:7103)
+	{
+		menu(text:'$$$/Premiere/Menu/7103/AudioMixerPanelMenu/Show/HideTracks...=Show/Hide Tracks...', idName:'cmd.audiomixer.showhidetracks');
+		menu(text:'$$$/Premiere/Menu/7103/AudioMixerPanelMenu/ShowAudioTimeUnits=Show Audio Time Units', idName:'cmd.audiomixer.audiounits');
+		separator();
+		menu(text:'$$$/Premiere/Menu/7103/AudioMixerPanelMenu/Loop=Loop', idName:'cmd.audiomixer.loop');
+		separator();
+		menu(text:'$$$/Premiere/Menu/7103/AudioMixerPanelMenu/MeterInputOpenParensCloseParenOnly=Meter Input(s) Only', idName:'cmd.audiomixer.meterinput');
+		menu(text:'$$$/Premiere/Menu/7103/AudioMixerPanelMenu/SwitchtoTouchafterWrite=Switch to Touch after Write', idName:'cmd.audiomixer.touchafterwrite');
+	}
+}

@@ -1,0 +1,43 @@
+layout my_dialog
+{
+    view dva_dialog(name: '$$$/Premiere/DLG/TimecodeDialog/kResDLGTimecodeDialogTitle=Timecode', identifier:'TimecodeDialog')
+    {
+		row(child_horizontal:align_fill, horizontal:align_fill, spacing:15)
+		{
+   			column()
+			{
+				dva_groupbox(identifier:'timecodeGroupBox', name:'$$$/Premiere/DLG/TimecodeDialog/kResDLGTimecodeDialogTitle=Timecode', headerType:'static_text', horizontal:align_fill)
+				{
+					dva_subview(identifier:'timecodeControl', minWidth:90, minHeight:20, label:'$$$/Premiere/DLG/TimecodeDialog/kResDLGTimecodeLabel=Timecode:');
+					row()
+					{
+						dva_radio_button_group(identifier: 'optionsRadioGroup', showBorder: 'false')
+						{
+							column()
+							{
+								dva_radio_button(identifier:'setAtBeginningRadioButton', name: '$$$/Premiere/DLG/TimecodeDialog/kResDLGSetAtBeginning=Set at Beginning');
+								dva_radio_button(identifier:'setAtCurrentFrameRadioButton', name: '$$$/Premiere/DLG/TimecodeDialog/kResDLGSetAtCurrentFrame=Set at Current Frame');
+							}
+						}
+					}
+					dva_button(identifier:'revertTimecodeButton', name:'$$$/Premiere/DLG/TimecodeDialog/kResDLGRevert=Revert', horizontal: align_right);
+				}
+				dva_groupbox(identifier:'tapeNameGroupBox', name:'$$$/Premiere/DLG/TimecodeDialog/kResDLGTapeName=Tape Name', headerType:'static_text', topFrame:4)		
+				{
+					column()
+					{
+						dva_text_edit(
+							identifier:'tapeNameTextEdit', 
+							label:'$$$/Premiere/DLG/TimecodeDialog/kResDLGTapeName=Tape Name', 
+							minWidth:140);
+						dva_button(identifier:'revertTapeNameButton', name:'$$$/Premiere/DLG/TimecodeDialog/kResDLGRevert=Revert', horizontal:align_right);
+					}
+				}
+			}
+			column()
+			{
+				dva_ok_cancel_column(minWidth:80, minHeight:20);
+			}
+		}
+    }
+}

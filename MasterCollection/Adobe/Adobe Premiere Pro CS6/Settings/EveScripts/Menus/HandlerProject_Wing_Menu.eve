@@ -1,0 +1,23 @@
+layout my_menu
+{
+	view menu(id:4001)
+	{
+		menu(text:'$$$/Premiere/Menu/4001/ProjectPanelMenu/NewBin=New Bin', idName:'cmd.file.new.bin');
+		menu(text:'$$$/Premiere/Menu/4001/ProjectPanelMenu/Rename=Rename', idName:'cmd.clip.rename');
+		menu(text:'$$$/Premiere/Menu/4001/ProjectPanelMenu/Delete=Delete', idName:'cmd.edit.clear');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4001/ProjectPanelMenu/AutomatetoSequence...=Automate to Sequence...', idName:'cmd.project.automatetosequence');
+		menu(text:'$$$/Premiere/Menu/4001/ProjectPanelMenu/Find...=Find...', idName:'cmd.edit.find');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4001/ProjectPanelMenu/View/List=List', idName:'cmd.project.wingtip.view.list');
+		menu(text:'$$$/Premiere/Menu/4001/ProjectPanelMenu/View/Icon=Icon', idName:'cmd.project.wingtip.view.icon');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4001/ProjectPanelMenu/View/PreviewArea=Preview Area', idName:'cmd.project.wingtip.view.preview');
+		menu(text:'$$$/Premiere/Menu/4001/ProjectPanelMenu/Thumbnails/Thumbnails=Thumbnails', idName:'cmd.project.wingtip.thumbnails.off');
+		menu(text:'$$$/Premiere/Menu/4001/ProjectPanelMenu/HoverScrub=Hover Scrub', idName:'cmd.project.enablehover');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4001/ProjectPanelMenu/Refresh=Refresh', idName:'cmd.project.wingtip.refresh');
+		separator();
+		menu(text:'$$$/Premiere/Menu/4001/ProjectPanelMenu/MetadataDisplay...=Metadata Display...', idName:'cmd.project.wingtip.metadatadisplay');
+	}
+}

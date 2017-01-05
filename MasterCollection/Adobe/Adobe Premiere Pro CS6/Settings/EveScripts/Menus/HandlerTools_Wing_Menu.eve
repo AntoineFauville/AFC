@@ -1,0 +1,7 @@
+layout my_menu
+{
+	view menu(id:29000)
+	{
+		menu(text:'$$$/Premiere/Menu/ToolPanelMenu/DockInOptionsPanel=Dock in Options Panel', idName:'cmd.toolpanel.wingtip.place_in_options_bar');
+	}
+}

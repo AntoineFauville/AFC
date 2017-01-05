@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PremiereData Version="3">
+	<SequencePreset ObjectRef="1"/>
+	<SequencePreset ObjectID="1" ClassID="5e73dd7e-4f86-4917-80eb-08ddb2f4a5f3" Version="5">
+		<PreviewVideoFrameSize>0,0,1920,1080</PreviewVideoFrameSize>
+		<AudioTracks>{"SerializerWrappedObject": [{"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}, {"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}, {"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}, {"mChannelType": 1, "mIsOpen": false, "mIsSubmix": false, "mMatrix": [], "mName": "", "mPan": 0.000000e+00}]}</AudioTracks>
+		<InitialNumberOfVideoTracks>3</InitialNumberOfVideoTracks>
+		<AdaptiveNumChannels>16</AdaptiveNumChannels>
+		<VideoUseMaxRenderQuality>false</VideoUseMaxRenderQuality>
+		<VideoUseMaxBitDepth>false</VideoUseMaxBitDepth>
+		<VideoPixelAspectRatio>1,1</VideoPixelAspectRatio>
+		<PreviewPresetVideoCodec.Win>1297107278</PreviewPresetVideoCodec.Win>
+		<PreviewPresetFileName.Win>I-Frame Only MPEG</PreviewPresetFileName.Win>
+		<PreviewPresetVideoCodec.Mac>1297107278</PreviewPresetVideoCodec.Mac>
+		<PreviewPresetFileName.Mac>I-Frame Only MPEG</PreviewPresetFileName.Mac>
+		<EditingModeGUID.Win>bc596dbe-d38d-4d50-87db-09e9e617d71c</EditingModeGUID.Win>
+		<EditingModeGUID.Mac>bc596dbe-d38d-4d50-87db-09e9e617d71c</EditingModeGUID.Mac>
+		<Descriptions Version="1">
+			<DescriptionItem Version="1" Index="0">
+				<Second>Pour la modification d'éléments enregistrés dans le codec AVC-Intra 100.&#13;&#10;Vidéo HD entrelacée 16:9 à 59,94 images par seconde.&#13;&#10;Audio 48kHz.</Second>
+				<First>fr_FR</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>AVC-Intra 100 コーデックで撮影したクリップの編集用。&#13;&#10;59.94 フレーム/秒の 16:9 インターレース HD ビデオ。&#13;&#10;48 kHz オーディオ。</Second>
+				<First>ja_JP</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Per la modifica di clip registrate con codec AVC-Intra 100.&#13;&#10;Video HD 16:9 interlacciato da 59,94 fotogrammi al secondo.&#13;&#10;Audio da 48 kHz.</Second>
+				<First>it_IT</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Zur Bearbeitung von im AVC-Intra 100 -Codec aufgenommenen Clips.&#13;&#10;16:9 interlaced HD-Video mit 59,94 Frames pro Sekunde.&#13;&#10;48kHz Audio.</Second>
+				<First>de_DE</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>Para editar clips grabados con un códec AVC-Intra 100.&#13;&#10;Vídeo HD entrelazado 16:9 a 59,94 fotogramas por segundo.&#13;&#10;Audio de 48 kHz.</Second>
+				<First>es_ES</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>AVC-Intra 100 코덱으로 기록된 클립 편집용.&#13;&#10;초당 59.94프레임 16:9 인터레이스 HD 비디오.&#13;&#10;48kHz 오디오.</Second>
+				<First>ko_KR</First>
+			</DescriptionItem>
+			<DescriptionItem Version="1" Index="0">
+				<Second>For editing clips recorded in AVC-Intra 100 codec.&#13;&#10;16:9 interlaced HD video at 59.94 frames per second.&#13;&#10;48kHz audio.</Second>
+				<First>en_US</First>
+			</DescriptionItem>
+		</Descriptions>
+		<Names Version="1">
+			<NameItem Version="1" Index="0">
+				<Second>AVC-I 100 1080i60</Second>
+				<First>fr_FR</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>AVC-I 100 1080i60</Second>
+				<First>ja_JP</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>AVC-I 100 1080i60</Second>
+				<First>it_IT</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>AVC-I 100 1080i60</Second>
+				<First>de_DE</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>AVC-I 100 1080i60</Second>
+				<First>es_ES</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>AVC-I 100 1080i60</Second>
+				<First>ko_KR</First>
+			</NameItem>
+			<NameItem Version="1" Index="0">
+				<Second>AVC-I 100 1080i60</Second>
+				<First>en_US</First>
+			</NameItem>
+		</Names>
+		<VideoFieldType>1</VideoFieldType>
+		<AudioTimeDisplay>200</AudioTimeDisplay>
+		<VideoTimeDisplay>102</VideoTimeDisplay>
+		<AudioChannelType>1</AudioChannelType>
+		<AudioFrameRate>5292000</AudioFrameRate>
+		<VideoFrameSize>0,0,1920,1080</VideoFrameSize>
+		<VideoFrameRate>8475667200</VideoFrameRate>
+	</SequencePreset>
+</PremiereData>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xmp_definitions>
+  <xmp_schema prefix='premierePrivateFileProperties' namespace='http://ns.adobe.com/premierePrivateFileProperties/1.0/' label='$$$/Premiere/PrivateFileProperties=File Properties'>
+	<xmp_property name='filename' category='internal' label='$$$/Premiere/PremierePrivateFileProperties/filename_label=Name' type='text'/>
+	<xmp_property name='file_path' category='internal' label='$$$/Premiere/PremierePrivateFileProperties/file_path_label=File Path' type='uri'/>
+	<xmp_property name='type' category='internal' label='$$$/Premiere/PremierePrivateFileProperties/type_label=Type' type='text'/>
+	<xmp_property name='file_created' category='internal' label='$$$/Premiere/PremierePrivateFileProperties/file_created_label=Created' type='text'/>
+	<xmp_property name='file_modified' category='internal' label='$$$/Premiere/PremierePrivateFileProperties/file_modified_label=Modified' type='text'/>
+	<xmp_property name='metadata_modified' category='internal' label='$$$/Premiere/PremierePrivateFileProperties/metadata_modified_label=XMP Modified' type='text'/>
+	<xmp_property name='file_size' category='internal' label='$$$/Premiere/PremierePrivateFileProperties/file_size_label=Size' type='text'/>
+  </xmp_schema>
+</xmp_definitions>

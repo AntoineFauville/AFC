@@ -1,0 +1,9 @@
+layout my_menu
+{
+	view menu(id:17502)
+	{
+		menu(text:'$$$/Premiere/Menu/17502/TransitionShortcutContextMenuWin/DeleteWin=Delete', idName:'cmd.edit.clear');
+		separator();
+		menu(text:'$$$/Premiere/Menu/17502/TransitionShortcutContextMenuWin/SetSelectedasDefaultTransitionWin=Set Selected as Default Transition', idName:'cmd.effects.setdefaulttransition');
+	}
+}

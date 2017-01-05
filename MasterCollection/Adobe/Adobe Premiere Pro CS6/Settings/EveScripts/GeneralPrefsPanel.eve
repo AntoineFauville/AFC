@@ -1,0 +1,98 @@
+layout General
+{
+	view dva_panel_view(name: '$$$/Premiere/DLG/PrefsDialog/kResDLGGeneral=General', identifier: 'prefsGeneral', guide_mask:[@guide_label, @guide_baseline])
+	{
+		row()
+		{
+			column()
+			{
+				dva_static_text(identifier:'videoTransDurST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGVideoTransitionDefault=Video Transition Default Duration:', horizontal:align_right);
+				dva_static_text(identifier:'audioTransDurST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGAudioTransitionDefault=Audio Transition Default Duration:', horizontal:align_right);
+				dva_static_text(identifier:'stillDurST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGStillImageDefault=Still Image Default Duration:', horizontal:align_right);
+			}
+			column()
+			{
+				row()
+				{
+					dva_number_edit(identifier:'videoTransDurET',minValue:2, maxValue:9999, decimalPlaces:0, minWidth:80,minHeight:20,horizontal:align_left);
+					dva_static_text(identifier:'static3', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGFrames=frames', horizontal:align_left);
+				}
+				row()
+				{
+					dva_number_edit(identifier:'audioTransDurET',minValue:0.10, maxValue:9999, decimalPlaces:2, minWidth:80,minHeight:20,horizontal:align_left);
+					dva_static_text(identifier:'static4', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGSeconds=seconds', horizontal:align_left);
+				}
+				row()
+				{
+					dva_number_edit(identifier:'stillDurET', minValue:1, maxValue:1000000, decimalPlaces:0, minWidth:80,minHeight:20,horizontal:align_left);
+					dva_static_text(identifier:'static5', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGFrames=frames', horizontal:align_left);
+				}
+			}
+		}
+		dva_popup(identifier:'timelinePlaybackPopup', minWidth:174, minHeigth:20, label: '$$$/Premiere/DLG/PrefsDialog/kResDLGTimelinePlaybackScrolling=Timeline Playback Auto-Scrolling:')
+		{
+			dva_popup_item(identifier:'timelinePlaybackItem1', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGNoScroll=No Scroll');
+			dva_popup_item(identifier:'timelinePlaybackItem2', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGPageScroll=Page Scroll');
+			dva_popup_item(identifier:'timelinePlaybackItem3', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGSmoothScroll=Smooth Scroll');
+		}
+		dva_popup(identifier:'timelineMouseScrolling', minWidth:174, minHeigth:20, label: '$$$/Premiere/DLG/PrefsDialog/kResDLGTimelineMouseScrolling=Timeline Mouse Scrolling:')
+		{
+			dva_popup_item(name:'$$$/Premiere/DLG/PrefsDialog/kResDLGMouseScrollHorizontal=Horizontal');
+			dva_popup_item(name:'$$$/Premiere/DLG/PrefsDialog/kResDLGMouseScrollVertical=Vertical');
+		}
+		dva_popup(identifier:'timelineAudioKeyframesPopup', minWidth:174, minHeigth:20, label: '$$$/Premiere/DLG/PrefsDialog/kResDLGTimelineAudioKeyframesDisplay=New Timeline Audio Tracks:')
+		{
+			dva_popup_item(identifier:'timelineAudioKeyframesItem1', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGTimelineAudioShowClipKeyframes=Show Clip Keyframes');
+			dva_popup_item(identifier:'timelineAudioKeyframesItem2', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGTimelineAudioShowClipVolume=Show Clip Volume');
+			dva_popup_item(identifier:'timelineAudioKeyframesItem3', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGTimelineAudioShowTrackKeyframes=Show Track Keyframes');
+			dva_popup_item(identifier:'timelineAudioKeyframesItem4', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGTimelineAudioShowTrackVolume=Show Track Volume');
+			dva_popup_item(identifier:'timelineAudioKeyframesItem5', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGTimelineAudioHideKeyframes=Hide Keyframes');
+		}
+		dva_popup(identifier:'timelineVideoKeyframesPopup', minWidth:174, minHeigth:20, label: '$$$/Premiere/DLG/PrefsDialog/kResDLGTimelineVideoKeyframesDisplay=New Timeline Video Tracks:')
+		{
+			dva_popup_item(identifier:'timelineVideoKeyframesItem1', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGTimelineVideoShowKeyframes=Show Keyframes');
+			dva_popup_item(identifier:'timelineVideoKeyframesItem2', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGTimelineVideoShowOpacity=Show Opacity Handles');
+			dva_popup_item(identifier:'timelineVideoKeyframesItem3', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGTimelineVideoHideKeyframes=Hide Keyframes');
+		}
+		dva_checkbox(identifier:'playAfterRenderCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGPlayWorkAreaAfterRendering=Play work area after rendering previews', minHeight:16);
+		dva_checkbox(identifier:'defaultScaleSizeCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGDefaultScale=Default scale to frame size', minHeight:16);
+		row(guide_mask:[@guide_label])
+		{
+			dva_groupbox(identifier: 'groupbox1', name: '$$$/Premiere/DLG/PrefsDialog/kResDLGBins=Bins', headerType:'static_text')
+			{
+				row(horizontal:align_right)
+				{
+						dva_static_text(identifier:'doubleclickST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGDoubleClick=Double-click:');
+						dva_popup(identifier:'doubleClickPU', minWidth:140, minHeigth:20, leftSpace: -5)
+						{
+							dva_popup_item(identifier:'doubleClickItem0', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGOpenInNewWindow=Open in new window');
+							dva_popup_item(identifier:'doubleClickItem1', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGOpenInPlace=Open in place');
+							dva_popup_item(identifier:'doubleClickItem2', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGOpenInNewTab=Open new tab');
+						}
+				}
+				row(horizontal:align_right)
+				{
+						dva_static_text(identifier:'plusCmdST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGPlusCmd=+ Cmd:');
+						dva_popup(identifier:'plusCmdPU', minWidth:140, minHeigth:20, leftSpace: -5)
+						{
+							dva_popup_item(identifier:'plusCmdItem0', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGOpenInNewWindow=Open in new window');
+							dva_popup_item(identifier:'plusCmdItem1', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGOpenInPlace=Open in place');
+							dva_popup_item(identifier:'plusCmdItem2', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGOpenInNewTab=Open new tab');
+						}
+				}
+				row(horizontal:align_right)
+				{
+						dva_static_text(identifier:'plusOptST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGPlusOpt=+ Opt:');
+						dva_popup(identifier:'plusOptPU', minWidth:140, minHeigth:20, leftSpace: -5)
+						{
+							dva_popup_item(identifier:'plusOptItem0', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGOpenInNewWindow=Open in new window');
+							dva_popup_item(identifier:'plusOptItem1', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGOpenInPlace=Open in place');
+							dva_popup_item(identifier:'plusOptItem2', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGOpenInNewTab=Open new tab');
+						}
+				}
+			}
+		}
+		dva_checkbox(identifier:'renderAWithVPreviewCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGRenderAudioPreviewWithVideoPreview=Render audio when rendering video', minHeight:16);
+		dva_checkbox(identifier:'showMatchSequenceToClipDialog', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGShowMatchSequenceToClipDialog=Show match sequence settings to clip dialog', minHeight:16);
+	}
+}

@@ -1,0 +1,24 @@
+layout AutoSave
+{
+	view dva_panel_view(name: '$$$/Premiere/DLG/PrefsDialog/kResDLGAutoSave=Auto Save', identifier: 'panelAutoSave', guide_mask:[@guide_label, @guide_baseline])
+	{
+		dva_checkbox(identifier:'autosaveCB', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGAutomaticallySaveProjects=Automatically save projects', minHeight:16);
+		row()
+		{
+			column()
+			{
+				dva_static_text(identifier:'autosaveEvST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGAutoSaveEvery=Automatically Save Every:', horizontal:align_right);
+				dva_static_text(identifier:'maxVersST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGMaxProjectVersions=Maximum Project Versions:', horizontal:align_right);
+			}
+			column()
+			{
+				row()
+				{
+					dva_number_edit(identifier:'autosaveEvET', minValue:1, maxValue:10000000, minWidth:80,minHeight:20,horizontal:align_left);
+					dva_static_text(identifier:'autointervalST', name:'$$$/Premiere/DLG/PrefsDialog/kResDLGSaveMinutes=minute(s)', horizontal:align_left);
+				}
+				dva_number_edit(identifier:'maxVersET', minValue:1, maxValue:10000000, minWidth:80,minHeight:20,horizontal:align_left);
+			}
+		}
+	}
+}

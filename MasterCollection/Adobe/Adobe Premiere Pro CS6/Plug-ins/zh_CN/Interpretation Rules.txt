@@ -1,0 +1,52 @@
+# Premiere pixel aspect ratio rules and names
+# note: Premiere only uses the width, height, and pixel aspect ratio information
+#
+# adapted from:
+# "Interpretation Rules.txt"
+# After Effects 4.1 Automatic Footage Interpretation
+#  
+# lines beginning with "#" are comments
+#
+# basic format of a rule: {match requirements} = {set interpretation}
+#
+# + for each rule that matches, the interpretation is set; wild-cards ("*") allowed
+#   on both sides; wildcard match matches anything, wildcard set sets nothing
+# + multiple rules are allowed to match, later matches override earlier matches
+# + all rules are scanned in order, one rule per line
+# + rules are applied after the automatic setting of D1 pixel aspect and automatic
+#	field separation from field-labeled files
+#
+# width, height, frame-rate, file-type, codec = 
+# 	pixel aspect ratio/name, field order, conform frame-rate, alpha interp
+#
+# width & height are integer numbers
+# frame-rate is a decimal number
+# file-type is four characters in quotes (4c's)
+# codec (applicable for QT & AVI only) is also 4c's
+#
+# the pixel aspect ratio is a ratio of integers (e.g. 10/11)
+#   optionally followed by a name for that ratio (e.g. 10/11/"My Aspect")
+# the field order is a single character, (F=frame, U=upper field, or L=lower field)
+# the conform frame-rate is a decimal number
+# alpha interp: (I=ignore, S=straight, P=premul/black, W=premul/white)
+#	alpha interp is ignored for footage without an alpha channel
+#
+
+# assume ATSC 704x480 in any format is D1 aspect
+704, 480, *, *, * = 10/11, *, *, *
+
+# assume NTSC DV is D1 aspect
+720, 480, *, *, * = 10/11, *, *, *
+
+# NTSC D1 is D1 aspect
+720, 486, *, *, * = 10/11, *, *, *
+
+# PAL D1/DV
+720, 576, *, *, * = 768/702, *, *, *
+
+# HD 1080 Anamorphic
+1440, 1080, *, *, * = 1920/1440, *, *, *
+
+# only adds a custom pixel aspect ratio to the UI
+# uncomment the next line to try it out
+# 0, 0, 0, "0000", * = 10/11/"Custom Aspect", *, *, *

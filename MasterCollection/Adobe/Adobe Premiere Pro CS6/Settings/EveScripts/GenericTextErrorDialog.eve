@@ -1,0 +1,17 @@
+layout genericTextErrorDialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/GenericTextErrorDialog/kResDLGError=Error', identifier:'genericTextErrorDialog')
+	{
+		row(child_horizontal: align_left, horizontal: align_fill, spacing:15)
+		{
+			column()
+			{
+				dva_text_edit(identifier:'errorTextEdit', minWidth:320, minHeight:150, horizontal:align_left, multiLine:'true', vertical_scroll:'true', read_only:'true');
+			}
+			column()
+			{
+				dva_button(name: '$$$/Premiere/DLG/kResDLGOK=OK', identifier:'okButton', default: true, setAsDefault:'true', setAsFocused:'true', minWidth:80);
+			}
+		}
+	}
+}

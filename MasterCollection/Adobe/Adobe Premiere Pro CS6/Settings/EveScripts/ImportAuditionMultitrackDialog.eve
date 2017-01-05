@@ -1,0 +1,20 @@
+layout import_audition_multitrack_dialog
+{
+	view dva_dialog(name: '$$$/Premiere/DLG/ImportAuditionMultitrackDialog/kResDLGImportAuditionMultitrackDialogTitle=Copy Adobe Audition Tracks', identifier:'ImportAuditionMultitrackDialog')
+	{
+		column(child_horizontal: align_fill, horizontal: align_fill, spacing:15)
+		{
+			row(horizontal:align_fill)
+			{
+				dva_popup(
+					identifier:'trackPopup',
+					label:'$$$/Premiere/DLG/ImportAuditionMultitrackDialog/kResDLGCopy=Copy to Active Sequence:', 
+					minWidth:200);
+			}
+			row(horizontal:align_right)
+			{
+				dva_ok_cancel_row(minWidth:80, minHeight:20);
+			}
+		}
+	}
+} 
