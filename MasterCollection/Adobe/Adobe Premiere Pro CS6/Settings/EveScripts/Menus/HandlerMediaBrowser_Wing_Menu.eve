@@ -1,9 +1,0 @@
-layout my_menu
-{
-	view menu(id:30001)
-	{
-		menu(text:'$$$/Premiere/Menu/30001/MediaBrowserPanelMenuWin/EditColumns...=Edit Columns...', idName:'cmd.mediabrowser.editcolumns');
-		menu(text:'$$$/Premiere/Menu/30001/MediaBrowserPanelMenuWin/ImageSequence=Import as Image Sequence', idName:'cmd.mediabrowser.importstillsassequence');
-		menu(text:'$$$/Premiere/Menu/30001/MediaBrowserPanelMenuWin/HoverScrub=Hover Scrub', idName:'cmd.mediabrowser.enablehover');
-	}
-}

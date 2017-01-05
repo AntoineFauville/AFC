@@ -1,9 +1,0 @@
-layout my_menu
-{
-	view menu(id:23102)
-	{
-		menu(text:'$$$/Premiere/Menu/23102/Left=Left', idName:'cmd.titler.menu.type.left');
-		menu(text:'$$$/Premiere/Menu/23102/Center=Center', idName:'cmd.titler.menu.type.centre');
-		menu(text:'$$$/Premiere/Menu/23102/Right=Right', idName:'cmd.titler.menu.type.right');
-	}
-}

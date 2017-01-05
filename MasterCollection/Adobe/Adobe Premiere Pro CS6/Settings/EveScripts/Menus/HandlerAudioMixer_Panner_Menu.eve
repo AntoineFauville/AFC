@@ -1,7 +1,0 @@
-layout my_menu
-{
-	view menu(id:7109)
-	{
-		menu(text:'$$$/Premiere/Menu/7109/SafeDuringWrite=Safe During Write', idName:'cmd.audiomixer.pannersafe');
-	}
-}

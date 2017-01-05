@@ -1,9 +1,0 @@
-layout my_menu
-{
-	view menu(id:21614)
-	{
-		menu(text:'$$$/Premiere/Menu/21614/Miter=Miter', id:1);
-		menu(text:'$$$/Premiere/Menu/21614/Round=Round', id:2);
-		menu(text:'$$$/Premiere/Menu/21614/Bevel=Bevel', id:3);
-	}
-}

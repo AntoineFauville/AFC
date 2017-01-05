@@ -1,7 +1,0 @@
-layout my_menu
-{
-	view menu(id:4009)
-	{
-		menu(text:'$$$/Premiere/Menu/4001/ProjectPanelMenu/MetadataDisplay...=Metadata Display...', idName:'cmd.project.wingtip.metadatadisplay');
-	}
-}

@@ -1,7 +1,0 @@
-layout my_menu
-{
-	view menu(id:4005)
-	{
-		menu(text:'$$$/Premiere/Menu/4005/PreviewAreaNoSelectionContextMenu/Find...=Find...', idName:'cmd.edit.find');
-	}
-}

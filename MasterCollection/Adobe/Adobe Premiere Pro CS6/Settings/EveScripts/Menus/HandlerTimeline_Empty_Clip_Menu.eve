@@ -1,7 +1,0 @@
-layout my_menu
-{
-	view menu(id:5503)
-	{
-		menu(text:'$$$/Premiere/Menu/5503/RippleDelete=Ripple Delete', idName:'cmd.edit.rippledelete');
-	}
-}

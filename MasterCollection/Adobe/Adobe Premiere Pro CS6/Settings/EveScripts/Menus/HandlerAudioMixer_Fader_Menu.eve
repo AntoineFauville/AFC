@@ -1,7 +1,0 @@
-layout my_menu
-{
-	view menu(id:7105)
-	{
-		menu(text:'$$$/Premiere/Menu/7105/SafeDuringWrite=Safe During Write', idName:'cmd.audiomixer.fadersafe');
-	}
-}

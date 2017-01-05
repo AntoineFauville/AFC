@@ -1,9 +1,0 @@
-layout my_menu
-{
-	view menu(id:21621)
-	{
-		menu(text:'$$$/Premiere/Menu/21621/Top=Top', id:1);
-		menu(text:'$$$/Premiere/Menu/21621/Center=Center', id:2);
-		menu(text:'$$$/Premiere/Menu/21621/Bottom=Bottom', id:3);
-	}
-}
