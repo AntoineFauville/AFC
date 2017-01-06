@@ -80,6 +80,7 @@
      <Compile Include="Assets\Scripts\Area\InteractiveAreaGestion.cs" />
      <Compile Include="Assets\Scripts\Area\LightBeamTriggerLazer.cs" />
      <Compile Include="Assets\Scripts\BonusItemReception\BonusPointExplosion.cs" />
+     <Compile Include="Assets\Scripts\Book\Map.cs" />
      <Compile Include="Assets\Scripts\Book\OpenCloseBook.cs" />
      <Compile Include="Assets\Scripts\Book\SaveBookInputs.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraController.cs" />

@@ -8,6 +8,12 @@ public class ZoneGestion : MonoBehaviour {
 
 	GameObject Player;
 
+	bool didICheckNextVillage;
+	bool isThereSomthingAround;
+
+	GameObject ScanningFeedBack01;
+	GameObject ScanningFeedBack02;
+
 	public GameObject[] ListDeZone;
 
 	public bool AmIInsideArea;
@@ -15,6 +21,11 @@ public class ZoneGestion : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Player = GameObject.Find ("Player");
+		ScanningFeedBack01 = GameObject.Find ("PanelNewMapInfoScan");
+		ScanningFeedBack02 = GameObject.Find ("PanelNewMapInfoScanned");
+
+		ScanningFeedBack01.SetActive (true);
+		ScanningFeedBack02.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -30,5 +41,39 @@ public class ZoneGestion : MonoBehaviour {
 			print ("OUT"); 
 			AmIInsideArea = false;
 		}
+
+
+
+		//scanning
+
+
+	}
+
+	public void scanning(){
+		//new village found
+
+		if (!didICheckNextVillage) {
+			//launch Anim 1
+			ScanningFeedBack01.SetActive (true);
+			ScanningFeedBack02.SetActive (false);
+
+			didICheckNextVillage = true;
+			//launch Anim 2
+		} else {
+			ScanningFeedBack01.SetActive (false);
+			ScanningFeedBack02.SetActive (true);
+		}
+
+		//nothing around
+		if(isThereSomthingAround){
+			
+		}
+
+
+		//new thing on the map !!
+		/*if(didICheckNextVillage || !isThereSomthingAround){
+			ScanningFeedBack01.SetActive (false);
+			ScanningFeedBack02.SetActive (true);
+		}*/
 	}
 }

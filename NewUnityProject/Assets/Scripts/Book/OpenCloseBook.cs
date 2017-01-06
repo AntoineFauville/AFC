@@ -6,7 +6,6 @@ namespace ThirdPersonCamera
 public class OpenCloseBook : MonoBehaviour {
 
 	public GameObject canvas;
-	public GameObject cameraMiniMap;
 	public bool isBookOpen;
 	public GameObject buttonOuvrirBook;
 
@@ -25,7 +24,8 @@ public class OpenCloseBook : MonoBehaviour {
 	void Start () {
 		canvas.SetActive (false);
 			canvasMainCamera = GameObject.Find ("Canvas Book Notification MainCamera");
-			mainCamera.SetActive (true);SecondCamera.SetActive (false);
+			mainCamera.SetActive (true);
+			SecondCamera.SetActive (false);
 
 			DC = GameObject.Find ("Player").GetComponent<DropCube> ();
 	}
@@ -34,11 +34,9 @@ public class OpenCloseBook : MonoBehaviour {
 	void Update () {
 			if (Input.GetButtonDown ("OpenBook") && !isBookOpen && DC.isCubeOnGround == false) {
 			canvas.SetActive (true);
-
-				mainCamera.SetActive (false);SecondCamera.SetActive (true);
-
-				canvasMainCamera.SetActive (false);
-
+			mainCamera.SetActive (false);
+			SecondCamera.SetActive (true);
+			canvasMainCamera.SetActive (false);
 			buttonOuvrirBook.SetActive (false);
 			isBookOpen = true;
 			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().enabled = false;
@@ -50,13 +48,10 @@ public class OpenCloseBook : MonoBehaviour {
 		} else 
 			if (Input.GetButtonDown ("Cancel") && isBookOpen) {
 				buttonOuvrirBook.SetActive (true);
-
-					mainCamera.SetActive (true);SecondCamera.SetActive (false);
-
-					canvasMainCamera.SetActive (true);
-
+				mainCamera.SetActive (true);
+				SecondCamera.SetActive (false);
+				canvasMainCamera.SetActive (true);
 				canvas.SetActive (false);
-				cameraMiniMap.SetActive (false);
 				isBookOpen = false;
 				player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().enabled = true;
 				player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl> ().enabled = true;
