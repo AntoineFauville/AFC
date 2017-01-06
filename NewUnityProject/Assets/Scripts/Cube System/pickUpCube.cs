@@ -27,9 +27,9 @@ public class pickUpCube : MonoBehaviour {
 	void Update () {
 		float distance = Vector3.Distance(Player.transform.position, transform.position);
 
-		if (Input.GetButtonDown ("dropcube") && dc.isCubeOnGround && distance < 3 && OCB.isBookOpen == false) {
+		if (Input.GetButtonDown ("dropcube") && dc.isCubeOnGround && distance < 3 /*&& OCB.isBookOpen == false*/) {
 			SG.sanity = 1;
-			cubeOnAss.SetActive (true);
+			//cubeOnAss.SetActive (true);
 			dc.StartCoroutine ("returnCubeBool");
 			Destroy (this.gameObject);
 		}

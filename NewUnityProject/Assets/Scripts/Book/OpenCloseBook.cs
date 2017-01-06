@@ -15,9 +15,6 @@ public class OpenCloseBook : MonoBehaviour {
 		public GameObject mainCamera;
 		public GameObject SecondCamera;
 
-		public GameObject artefactOnAss;
-		public GameObject artefactOnHand;
-
 		DropCube DC;
 
 	public FreeForm FF;
@@ -29,7 +26,6 @@ public class OpenCloseBook : MonoBehaviour {
 		canvas.SetActive (false);
 			canvasMainCamera = GameObject.Find ("Canvas Book Notification MainCamera");
 			mainCamera.SetActive (true);SecondCamera.SetActive (false);
-			artefactOnAss.SetActive (true);artefactOnHand.SetActive (false);
 
 			DC = GameObject.Find ("Player").GetComponent<DropCube> ();
 	}
@@ -40,7 +36,6 @@ public class OpenCloseBook : MonoBehaviour {
 			canvas.SetActive (true);
 
 				mainCamera.SetActive (false);SecondCamera.SetActive (true);
-				artefactOnAss.SetActive (false);artefactOnHand.SetActive (true);
 
 				canvasMainCamera.SetActive (false);
 
@@ -57,7 +52,6 @@ public class OpenCloseBook : MonoBehaviour {
 				buttonOuvrirBook.SetActive (true);
 
 					mainCamera.SetActive (true);SecondCamera.SetActive (false);
-					artefactOnAss.SetActive (true);artefactOnHand.SetActive (false);
 
 					canvasMainCamera.SetActive (true);
 

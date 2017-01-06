@@ -92,9 +92,12 @@
      <Compile Include="Assets\Scripts\Camera\ShackingEffect.cs" />
      <Compile Include="Assets\Scripts\Camera\SmoothCameraDeplacement.cs" />
      <Compile Include="Assets\Scripts\Camera\StartWhiteScreen.cs" />
+     <Compile Include="Assets\Scripts\Cube System\ArcheologyCube.cs" />
      <Compile Include="Assets\Scripts\Cube System\DropCube.cs" />
      <Compile Include="Assets\Scripts\Cube System\LosingSanityWhenGettingAway.cs" />
+     <Compile Include="Assets\Scripts\Cube System\ObjetATrouverList.cs" />
      <Compile Include="Assets\Scripts\Cube System\SanityGestion.cs" />
+     <Compile Include="Assets\Scripts\Cube System\ZoneGestion.cs" />
      <Compile Include="Assets\Scripts\Cube System\pickUpCube.cs" />
      <Compile Include="Assets\Scripts\Enigme 1\ActivateCirclePuzzle.cs" />
      <Compile Include="Assets\Scripts\Enigme 1\CircleOpeningAfterEndRotation.cs" />
