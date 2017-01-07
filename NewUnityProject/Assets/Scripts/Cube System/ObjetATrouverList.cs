@@ -6,7 +6,7 @@ public class ObjetATrouverList : MonoBehaviour {
 
 	GameObject Player;
 
-	ZoneGestion ZG;
+	v
 
 	public GameObject[] Ville;
 

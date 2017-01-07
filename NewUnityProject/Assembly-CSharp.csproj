@@ -94,6 +94,8 @@
      <Compile Include="Assets\Scripts\Camera\SmoothCameraDeplacement.cs" />
      <Compile Include="Assets\Scripts\Camera\StartWhiteScreen.cs" />
      <Compile Include="Assets\Scripts\Cube System\ArcheologyCube.cs" />
+     <Compile Include="Assets\Scripts\Cube System\CubeIsHere.cs" />
+     <Compile Include="Assets\Scripts\Cube System\CubeIsHereSmall.cs" />
      <Compile Include="Assets\Scripts\Cube System\DropCube.cs" />
      <Compile Include="Assets\Scripts\Cube System\LosingSanityWhenGettingAway.cs" />
      <Compile Include="Assets\Scripts\Cube System\ObjetATrouverList.cs" />

@@ -31,22 +31,33 @@ public class DropCube : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		//drop it depending if we are in or out
-		if(ZG.AmIInsideArea)
-		{
-			// et que j'appuie sur le bouton pour le cube, je le lache, mais ca instantiate le cube avec le module d'archéologie
-			if (Input.GetButtonDown ("dropcube") && !isCubeOnGround) {
-				Instantiate (prefabCubeArcheo,LaunchCube.position, LaunchCube.rotation);
-				isCubeOnGround = true;
+		//il faut scan avant de savoir si on est dans la z
+		if (ZG.didICheckNextVillage == true) {
+
+			//drop it depending if we are in or out
+			if (ZG.AmIInsideArea) {
+				// et que j'appuie sur le bouton pour le cube, je le lache, mais ca instantiate le cube avec le module d'archéologie
+				if (Input.GetButtonDown ("dropcube") && !isCubeOnGround) {
+					Instantiate (prefabCubeArcheo, LaunchCube.position, LaunchCube.rotation);
+					isCubeOnGround = true;
+					ScanningPanel.SetActive (true);
+				}
+			} else {
+				if (Input.GetButtonDown ("dropcube") && !isCubeOnGround /*&& OCB.isBookOpen == false*/) {
+					// et que j'appuie sur le bouton pour le cube, je le lache, mais ca instantiate le cube avec le module de recherche
+					Instantiate (prefabCube, LaunchCube.position, LaunchCube.rotation);
+					isCubeOnGround = true;
+					ScanningPanel.SetActive (true);
+					//StartCoroutine ("returnCubeBool");
+				}
 			}
 		} else {
-			if(Input.GetButtonDown("dropcube") && !isCubeOnGround /*&& OCB.isBookOpen == false*/){
-				// et que j'appuie sur le bouton pour le cube, je le lache, mais ca instantiate le cube avec le module de recherche
-				Instantiate (prefabCube,LaunchCube.position, LaunchCube.rotation);
-				isCubeOnGround = true;
-				ScanningPanel.SetActive (true);
-				//StartCoroutine ("returnCubeBool");
-			}
+			// et que j'appuie sur le bouton pour le cube, je le lache, mais ca instantiate le cube avec le module de recherche
+				if (Input.GetButtonDown ("dropcube") && !isCubeOnGround) {
+					Instantiate (prefabCube, LaunchCube.position, LaunchCube.rotation);
+					isCubeOnGround = true;
+					ScanningPanel.SetActive (true);
+				}
 		}
 
 		//pick it up
