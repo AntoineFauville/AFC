@@ -6,39 +6,64 @@ public class ActivateTotemEnigma : MonoBehaviour {
 	public bool playerIsHere = false;
 	public bool amIOn = false;
 
-	public GameObject player;
-	public GameObject playerWrong;
-	public GameObject cam1;
-	public GameObject cam2;
+	GameObject player;
+	GameObject playerWrong;
+	GameObject cam1;
+	GameObject cam2;
 
 	public GameObject cube;
 
-	public GestionSelectionParts GSP;
+	EndTotemEnigma EndingTotemScript;
+	GestionSelectionParts GSP;
+
+	void Start () {
+		player = GameObject.Find ("Player");
+		playerWrong = GameObject.Find ("CrounchingPlayerPuzzleTotem");
+		cam1 = GameObject.Find ("Main Camera Main");
+		cam2 = GameObject.Find ("CameraEnigmeTotem");
+		GSP = GameObject.Find ("GestionPartSelectionTotem").GetComponent<GestionSelectionParts>();
+
+		EndingTotemScript = GameObject.Find ("EndGestionTotem").GetComponent<EndTotemEnigma>();
+
+		playerWrong.SetActive (false);
+		cam2.SetActive (false);
+	}
 
 	void Update () {
 
-		if (!amIOn && playerIsHere && Input.GetButtonDown ("Submit")) {
+		if (!amIOn && playerIsHere && Input.GetButtonDown ("Submit") && EndingTotemScript.EnigmaIsDone == false) {
 			amIOn = true;
+
 			player.SetActive (false);
 			playerWrong.SetActive (true);
+
 			cam1.SetActive (false);
 			cam2.SetActive (true);
-			cube.SetActive (true);
+
+
+			//GestionSelectionParts
 
 			GSP.state1 = true;
 			GSP.state2 = false;
 			GSP.state3 = false;
+
 			GSP.OutlineDown.SetActive (true);
 			GSP.OutlineMid.SetActive (false);
 			GSP.OutlineTop.SetActive (false);
 
-		} else if (amIOn && playerIsHere && Input.GetButtonDown ("Submit")) {
+			//est ce que j'ai résolu l'énigme ou pas
+			//cube.SetActive (true);
+
+		} else if (amIOn && playerIsHere && Input.GetButtonDown ("Submit") && EndingTotemScript.EnigmaIsDone == false) {
 			amIOn = false;
+
 			player.SetActive (true);
 			playerWrong.SetActive (false);
+
 			cam1.SetActive (true);
 			cam2.SetActive (false);
-			cube.SetActive (false);
+
+			//GestionSelectionParts
 
 			GSP.canIUseItDown = false;
 			GSP.canIUseItMid = false;
@@ -47,9 +72,13 @@ public class ActivateTotemEnigma : MonoBehaviour {
 			GSP.state1 = false;
 			GSP.state2 = false;
 			GSP.state3 = false;
+
 			GSP.OutlineDown.SetActive (false);
 			GSP.OutlineMid.SetActive (false);
 			GSP.OutlineTop.SetActive (false);
+
+			//est ce que j'ai résolu l'énigme ou pas
+			//cube.SetActive (true);
 		}
 	}
 

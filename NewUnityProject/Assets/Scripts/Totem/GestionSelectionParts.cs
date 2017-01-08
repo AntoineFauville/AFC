@@ -26,6 +26,9 @@ public class GestionSelectionParts : MonoBehaviour {
 		state1 = false;
 		state2 = false;
 		state3 = false;
+		OutlineDown.SetActive(false);
+		OutlineMid.SetActive (false);
+		OutlineTop.SetActive (false);
 	}
 	
 	// Update is called once per frame

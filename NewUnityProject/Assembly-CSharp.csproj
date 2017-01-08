@@ -76,7 +76,6 @@
      <Compile Include="Assets\Scripts\Area\AreaColliderSecondScript.cs" />
      <Compile Include="Assets\Scripts\Area\AreaDetectorGestion.cs" />
      <Compile Include="Assets\Scripts\Area\DetectArea.cs" />
-     <Compile Include="Assets\Scripts\Area\GestionSelectionParts.cs" />
      <Compile Include="Assets\Scripts\Area\InteractiveAreaGestion.cs" />
      <Compile Include="Assets\Scripts\Area\LightBeamTriggerLazer.cs" />
      <Compile Include="Assets\Scripts\BonusItemReception\BonusPointExplosion.cs" />
@@ -114,7 +113,6 @@
      <Compile Include="Assets\Scripts\Enigme 3\PlayerActivateRockEnigme.cs" />
      <Compile Include="Assets\Scripts\Enigme 3\RunicPillarA.cs" />
      <Compile Include="Assets\Scripts\Enigme 4\ActivateEnigmeFaisseaux.cs" />
-     <Compile Include="Assets\Scripts\Enigme 4\RotationEnigmeLazer.cs" />
      <Compile Include="Assets\Scripts\FootSteps\InstantiatePrefabOnWalk.cs" />
      <Compile Include="Assets\Scripts\Hallucinations\CameraEffectCubeDistance.cs" />
      <Compile Include="Assets\Scripts\Historical Bar system\AddOnceToBar.cs" />
@@ -140,6 +138,11 @@
      <Compile Include="Assets\Scripts\Temple 1\turnGolbalFinalDoorBool.cs" />
      <Compile Include="Assets\Scripts\Totem\ActivateTotemEnigma.cs" />
      <Compile Include="Assets\Scripts\Totem\EndTotemEnigma.cs" />
+     <Compile Include="Assets\Scripts\Totem\GestionSelectionParts.cs" />
+     <Compile Include="Assets\Scripts\Totem\RotationEnigmeLazer.cs" />
+     <Compile Include="Assets\Scripts\Totem\TriggerSendingInfoTotem1.cs" />
+     <Compile Include="Assets\Scripts\Totem\TriggerSendingInfoTotem2.cs" />
+     <Compile Include="Assets\Scripts\Totem\VillageDecouvertBlocageCube.cs" />
      <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Anaglyph3D.cs" />
      <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\BlackAndBlue.cs" />
      <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\BlackAndGreen.cs" />
