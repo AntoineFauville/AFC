@@ -10,6 +10,9 @@ public class DetectArea : MonoBehaviour {
 
 	[SerializeField]public float dist;
 
+	public float speedJoueurOut = 1.0f;
+	public float speedAnimOut = 1.0f;
+
 	/*void OnTriggerEnter(Collider coll){
 		if (coll.tag == "Player") {
 			amIArea1 = true;
@@ -30,8 +33,8 @@ public class DetectArea : MonoBehaviour {
 		}
 
 		if (dist >= 25) {
-			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().m_AnimSpeedMultiplier = 1.0f;
-			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().m_MoveSpeedMultiplier = 1.0f;
+			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().m_AnimSpeedMultiplier = speedJoueurOut;
+			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().m_MoveSpeedMultiplier = speedAnimOut;
 		}
 
 		if (dist < 25 && dist >= 21) {

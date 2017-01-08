@@ -20,5 +20,10 @@ public class SanityGestion : MonoBehaviour {
 	void Update () {
 
 		Sanity.fillAmount = sanity;
+
+		if (sanity < 0)
+		{
+			sanity = 0;
+		}
 	}
 }

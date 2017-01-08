@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjetATrouverList : MonoBehaviour {
-
+	/*
 	GameObject Player;
-
-	v
 
 	public GameObject[] Ville;
 
@@ -35,5 +33,5 @@ public class ObjetATrouverList : MonoBehaviour {
 				FoundTown = false;
 			}
 		}
-	}
+	}*/
 }
