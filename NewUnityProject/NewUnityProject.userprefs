@@ -1,23 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Totem\EndTotemEnigma.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Totem\RotationEnigmeLazer.cs">
     <Files>
-      <File FileName="Assets\Scripts\Totem\ActivateTotemEnigma.cs" Line="24" Column="93" />
+      <File FileName="Assets\Scripts\Totem\ActivateTotemEnigma.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Totem\GestionSelectionParts.cs" Line="29" Column="24" />
-      <File FileName="Assets\Scripts\Totem\EndTotemEnigma.cs" Line="37" Column="5" />
-      <File FileName="Assets\Scripts\Totem\TriggerSendingInfoTotem1.cs" Line="5" Column="38" />
-      <File FileName="Assets\Scripts\Totem\TriggerSendingInfoTotem2.cs" Line="11" Column="30" />
-      <File FileName="Assets\Scripts\Totem\VillageDecouvertBlocageCube.cs" Line="72" Column="52" />
-      <File FileName="Assets\Scripts\Cube System\pickUpCube.cs" Line="32" Column="6" />
-      <File FileName="Assets\Scripts\Cube System\DropCube.cs" Line="15" Column="28" />
+      <File FileName="Assets\Scripts\Totem\EndTotemEnigma.cs" Line="57" Column="16" />
+      <File FileName="Assets\Scripts\Totem\TriggerSendingInfoTotem1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Totem\TriggerSendingInfoTotem2.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Totem\VillageDecouvertBlocageCube.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Totem\RotationEnigmeLazer.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State name="__root__">
-          <Node name="NewUnityProject" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

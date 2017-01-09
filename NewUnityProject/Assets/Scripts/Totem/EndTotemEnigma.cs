@@ -54,6 +54,8 @@ public class EndTotemEnigma : MonoBehaviour {
 		float rot2 = Mathf.Abs (currentRotationPart2.y);
 		float rot3 = Mathf.Abs (currentRotationPart3.y);
 
+		print (rot2);
+
 		/*if (rot1 >= 0.95f && rot1 <= 0.96f &&
 			rot2 >= 0.95f && rot2 <= 0.96f &&
 			rot3 >= 0.95f && rot3 <= 0.96f) 
