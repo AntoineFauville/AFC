@@ -101,6 +101,7 @@
      <Compile Include="Assets\Scripts\Cube System\SanityGestion.cs" />
      <Compile Include="Assets\Scripts\Cube System\ZoneGestion.cs" />
      <Compile Include="Assets\Scripts\Cube System\pickUpCube.cs" />
+     <Compile Include="Assets\Scripts\Demo\DebugDemo.cs" />
      <Compile Include="Assets\Scripts\Enigme 1\ActivateCirclePuzzle.cs" />
      <Compile Include="Assets\Scripts\Enigme 1\CircleOpeningAfterEndRotation.cs" />
      <Compile Include="Assets\Scripts\Enigme 1\EndEnigmeRotationCircle.cs" />
@@ -140,6 +141,7 @@
      <Compile Include="Assets\Scripts\Totem\EndTotemEnigma.cs" />
      <Compile Include="Assets\Scripts\Totem\GestionSelectionParts.cs" />
      <Compile Include="Assets\Scripts\Totem\RotationEnigmeLazer.cs" />
+     <Compile Include="Assets\Scripts\Totem\TriggerAnimNewEntry.cs" />
      <Compile Include="Assets\Scripts\Totem\TriggerSendingInfoTotem1.cs" />
      <Compile Include="Assets\Scripts\Totem\TriggerSendingInfoTotem2.cs" />
      <Compile Include="Assets\Scripts\Totem\VillageDecouvertBlocageCube.cs" />

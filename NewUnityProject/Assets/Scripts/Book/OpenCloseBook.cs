@@ -46,7 +46,7 @@ public class OpenCloseBook : MonoBehaviour {
 
 				//FF.lockMouseCursor = false;
 		} else 
-			if (Input.GetButtonDown ("Cancel") && isBookOpen) {
+			if (Input.GetButtonDown ("OpenBook") && isBookOpen) {
 				buttonOuvrirBook.SetActive (true);
 				mainCamera.SetActive (true);
 				SecondCamera.SetActive (false);

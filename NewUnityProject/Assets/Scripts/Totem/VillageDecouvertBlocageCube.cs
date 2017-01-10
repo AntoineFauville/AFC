@@ -68,7 +68,7 @@ public class VillageDecouvertBlocageCube : MonoBehaviour {
 				didIInstantiate = true;
 				CubeTotem.SetActive (false);
 				CubeOnAss.SetActive (false);
-				ScanningPanel.SetActive (true);
+//				ScanningPanel.SetActive (true);
 				Player.GetComponent<DropCube> ().enabled = true;
 				Player.GetComponent<DropCube> ().isCubeOnGround = true;
 			}
