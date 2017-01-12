@@ -37,25 +37,38 @@ public class ZoneGestion : MonoBehaviour {
 	public Animator animVillage;
 	bool animBoolVillage;
 
+	public Animator anim;
+	bool animBool;
+
+	GameObject ImageBookVillage;
+	GameObject ImageBookSmall;
+
 	// Use this for initialization
 	void Start () {
 		Player = GameObject.Find ("Player");
 		ScanningFeedBack01 = GameObject.Find ("PanelNewMapInfoScan");
 		ScanningFeedBack02 = GameObject.Find ("PanelNewMapInfoScanned");
 		ScanningFeedBack03 = GameObject.Find ("PanelNewMapInfoScannedSmall");
+		ImageBookVillage = GameObject.Find ("ButtonImageBouquinVillage01");
+		ImageBookSmall = GameObject.Find ("ButtonImageBouquinPots");
 
 		ScanningFeedBack01.SetActive (true);
 		ScanningFeedBack02.SetActive (false);
 		ScanningFeedBack03.SetActive (false);
+
+		ImageBookVillage.SetActive (false);
+		ImageBookSmall.SetActive (false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		animVillage.SetBool ("AnimVillageBool", animBoolVillage);
+		anim.SetBool ("ActivateDemoSmall",animBool);
 		//distance face au village
 
 		float distance = Vector3.Distance(Player.transform.position, ListDeZone[0].transform.position);
 		//inside area
+
 
 		if (!cubeIsHereInTown) {
 
@@ -77,6 +90,7 @@ public class ZoneGestion : MonoBehaviour {
 			//une fois résolue -> resoudreLEnigme = true;
 			didCubeGotIntoTownOnce = true;
 			animBoolVillage = true;
+			ImageBookVillage.SetActive (true);
 			StartCoroutine ("returnBoolAnim");
 			cubeIsHereInTown = false;
 		}
@@ -92,6 +106,8 @@ public class ZoneGestion : MonoBehaviour {
 			}
 		} else if (cubeIsHereSmall) {
 			didCubeGotInSmallOnce = true;
+			animBool = true;
+			ImageBookSmall.SetActive (true);
 			cubeIsHereSmall = false;
 		}
 

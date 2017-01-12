@@ -30,7 +30,7 @@ public class ArcheologyCube : MonoBehaviour {
 		float distanceRouge = Vector3.Distance (transform.position, ZG.ListDeZone [0].transform.position);
 		float distanceVert = Vector3.Distance (ZG.ListDeZone [0].transform.position, transform.position);
 
-		print (distanceRouge);
+		//print (distanceRouge);
 
 		rouge = Mathf.Round ((distanceRouge / 50.0f) * 255.0f * 2);
 		if (rouge < 0.0f) {

@@ -6,8 +6,11 @@ public class CubeIsHereSmall : MonoBehaviour {
 
 	ZoneGestion ZG;
 
+
+
 	// Use this for initialization
 	void Start () {
+		
 		ZG = GameObject.Find ("ScriptManager").GetComponent<ZoneGestion> ();
 	}
 	
@@ -16,9 +19,9 @@ public class CubeIsHereSmall : MonoBehaviour {
 		
 	}
 
-	void OnTriggerEnter (Collider coll) {
+	void OnTriggerStay (Collider coll) {
 		if (coll.tag == "Cube") {
-			ZG.cubeIsHereSmall = true;
+				ZG.cubeIsHereSmall = true;
 		}
 	}
 }

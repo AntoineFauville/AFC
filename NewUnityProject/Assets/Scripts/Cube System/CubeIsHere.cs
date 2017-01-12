@@ -16,7 +16,7 @@ public class CubeIsHere : MonoBehaviour {
 		
 	}
 
-	void OnTriggerEnter (Collider coll) {
+	void OnTriggerStay (Collider coll) {
 		if (coll.tag == "Cube") {
 			ZG.cubeIsHereInTown = true;
 		}
