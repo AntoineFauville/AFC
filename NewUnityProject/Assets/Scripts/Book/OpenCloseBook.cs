@@ -7,7 +7,7 @@ public class OpenCloseBook : MonoBehaviour {
 
 	public GameObject canvas;
 	public bool isBookOpen;
-	public GameObject buttonOuvrirBook;
+	//public GameObject buttonOuvrirBook;
 
 		GameObject canvasMainCamera;
 
@@ -37,7 +37,7 @@ public class OpenCloseBook : MonoBehaviour {
 			mainCamera.SetActive (false);
 			SecondCamera.SetActive (true);
 			canvasMainCamera.SetActive (false);
-			buttonOuvrirBook.SetActive (false);
+			//buttonOuvrirBook.SetActive (false);
 			isBookOpen = true;
 			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().enabled = false;
 			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl> ().enabled = false;
@@ -47,7 +47,7 @@ public class OpenCloseBook : MonoBehaviour {
 				//FF.lockMouseCursor = false;
 		} else 
 			if (Input.GetButtonDown ("OpenBook") && isBookOpen) {
-				buttonOuvrirBook.SetActive (true);
+				//buttonOuvrirBook.SetActive (true);
 				mainCamera.SetActive (true);
 				SecondCamera.SetActive (false);
 				canvasMainCamera.SetActive (true);

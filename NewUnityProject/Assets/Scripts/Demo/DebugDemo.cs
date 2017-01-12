@@ -7,9 +7,12 @@ public class DebugDemo : MonoBehaviour {
 
 	GameObject BlocageCube;
 
+	DeathSystem DS;
+
 	// Use this for initialization
 	void Start () {
 		BlocageCube = GameObject.Find ("BlocageCube");
+		DS = GameObject.Find ("Player").GetComponent<DeathSystem>();
 	}
 	
 	// Update is called once per frame
@@ -32,6 +35,7 @@ public class DebugDemo : MonoBehaviour {
 		} else if (Input.GetKeyDown ("4")) {
 			print ("4 pressed");
 			BlocageCube.GetComponent<VillageDecouvertBlocageCube> ().villageAnimLaunched = true;
+			DS.EnigmeActiveeMortSystemOn = true;
 		} else if (Input.GetKeyDown ("5")) {
 			print ("5 pressed");
 

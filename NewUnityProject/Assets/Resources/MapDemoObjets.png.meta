@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 3664e2ff58b64604fbaa5437b5b942b2
-timeCreated: 1483791811
+timeCreated: 1484238880
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -9,6 +9,8 @@ TextureImporter:
     21300004: MapDemoObjets_2
     21300006: MapDemoObjets_3
     21300008: MapDemoObjets_4
+    21300010: MapDemoObjets_5
+    21300012: MapDemoObjets_6
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -134,6 +136,32 @@ TextureImporter:
         y: 85
         width: 150
         height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapDemoObjets_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 389
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: MapDemoObjets_6
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 6
+        width: 449
+        height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

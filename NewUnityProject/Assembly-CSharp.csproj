@@ -116,6 +116,7 @@
      <Compile Include="Assets\Scripts\Enigme 4\ActivateEnigmeFaisseaux.cs" />
      <Compile Include="Assets\Scripts\FootSteps\InstantiatePrefabOnWalk.cs" />
      <Compile Include="Assets\Scripts\Hallucinations\CameraEffectCubeDistance.cs" />
+     <Compile Include="Assets\Scripts\Hallucinations\DeathSystem.cs" />
      <Compile Include="Assets\Scripts\Historical Bar system\AddOnceToBar.cs" />
      <Compile Include="Assets\Scripts\Historical Bar system\HistorybarInteractive.cs" />
      <Compile Include="Assets\Scripts\Objectives\ActivateNextObjective.cs" />

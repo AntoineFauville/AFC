@@ -71,6 +71,8 @@ public class VillageDecouvertBlocageCube : MonoBehaviour {
 //				ScanningPanel.SetActive (true);
 				Player.GetComponent<DropCube> ().enabled = true;
 				Player.GetComponent<DropCube> ().isCubeOnGround = true;
+
+				Player.GetComponent<DeathSystem> ().EnigmeActiveeMortSystemOn = false;
 			}
 			EnigmaResolving = false;
 		}

@@ -1,11 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Totem\TriggerAnimNewEntry.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Cube System\ArcheologyCube.cs">
     <Files>
       <File FileName="Assets\Scripts\Demo\DebugDemo.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Book\OpenCloseBook.cs" Line="49" Column="38" />
+      <File FileName="Assets\Scripts\Book\OpenCloseBook.cs" Line="1" Column="1" />
       <File FileName="Assets\3rdPersonCamera\Scripts\LockOnTarget.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Totem\TriggerAnimNewEntry.cs" Line="46" Column="29" />
+      <File FileName="Assets\Scripts\Totem\TriggerAnimNewEntry.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Hallucinations\DeathSystem.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Totem\VillageDecouvertBlocageCube.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Book\Map.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Cube System\ObjetATrouverList.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Cube System\DropCube.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Cube System\ArcheologyCube.cs" Line="35" Column="60" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
