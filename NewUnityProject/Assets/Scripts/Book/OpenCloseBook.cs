@@ -32,7 +32,7 @@ public class OpenCloseBook : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-			if (Input.GetButtonDown ("OpenBook") && !isBookOpen && DC.isCubeOnGround == false) {
+			if (Input.GetButtonDown ("OpenBook") && !isBookOpen) {
 			canvas.SetActive (true);
 			mainCamera.SetActive (false);
 			SecondCamera.SetActive (true);

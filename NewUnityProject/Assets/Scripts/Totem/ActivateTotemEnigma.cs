@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using ThirdPersonCamera;
 
 public class ActivateTotemEnigma : MonoBehaviour {
 
@@ -10,6 +11,8 @@ public class ActivateTotemEnigma : MonoBehaviour {
 	GameObject playerWrong;
 	GameObject cam1;
 	GameObject cam2;
+
+	GameObject MapAndInventory;
 
 	public GameObject cube;
 
@@ -22,6 +25,8 @@ public class ActivateTotemEnigma : MonoBehaviour {
 		cam1 = GameObject.Find ("Main Camera Main");
 		cam2 = GameObject.Find ("CameraEnigmeTotem");
 		GSP = GameObject.Find ("GestionPartSelectionTotem").GetComponent<GestionSelectionParts>();
+
+		MapAndInventory = GameObject.Find ("ScriptManager");
 
 		EndingTotemScript = GameObject.Find ("EndGestionTotem").GetComponent<EndTotemEnigma>();
 
@@ -36,6 +41,9 @@ public class ActivateTotemEnigma : MonoBehaviour {
 
 			player.SetActive (false);
 			playerWrong.SetActive (true);
+
+			MapAndInventory.GetComponent<Map> ().enabled = false;
+			MapAndInventory.GetComponent<OpenCloseBook> ().enabled = false;
 
 			cam1.SetActive (false);
 			cam2.SetActive (true);
@@ -59,6 +67,9 @@ public class ActivateTotemEnigma : MonoBehaviour {
 
 			player.SetActive (true);
 			playerWrong.SetActive (false);
+
+			MapAndInventory.GetComponent<Map> ().enabled = true;
+			MapAndInventory.GetComponent<OpenCloseBook> ().enabled = true;
 
 			cam1.SetActive (true);
 			cam2.SetActive (false);
