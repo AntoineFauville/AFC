@@ -1,24 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Hallucinations\DeathSystem.cs">
     <Files>
-      <File FileName="Assets\Scripts\Demo\DebugDemo.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Book\OpenCloseBook.cs" Line="1" Column="1" />
-      <File FileName="Assets\3rdPersonCamera\Scripts\LockOnTarget.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Totem\TriggerAnimNewEntry.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Hallucinations\DeathSystem.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Totem\VillageDecouvertBlocageCube.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Book\Map.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Cube System\ObjetATrouverList.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Cube System\DropCube.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Cube System\ArcheologyCube.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Cube System\CubeIsHereSmall.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Cube System\ZoneGestion.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Cube System\CubeIsHere.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Totem\GestionSelectionParts.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Totem\ActivateTotemEnigma.cs" Line="1" Column="1" />
-      <File FileName="Assets\3rdPersonCamera\Scripts\Follow.cs" Line="61" Column="66" />
-      <File FileName="Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Cube System\ZoneGestion.cs" Line="67" Column="1" />
+      <File FileName="Assets\Scripts\Hallucinations\DeathSystem.cs" Line="75" Column="80" />
+      <File FileName="Assets\Scripts\Camera\StartWhiteScreen.cs" Line="26" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

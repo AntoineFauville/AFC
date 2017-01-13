@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class AreaDetectorGestion : MonoBehaviour {
-
+	/*
 	/*public DetectArea area1Script;
 	public DetectArea area2Script;
 	public DetectArea area3Script;
@@ -14,7 +14,7 @@ public class AreaDetectorGestion : MonoBehaviour {
 	public DetectArea area9Script;
 	public DetectArea area10Script;
 	public DetectArea area11Script;*/
-
+	/*
 	public bool area1;
 
 	public GameObject player;
@@ -26,12 +26,12 @@ public class AreaDetectorGestion : MonoBehaviour {
 	public float amoutOfMoveSpeed;
 
 	// Use this for initialization
-	void Start () {
+	/*void Start () {
 		speedBeforeEntering = player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().m_MoveSpeedMultiplier;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	/*void Update () {
 		/*if (area1Script.amIArea1 == true || area2Script.amIArea1 == true || area3Script.amIArea1 == true || area4Script.amIArea1 == true || area5Script.amIArea1 == true
 			|| area6Script.amIArea1 == true || area7Script.amIArea1 == true || area8Script.amIArea1 == true || area9Script.amIArea1 == true || area10Script.amIArea1 == true
 			|| area11Script.amIArea1 == true) {
@@ -48,7 +48,7 @@ public class AreaDetectorGestion : MonoBehaviour {
 
 
 
-		if (player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().m_AnimSpeedMultiplier <= 0.4f) {
+	/*	if (player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().m_AnimSpeedMultiplier <= 0.4f) {
 			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().m_AnimSpeedMultiplier = 0.4f;
 		}
 
@@ -76,5 +76,5 @@ public class AreaDetectorGestion : MonoBehaviour {
 			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().m_MoveSpeedMultiplier = speedBeforeEntering;
 			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().m_AnimSpeedMultiplier = speedBeforeEntering;
 		}
-	}
+	}*/
 }

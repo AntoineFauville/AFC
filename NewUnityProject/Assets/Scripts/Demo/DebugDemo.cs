@@ -9,14 +9,27 @@ public class DebugDemo : MonoBehaviour {
 
 	DeathSystem DS;
 
+	GameObject MenuCanvas;
+	bool menuOpen;
+
 	// Use this for initialization
 	void Start () {
+		MenuCanvas = GameObject.Find ("CanvasMenu");
 		BlocageCube = GameObject.Find ("BlocageCube");
 		DS = GameObject.Find ("Player").GetComponent<DeathSystem>();
+		MenuCanvas.SetActive (false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (Input.GetButtonDown ("Cancel") && !menuOpen) {
+			MenuCanvas.SetActive (true);
+			menuOpen = true;
+		} else if (Input.GetButtonDown ("Cancel") && menuOpen) {
+			MenuCanvas.SetActive (false);
+			menuOpen = false;
+		}
 
 		//scene loading
 

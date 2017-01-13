@@ -1,12 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DeathSystem : MonoBehaviour {
 
 	GameObject Artefact;
 	GameObject RespawnEnigme;
 
+	public CanvasGroup ImageWhite;
+	public float smoothWhiteBeginning = 0.05f;
+	public bool amIAtZero = false;
+	public bool amIAtMax = false;
+	public float secondsBeforeDecreasing = 2.0f;
+	private bool goingUp = false;
+	private bool goingDown = false;
 
 	DropCube DC;
 	SanityGestion SG;
@@ -30,7 +38,7 @@ public class DeathSystem : MonoBehaviour {
 			Artefact = GameObject.Find ("ArtefactRecherche(Clone)");
 
 			if (SG.sanity <= 0) {
-				this.transform.position =  Artefact.transform.position;
+				StartCoroutine ("Dying");
 			}
 		}
 
@@ -38,12 +46,47 @@ public class DeathSystem : MonoBehaviour {
 
 		if (EnigmeActiveeMortSystemOn) {
 			if (SG.sanity <= 0) {
-				this.transform.position =  RespawnEnigme.transform.position;
+				StartCoroutine ("DyingEnigma");
+
 			}
+		}
+
+		if (amIAtZero && goingUp) {
+			ImageWhite.alpha += smoothWhiteBeginning;
+		}
+
+		if (amIAtMax && goingDown) {
+			ImageWhite.alpha -= smoothWhiteBeginning;
+		}
+
+		if (ImageWhite.alpha <= 0) {
+			amIAtZero = true;
+		}
+
+		if (ImageWhite.alpha >= 0) {
+			amIAtMax = true;
 		}
 	}
 
-	IEnumerator wait () {
-		yield return new WaitForSeconds (0.5f);
+	IEnumerator Dying () {
+		goingUp = true;
+		yield return new WaitForSeconds (secondsBeforeDecreasing);
+		goingUp = false;
+		this.transform.position =  Artefact.transform.position + new Vector3 (1,0,1);
+		yield return new WaitForSeconds (secondsBeforeDecreasing);
+		goingDown = true;
+		yield return new WaitForSeconds (secondsBeforeDecreasing);
+		goingDown = false;
+	}
+
+	IEnumerator DyingEnigma () {
+		goingUp = true;
+		yield return new WaitForSeconds (secondsBeforeDecreasing);
+		goingUp = false;
+		this.transform.position =  RespawnEnigme.transform.position;
+		yield return new WaitForSeconds (secondsBeforeDecreasing);
+		goingDown = true;
+		yield return new WaitForSeconds (secondsBeforeDecreasing);
+		goingDown = false;
 	}
 }

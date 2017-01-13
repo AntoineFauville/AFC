@@ -28,18 +28,27 @@ public class MenuDemo : MonoBehaviour {
 		StartCoroutine ("launchDemoGraph");
 	}
 
+	public void launchMenuDemo(){
+		StartCoroutine ("launchMenu");
+	}
+
 	IEnumerator launchDemoTech (){
-		yield return new WaitForSeconds (0.5f);
+		yield return new WaitForSeconds (0.3f);
 		SceneManager.LoadScene ("Technical Scene");
 	}
 
 	IEnumerator launchDemoGraph (){
-		yield return new WaitForSeconds (0.5f);
+		yield return new WaitForSeconds (0.3f);
 		SceneManager.LoadScene ("");
 	}
 		
 	IEnumerator EndGame (){
-		yield return new WaitForSeconds (2.0f);
+		yield return new WaitForSeconds (0.2f);
 		Application.CancelQuit ();
+	}
+
+	IEnumerator launchMenu (){
+		yield return new WaitForSeconds (0.3f);
+		SceneManager.LoadScene ("MenuScene");
 	}
 }

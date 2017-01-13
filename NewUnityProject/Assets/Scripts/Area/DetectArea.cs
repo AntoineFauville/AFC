@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class DetectArea : MonoBehaviour {
-
+	/*
 	[SerializeField]public bool amIArea1;
 
 	[SerializeField]public Transform reference;
@@ -19,7 +19,7 @@ public class DetectArea : MonoBehaviour {
 			print ("Entered");
 		}
 	}*/
-
+	/*
 	void OnTriggerExit(Collider coll){
 		if (coll.tag == "Player") {
 			amIArea1 = false;
@@ -62,5 +62,5 @@ public class DetectArea : MonoBehaviour {
 		if (coll.tag == "Player") {
 			amIArea1 = true;
 		}
-	}
+	}*/
 }

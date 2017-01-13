@@ -1,15 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+//using UnityEditor;
 
 public class ArcheologyCube : MonoBehaviour {
 
 	Renderer rend;
-
-
-
-	//ObjetATrouverList OATL;
 
 	ZoneGestion ZG;
 
@@ -20,7 +16,6 @@ public class ArcheologyCube : MonoBehaviour {
 
 	void Start () {
 		rend = GetComponent<Renderer> ();
-		//OATL = GameObject.Find ("ScriptManager").GetComponent<ObjetATrouverList> ();
 		ZG = GameObject.Find ("ScriptManager").GetComponent<ZoneGestion> ();
 		StartCoroutine ("ColorChange");
 	}

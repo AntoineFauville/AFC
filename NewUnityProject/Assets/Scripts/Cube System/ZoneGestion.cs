@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ZoneGestion : MonoBehaviour {
 
@@ -32,6 +33,10 @@ public class ZoneGestion : MonoBehaviour {
 
 	public bool AmIInsideArea;
 
+	public GameObject TextVertical;
+	public GameObject TextDescription;
+	public GameObject TextSmall;
+
 	//animation
 
 	public Animator animVillage;
@@ -45,19 +50,24 @@ public class ZoneGestion : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		//TextVertical = GameObject.Find ("Text petit vertical");
+		//TextDescription = GameObject.Find ("Text full text description");
+		//TextSmall = GameObject.Find ("Text small text description");
+
 		Player = GameObject.Find ("Player");
 		ScanningFeedBack01 = GameObject.Find ("PanelNewMapInfoScan");
 		ScanningFeedBack02 = GameObject.Find ("PanelNewMapInfoScanned");
 		ScanningFeedBack03 = GameObject.Find ("PanelNewMapInfoScannedSmall");
 		ImageBookVillage = GameObject.Find ("ButtonImageBouquinVillage01");
 		ImageBookSmall = GameObject.Find ("ButtonImageBouquinPots");
-
 		ScanningFeedBack01.SetActive (true);
 		ScanningFeedBack02.SetActive (false);
 		ScanningFeedBack03.SetActive (false);
 
 		ImageBookVillage.SetActive (false);
 		ImageBookSmall.SetActive (false);
+
+
 	}
 	
 	// Update is called once per frame
@@ -114,15 +124,23 @@ public class ZoneGestion : MonoBehaviour {
 
 		//scanning
 		if (!didICheckNextVillage) {
+			// si j'ai rien scanner 
 			ScanningFeedBack01.SetActive (true);
 			ScanningFeedBack02.SetActive (false);
 			ScanningFeedBack03.SetActive (false);
+			TextVertical.GetComponent<Text> ().text = "0 0";
+			TextSmall.GetComponent<Text> ().text = " ";
+			TextDescription.GetComponent<Text> ().text = "Fermez le menu, ensuite appuyez sur E et utilisez le bouton 'scan' pour avoir un Objectif";
+
 		} else {
 			if(!didICheckSmallThing && isThereSomthingAround){
 				ScanningFeedBack01.SetActive (false);
 				ScanningFeedBack02.SetActive (false);
 				ScanningFeedBack03.SetActive (true);
+				TextSmall.GetComponent<Text> ().text = "Nouveau petit Objet découvert en : A 1";
 			} else {
+				TextVertical.GetComponent<Text> ().text = "C 1";
+				TextDescription.GetComponent<Text> ().text = "Nouvelle entrée ! Le cube nous donne les coordonnées suivantes : C 1";
 				ScanningFeedBack01.SetActive (false);
 				ScanningFeedBack02.SetActive (true);
 				ScanningFeedBack03.SetActive (false);
@@ -137,6 +155,7 @@ public class ZoneGestion : MonoBehaviour {
 		// 1 new village found - osef si y a des petits trucs pas loin prio village
 		// si j'appuie sur scan ca lance le scan
 		if (!didICheckNextVillage) {
+			
 			StartCoroutine ("timeOfAnimDetect");
 		}
 
