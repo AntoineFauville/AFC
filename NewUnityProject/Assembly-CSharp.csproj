@@ -131,6 +131,9 @@
      <Compile Include="Assets\Scripts\Other\QT_SurfaceNoise.cs" />
      <Compile Include="Assets\Scripts\Other\RunInBackGround.cs" />
      <Compile Include="Assets\Scripts\Other\SpriteSheet.cs" />
+     <Compile Include="Assets\Scripts\Player\CharacterMovement.cs" />
+     <Compile Include="Assets\Scripts\Player\MoveCamNoFollow.cs" />
+     <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Save + GameInfo\GameInformation.cs" />
      <Compile Include="Assets\Scripts\Save + GameInfo\LoadInformation.cs" />
      <Compile Include="Assets\Scripts\Save + GameInfo\SaveInformation.cs" />
@@ -300,9 +303,6 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Headache.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Users/Antoine/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/Antoine/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -317,9 +317,6 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>C:/Users/Antoine/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>C:/Users/Antoine/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Users/Antoine/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
