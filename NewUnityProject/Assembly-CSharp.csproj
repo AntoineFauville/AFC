@@ -149,6 +149,14 @@
      <Compile Include="Assets\Scripts\Totem\TriggerSendingInfoTotem1.cs" />
      <Compile Include="Assets\Scripts\Totem\TriggerSendingInfoTotem2.cs" />
      <Compile Include="Assets\Scripts\Totem\VillageDecouvertBlocageCube.cs" />
+     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\CameraFollow.cs" />
+     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\CameraView.cs" />
+     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\CharacterFootsteps.cs" />
+     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\DemoUI.cs" />
+     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\FirstPersonController.cs" />
+     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\FootstepTrigger.cs" />
+     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\SurfaceManager.cs" />
+     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\TopDownController.cs" />
      <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Anaglyph3D.cs" />
      <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\BlackAndBlue.cs" />
      <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\BlackAndGreen.cs" />

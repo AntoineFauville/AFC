@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using ThirdPersonCamera;
 
 public class Map : MonoBehaviour {
 
 	GameObject MapGameObject;
-	GameObject PanelbookCamera;
+	GameObject canvasMainCamera;
 
 	GameObject BigArea;
 	GameObject SmallArea;
@@ -15,14 +16,18 @@ public class Map : MonoBehaviour {
 	GameObject ImageMapVillage;
 	GameObject ImageMapZoneVillage;
 
-	ZoneGestion ZG;
+	public GameObject PanelArtefact;
+	public GameObject PanelBook;
+	public GameObject PanelMap;
 
-	bool mapOpen = false;
+	ZoneGestion ZG;
+	OpenCloseBook OCB;
+
+	public bool mapOpen = false;
 
 	// Use this for initialization
 	void Start () {
 		MapGameObject = GameObject.Find ("CameraMap");
-		PanelbookCamera = GameObject.Find ("NewBookPanelMapOnly");
 
 		ImageMapSmall = GameObject.Find ("ImageMapSmall");
 		ImageMapZoneSmall = GameObject.Find ("ImageMapZoneSmall");
@@ -35,7 +40,6 @@ public class Map : MonoBehaviour {
 		ImageMapZoneVillage.SetActive(false);
 
 		MapGameObject.SetActive (false);
-		PanelbookCamera.SetActive (false);
 
 		BigArea = GameObject.Find ("SphereVillage");
 		SmallArea = GameObject.Find ("SphereSmall");
@@ -44,19 +48,42 @@ public class Map : MonoBehaviour {
 		BigArea.SetActive(false);
 
 		ZG = GameObject.Find ("ScriptManager").GetComponent<ZoneGestion> ();
+		OCB = GameObject.Find ("ScriptManager").GetComponent<OpenCloseBook> ();
+		canvasMainCamera = GameObject.Find ("Canvas Book Notification MainCamera");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown ("Map") && !mapOpen) {
+		if (Input.GetButtonDown ("Map") && !mapOpen && OCB.ImInMenuBool == false) {
+			OCB.ImInMenuBool = true;
+			OCB.canvas.SetActive (true);
+			OCB.mainCamera.SetActive (false);
+			OCB.SecondCamera.SetActive (true);
+			canvasMainCamera.SetActive (false);
+			OCB.isBookOpen = true;
 			mapOpen = true;
 			MapGameObject.SetActive (true);
-			PanelbookCamera.SetActive (true);
+
+			PanelArtefact.SetActive (false);
+			PanelBook.SetActive (false);
+			PanelMap.SetActive (true);
 		}
-		else if (Input.GetButtonDown ("Map") && mapOpen) {
+		else if ((Input.GetButtonDown ("Map") || Input.GetButtonDown ("Cancel")) && OCB.ImInMenuBool && mapOpen) {
 			mapOpen = false;
+
+			OCB.mainCamera.SetActive (true);
+			OCB.SecondCamera.SetActive (false);
+			canvasMainCamera.SetActive (true);
+			OCB.canvas.SetActive (false);
+			OCB.isBookOpen = false;
+
 			MapGameObject.SetActive (false);
-			PanelbookCamera.SetActive (false);
+
+			PanelArtefact.SetActive (false);
+			PanelBook.SetActive (false);
+			PanelMap.SetActive (true);
+
+			StartCoroutine("retourEchap");
 		}
 			
 		if (ZG.didICheckNextVillage == true) {
@@ -80,5 +107,26 @@ public class Map : MonoBehaviour {
 				ImageMapZoneSmall.SetActive (true);
 			}
 		}	
+	}
+
+	public void CloseMapButton () {
+		mapOpen = false;
+		MapGameObject.SetActive (false);
+	}
+
+	public void OpenMapButton () {
+		OCB.ImInMenuBool = true;
+		OCB.canvas.SetActive (true);
+		OCB.mainCamera.SetActive (false);
+		OCB.SecondCamera.SetActive (true);
+		canvasMainCamera.SetActive (false);
+		OCB.isBookOpen = true;
+		mapOpen = true;
+		MapGameObject.SetActive (true);
+	}
+
+	IEnumerator retourEchap () {
+		yield return new WaitForSeconds (0.1f);
+		OCB.ImInMenuBool = false;
 	}
 }

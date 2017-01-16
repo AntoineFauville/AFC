@@ -64,6 +64,7 @@
      <Compile Include="Assets\fromAssetsStore\Cinema Suite\About\Editor\CinemaSuiteWelcome.cs" />
      <Compile Include="Assets\fromAssetsStore\Cinema Suite\About\Editor\ProductInfo.cs" />
      <Compile Include="Assets\fromAssetsStore\Cinema Suite\Cinema Themes\Editor\CinemaThemesWindow.cs" />
+     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\Editor\CustomInspectors.cs" />
      <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Editor\MorePPEffects\Anaglyph3DEditor.cs" />
      <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Editor\MorePPEffects\BlackAndBlueEditor.cs" />
      <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Editor\MorePPEffects\BlackAndGreenEditor.cs" />

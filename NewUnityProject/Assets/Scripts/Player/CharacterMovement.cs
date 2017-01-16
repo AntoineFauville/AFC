@@ -6,6 +6,8 @@ public class CharacterMovement : MonoBehaviour {
 
 	public float moveSpeed = 25.0f;
 	public float moveTurnSpeed = 3.0f;
+	float m_RunCycleLegOffset = 0.2f;
+	float m_StationaryTurnSpeed = 18;
 	//public float underwaterSpeed = 10.0f;
 	//public bool isUnderwaterD = false;
 	//public bool isDrowningD = false;
@@ -32,6 +34,12 @@ public class CharacterMovement : MonoBehaviour {
 
 	Animator animator;
 
+	float m_TurnAmount;
+	float m_ForwardAmount;
+	float translation;
+	float rotation;
+	float MovingRotation;
+
 	void Start()
 	{
 		animator = GetComponent<Animator>();
@@ -43,10 +51,33 @@ public class CharacterMovement : MonoBehaviour {
 	{
 		float v = Input.GetAxis("Vertical");
 
-		float translation = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
-		float rotation = Input.GetAxis ("Horizontal") * moveTurnSpeed * Time.deltaTime;
+
+		if (Input.GetAxis ("Vertical") > 0) {
+			translation = Input.GetAxis ("Vertical") * moveSpeed * Time.deltaTime;
+			m_TurnAmount = Mathf.Atan2(0,0);
+			MovingRotation = moveTurnSpeed * Input.GetAxis ("Vertical");
+		} else {
+			translation = 0.0f;
+			MovingRotation = moveTurnSpeed * 2;
+			m_TurnAmount = Mathf.Atan2(rotation,rotation);
+		}
+
+		rotation = Input.GetAxis ("Horizontal") * MovingRotation * Time.deltaTime;
 		transform.Translate(0, 0, translation);
 		transform.Rotate(0, rotation, 0);
+
+
+		m_ForwardAmount = translation;
+
+		animator.SetFloat("Forward", m_ForwardAmount*50, 0.1f, Time.deltaTime);
+		animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
+
+		float runCycle =
+			Mathf.Repeat(
+				animator.GetCurrentAnimatorStateInfo(0).normalizedTime + m_RunCycleLegOffset, 1);
+
+		/*float turnSpeed = Mathf.Lerp(m_StationaryTurnSpeed, moveTurnSpeed, m_ForwardAmount);
+		transform.Rotate(0, m_TurnAmount * turnSpeed * Time.deltaTime, 0);*/
 
 		//UnderWaterSwimming();
 
@@ -56,6 +87,15 @@ public class CharacterMovement : MonoBehaviour {
 		animator.SetBool ("Weapon", IsOut);*/
 
 		velocity = rigidbody.velocity;
+
+		/*if (Time.deltaTime > 0)
+		{
+			Vector3 x = (animator.deltaPosition * moveSpeed) / Time.deltaTime;
+
+			// we preserve the existing y part of the current velocity.
+			x.y = GameObject.Find("Player").GetComponent<Rigidbody>().velocity.y;
+			GameObject.Find("Player").GetComponent<Rigidbody>().velocity = x;
+		}*/
 
 		/*if (Input.GetButton("Jump") /*&& jumpCooldown < Time.time*/ /* && IsGrounded) {
 		

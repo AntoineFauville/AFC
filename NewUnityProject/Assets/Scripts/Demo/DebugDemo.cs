@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using ThirdPersonCamera;
 
 public class DebugDemo : MonoBehaviour {
 
@@ -12,21 +13,26 @@ public class DebugDemo : MonoBehaviour {
 	GameObject MenuCanvas;
 	bool menuOpen;
 
+	OpenCloseBook OCB;
+
 	// Use this for initialization
 	void Start () {
 		MenuCanvas = GameObject.Find ("CanvasMenu");
 		BlocageCube = GameObject.Find ("BlocageCube");
 		DS = GameObject.Find ("Player").GetComponent<DeathSystem>();
 		MenuCanvas.SetActive (false);
+		OCB = GameObject.Find ("ScriptManager").GetComponent<OpenCloseBook> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetButtonDown ("Cancel") && !menuOpen) {
+		if (Input.GetButtonDown ("Cancel") && !menuOpen && OCB.ImInMenuBool == false) {
+			OCB.ImInMenuBool = true;
 			MenuCanvas.SetActive (true);
 			menuOpen = true;
-		} else if (Input.GetButtonDown ("Cancel") && menuOpen) {
+		} else if (Input.GetButtonDown ("Cancel") && menuOpen && OCB.ImInMenuBool == true) {
+			OCB.ImInMenuBool = false;
 			MenuCanvas.SetActive (false);
 			menuOpen = false;
 		}
