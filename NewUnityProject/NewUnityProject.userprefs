@@ -1,12 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Demo\DebugDemo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Cube System\Zonedetection.cs">
     <Files>
-      <File FileName="Assets\Scripts\Demo\DebugDemo.cs" Line="50" Column="46" />
-      <File FileName="Assets\Scripts\Player\CharacterMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Other\MenuDemo.cs" Line="42" Column="46" />
-      <File FileName="Assets\Scripts\Demo\BacktoMenu.cs" Line="16" Column="41" />
+      <File FileName="Assets\Scripts\Cube System\DropCube.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Cube System\pickUpCube.cs" Line="23" Column="43" />
+      <File FileName="Assets\Scripts\Cube System\Zonedetection.cs" Line="49" Column="100" />
+      <File FileName="Assets\Scripts\Cube System\ListeDesZonesDuCubes.cs" Line="7" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

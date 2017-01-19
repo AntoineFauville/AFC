@@ -128,10 +128,10 @@ public class MenuGestion : MonoBehaviour {
 	IEnumerator EndGame (){
 		amILaunched = true;
 		yield return new WaitForSeconds (2.0f);
-/*		if (runInEditMode) {
+		if (runInEditMode) {
 			amILaunched = false;
 			imageblanche.alpha = 0.0f;
-		}*/
+		}
 		Application.CancelQuit ();
 	}
 

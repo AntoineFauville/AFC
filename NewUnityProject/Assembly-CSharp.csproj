@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -76,10 +76,10 @@
      <Compile Include="Assets\Scripts\Area\AreaColliderSecondScript.cs" />
      <Compile Include="Assets\Scripts\Area\AreaDetectorGestion.cs" />
      <Compile Include="Assets\Scripts\Area\DetectArea.cs" />
+     <Compile Include="Assets\Scripts\Area\GestionSelectionParts.cs" />
      <Compile Include="Assets\Scripts\Area\InteractiveAreaGestion.cs" />
      <Compile Include="Assets\Scripts\Area\LightBeamTriggerLazer.cs" />
      <Compile Include="Assets\Scripts\BonusItemReception\BonusPointExplosion.cs" />
-     <Compile Include="Assets\Scripts\Book\Map.cs" />
      <Compile Include="Assets\Scripts\Book\OpenCloseBook.cs" />
      <Compile Include="Assets\Scripts\Book\SaveBookInputs.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
@@ -92,17 +92,12 @@
      <Compile Include="Assets\Scripts\Camera\ShackingEffect.cs" />
      <Compile Include="Assets\Scripts\Camera\SmoothCameraDeplacement.cs" />
      <Compile Include="Assets\Scripts\Camera\StartWhiteScreen.cs" />
-     <Compile Include="Assets\Scripts\Cube System\ArcheologyCube.cs" />
-     <Compile Include="Assets\Scripts\Cube System\CubeIsHere.cs" />
-     <Compile Include="Assets\Scripts\Cube System\CubeIsHereSmall.cs" />
      <Compile Include="Assets\Scripts\Cube System\DropCube.cs" />
+     <Compile Include="Assets\Scripts\Cube System\ListeDesZonesDuCubes.cs" />
      <Compile Include="Assets\Scripts\Cube System\LosingSanityWhenGettingAway.cs" />
-     <Compile Include="Assets\Scripts\Cube System\ObjetATrouverList.cs" />
      <Compile Include="Assets\Scripts\Cube System\SanityGestion.cs" />
-     <Compile Include="Assets\Scripts\Cube System\ZoneGestion.cs" />
+     <Compile Include="Assets\Scripts\Cube System\Zonedetection.cs" />
      <Compile Include="Assets\Scripts\Cube System\pickUpCube.cs" />
-     <Compile Include="Assets\Scripts\Demo\BacktoMenu.cs" />
-     <Compile Include="Assets\Scripts\Demo\DebugDemo.cs" />
      <Compile Include="Assets\Scripts\Enigme 1\ActivateCirclePuzzle.cs" />
      <Compile Include="Assets\Scripts\Enigme 1\CircleOpeningAfterEndRotation.cs" />
      <Compile Include="Assets\Scripts\Enigme 1\EndEnigmeRotationCircle.cs" />
@@ -115,9 +110,8 @@
      <Compile Include="Assets\Scripts\Enigme 3\PlayerActivateRockEnigme.cs" />
      <Compile Include="Assets\Scripts\Enigme 3\RunicPillarA.cs" />
      <Compile Include="Assets\Scripts\Enigme 4\ActivateEnigmeFaisseaux.cs" />
+     <Compile Include="Assets\Scripts\Enigme 4\RotationEnigmeLazer.cs" />
      <Compile Include="Assets\Scripts\FootSteps\InstantiatePrefabOnWalk.cs" />
-     <Compile Include="Assets\Scripts\Hallucinations\CameraEffectCubeDistance.cs" />
-     <Compile Include="Assets\Scripts\Hallucinations\DeathSystem.cs" />
      <Compile Include="Assets\Scripts\Historical Bar system\AddOnceToBar.cs" />
      <Compile Include="Assets\Scripts\Historical Bar system\HistorybarInteractive.cs" />
      <Compile Include="Assets\Scripts\Objectives\ActivateNextObjective.cs" />
@@ -126,15 +120,11 @@
      <Compile Include="Assets\Scripts\Other\DestroyGameObjectAfterOneSec.cs" />
      <Compile Include="Assets\Scripts\Other\IsThisIntrosceneScript.cs" />
      <Compile Include="Assets\Scripts\Other\LoadScene.cs" />
-     <Compile Include="Assets\Scripts\Other\MenuDemo.cs" />
      <Compile Include="Assets\Scripts\Other\MenuGestion.cs" />
      <Compile Include="Assets\Scripts\Other\PlantsGrowing.cs" />
      <Compile Include="Assets\Scripts\Other\QT_SurfaceNoise.cs" />
      <Compile Include="Assets\Scripts\Other\RunInBackGround.cs" />
      <Compile Include="Assets\Scripts\Other\SpriteSheet.cs" />
-     <Compile Include="Assets\Scripts\Player\CharacterMovement.cs" />
-     <Compile Include="Assets\Scripts\Player\MoveCamNoFollow.cs" />
-     <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Save + GameInfo\GameInformation.cs" />
      <Compile Include="Assets\Scripts\Save + GameInfo\LoadInformation.cs" />
      <Compile Include="Assets\Scripts\Save + GameInfo\SaveInformation.cs" />
@@ -144,48 +134,6 @@
      <Compile Include="Assets\Scripts\Temple 1\turnGolbalFinalDoorBool.cs" />
      <Compile Include="Assets\Scripts\Totem\ActivateTotemEnigma.cs" />
      <Compile Include="Assets\Scripts\Totem\EndTotemEnigma.cs" />
-     <Compile Include="Assets\Scripts\Totem\GestionSelectionParts.cs" />
-     <Compile Include="Assets\Scripts\Totem\RotationEnigmeLazer.cs" />
-     <Compile Include="Assets\Scripts\Totem\TriggerAnimNewEntry.cs" />
-     <Compile Include="Assets\Scripts\Totem\TriggerSendingInfoTotem1.cs" />
-     <Compile Include="Assets\Scripts\Totem\TriggerSendingInfoTotem2.cs" />
-     <Compile Include="Assets\Scripts\Totem\VillageDecouvertBlocageCube.cs" />
-     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\CameraFollow.cs" />
-     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\CameraView.cs" />
-     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\CharacterFootsteps.cs" />
-     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\DemoUI.cs" />
-     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\FirstPersonController.cs" />
-     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\FootstepTrigger.cs" />
-     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\SurfaceManager.cs" />
-     <Compile Include="Assets\fromAssetsStore\FREE Footsteps System\scripts\TopDownController.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Anaglyph3D.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\BlackAndBlue.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\BlackAndGreen.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\BlackAndRed.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\BleachBypass.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\CircularBlur.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\ColoredRays.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Colorization.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Dreamy.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Drunk.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\DuoTone.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Emboss.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Headache.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Laplacian.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Lens.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\LowResolution.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Negative.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\NightVision.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\NormalMapDistortion.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Posterization.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\RadialBlur.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Ripple.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Scanner.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Shadows2D.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Sobel.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\ThermalVision.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Waves.cs" />
-     <Compile Include="Assets\fromAssetsStore\More PostProcessing Effects\Scripts\Wiggle.cs" />
      <Compile Include="Assets\fromAssetsStore\Pixel Map Terrain\Scripts\PixelMapTerrain.cs" />
      <Compile Include="Assets\fromAssetsStore\Sky FX Pack\Scripts\LightBeamsControlScript.cs" />
      <Compile Include="Assets\fromAssetsStore\Sky FX Pack\Scripts\LookAtBehaviour.cs" />
@@ -204,47 +152,32 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceRaytrace.cginc" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Ripple.shader" />
      <None Include="Assets\fromAssetsStore\Pixel Map Terrain\README.txt" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\BleachBypass.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\ThermalVision.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
      <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
      <None Include="Assets\Standard Assets\Effects\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Scanner.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\BlackAndBlue.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
      <None Include="Assets\3rdPersonCamera\DemoSceneDependencies\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Lens.shader" />
      <None Include="Assets\fromAssetsStore\PainterlyNature\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
      <None Include="Assets\3rdPersonCamera\Documentation\readme.txt" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Sobel.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\BlackAndGreen.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\CircularBlur.shader" />
      <None Include="Assets\3rdPersonCamera\DemoSceneDependencies\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Drunk.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\LowResolution.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Colorization.shader" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\3rdPersonCamera\DemoSceneDependencies\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpec.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Laplacian.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Wiggle.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\DuoTone.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
@@ -256,12 +189,10 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Negative.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
      <None Include="Assets\fromAssetsStore\!SCI_FI_Modular_Pack_Free\AdditiveTint.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\NormalMapDistortion.shader" />
      <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
@@ -269,7 +200,6 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\BlackAndRed.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
@@ -283,38 +213,21 @@
      <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\ColoredRays.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\NightVision.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Shadows2D.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
-     <None Include="Assets\fromAssetsStore\Cinema Suite\About\Editor\Resources\BaseProductInfo.xml" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Emboss.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Posterization.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\RadialBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Dreamy.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Waves.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
      <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
-     <None Include="Assets\fromAssetsStore\Cinema Suite\Cinema Themes\ReadMe.txt" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Anaglyph3D.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
-     <None Include="Assets\Shaders\VertexTest.shader" />
-     <None Include="Assets\fromAssetsStore\Cinema Suite\Cinema Themes\Editor\Resources\CinemaThemesInstalledProductInfo.xml" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
-     <None Include="Assets\fromAssetsStore\More PostProcessing Effects\Shaders\Headache.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -329,9 +242,6 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>

@@ -64,40 +64,28 @@ public class RotationCircleGestion : MonoBehaviour {
 
 		//switch from circle to an other
 
-		if(state1 == true && Input.GetAxis("Vertical") < -0.5 && CanIUseVerticalAgain == false && 
-			(circle1.GetComponent<RotationCircle>().canIUseHorizontalAgain == false) && 
-			(circle2.GetComponent<RotationCircle>().canIUseHorizontalAgain == false) && 
-			(circle3.GetComponent<RotationCircle>().canIUseHorizontalAgain == false))
+		if(state1 == true && Input.GetAxis("Vertical") > 0.8 && CanIUseVerticalAgain == false)
 		{
 			state1 = false;
 			state2 = true;
 			CanIUseVerticalAgain = true;
 			StartCoroutine ("waitForVerticalInput");
 		}
-		else if(state2 == true && Input.GetAxis("Vertical") < -0.5 && CanIUseVerticalAgain == false && 
-			(circle1.GetComponent<RotationCircle>().canIUseHorizontalAgain == false) && 
-			(circle2.GetComponent<RotationCircle>().canIUseHorizontalAgain == false) && 
-			(circle3.GetComponent<RotationCircle>().canIUseHorizontalAgain == false))
+		else if(state2 == true && Input.GetAxis("Vertical") > 0.8 && CanIUseVerticalAgain == false)
 		{
 			state2 = false;
 			state3 = true;
 			CanIUseVerticalAgain = true;
 			StartCoroutine ("waitForVerticalInput");
 		}
-		if(state2 == true && Input.GetAxis("Vertical") > 0.5 && CanIUseVerticalAgain == false && 
-			(circle1.GetComponent<RotationCircle>().canIUseHorizontalAgain == false) && 
-			(circle2.GetComponent<RotationCircle>().canIUseHorizontalAgain == false) && 
-			(circle3.GetComponent<RotationCircle>().canIUseHorizontalAgain == false))
+		if(state2 == true && Input.GetAxis("Vertical") < -0.8 && CanIUseVerticalAgain == false)
 		{
 			state2 = false;
 			state1 = true;
 			CanIUseVerticalAgain = true;
 			StartCoroutine ("waitForVerticalInput");
 		}
-		else if(state3 == true && Input.GetAxis("Vertical") > 0.5 && CanIUseVerticalAgain == false && 
-			(circle1.GetComponent<RotationCircle>().canIUseHorizontalAgain == false) && 
-			(circle2.GetComponent<RotationCircle>().canIUseHorizontalAgain == false) && 
-			(circle3.GetComponent<RotationCircle>().canIUseHorizontalAgain == false))
+		else if(state3 == true && Input.GetAxis("Vertical") < -0.8 && CanIUseVerticalAgain == false)
 		{
 			state3 = false;
 			state2 = true;

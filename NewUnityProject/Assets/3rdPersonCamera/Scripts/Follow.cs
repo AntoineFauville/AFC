@@ -58,7 +58,7 @@ namespace ThirdPersonCamera
 
                 if (alignOnSlopes)
                 {
-					if (Physics.Raycast(cc.target.transform.position, Vector3.up, out raycastHit, 25.0f, layerMask)) // if the range of 15.0 is not enough, increase the value
+                    if (Physics.Raycast(cc.target.transform.position, Vector3.down, out raycastHit, 25.0f, layerMask)) // if the range of 15.0 is not enough, increase the value
                     {
                         upVector = raycastHit.normal;
                     }

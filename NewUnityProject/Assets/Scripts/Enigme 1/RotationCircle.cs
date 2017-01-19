@@ -24,14 +24,14 @@ public class RotationCircle : MonoBehaviour {
 		Quaternion currentRotation = circle.transform.rotation;
 
 		//rotation of the circles
-		if (Input.GetAxis("Horizontal") > 0.5 && canIUseHorizontalAgain == false) {
+		if (Input.GetAxis("Horizontal") > 0.8 && canIUseHorizontalAgain == false) {
 			circle.transform.rotation = currentRotation * Quaternion.Euler (0, 0, degree);
 			canIUseHorizontalAgain = true;
 			StartCoroutine ("returnHorizontal");
 			//circle.transform.rotation.z += 45;
 		}
 
-		if (Input.GetAxis("Horizontal") < -0.5 && canIUseHorizontalAgain == false) {
+		if (Input.GetAxis("Horizontal") < -0.8 && canIUseHorizontalAgain == false) {
 			circle.transform.rotation = currentRotation * Quaternion.Euler (0, 0, -degree);
 			canIUseHorizontalAgain = true;
 			StartCoroutine ("returnHorizontal");

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class DetectArea : MonoBehaviour {
-	/*
+
 	[SerializeField]public bool amIArea1;
 
 	[SerializeField]public Transform reference;
@@ -10,16 +10,13 @@ public class DetectArea : MonoBehaviour {
 
 	[SerializeField]public float dist;
 
-	public float speedJoueurOut = 1.0f;
-	public float speedAnimOut = 1.0f;
-
 	/*void OnTriggerEnter(Collider coll){
 		if (coll.tag == "Player") {
 			amIArea1 = true;
 			print ("Entered");
 		}
 	}*/
-	/*
+
 	void OnTriggerExit(Collider coll){
 		if (coll.tag == "Player") {
 			amIArea1 = false;
@@ -33,8 +30,8 @@ public class DetectArea : MonoBehaviour {
 		}
 
 		if (dist >= 25) {
-			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().m_AnimSpeedMultiplier = speedJoueurOut;
-			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().m_MoveSpeedMultiplier = speedAnimOut;
+			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().m_AnimSpeedMultiplier = 1.0f;
+			player.gameObject.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter> ().m_MoveSpeedMultiplier = 1.0f;
 		}
 
 		if (dist < 25 && dist >= 21) {
@@ -62,5 +59,5 @@ public class DetectArea : MonoBehaviour {
 		if (coll.tag == "Player") {
 			amIArea1 = true;
 		}
-	}*/
+	}
 }
