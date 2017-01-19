@@ -47,7 +47,7 @@ public class DebugDemo : MonoBehaviour {
 			Application.LoadLevel ("Technical Scene");
 		} else if (Input.GetKeyDown ("3")) {
 			print ("3 pressed");
-			Application.LoadLevel ("");
+			Application.LoadLevel ("AAAAAAAAAAAAAAAAAA");
 
 		//
 
