@@ -1,4 +1,10 @@
 sceneSetups:
-- path: Assets/Scenes/Technical Scene.unity
+- path: Assets/Scenes/Village1Layout.unity
   isLoaded: 1
   isActive: 1
+- path: Assets/Raphael_Diorama_ART/AAAAAAAAAAAAAAAAAA.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/Scenes/Technical Scene.unity
+  isLoaded: 1
+  isActive: 0
