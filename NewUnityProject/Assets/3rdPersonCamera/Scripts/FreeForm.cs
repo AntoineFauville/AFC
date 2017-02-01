@@ -125,14 +125,14 @@ namespace ThirdPersonCamera
                         y *= -1.0f;
                 }
 
-                if (Input.GetAxis("Mouse ScrollWheel") < 0) // back
+                /*if (Input.GetAxis("Mouse ScrollWheel") < 0) // back
                 {
                     cameraController.desiredDistance += cameraController.zoomOutStepValue;
                 }
                 if (Input.GetAxis("Mouse ScrollWheel") > 0) // forward
                 {
                     cameraController.desiredDistance -= cameraController.zoomOutStepValue;
-                }
+                }*/
 
                 if (cameraController.desiredDistance < 0)
                     cameraController.desiredDistance = 0;

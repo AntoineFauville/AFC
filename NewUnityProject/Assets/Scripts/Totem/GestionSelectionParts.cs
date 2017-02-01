@@ -17,7 +17,7 @@ public class GestionSelectionParts : MonoBehaviour {
 
 	public RotationEnigmeLazer RotationDown;
 	public RotationEnigmeLazer RotationMid;
-	public RotationEnigmeLazer RotationUp;
+	public AnimTopPartNotMoving RotationUp;
 
 	bool returnAxisBool = false;
 

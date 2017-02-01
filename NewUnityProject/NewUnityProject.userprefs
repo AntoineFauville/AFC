@@ -1,12 +1,20 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Demo\DebugDemo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Book\Map.cs">
     <Files>
-      <File FileName="Assets\Scripts\Demo\DebugDemo.cs" Line="50" Column="46" />
+      <File FileName="Assets\Scripts\Demo\DebugDemo.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Player\CharacterMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Other\MenuDemo.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Demo\BacktoMenu.cs" Line="1" Column="1" />
       <File FileName="Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Other\MenuDemo.cs" Line="42" Column="46" />
-      <File FileName="Assets\Scripts\Demo\BacktoMenu.cs" Line="16" Column="41" />
+      <File FileName="Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\3rdPersonCamera\Scripts\CameraController.cs" Line="1" Column="1" />
+      <File FileName="Assets\3rdPersonCamera\Scripts\FreeForm.cs" Line="1" Column="1" />
+      <File FileName="Assets\3rdPersonCamera\Scripts\CameraRotationMoving.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Totem\AnimTopPartNotMoving.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Totem\RotationEnigmeLazer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Totem\GestionSelectionParts.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Book\Map.cs" Line="89" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

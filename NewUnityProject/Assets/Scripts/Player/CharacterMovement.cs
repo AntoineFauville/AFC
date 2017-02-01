@@ -12,6 +12,9 @@ public class CharacterMovement : MonoBehaviour {
 	//public bool isUnderwaterD = false;
 	//public bool isDrowningD = false;
 
+	GameObject MainCamera;
+	private Vector3 VectorCamera;
+
 	//private float PosY;
 	private Vector3 velocity;
 	public Rigidbody rigidbody;
@@ -40,31 +43,72 @@ public class CharacterMovement : MonoBehaviour {
 	float rotation;
 	float MovingRotation;
 
+	float angleY;
+
 	void Start()
 	{
 		animator = GetComponent<Animator>();
+		MainCamera = GameObject.Find ("Main Camera Main");
 		//PosY = this.transform.position.y;
 		//WaterBar.SetActive (false);
 	}
 
-	void Update() 
+	void FixedUpdate() 
 	{
 		float v = Input.GetAxis("Vertical");
 
 
 		if (Input.GetAxis ("Vertical") > 0) {
 			translation = Input.GetAxis ("Vertical") * moveSpeed * Time.deltaTime;
-			m_TurnAmount = Mathf.Atan2(0,0);
+			m_TurnAmount = Mathf.Atan2 (0, 0);
 			MovingRotation = moveTurnSpeed * Input.GetAxis ("Vertical");
 		} else {
 			translation = 0.0f;
 			MovingRotation = moveTurnSpeed * 2;
 			m_TurnAmount = Mathf.Atan2(rotation,rotation);
 		}
+		//si la camera a un angle different et qu'on appuie sur vertical 
+
+		float actualXCam = MainCamera.transform.rotation.eulerAngles.x;
+		float actualYCam = MainCamera.transform.rotation.eulerAngles.y;
+		float actualZCam = MainCamera.transform.rotation.eulerAngles.z;
+
+		float actualXPla = transform.rotation.eulerAngles.x;
+		float actualYPla = transform.rotation.eulerAngles.y;
+		float actualZPla = transform.rotation.eulerAngles.z;
+
+		MainCamera.transform.rotation = Quaternion.Euler (actualXCam,actualYCam,actualZCam);
+		transform.rotation = Quaternion.Euler (actualXPla,actualYPla,actualZPla);
+
+
+		//float axeDeDirection = MainCamera.transform.rotation.eulerAngles.y;
+		//float axeDeDirectionJoueur = transform.rotation.eulerAngles.y;
+
+		if(Input.GetAxis ("Vertical") > 0 && MainCamera.transform.rotation.eulerAngles.y != transform.rotation.eulerAngles.y && Input.GetAxis ("Horizontal") == 0)
+		{
+			transform.rotation = Quaternion.Euler (actualXPla,actualYCam,actualZPla);
+		} 
+
+		//angleY = (axeDeDirection.y / (Mathf.Sqrt(1-axeDeDirection.w * axeDeDirection.w)));
+		//print (angleY);
+
+		//angleY = 2 * Mathf.Acos (axeDeDirection.y);
+
+		//print("sinY " + Mathf.Asin (axeDeDirectionJoueur.y) * 100);
+		//print("cosY " + Mathf.Acos (axeDeDirectionJoueur.y) * 100);
+		//print ( transform.rotation.eulerAngles.y);
+
+
+		//print(MainCamera.transform.rotation);
+		//print(transform.rotation);
 
 		rotation = Input.GetAxis ("Horizontal") * MovingRotation * Time.deltaTime;
 		transform.Translate(0, 0, translation);
 		transform.Rotate(0, rotation, 0);
+
+	/*	if (VectorCamera != null) {
+			VectorCamera = Vector3.Scale(MainCamera.transform.forward, new Vector3(1, 0, 1)).normalized;
+		}*/
 
 
 		m_ForwardAmount = translation;
